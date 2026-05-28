@@ -2,6 +2,7 @@ use crate::api::RunningStats;
 use crate::config::LeetCodeVariant;
 use crate::leetcode::Question;
 
+#[allow(clippy::too_many_arguments)]
 pub fn build_message(
     greeting: &str,
     get_up_time: &str,
@@ -68,7 +69,7 @@ pub fn format_history(history: &[String]) -> String {
     } else {
         let mut out = "📜 On this day:".to_string();
         for h in history {
-            out.push_str("\n");
+            out.push('\n');
             out.push_str(h);
         }
         out

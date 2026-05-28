@@ -18,19 +18,27 @@ struct GraphQLRequest {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use super::{CnDailyChallengeData, DailyChallengeData, GraphQLResponse};
     use crate::config::{Config, LeetCodeVariant};
-    use super::{GraphQLResponse, DailyChallengeData, CnDailyChallengeData};
 
     #[test]
     fn test_get_day_seed_structure() {
         let seed = LeetCode::get_day_seed();
         // seed = year * 1000 + day_of_year, so for 2024+ it's >= 2024001
-        assert!(seed >= 2024001, "seed {} looks wrong (expected >= 2024001)", seed);
+        assert!(
+            seed >= 2024001,
+            "seed {} looks wrong (expected >= 2024001)",
+            seed
+        );
         // year * 1000 -> last 3 digits are day_of_year (1-366)
         let year_part = seed / 1000;
         let day_part = seed % 1000;
         assert!(year_part >= 2024, "year part {} looks wrong", year_part);
-        assert!(day_part >= 1 && day_part <= 366, "day part {} out of range", day_part);
+        assert!(
+            day_part >= 1 && day_part <= 366,
+            "day part {} out of range",
+            day_part
+        );
     }
 
     #[test]
@@ -54,7 +62,11 @@ mod tests {
             .map(|s| LeetCode::pick_seeded_random(&items, s).unwrap())
             .collect();
         // With 10 items and 50 different seeds we should see at least 3 distinct values
-        assert!(results.len() >= 3, "only {} unique values from 50 seeds", results.len());
+        assert!(
+            results.len() >= 3,
+            "only {} unique values from 50 seeds",
+            results.len()
+        );
     }
 
     #[test]
@@ -118,7 +130,9 @@ mod tests {
         let used_file = tmp.join("test_used.txt");
 
         // Write easy file: id|title|slug
-        tokio::fs::write(&easy_file, "1|First|first\n2|Second|second\n3|Third|third").await.unwrap();
+        tokio::fs::write(&easy_file, "1|First|first\n2|Second|second\n3|Third|third")
+            .await
+            .unwrap();
         // Write used file: slug of second problem
         tokio::fs::write(&used_file, "second").await.unwrap();
 
@@ -138,10 +152,10 @@ mod tests {
         };
         let lc = LeetCode::new(&config);
 
-        let problem = lc.pick_daily_problem(
-            easy_file.to_str().unwrap(),
-            used_file.to_str().unwrap(),
-        ).await.unwrap();
+        let problem = lc
+            .pick_daily_problem(easy_file.to_str().unwrap(), used_file.to_str().unwrap())
+            .await
+            .unwrap();
 
         // Should not pick "second" (used)
         assert_ne!(problem.slug, "second");
@@ -158,7 +172,9 @@ mod tests {
         let easy_file = tmp.join("test_easy_all_used.txt");
         let used_file = tmp.join("test_used_all_used.txt");
 
-        tokio::fs::write(&easy_file, "1|Only|only-one").await.unwrap();
+        tokio::fs::write(&easy_file, "1|Only|only-one")
+            .await
+            .unwrap();
         tokio::fs::write(&used_file, "only-one").await.unwrap();
 
         let config = Config {
@@ -177,10 +193,9 @@ mod tests {
         };
         let lc = LeetCode::new(&config);
 
-        let result = lc.pick_daily_problem(
-            easy_file.to_str().unwrap(),
-            used_file.to_str().unwrap(),
-        ).await;
+        let result = lc
+            .pick_daily_problem(easy_file.to_str().unwrap(), used_file.to_str().unwrap())
+            .await;
 
         assert!(result.is_err());
 
@@ -211,10 +226,13 @@ mod tests {
         };
         let lc = LeetCode::new(&config);
 
-        let problem = lc.pick_daily_problem(
-            easy_file.to_str().unwrap(),
-            "/tmp/nonexistent_used_file_xyz.txt",
-        ).await.unwrap();
+        let problem = lc
+            .pick_daily_problem(
+                easy_file.to_str().unwrap(),
+                "/tmp/nonexistent_used_file_xyz.txt",
+            )
+            .await
+            .unwrap();
 
         assert_eq!(problem.slug, "first");
 
@@ -322,7 +340,9 @@ impl LeetCode {
             if p.difficulty.level == 1 && !p.paid_only {
                 output.push_str(&format!(
                     "{}|{}|{}\n",
-                    p.stat.frontend_question_id, p.stat.question__title, p.stat.question__title_slug
+                    p.stat.frontend_question_id,
+                    p.stat.question__title,
+                    p.stat.question__title_slug
                 ));
             }
         }
@@ -481,8 +501,7 @@ impl LeetCode {
         }
 
         let day_seed = Self::get_day_seed();
-        Self::pick_seeded_random(&available, day_seed)
-            .ok_or_else(|| anyhow!("No problem selected"))
+        Self::pick_seeded_random(&available, day_seed).ok_or_else(|| anyhow!("No problem selected"))
     }
 
     pub async fn get_today_problem(&self, easy_file: &str, used_file: &str) -> Result<Question> {
@@ -503,5 +522,4 @@ impl LeetCode {
 
         self.pick_daily_problem(easy_file, used_file).await
     }
-
 }

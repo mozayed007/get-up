@@ -22,14 +22,20 @@ pub fn get_year_progress(now: &DateTime<Tz>) -> String {
 
     let bar = format!("{}{}", "█".repeat(filled), "░".repeat(empty));
 
-    format!("{}/{} ({:.1}%) {}", day_of_year, days_in_year, percentage, bar)
+    format!(
+        "{}/{} ({:.1}%) {}",
+        day_of_year, days_in_year, percentage, bar
+    )
 }
 
 pub async fn read_lines(filename: &str) -> Result<Vec<String>> {
     let file = match tokio::fs::File::open(filename).await {
         Ok(file) => file,
         Err(e) if e.kind() == std::io::ErrorKind::NotFound => return Ok(vec![]),
-        Err(e) => return Err(anyhow::Error::from(e)).with_context(|| format!("Failed to open file: {}", filename)),
+        Err(e) => {
+            return Err(anyhow::Error::from(e))
+                .with_context(|| format!("Failed to open file: {}", filename))
+        }
     };
     let reader = BufReader::new(file);
     let mut lines = Vec::new();
@@ -99,7 +105,9 @@ mod tests {
 
     #[tokio::test]
     async fn test_read_lines_file_not_found() {
-        let lines = read_lines("/tmp/nonexistent_file_xyz_123.txt").await.unwrap();
+        let lines = read_lines("/tmp/nonexistent_file_xyz_123.txt")
+            .await
+            .unwrap();
         assert!(lines.is_empty());
     }
 

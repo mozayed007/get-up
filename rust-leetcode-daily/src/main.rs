@@ -20,7 +20,10 @@ const RUNNING_FILE: &str = "data/running.parquet";
 #[command(name = "leetcode-daily")]
 #[command(about = "A CLI tool for daily motivational messages with LeetCode problems")]
 struct Args {
-    #[arg(long, help = "Fetch and save all EASY problems to data/leetcode_easy.txt")]
+    #[arg(
+        long,
+        help = "Fetch and save all EASY problems to data/leetcode_easy.txt"
+    )]
     fetch_easy: bool,
 
     #[arg(long, help = "Post the generated message to GitHub Issue #1")]
@@ -85,7 +88,9 @@ async fn main() -> Result<()> {
                     }
                 }
                 if page.next.is_some() {
-                    page = crab.get_page(&page.next).await?
+                    page = crab
+                        .get_page(&page.next)
+                        .await?
                         .ok_or_else(|| anyhow::anyhow!("Expected next page"))?;
                 } else {
                     break;
@@ -106,9 +111,15 @@ async fn main() -> Result<()> {
         .await
         .context("Failed to fetch quote")?;
 
-    let history = api::fetch_history(&client, config.birth_year, now.year(), now.month(), now.day())
-        .await
-        .context("Failed to fetch history")?;
+    let history = api::fetch_history(
+        &client,
+        config.birth_year,
+        now.year(),
+        now.month(),
+        now.day(),
+    )
+    .await
+    .context("Failed to fetch history")?;
 
     let running = api::fetch_running_stats(RUNNING_FILE, now.date_naive())
         .await
@@ -174,4 +185,3 @@ async fn main() -> Result<()> {
 
     Ok(())
 }
-

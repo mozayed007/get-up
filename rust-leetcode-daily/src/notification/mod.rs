@@ -1,8 +1,8 @@
-mod telegram;
 mod discord;
+mod telegram;
 
-pub use telegram::TelegramNotifier;
 pub use discord::DiscordNotifier;
+pub use telegram::TelegramNotifier;
 
 use anyhow::Result;
 use async_trait::async_trait;

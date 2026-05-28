@@ -26,7 +26,14 @@ Day {} · {}
 
 💬 Today's Quote
 {}"#,
-        greeting, get_up_time, day_of_year, year_progress, leetcode, running_info, history_today, quote
+        greeting,
+        get_up_time,
+        day_of_year,
+        year_progress,
+        leetcode,
+        running_info,
+        history_today,
+        quote
     )
 }
 
@@ -82,7 +89,16 @@ mod tests {
 
     #[test]
     fn test_build_message() {
-        let msg = build_message("☀️ GM", "07:30", 42, "42/365", "LC msg", "Run info", "History", "Quote");
+        let msg = build_message(
+            "☀️ GM",
+            "07:30",
+            42,
+            "42/365",
+            "LC msg",
+            "Run info",
+            "History",
+            "Quote",
+        );
         assert!(msg.contains("07:30"));
         assert!(msg.contains("Day 42"));
         assert!(msg.contains("LC msg"));
@@ -142,9 +158,12 @@ mod tests {
     #[test]
     fn test_format_running() {
         let stats = RunningStats {
-            yesterday_km: 5.2, yesterday_count: 1,
-            month_km: 42.0, month_count: 10,
-            year_km: 300.0, year_count: 72,
+            yesterday_km: 5.2,
+            yesterday_count: 1,
+            month_km: 42.0,
+            month_count: 10,
+            year_km: 300.0,
+            year_count: 72,
         };
         let msg = format_running(&stats);
         assert!(msg.contains("5.20 km"));

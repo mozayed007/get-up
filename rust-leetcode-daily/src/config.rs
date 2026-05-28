@@ -43,12 +43,9 @@ impl Config {
     pub fn load() -> Result<Self> {
         dotenv().ok();
 
-        let github_token = env::var("GITHUB_TOKEN")
-            .context("GITHUB_TOKEN must be set")?;
-        let repo_owner = env::var("REPO_OWNER")
-            .context("REPO_OWNER must be set")?;
-        let repo_name = env::var("REPO_NAME")
-            .context("REPO_NAME must be set")?;
+        let github_token = env::var("GITHUB_TOKEN").context("GITHUB_TOKEN must be set")?;
+        let repo_owner = env::var("REPO_OWNER").context("REPO_OWNER must be set")?;
+        let repo_name = env::var("REPO_NAME").context("REPO_NAME must be set")?;
 
         let telegram_token = env::var("TELEGRAM_TOKEN").ok();
         let telegram_chat_id = env::var("TELEGRAM_CHAT_ID").ok();
@@ -62,8 +59,7 @@ impl Config {
             .parse()
             .context("BIRTH_YEAR must be a valid year")?;
 
-        let timezone_str = env::var("TIMEZONE")
-            .context("TIMEZONE must be set")?;
+        let timezone_str = env::var("TIMEZONE").context("TIMEZONE must be set")?;
         let timezone: Tz = timezone_str
             .parse()
             .with_context(|| format!("Invalid timezone: {}", timezone_str))?;
@@ -98,28 +94,46 @@ mod tests {
 
     #[test]
     fn test_variant_com() {
-        assert_eq!("com".parse::<LeetCodeVariant>().unwrap(), LeetCodeVariant::Com);
+        assert_eq!(
+            "com".parse::<LeetCodeVariant>().unwrap(),
+            LeetCodeVariant::Com
+        );
     }
 
     #[test]
     fn test_variant_com_long() {
-        assert_eq!("leetcode-com".parse::<LeetCodeVariant>().unwrap(), LeetCodeVariant::Com);
+        assert_eq!(
+            "leetcode-com".parse::<LeetCodeVariant>().unwrap(),
+            LeetCodeVariant::Com
+        );
     }
 
     #[test]
     fn test_variant_cn() {
-        assert_eq!("cn".parse::<LeetCodeVariant>().unwrap(), LeetCodeVariant::Cn);
+        assert_eq!(
+            "cn".parse::<LeetCodeVariant>().unwrap(),
+            LeetCodeVariant::Cn
+        );
     }
 
     #[test]
     fn test_variant_cn_long() {
-        assert_eq!("leetcode-cn".parse::<LeetCodeVariant>().unwrap(), LeetCodeVariant::Cn);
+        assert_eq!(
+            "leetcode-cn".parse::<LeetCodeVariant>().unwrap(),
+            LeetCodeVariant::Cn
+        );
     }
 
     #[test]
     fn test_variant_case_insensitive() {
-        assert_eq!("CN".parse::<LeetCodeVariant>().unwrap(), LeetCodeVariant::Cn);
-        assert_eq!("COM".parse::<LeetCodeVariant>().unwrap(), LeetCodeVariant::Com);
+        assert_eq!(
+            "CN".parse::<LeetCodeVariant>().unwrap(),
+            LeetCodeVariant::Cn
+        );
+        assert_eq!(
+            "COM".parse::<LeetCodeVariant>().unwrap(),
+            LeetCodeVariant::Com
+        );
     }
 
     #[test]

@@ -56,10 +56,7 @@ pub struct RunningStats {
 }
 
 pub async fn fetch_quote(client: &reqwest::Client) -> Result<String> {
-    let result = client
-        .get("https://api.quotable.io/random")
-        .send()
-        .await;
+    let result = client.get("https://api.quotable.io/random").send().await;
 
     match result {
         Ok(resp) => match resp.json::<QuoteResponse>().await {
@@ -103,7 +100,11 @@ pub async fn fetch_history(
         .filter(|event| event.year >= birth_year && event.year <= current_year)
         .filter_map(|event| {
             event.pages.first().map(|page| {
-                (event.year, event.text, page.content_urls.desktop.page.clone())
+                (
+                    event.year,
+                    event.text,
+                    page.content_urls.desktop.page.clone(),
+                )
             })
         })
         .collect();
@@ -148,7 +149,9 @@ pub async fn fetch_running_stats(running_file: &str, today: NaiveDate) -> Result
                 Ok(r) => r,
                 Err(_) => continue,
             };
-            if record.len() < 2 { continue; }
+            if record.len() < 2 {
+                continue;
+            }
             if let (Ok(date), Ok(dist)) = (
                 chrono::NaiveDate::parse_from_str(&record[0], "%Y-%m-%d"),
                 record[1].parse::<f64>(),
@@ -189,7 +192,9 @@ pub async fn fetch_running_stats(running_file: &str, today: NaiveDate) -> Result
         Err(_) => return Ok(RunningStats::default()),
     };
 
-    let yesterday_df = all_data.clone().lazy()
+    let yesterday_df = all_data
+        .clone()
+        .lazy()
         .filter(col("_date_str").eq(lit(yesterday_str.as_str())))
         .select([
             col("distance_km").sum().alias("total_distance"),
@@ -197,7 +202,9 @@ pub async fn fetch_running_stats(running_file: &str, today: NaiveDate) -> Result
         ])
         .collect();
 
-    let month_df = all_data.clone().lazy()
+    let month_df = all_data
+        .clone()
+        .lazy()
         .filter(col("_month_str").eq(lit(month_str.as_str())))
         .select([
             col("distance_km").sum().alias("total_distance"),
@@ -205,7 +212,8 @@ pub async fn fetch_running_stats(running_file: &str, today: NaiveDate) -> Result
         ])
         .collect();
 
-    let year_df = all_data.lazy()
+    let year_df = all_data
+        .lazy()
         .filter(col("_year_str").eq(lit(year_str.as_str())))
         .select([
             col("distance_km").sum().alias("total_distance"),
@@ -230,10 +238,19 @@ pub async fn fetch_running_stats(running_file: &str, today: NaiveDate) -> Result
 fn extract_pair(df_result: std::result::Result<DataFrame, PolarsError>) -> (f64, i32) {
     match df_result {
         Ok(df) => {
-            let dist = df.column("total_distance")
-                .ok().and_then(|c| c.f64().ok()).and_then(|ca| ca.get(0)).unwrap_or(0.0);
-            let count = df.column("session_count")
-                .ok().and_then(|c| c.u32().ok()).and_then(|ca| ca.get(0)).map(|v| v as i32).unwrap_or(0);
+            let dist = df
+                .column("total_distance")
+                .ok()
+                .and_then(|c| c.f64().ok())
+                .and_then(|ca| ca.get(0))
+                .unwrap_or(0.0);
+            let count = df
+                .column("session_count")
+                .ok()
+                .and_then(|c| c.u32().ok())
+                .and_then(|ca| ca.get(0))
+                .map(|v| v as i32)
+                .unwrap_or(0);
             (dist, count)
         }
         Err(_) => (0.0, 0),
@@ -290,6 +307,9 @@ mod tests {
         let resp: WikiResponse = serde_json::from_str(json).unwrap();
         assert_eq!(resp.events.len(), 1);
         assert_eq!(resp.events[0].year, 1990);
-        assert_eq!(resp.events[0].pages[0].content_urls.desktop.page, "https://en.wikipedia.org/wiki/Main");
+        assert_eq!(
+            resp.events[0].pages[0].content_urls.desktop.page,
+            "https://en.wikipedia.org/wiki/Main"
+        );
     }
 }

@@ -55,7 +55,8 @@ impl Notifier for DiscordNotifier {
         use serenity::builder::CreateMessage;
         match &self.target {
             DiscordTarget::User(uid) => {
-                uid.dm(&self.http, CreateMessage::new().content(message)).await?;
+                uid.dm(&self.http, CreateMessage::new().content(message))
+                    .await?;
             }
             DiscordTarget::Channel(cid) => {
                 cid.say(&self.http, message).await?;

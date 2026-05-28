@@ -23,6 +23,7 @@ Day {} · {}
 
 {}
 
+💬 Today's Quote
 {}"#,
         greeting, get_up_time, day_of_year, year_progress, leetcode, running_info, history_today, quote
     )
@@ -84,6 +85,7 @@ mod tests {
         assert!(msg.contains("07:30"));
         assert!(msg.contains("Day 42"));
         assert!(msg.contains("LC msg"));
+        assert!(msg.contains("💬 Today's Quote"));
         assert!(msg.contains("Quote"));
     }
 

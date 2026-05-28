@@ -116,10 +116,10 @@ pub async fn fetch_history(
         .map(|(year, text, wiki_url)| {
             let age_text = if year >= birth_year {
                 let age = year - birth_year;
-                format!("(I was {} years old)", age)
+                format!("(you were {})", age)
             } else {
                 let years_before = birth_year - year;
-                format!("({} years before I was born)", years_before)
+                format!("({} years before you were born)", years_before)
             };
             format!("• {}: [{}]({}) {}", year, text, wiki_url, age_text)
         })

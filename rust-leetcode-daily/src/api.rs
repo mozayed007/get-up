@@ -128,16 +128,51 @@ pub async fn fetch_history(
     Ok(result)
 }
 
-pub async fn fetch_running_stats(parquet_file: &str, today: NaiveDate) -> Result<RunningStats> {
+pub async fn fetch_running_stats(running_file: &str, today: NaiveDate) -> Result<RunningStats> {
     let yesterday = today - TimeDelta::days(1);
 
-    if !std::path::Path::new(parquet_file).exists() {
+    if !std::path::Path::new(running_file).exists() {
         return Ok(RunningStats::default());
     }
 
-    let df = match LazyFrame::scan_parquet(parquet_file, Default::default()) {
-        Ok(df) => df,
-        Err(_) => return Ok(RunningStats::default()),
+    let df: LazyFrame = if running_file.ends_with(".csv") {
+        let f = match std::fs::File::open(running_file) {
+            Ok(f) => std::io::BufReader::new(f),
+            Err(_) => return Ok(RunningStats::default()),
+        };
+        let mut rdr = csv::ReaderBuilder::new().has_headers(true).from_reader(f);
+        let mut dates = Vec::new();
+        let mut distances = Vec::new();
+        for result in rdr.records() {
+            let record = match result {
+                Ok(r) => r,
+                Err(_) => continue,
+            };
+            if record.len() < 2 { continue; }
+            if let (Ok(date), Ok(dist)) = (
+                chrono::NaiveDate::parse_from_str(&record[0], "%Y-%m-%d"),
+                record[1].parse::<f64>(),
+            ) {
+                dates.push(date);
+                distances.push(dist);
+            }
+        }
+        if dates.is_empty() {
+            return Ok(RunningStats::default());
+        }
+        let frame = match polars::prelude::DataFrame::new(vec![
+            polars::prelude::Series::new("date", dates),
+            polars::prelude::Series::new("distance_km", distances),
+        ]) {
+            Ok(f) => f,
+            Err(_) => return Ok(RunningStats::default()),
+        };
+        frame.lazy()
+    } else {
+        match LazyFrame::scan_parquet(running_file, Default::default()) {
+            Ok(df) => df,
+            Err(_) => return Ok(RunningStats::default()),
+        }
     };
 
     let yesterday_str = yesterday.format("%Y-%m-%d").to_string();

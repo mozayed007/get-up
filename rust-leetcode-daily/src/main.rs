@@ -14,7 +14,7 @@ use utils::append_line;
 
 const EASY_FILE: &str = "data/leetcode_easy.txt";
 const USED_FILE: &str = "data/used_problems.txt";
-const PARQUET_FILE: &str = "data/running.parquet";
+const RUNNING_FILE: &str = "data/running.parquet";
 
 #[derive(Parser, Debug)]
 #[command(name = "leetcode-daily")]
@@ -110,7 +110,7 @@ async fn main() -> Result<()> {
         .await
         .context("Failed to fetch history")?;
 
-    let running = api::fetch_running_stats(PARQUET_FILE, now.date_naive())
+    let running = api::fetch_running_stats(RUNNING_FILE, now.date_naive())
         .await
         .context("Failed to fetch running stats")?;
 

@@ -19,7 +19,7 @@ struct GraphQLRequest {
 mod tests {
     use super::*;
     use crate::config::{Config, LeetCodeVariant};
-    use super::{GraphQLResponse, DailyChallengeData, CnDailyChallengeData, ProblemListData};
+    use super::{GraphQLResponse, DailyChallengeData, CnDailyChallengeData};
 
     #[test]
     fn test_get_day_seed_structure() {
@@ -109,37 +109,6 @@ mod tests {
         let q = &resp.data.today_record[0].question;
         assert_eq!(q.title, "CN Problem");
         assert_eq!(q.title_slug, "cn-problem");
-    }
-
-    #[test]
-    fn test_problem_list_deserialization() {
-        let json = r#"{
-            "data": {
-                "problemsetQuestionList": {
-                    "questions": [
-                        {
-                            "questionFrontendId": "1",
-                            "title": "Two Sum",
-                            "titleSlug": "two-sum",
-                            "difficulty": "EASY",
-                            "isPaidOnly": false
-                        },
-                        {
-                            "questionFrontendId": "2",
-                            "title": "Hard One",
-                            "titleSlug": "hard-one",
-                            "difficulty": "HARD",
-                            "isPaidOnly": true
-                        }
-                    ],
-                    "total": 2
-                }
-            }
-        }"#;
-        let resp: GraphQLResponse<ProblemListData> = serde_json::from_str(json).unwrap();
-        assert_eq!(resp.data.problemset_question_list.total, 2);
-        assert_eq!(resp.data.problemset_question_list.questions.len(), 2);
-        assert!(resp.data.problemset_question_list.questions[1].is_paid_only);
     }
 
     #[tokio::test]
@@ -280,6 +249,7 @@ struct QuestionRaw {
     title: String,
     title_slug: String,
     difficulty: String,
+    #[allow(dead_code)]
     is_paid_only: bool,
 }
 
@@ -292,18 +262,6 @@ struct CnDailyChallengeData {
 #[derive(Debug, Deserialize)]
 struct CnDailyChallengeItem {
     question: QuestionRaw,
-}
-
-#[derive(Debug, Deserialize)]
-#[serde(rename_all = "camelCase")]
-struct ProblemListData {
-    problemset_question_list: ProblemList,
-}
-
-#[derive(Debug, Deserialize)]
-struct ProblemList {
-    questions: Vec<QuestionRaw>,
-    total: i32,
 }
 
 #[derive(Debug, Deserialize)]
@@ -327,75 +285,49 @@ impl LeetCode {
     }
 
     pub async fn fetch_easy_list(&self, output_file: &str) -> Result<()> {
-        let mut all_questions: Vec<QuestionRaw> = Vec::new();
-        let mut skip = 0;
-        let limit = 100;
-
-        loop {
-            let query = r#"
-                query problemsetQuestionList($categorySlug: String, $limit: Int, $skip: Int, $filters: QuestionFilterInput) {
-                    problemsetQuestionList: problemsetQuestions(
-                        categorySlug: $categorySlug
-                        limit: $limit
-                        skip: $skip
-                        filters: $filters
-                    ) {
-                        questions {
-                            questionFrontendId
-                            title
-                            titleSlug
-                            difficulty
-                            isPaidOnly
-                        }
-                        total
-                    }
-                }
-            "#;
-
-            let variables = serde_json::json!({
-                "categorySlug": "algorithms",
-                "limit": limit,
-                "skip": skip,
-                "filters": {
-                    "difficulty": "EASY"
-                }
-            });
-
-            let request = GraphQLRequest {
-                query: query.to_string(),
-                variables,
-            };
-
-            let response = self
-                .client
-                .post(&self.endpoint)
-                .json(&request)
-                .send()
-                .await?;
-
-            let graphql_response: GraphQLResponse<ProblemListData> = response.json().await?;
-
-            let problem_list = graphql_response.data.problemset_question_list;
-            let total = problem_list.total;
-
-            all_questions.extend(problem_list.questions);
-
-            skip += limit;
-
-            if skip >= total {
-                break;
-            }
+        #[derive(Deserialize)]
+        #[allow(non_snake_case)]
+        struct ApiProblem {
+            stat: ApiStat,
+            difficulty: ApiDifficulty,
+            paid_only: bool,
+        }
+        #[derive(Deserialize)]
+        #[allow(non_snake_case)]
+        struct ApiStat {
+            frontend_question_id: i32,
+            question__title: String,
+            question__title_slug: String,
+        }
+        #[derive(Deserialize)]
+        struct ApiDifficulty {
+            level: i32,
+        }
+        #[derive(Deserialize)]
+        struct ApiResponse {
+            stat_status_pairs: Vec<ApiProblem>,
         }
 
+        let resp: ApiResponse = self
+            .client
+            .get("https://leetcode.com/api/problems/algorithms/")
+            .header("User-Agent", "LeetCodeDaily/0.1.0")
+            .send()
+            .await?
+            .json()
+            .await?;
+
         let mut output = String::new();
-        for q in all_questions {
-            if !q.is_paid_only {
-                output.push_str(&format!("{}|{}|{}\n", q.question_frontend_id, q.title, q.title_slug));
+        for p in resp.stat_status_pairs {
+            if p.difficulty.level == 1 && !p.paid_only {
+                output.push_str(&format!(
+                    "{}|{}|{}\n",
+                    p.stat.frontend_question_id, p.stat.question__title, p.stat.question__title_slug
+                ));
             }
         }
 
         tokio::fs::write(output_file, output.trim()).await?;
-
         Ok(())
     }
 
@@ -429,6 +361,7 @@ impl LeetCode {
         let response = self
             .client
             .post(&self.endpoint)
+            .header("User-Agent", "LeetCodeDaily/0.1.0")
             .json(&request)
             .send()
             .await?;
@@ -473,6 +406,7 @@ impl LeetCode {
         let response = self
             .client
             .post(&self.endpoint)
+            .header("User-Agent", "LeetCodeDaily/0.1.0")
             .json(&request)
             .send()
             .await?;

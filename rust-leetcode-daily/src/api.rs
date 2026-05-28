@@ -42,7 +42,7 @@ struct WikiDesktop {
     page: String,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct RunningStats {
     pub yesterday_km: f64,
     pub yesterday_count: i32,
@@ -56,14 +56,13 @@ pub async fn fetch_quote(client: &reqwest::Client) -> Result<String> {
     let result = client
         .get("https://api.quotable.io/random")
         .send()
-        .await?
-        .json::<QuoteResponse>()
         .await;
 
     match result {
-        Ok(response) => {
-            Ok(format!("{}\n\n—— {}", response.content, response.author))
-        }
+        Ok(resp) => match resp.json::<QuoteResponse>().await {
+            Ok(response) => Ok(format!("{}\n\n—— {}", response.content, response.author)),
+            Err(_) => Ok(DEFAULT_QUOTE.to_string()),
+        },
         Err(_) => Ok(DEFAULT_QUOTE.to_string()),
     }
 }
@@ -129,29 +128,28 @@ pub async fn fetch_history(
 pub async fn fetch_running_stats(parquet_file: &str, today: NaiveDate) -> Result<RunningStats> {
     let yesterday = today - TimeDelta::days(1);
 
+    if !std::path::Path::new(parquet_file).exists() {
+        return Ok(RunningStats::default());
+    }
+
     let df = match LazyFrame::scan_parquet(parquet_file, Default::default()) {
         Ok(df) => df,
-        Err(_) => {
-            return Ok(RunningStats {
-                yesterday_km: 0.0,
-                yesterday_count: 0,
-                month_km: 0.0,
-                month_count: 0,
-                year_km: 0.0,
-                year_count: 0,
-            });
-        }
+        Err(_) => return Ok(RunningStats::default()),
     };
 
     let yesterday_str = yesterday.format("%Y-%m-%d").to_string();
     let month_str = today.format("%Y-%m").to_string();
     let year_str = today.format("%Y").to_string();
 
-    let all_data = df
+    let all_data = match df
         .with_column(col("date").dt().strftime("%Y-%m-%d").alias("_date_str"))
         .with_column(col("date").dt().strftime("%Y-%m").alias("_month_str"))
         .with_column(col("date").dt().strftime("%Y").alias("_year_str"))
-        .collect()?;
+        .collect()
+    {
+        Ok(d) => d,
+        Err(_) => return Ok(RunningStats::default()),
+    };
 
     let yesterday_df = all_data.clone().lazy()
         .filter(col("_date_str").eq(lit(yesterday_str.as_str())))

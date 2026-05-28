@@ -5,14 +5,6 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
-env:
-  REPO_OWNER: ${{ github.repository_owner }}
-  REPO_NAME: ${{ github.event.repository.name }}
-  BIRTH_YEAR: ''
-  TIMEZONE: 'UTC'
-  LEETCODE_ENDPOINT: 'https://leetcode.com'
-  LEETCODE_VARIANT: 'leetcode'
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -67,8 +59,14 @@ jobs:
       - name: Run binary
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_OWNER: ${{ github.repository_owner }}
+          REPO_NAME: ${{ github.event.repository.name }}
+          BIRTH_YEAR: ${{ secrets.BIRTH_YEAR }}
+          TIMEZONE: ${{ secrets.TIMEZONE }}
+          LEETCODE_ENDPOINT: https://leetcode.com/graphql/
+          LEETCODE_VARIANT: com
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
-          DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
+          DISCORD_USER_ID: ${{ secrets.DISCORD_USER_ID }}
         run: cargo run --release --all-features -- --post --telegram --discord

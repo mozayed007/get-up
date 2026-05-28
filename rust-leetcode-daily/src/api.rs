@@ -45,10 +45,13 @@ struct WikiDesktop {
 #[derive(Debug, Clone, Default)]
 pub struct RunningStats {
     pub yesterday_km: f64,
+    #[allow(dead_code)]
     pub yesterday_count: i32,
     pub month_km: f64,
+    #[allow(dead_code)]
     pub month_count: i32,
     pub year_km: f64,
+    #[allow(dead_code)]
     pub year_count: i32,
 }
 

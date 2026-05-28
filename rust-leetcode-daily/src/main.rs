@@ -119,11 +119,13 @@ async fn main() -> Result<()> {
         .await
         .context("Failed to get today's problem")?;
 
+    let greeting = message::get_greeting(current_hour);
     let leetcode_info = message::format_problem_message(&problem, &config.leetcode_variant);
     let running_info = message::format_running(&running);
     let history_today = message::format_history(&history);
 
     let message = message::build_message(
+        greeting,
         &get_up_time,
         day_of_year,
         &year_progress,

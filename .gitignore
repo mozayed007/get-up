@@ -1,0 +1,6 @@
+target/
+.env
+nul
+data/leetcode_easy.txt
+data/used_problems.txt
+*.parquet

@@ -1,7 +1,7 @@
 use anyhow::Result;
 use chrono::{NaiveDate, TimeDelta};
 use polars::prelude::*;
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 
 const DEFAULT_QUOTE: &str = r#"The only way to do great work is to love what you do.
 
@@ -42,16 +42,13 @@ struct WikiDesktop {
     page: String,
 }
 
-#[derive(Debug, Clone, Default)]
+#[derive(Debug, Clone, Default, Serialize, Deserialize)]
 pub struct RunningStats {
     pub yesterday_km: f64,
-    #[allow(dead_code)]
     pub yesterday_count: i32,
     pub month_km: f64,
-    #[allow(dead_code)]
     pub month_count: i32,
     pub year_km: f64,
-    #[allow(dead_code)]
     pub year_count: i32,
 }
 

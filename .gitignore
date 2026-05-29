@@ -1,6 +1,9 @@
 target/
 .env
-nul
-data/leetcode_easy.txt
-data/used_problems.txt
 *.parquet
+nul
+
+rust-leetcode-daily/target/
+rust-leetcode-daily/.env
+rust-leetcode-daily/data/leetcode_easy.txt
+rust-leetcode-daily/data/used_problems.txt

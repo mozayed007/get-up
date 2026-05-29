@@ -1,24 +1,16 @@
-mod api;
-mod config;
-mod leetcode;
-mod message;
-mod notification;
-mod utils;
-
 use anyhow::{Context, Result};
-use chrono::{Datelike, Timelike};
-use clap::Parser;
-use leetcode::LeetCode;
-use notification::{DiscordNotifier, Notifier, TelegramNotifier};
-use utils::append_line;
+use clap::{Parser, Subcommand};
+use leetcode_daily::config;
+use leetcode_daily::leetcode::LeetCode;
+use leetcode_daily::notification::{DiscordNotifier, Notifier, TelegramNotifier};
+use leetcode_daily::routine::{self, OutputFormat, RoutineOptions, RoutineType};
 
 const EASY_FILE: &str = "data/leetcode_easy.txt";
-const USED_FILE: &str = "data/used_problems.txt";
-const RUNNING_FILE: &str = "data/running.parquet";
 
 #[derive(Parser, Debug)]
 #[command(name = "leetcode-daily")]
-#[command(about = "A CLI tool for daily motivational messages with LeetCode problems")]
+#[command(about = "A CLI tool and MCP server for daily motivational messages with LeetCode problems")]
+#[command(version)]
 struct Args {
     #[arg(
         long,
@@ -37,6 +29,30 @@ struct Args {
 
     #[arg(long, help = "Print message to stdout without posting")]
     dry_run: bool,
+
+    #[arg(long, help = "Output structured JSON instead of formatted text")]
+    json: bool,
+
+    #[arg(long, help = "Output structured XML instead of formatted text")]
+    xml: bool,
+
+    #[arg(long, help = "Run night routine instead of morning")]
+    night: bool,
+
+    #[command(subcommand)]
+    command: Option<Commands>,
+}
+
+#[derive(Subcommand, Debug)]
+enum Commands {
+    /// Start the MCP server for agent integration
+    Mcp {
+        #[arg(long, default_value = "stdio", help = "Transport: stdio or http")]
+        transport: String,
+
+        #[arg(long, default_value = "3000", help = "Port for HTTP transport")]
+        port: u16,
+    },
 }
 
 #[tokio::main]
@@ -44,11 +60,20 @@ async fn main() -> Result<()> {
     let args = Args::parse();
 
     let config = config::Config::load()?;
-    let client = reqwest::Client::new();
-    let leetcode = LeetCode::new(&config);
-    let now = utils::get_local_time(&config);
 
+    // Handle MCP subcommand
+    if let Some(cmd) = &args.command {
+        match cmd {
+            Commands::Mcp { transport, port } => {
+                run_mcp(config, transport, *port).await?;
+                return Ok(());
+            }
+        }
+    }
+
+    // Handle fetch-easy
     if args.fetch_easy {
+        let leetcode = LeetCode::new(&config);
         println!("Fetching EASY problems...");
         leetcode
             .fetch_easy_list(EASY_FILE)
@@ -58,130 +83,126 @@ async fn main() -> Result<()> {
         return Ok(());
     }
 
-    let current_hour = now.hour();
-    let is_early_wake_up = (3..=9).contains(&current_hour);
+    // Determine output format
+    let format = if args.json {
+        OutputFormat::Json
+    } else if args.xml {
+        OutputFormat::Xml
+    } else {
+        OutputFormat::Text
+    };
 
-    let octocrab = if args.post && !args.dry_run {
-        let crab = octocrab::Octocrab::builder()
-            .personal_token(config.github_token.clone())
-            .build()?;
+    let routine_type = if args.night {
+        RoutineType::Night
+    } else {
+        RoutineType::Morning
+    };
 
-        let today = now.format("%Y-%m-%d").to_string();
-        let issue = crab
-            .issues(&config.repo_owner, &config.repo_name)
-            .get(1)
-            .await?;
+    let options = RoutineOptions {
+        routine_type,
+        format,
+        ..RoutineOptions::default()
+    };
 
-        if issue.comments > 0 {
-            let mut page = crab
-                .issues(&config.repo_owner, &config.repo_name)
-                .list_comments(1)
-                .per_page(100)
-                .send()
-                .await?;
+    let result = routine::run_routine(&config, &options)
+        .await
+        .context("Failed to run routine")?;
 
-            loop {
-                for comment in &page.items {
-                    if comment.body.as_ref().is_some_and(|b| b.contains(&today)) {
-                        println!("Already posted today, skipping...");
-                        return Ok(());
+    // Output based on format
+    match format {
+        OutputFormat::Json => {
+            println!("{}", routine::to_json(&result)?);
+        }
+        OutputFormat::Xml => {
+            println!("{}", routine::to_xml(&result)?);
+        }
+        OutputFormat::Text => {
+            println!("{}", result.formatted_message);
+        }
+    }
+
+    // Handle posting and notifications (only for text format, backward compat)
+    if format == OutputFormat::Text {
+        let now = leetcode_daily::utils::get_local_time(&config);
+        let current_hour = chrono::Timelike::hour(&now);
+        let is_early_wake_up = (3..=9).contains(&current_hour);
+
+        if args.dry_run {
+            return Ok(());
+        }
+
+        if !is_early_wake_up && !args.night {
+            println!("You wake up late");
+            return Ok(());
+        }
+
+        if args.post {
+            match octocrab::Octocrab::builder()
+                .personal_token(config.github_token.clone())
+                .build()
+            {
+                Ok(crab) => {
+                    match crab
+                        .issues(&config.repo_owner, &config.repo_name)
+                        .create_comment(1, &result.formatted_message)
+                        .await
+                    {
+                        Ok(_) => println!("Posted to GitHub Issue #1"),
+                        Err(e) => eprintln!("Failed to post to GitHub: {}", e),
                     }
                 }
-                if page.next.is_some() {
-                    page = crab
-                        .get_page(&page.next)
-                        .await?
-                        .ok_or_else(|| anyhow::anyhow!("Expected next page"))?;
-                } else {
-                    break;
-                }
+                Err(e) => eprintln!("Failed to create GitHub client: {}", e),
             }
         }
 
-        Some(crab)
-    } else {
-        None
-    };
-
-    let get_up_time = now.format("%Y-%m-%d %H:%M:%S").to_string();
-    let day_of_year = utils::get_day_of_year(&now);
-    let year_progress = utils::get_year_progress(&now);
-
-    let quote = api::fetch_quote(&client)
-        .await
-        .context("Failed to fetch quote")?;
-
-    let history = api::fetch_history(
-        &client,
-        config.birth_year,
-        now.year(),
-        now.month(),
-        now.day(),
-    )
-    .await
-    .context("Failed to fetch history")?;
-
-    let running = api::fetch_running_stats(RUNNING_FILE, now.date_naive())
-        .await
-        .context("Failed to fetch running stats")?;
-
-    let problem = leetcode
-        .get_today_problem(EASY_FILE, USED_FILE)
-        .await
-        .context("Failed to get today's problem")?;
-
-    let greeting = message::get_greeting(current_hour);
-    let leetcode_info = message::format_problem_message(&problem, &config.leetcode_variant);
-    let running_info = message::format_running(&running);
-    let history_today = message::format_history(&history);
-
-    let message = message::build_message(
-        greeting,
-        &get_up_time,
-        day_of_year,
-        &year_progress,
-        &leetcode_info,
-        &running_info,
-        &history_today,
-        &quote,
-    );
-
-    if args.dry_run {
-        println!("{}", message);
-        return Ok(());
-    }
-
-    if !is_early_wake_up {
-        println!("You wake up late");
-        println!("\n{}", message);
-        return Ok(());
-    }
-
-    if let Some(crab) = &octocrab {
-        crab.issues(&config.repo_owner, &config.repo_name)
-            .create_comment(1, &message)
-            .await?;
-
-        append_line(USED_FILE, &problem.slug).await?;
-        println!("Posted to GitHub Issue #1");
-    }
-
-    let mut notifiers: Vec<Box<dyn Notifier>> = Vec::new();
-    if args.telegram {
-        if let Some(n) = TelegramNotifier::from_config(&config) {
-            notifiers.push(Box::new(n));
+        let mut notifiers: Vec<Box<dyn Notifier>> = Vec::new();
+        if args.telegram {
+            if let Some(n) = TelegramNotifier::from_config(&config) {
+                notifiers.push(Box::new(n));
+            }
         }
-    }
-    if args.discord {
-        if let Some(n) = DiscordNotifier::from_config(&config) {
-            notifiers.push(Box::new(n));
+        if args.discord {
+            if let Some(n) = DiscordNotifier::from_config(&config) {
+                notifiers.push(Box::new(n));
+            }
         }
-    }
 
-    for notifier in &notifiers {
-        notifier.send_message(&message).await?;
-        println!("Sent notification via {}", notifier.name());
+        for notifier in &notifiers {
+            match notifier.send_message(&result.formatted_message).await {
+                Ok(_) => println!("Sent notification via {}", notifier.name()),
+                Err(e) => eprintln!("Failed to send {}: {}", notifier.name(), e),
+            }
+        }
     }
 
     Ok(())
+}
+
+#[allow(clippy::needless_return)]
+async fn run_mcp(_config: config::Config, transport: &str, port: u16) -> Result<()> {
+    #[cfg(feature = "mcp")]
+    {
+        match transport {
+            "stdio" => {
+                eprintln!("Starting MCP server in stdio mode...");
+                leetcode_daily::mcp::run_stdio(_config).await?;
+            }
+            "http" | "sse" => {
+                eprintln!("Starting MCP server in HTTP/SSE mode on port {}...", port);
+                leetcode_daily::mcp::run_http(_config, port).await?;
+            }
+            other => {
+                eprintln!("Unknown transport: {}. Use 'stdio' or 'http'.", other);
+                std::process::exit(1);
+            }
+        }
+        return Ok(());
+    }
+    #[cfg(not(feature = "mcp"))]
+    {
+        let _ = (transport, port);
+        eprintln!("MCP server requires the 'mcp' feature. Rebuild with:");
+        eprintln!("  cargo build --release --features mcp");
+        std::process::exit(1);
+    }
 }

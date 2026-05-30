@@ -8,7 +8,7 @@ use rmcp::handler::server::wrapper::Parameters;
 use serde::Deserialize;
 
 use crate::config::Config;
-use crate::routine::{self, OutputFormat, RoutineOptions, RoutineType};
+use crate::routine::{self, OutputFormat, RoutineOptions, RoutineType, Section};
 
 /// The MCP server state. Holds config shared across tool calls.
 #[derive(Clone)]
@@ -22,9 +22,9 @@ pub struct RunRoutineParams {
     #[serde(default)]
     pub routine_type: Option<String>,
 
-    /// Include LeetCode problem (default: true).
+    /// Include daily problems (default: true).
     #[serde(default)]
-    pub include_leetcode: Option<bool>,
+    pub include_problems: Option<bool>,
 
     /// Include running statistics (default: true).
     #[serde(default)]
@@ -84,13 +84,26 @@ impl GetUpServer {
             })
             .unwrap_or(OutputFormat::Json);
 
+        let mut sections = Vec::new();
+        if params.include_problems.unwrap_or(true) {
+            sections.push(Section::Problems);
+        }
+        if params.include_running.unwrap_or(true) {
+            sections.push(Section::Running);
+        }
+        if params.include_history.unwrap_or(true) {
+            sections.push(Section::History);
+        }
+        if params.include_quote.unwrap_or(true) {
+            sections.push(Section::Quote);
+        }
+        if params.include_year_progress.unwrap_or(true) {
+            sections.push(Section::YearProgress);
+        }
+
         RoutineOptions {
             routine_type,
-            include_leetcode: params.include_leetcode.unwrap_or(true),
-            include_running: params.include_running.unwrap_or(true),
-            include_history: params.include_history.unwrap_or(true),
-            include_quote: params.include_quote.unwrap_or(true),
-            include_year_progress: params.include_year_progress.unwrap_or(true),
+            sections,
             format,
         }
     }
@@ -125,33 +138,29 @@ impl GetUpServer {
     }
 
     #[tool(
-        name = "get_leetcode_problem",
-        description = "Get today's LeetCode problem. Returns the problem ID, title, slug, difficulty, URL, and whether it's the daily challenge."
+        name = "get_problems",
+        description = "Get today's problems from all platforms (LeetCode and Deep-ML). Returns a list of problems with platform, ID, title, slug, difficulty, URL, and whether it's the daily challenge."
     )]
-    async fn get_leetcode_problem(
+    async fn get_problems(
         &self,
         Parameters(_params): Parameters<GetLeetcodeParams>,
     ) -> Result<String, String> {
         let options = RoutineOptions {
-            include_leetcode: true,
-            include_running: false,
-            include_history: false,
-            include_quote: false,
-            include_year_progress: false,
+            sections: vec![Section::Problems],
             format: OutputFormat::Json,
             ..Default::default()
         };
         routine::run_routine(&self.config, &options)
             .await
             .map(|result| {
-                if let Some(ref lc) = result.leetcode {
-                    serde_json::to_string_pretty(lc)
+                if !result.problems.is_empty() {
+                    serde_json::to_string_pretty(&result.problems)
                         .unwrap_or_else(|_| result.formatted_message.clone())
                 } else {
-                    r#"{"error": "No LeetCode problem available"}"#.to_string()
+                    r#"{"error": "No problems available"}"#.to_string()
                 }
             })
-            .map_err(|e| format!("Failed to get LeetCode problem: {}", e))
+            .map_err(|e| format!("Failed to get problems: {}", e))
     }
 
     #[tool(
@@ -163,11 +172,7 @@ impl GetUpServer {
         Parameters(_params): Parameters<EmptyParams>,
     ) -> Result<String, String> {
         let options = RoutineOptions {
-            include_leetcode: false,
-            include_running: false,
-            include_history: false,
-            include_quote: true,
-            include_year_progress: false,
+            sections: vec![Section::Quote],
             format: OutputFormat::Json,
             ..Default::default()
         };
@@ -193,11 +198,7 @@ impl GetUpServer {
         Parameters(_params): Parameters<EmptyParams>,
     ) -> Result<String, String> {
         let options = RoutineOptions {
-            include_leetcode: false,
-            include_running: false,
-            include_history: true,
-            include_quote: false,
-            include_year_progress: false,
+            sections: vec![Section::History],
             format: OutputFormat::Json,
             ..Default::default()
         };
@@ -223,11 +224,7 @@ impl GetUpServer {
         Parameters(_params): Parameters<EmptyParams>,
     ) -> Result<String, String> {
         let options = RoutineOptions {
-            include_leetcode: false,
-            include_running: true,
-            include_history: false,
-            include_quote: false,
-            include_year_progress: false,
+            sections: vec![Section::Running],
             format: OutputFormat::Json,
             ..Default::default()
         };
@@ -253,11 +250,7 @@ impl GetUpServer {
         Parameters(_params): Parameters<EmptyParams>,
     ) -> Result<String, String> {
         let options = RoutineOptions {
-            include_leetcode: false,
-            include_running: false,
-            include_history: false,
-            include_quote: false,
-            include_year_progress: true,
+            sections: vec![Section::YearProgress],
             format: OutputFormat::Json,
             ..Default::default()
         };
@@ -287,7 +280,7 @@ impl ServerHandler for GetUpServer {
         .with_instructions(
             "get-up is your personal AI morning/night routine engine. \
              Use run_routine to get the full daily briefing, or call individual tools \
-             (get_leetcode_problem, get_quote, get_history, get_running_stats, get_year_progress) \
+             (get_problems, get_quote, get_history, get_running_stats, get_year_progress) \
              for specific data. All tools return structured JSON by default. \
              Customize run_routine with options for routine_type (morning/night), \
              which sections to include, and output format (text/json/xml)."

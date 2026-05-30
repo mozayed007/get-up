@@ -1,22 +1,40 @@
 use anyhow::{Context, Result};
 use clap::{Parser, Subcommand};
 use leetcode_daily::config;
-use leetcode_daily::leetcode::LeetCode;
+use leetcode_daily::providers::deepml::DeepMLProvider;
+use leetcode_daily::providers::leetcode::LeetCodeProvider;
 use leetcode_daily::notification::{DiscordNotifier, Notifier, TelegramNotifier};
 use leetcode_daily::routine::{self, OutputFormat, RoutineOptions, RoutineType};
+use leetcode_daily::utils::append_line;
 
-const EASY_FILE: &str = "data/leetcode_easy.txt";
+const LEETCODE_EASY_FILE: &str = "data/leetcode_easy.txt";
+const LEETCODE_MEDIUM_FILE: &str = "data/leetcode_medium.txt";
+const LEETCODE_HARD_FILE: &str = "data/leetcode_hard.txt";
+const DEEPML_FILE: &str = "data/deepml_problems.txt";
+const USED_FILE: &str = "data/used_problems.txt";
 
 #[derive(Parser, Debug)]
 #[command(name = "leetcode-daily")]
-#[command(about = "A CLI tool and MCP server for daily motivational messages with LeetCode problems")]
+#[command(about = "A CLI tool and MCP server for daily motivational messages with LeetCode and Deep-ML problems")]
 #[command(version)]
 struct Args {
     #[arg(
         long,
-        help = "Fetch and save all EASY problems to data/leetcode_easy.txt"
+        help = "Fetch and save all LeetCode problems (Easy, Medium, Hard) to data/leetcode_*.txt"
+    )]
+    fetch_leetcode: bool,
+
+    #[arg(
+        long,
+        help = "Fetch and save all EASY problems to data/leetcode_easy.txt (legacy, use --fetch-leetcode)"
     )]
     fetch_easy: bool,
+
+    #[arg(
+        long,
+        help = "Sync Deep-ML problems from GitHub to data/deepml_problems.txt"
+    )]
+    sync_deepml: bool,
 
     #[arg(long, help = "Post the generated message to GitHub Issue #1")]
     post: bool,
@@ -71,15 +89,49 @@ async fn main() -> Result<()> {
         }
     }
 
-    // Handle fetch-easy
-    if args.fetch_easy {
-        let leetcode = LeetCode::new(&config);
-        println!("Fetching EASY problems...");
-        leetcode
-            .fetch_easy_list(EASY_FILE)
+    // Handle fetch-leetcode
+    if args.fetch_leetcode {
+        let provider = LeetCodeProvider::new(&config);
+        println!("Fetching LeetCode problems...");
+        provider
+            .fetch_easy_list(LEETCODE_EASY_FILE)
             .await
             .context("Failed to fetch EASY problems")?;
-        println!("EASY problems saved to {}", EASY_FILE);
+        println!("EASY problems saved to {}", LEETCODE_EASY_FILE);
+        provider
+            .fetch_medium_list(LEETCODE_MEDIUM_FILE)
+            .await
+            .context("Failed to fetch MEDIUM problems")?;
+        println!("MEDIUM problems saved to {}", LEETCODE_MEDIUM_FILE);
+        provider
+            .fetch_hard_list(LEETCODE_HARD_FILE)
+            .await
+            .context("Failed to fetch HARD problems")?;
+        println!("HARD problems saved to {}", LEETCODE_HARD_FILE);
+        return Ok(());
+    }
+
+    // Handle fetch-easy (legacy)
+    if args.fetch_easy {
+        let provider = LeetCodeProvider::new(&config);
+        println!("Fetching EASY problems...");
+        provider
+            .fetch_easy_list(LEETCODE_EASY_FILE)
+            .await
+            .context("Failed to fetch EASY problems")?;
+        println!("EASY problems saved to {}", LEETCODE_EASY_FILE);
+        return Ok(());
+    }
+
+    // Handle sync-deepml
+    if args.sync_deepml {
+        let provider = DeepMLProvider::new();
+        println!("Syncing Deep-ML problems from GitHub...");
+        provider
+            .sync_problems(DEEPML_FILE)
+            .await
+            .context("Failed to sync Deep-ML problems")?;
+        println!("Deep-ML problems saved to {}", DEEPML_FILE);
         return Ok(());
     }
 
@@ -107,6 +159,11 @@ async fn main() -> Result<()> {
     let result = routine::run_routine(&config, &options)
         .await
         .context("Failed to run routine")?;
+
+    // Mark problems as used
+    for problem in &result.problems {
+        append_line(USED_FILE, &problem.problem.slug).await?;
+    }
 
     // Output based on format
     match format {

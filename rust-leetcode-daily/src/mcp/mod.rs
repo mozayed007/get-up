@@ -48,13 +48,6 @@ pub struct RunRoutineParams {
 }
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
-pub struct GetLeetcodeParams {
-    /// Difficulty filter (currently only "easy" is supported).
-    #[serde(default)]
-    pub difficulty: Option<String>,
-}
-
-#[derive(Debug, Deserialize, schemars::JsonSchema)]
 pub struct EmptyParams {}
 
 impl GetUpServer {
@@ -113,7 +106,7 @@ impl GetUpServer {
 impl GetUpServer {
     #[tool(
         name = "run_routine",
-        description = "Run the full morning or night routine. Returns a complete RoutineResult with all requested sections (LeetCode, running stats, history, quote, year progress). Agents can customize which sections to include and the output format."
+        description = "Run the full morning or night routine. Returns a complete RoutineResult with all requested sections (problems from LeetCode and Deep-ML, running stats, history, quote, year progress). Agents can customize which sections to include and the output format."
     )]
     async fn run_routine(
         &self,
@@ -139,11 +132,11 @@ impl GetUpServer {
 
     #[tool(
         name = "get_problems",
-        description = "Get today's problems from all platforms (LeetCode and Deep-ML). Returns a list of problems with platform, ID, title, slug, difficulty, URL, and whether it's the daily challenge."
+        description = "Get today's problems from all platforms (LeetCode and Deep-ML). Returns a list of problems with platform, ID, title, slug, difficulty, URL, and whether it's the daily challenge. The difficulty is determined by the scheduler (weekdays: Easy/Medium, weekends: Medium/Hard)."
     )]
     async fn get_problems(
         &self,
-        Parameters(_params): Parameters<GetLeetcodeParams>,
+        Parameters(_params): Parameters<EmptyParams>,
     ) -> Result<String, String> {
         let options = RoutineOptions {
             sections: vec![Section::Problems],
@@ -279,6 +272,7 @@ impl ServerHandler for GetUpServer {
         .with_server_info(Implementation::new("get-up", env!("CARGO_PKG_VERSION")))
         .with_instructions(
             "get-up is your personal AI morning/night routine engine. \
+             It delivers daily problems from LeetCode and Deep-ML with scheduled difficulty. \
              Use run_routine to get the full daily briefing, or call individual tools \
              (get_problems, get_quote, get_history, get_running_stats, get_year_progress) \
              for specific data. All tools return structured JSON by default. \

@@ -131,7 +131,9 @@ async fn main() -> Result<()> {
             return Ok(());
         }
 
-        if !is_early_wake_up && !args.night {
+        let has_explicit_targets = args.post || args.telegram || args.discord;
+
+        if !is_early_wake_up && !args.night && !has_explicit_targets {
             println!("You wake up late");
             return Ok(());
         }

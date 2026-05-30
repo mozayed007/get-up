@@ -22,8 +22,9 @@ This document answers frequently asked questions and provides solutions to commo
 | `BIRTH_YEAR must be set` | Missing environment variable | Add `BIRTH_YEAR=1990` to `.env` |
 | `Invalid timezone: XXX` | Wrong timezone format | Use IANA format: `America/New_York` |
 | `BIRTH_YEAR must be a valid year` | Non-numeric value | Use numeric year: `1990` not `nineteen ninety` |
-| `Failed to fetch EASY problems` | LeetCode API unreachable | Check network, use VPN, or switch to CN |
-| `No available EASY problems found` | All problems used | Reset `data/used_problems.txt` |
+| `Failed to fetch LeetCode problems` | LeetCode API unreachable | Check network, use VPN, or switch to CN |
+| `Failed to sync Deep-ML problems` | GitHub API unreachable | Check network or use existing cache |
+| `No available problems found` | All problems used | Reset `data/used_problems.txt` |
 | `Telegram feature not enabled` | Missing compile feature | Rebuild with `--features telegram` |
 | `Discord feature not enabled` | Missing compile feature | Rebuild with `--features discord` |
 | `Failed to create GitHub comment` | Invalid token or permissions | Verify token has `repo` scope |
@@ -214,7 +215,7 @@ Note: These environment variables are defined in the configuration but not yet i
 
 ### How to Reset Used Problems
 
-**Problem:** All EASY problems have been used, or you want to start fresh.
+**Problem:** All problems have been used, or you want to start fresh.
 
 **Solution 1: Clear the used problems file**
 
@@ -236,11 +237,14 @@ cat data/used_problems.txt
 vim data/used_problems.txt
 ```
 
-**Solution 3: Refresh EASY problem list**
+**Solution 3: Refresh problem lists**
 
 ```bash
-# Re-fetch all EASY problems from LeetCode
-cargo run -- --fetch-easy
+# Re-fetch all LeetCode problems
+cargo run -- --fetch-leetcode
+
+# Re-sync Deep-ML problems
+cargo run -- --sync-deepml
 ```
 
 **File format:**
@@ -251,39 +255,52 @@ data/used_problems.txt
 │ two-sum                 │
 │ valid-parentheses       │
 │ merge-two-sorted-lists  │
+│ deep-ml-problem-1       │
 │ ...                     │
 └─────────────────────────┘
 
 data/leetcode_easy.txt
 ┌─────────────────────────────────────────────┐
-│ 1|Two Sum|two-sum                           │
-│ 20|Valid Parentheses|valid-parentheses      │
-│ 21|Merge Two Sorted Lists|merge-two-sorted-lists │
+│ 1|Two Sum|two-sum|Easy                      │
+│ 20|Valid Parentheses|valid-parentheses|Easy│
+│ 21|Merge Two Sorted Lists|merge-two-sorted-lists|Easy│
+│ ...                                         │
+└─────────────────────────────────────────────┘
+
+data/leetcode_medium.txt
+┌─────────────────────────────────────────────┐
+│ 3|Longest Substring Without Repeating Characters|longest-substring-without-repeating-characters|Medium│
+│ ...                                         │
+└─────────────────────────────────────────────┘
+
+data/deepml_problems.txt
+┌─────────────────────────────────────────────┐
+│ 1|Matrix-Vector Dot Product|deep-ml-problem-1|easy│
+│ 101|Implement GRPO Objective|deep-ml-problem-101|medium│
 │ ...                                         │
 └─────────────────────────────────────────────┘
 ```
 
 ### How Problems Are Selected
 
-```rust
-// 1. Try official daily challenge
-if let Some(daily) = get_daily_challenge().await? {
-    if daily.difficulty == "EASY" && !daily.paid_only {
-        if !is_used(&daily.slug) {
-            return Ok(daily);
-        }
-    }
-}
+**Weekdays (Mon-Fri):**
+1. Get schedule for the day (3 Easy + 2 Medium per week)
+2. For each platform (LeetCode, Deep-ML):
+   - Try official daily challenge (LeetCode only)
+   - Check if difficulty matches schedule
+   - Check if not used
+   - Fallback to seeded random from difficulty pool
 
-// 2. Fallback to seeded random from EASY pool
-let seed = year * 1000 + day_of_year;
-let problem = seeded_random_pick(available, seed);
-```
+**Weekends (Sat-Sun):**
+1. Get schedule (Medium + Hard)
+2. For each platform:
+   - Same selection logic with Medium/Hard difficulties
 
 **Key points:**
-- Daily challenge is prioritized if it's EASY and free
+- Difficulty is scheduled by day (weekday vs weekend)
+- Daily challenge is prioritized if difficulty matches
 - Seeded random ensures same problem for the same day
-- Problems are tracked by slug (URL-safe identifier)
+- Problems are tracked by slug across all platforms
 
 ## Rate Limiting
 
@@ -580,12 +597,13 @@ LEETCODE_VARIANT=cn
 The variant affects problem URLs:
 
 ```rust
-pub fn format_problem_message(problem: &Question, variant: &LeetCodeVariant) -> String {
-    let url = match variant {
-        LeetCodeVariant::Cn => format!("https://leetcode.cn/problems/{}/", problem.slug),
-        LeetCodeVariant::Com => format!("https://leetcode.com/problems/{}/", problem.slug),
-    };
-    // ...
+impl LeetCodeProvider {
+    fn make_url(&self, slug: &str) -> String {
+        match self.variant {
+            LeetCodeVariant::Cn => format!("https://leetcode.cn/problems/{}/", slug),
+            LeetCodeVariant::Com => format!("https://leetcode.com/problems/{}/", slug),
+        }
+    }
 }
 ```
 
@@ -620,13 +638,13 @@ Rebuild not required - configuration is loaded at runtime.
 
 ### Troubleshooting Cross-Platform Issues
 
-**Problem:** "Failed to fetch EASY problems" on one platform.
+**Problem:** "Failed to fetch problems" on one platform.
 
 **Solution:** Switch to the other platform temporarily:
 
 ```bash
 # If leetcode.com is blocked
-LEETCODE_VARIANT=cn cargo run -- --fetch-easy
+LEETCODE_VARIANT=cn cargo run -- --fetch-leetcode
 
 # Then switch back for posting
 LEETCODE_VARIANT=com cargo run -- --post

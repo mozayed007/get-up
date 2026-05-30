@@ -1,30 +1,12 @@
 # Get Up
 
-A Rust CLI that delivers a daily motivational briefing every morning — LeetCode EASY problem, on-this-day history with your age, running stats, and an inspirational quote — straight to **GitHub Issues**, **Telegram DM**, and **Discord DM**.
-
-```
-Good morning — 2026-05-28 08:13:22
-
-Day 148 / 365 (40.5%) ████████░░░░░░░░░░░░
-
-LeetCode EASY: 1637. Widest Vertical Area Between Two Points Containing No Points
-https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/
-
-Yesterday: 5.23 km · This month: 45.6 km · This year: 312.4 km
-
-On this day:
-• 2017: Takuma Sato wins the Indy 500 (you were 17)
-• 2016: Harambe incident (you were 16)
-
-Today's Quote
-The only way to do great work is to love what you do.
-—— Steve Jobs
-```
+A Rust CLI that delivers a daily motivational briefing with **LeetCode** and **Deep-ML** problems, on-this-day history with your age, running stats, and an inspirational quote. Posts to **GitHub Issues**, **Telegram DM**, and **Discord DM**.
 
 ## Features
 
+- **Multi-platform problems** — LeetCode (Easy/Medium/Hard) + Deep-ML (Easy/Medium/Hard) with scheduled difficulty
+- **Difficulty scheduling** — Weekdays: 3 Easy + 2 Medium per platform, Weekends: 1 Medium + 1 Hard per platform
 - **Time-aware greeting** — `Good morning` / `Good afternoon` / `Good evening` based on your local hour
-- **Smart LeetCode picker** — seeded random so you see each EASY problem once before repeating; prioritizes the daily challenge if it's EASY
 - **Your age in history** — Wikipedia on-this-day events tagged with how old you were
 - **Running stats** — reads parquet or CSV from Strava / OpenTracks / any app that exports run data
 - **Triple notification** — GitHub Issue comment + Telegram DM + Discord DM
@@ -32,6 +14,33 @@ The only way to do great work is to love what you do.
 - **MCP server** — Model Context Protocol integration with stdio and HTTP transports for AI agent workflows
 - **Structured output** — `--json` or `--xml` for machine-readable results
 - **GitHub Actions cron** — fires daily via CI, zero-maintenance
+
+## Example Output
+
+```
+☀️ Good morning — 2026-05-31 08:13:22
+
+Day 151 / 365 (41.4%) █████████░░░░░░░░░░░
+
+📚 Today's Problems
+
+🟢 LeetCode Easy: 1. Two Sum
+https://leetcode.com/problems/two-sum/
+
+🟡 Deep-ML Medium: Matrix-Vector Dot Product
+https://deep-ml.com/problem/1
+
+🏃 Yesterday: 5.23 km · This month: 45.6 km · This year: 312.4 km
+
+📜 On this day:
+• 2017: Takuma Sato wins the Indy 500 (you were 17)
+• 2016: Harambe incident (you were 16)
+
+💬 Today's Quote
+The only way to do great work is to love what you do.
+
+—— Steve Jobs
+```
 
 ## Quick Start
 
@@ -42,7 +51,13 @@ cd get-up/rust-leetcode-daily
 cp .env.example .env
 # fill in: GITHUB_TOKEN, REPO_OWNER, REPO_NAME, BIRTH_YEAR, TIMEZONE
 
-cargo run -- --fetch-easy
+# Fetch LeetCode problems (Easy, Medium, Hard)
+cargo run -- --fetch-leetcode
+
+# Sync Deep-ML problems from GitHub
+cargo run -- --sync-deepml
+
+# Test with dry run
 cargo run --features telegram,discord -- --dry-run
 ```
 
@@ -50,7 +65,9 @@ cargo run --features telegram,discord -- --dry-run
 
 | Flag | Description |
 |------|-------------|
-| `--fetch-easy` | Download all LeetCode EASY problems to `data/leetcode_easy.txt` |
+| `--fetch-leetcode` | Download all LeetCode problems (Easy, Medium, Hard) to `data/leetcode_*.txt` |
+| `--fetch-easy` | Download only EASY problems (legacy) |
+| `--sync-deepml` | Sync Deep-ML problems from GitHub to `data/deepml_problems.txt` |
 | `--dry-run` | Print message to terminal, don't post anywhere |
 | `--post` | Post the message as a comment on GitHub Issue #1 |
 | `--telegram` | Send via Telegram DM |
@@ -104,7 +121,7 @@ The server exposes six tools. Each returns JSON by default.
 | Tool | Parameters | Returns |
 |------|-----------|---------|
 | `run_routine` | `routine_type`, `include_*` toggles, `format` | Full `RoutineResult` with all requested sections |
-| `get_leetcode_problem` | `difficulty` | Problem ID, title, slug, URL, daily challenge flag |
+| `get_problems` | — | List of problems from LeetCode and Deep-ML with platform, difficulty, URL, daily challenge flag |
 | `get_quote` | — | Quote text, author, source |
 | `get_history` | — | List of events with year, text, Wikipedia URL, age context |
 | `get_running_stats` | — | Yesterday / month / year distances and session counts |
@@ -117,18 +134,18 @@ The main tool gives agents full control over what they receive:
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | `routine_type` | `"morning"` / `"night"` | `"morning"` | Which routine variant to run |
-| `include_leetcode` | bool | `true` | Include LeetCode problem |
+| `include_problems` | bool | `true` | Include daily problems (LeetCode + Deep-ML) |
 | `include_running` | bool | `true` | Include running stats |
 | `include_history` | bool | `true` | Include on-this-day events |
 | `include_quote` | bool | `true` | Include motivational quote |
 | `include_year_progress` | bool | `true` | Include year progress bar |
 | `format` | `"json"` / `"xml"` / `"text"` | `"json"` | Output format |
 
-Example: get only the LeetCode problem and quote in JSON:
+Example: get only problems and quote in JSON:
 
 ```json
 {
-  "include_leetcode": true,
+  "include_problems": true,
   "include_running": false,
   "include_history": false,
   "include_quote": true,
@@ -139,7 +156,7 @@ Example: get only the LeetCode problem and quote in JSON:
 
 ### Example Agent Workflows
 
-**Morning briefing agent** — call `run_routine` with defaults, summarize the result in natural language, and remind the user of their LeetCode problem.
+**Morning briefing agent** — call `run_routine` with defaults, summarize the result in natural language, and remind the user of their problems.
 
 **Running coach agent** — call `get_running_stats` to check recent mileage, then suggest today's distance based on weekly trends.
 
@@ -169,7 +186,7 @@ cargo run --release -- --xml --dry-run
 cargo run --release -- --night --json --dry-run
 ```
 
-The `RoutineResult` JSON schema includes: `routine_type`, `greeting`, `timestamp`, `year_progress`, `leetcode`, `running`, `history`, `quote`, and `formatted_message`.
+The `RoutineResult` JSON schema includes: `routine_type`, `greeting`, `timestamp`, `year_progress`, `problems`, `running`, `history`, `quote`, and `formatted_message`.
 
 ## Running Stats
 
@@ -200,10 +217,11 @@ DISCORD_USER_ID       # Discord user ID (optional)
 
 ## GitHub Actions
 
-Two workflows are included:
+Three workflows are included:
 
 - **CI** — `cargo test --all-features` + `clippy` + `fmt` on every push
 - **Daily Run** — fires at midnight UTC (3 AM Cairo), posts to GitHub Issue + Telegram + Discord
+- **Deep-ML Sync** — weekly sync of Deep-ML problems from GitHub (Sundays)
 
 Set these repo secrets:
 
@@ -224,28 +242,42 @@ get-up/
 ├── .github/workflows/
 │   ├── ci.yml               # lint + test on push
 │   ├── daily.yml            # daily cron job
+│   ├── sync-deepml.yml      # weekly Deep-ML sync
 │   └── cleanup-caches.yml   # weekly cache cleanup
 ├── rust-leetcode-daily/
 │   ├── src/
 │   │   ├── main.rs          # CLI entry, orchestration
 │   │   ├── config.rs        # env var loading
-│   │   ├── leetcode.rs      # LeetCode REST + GraphQL client
+│   │   ├── providers/       # Problem providers
+│   │   │   ├── mod.rs       # Shared selection logic
+│   │   │   ├── leetcode.rs  # LeetCode provider
+│   │   │   └── deepml.rs    # Deep-ML provider
+│   │   ├── scheduler.rs     # Difficulty scheduling
+│   │   ├── format.rs        # Message formatting
+│   │   ├── serialization.rs # JSON/XML serialization
 │   │   ├── api.rs           # quotes, history, running stats
-│   │   ├── message.rs       # message template + formatters
-│   │   ├── routine.rs       # routine engine (morning/night)
-│   │   ├── utils.rs         # time helpers
-│   │   ├── notification/
-│   │   │   ├── mod.rs        # Notifier trait
-│   │   │   ├── telegram.rs   # Telegram sender
-│   │   │   └── discord.rs    # Discord sender
-│   │   └── mcp/
-│   │       └── mod.rs        # MCP server implementation
-│   ├── data/                 # problem lists, used problems, running stats
+│   │   ├── types.rs         # Shared types
+│   │   ├── message.rs       # Greeting helper
+│   │   ├── routine.rs       # Routine engine
+│   │   ├── utils.rs         # Time helpers
+│   │   ├── notification/    # Notification adapters
+│   │   └── mcp/             # MCP server
+│   ├── data/                # problem lists, used problems, running stats
 │   └── Cargo.toml
-├── docs/
-│   └── get-up-rust.md        # original project plan
+├── docs/                      # Documentation
 └── README.md
 ```
+
+## Difficulty Scheduling
+
+The system automatically schedules difficulty based on the day:
+
+| Period | LeetCode | Deep-ML |
+|--------|----------|---------|
+| **Weekdays** (Mon-Fri) | 3 Easy + 2 Medium | 3 Easy + 2 Medium |
+| **Weekends** (Sat-Sun) | 1 Medium + 1 Hard | 1 Medium + 1 Hard |
+
+Each platform independently rolls its difficulty. LeetCode could be Easy while Deep-ML is Medium on the same day.
 
 ## Built With
 

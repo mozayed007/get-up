@@ -1,6 +1,6 @@
 # Getting Started Guide
 
-This guide walks you through installing, configuring, and running LeetCode Daily for the first time.
+This guide walks you through installing, configuring, and running the daily routine for the first time.
 
 ## Prerequisites
 
@@ -39,8 +39,8 @@ git --version
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/rust-leetcode-daily.git
-cd rust-leetcode-daily
+git clone https://github.com/mozayed007/get-up.git
+cd get-up/rust-leetcode-daily
 ```
 
 ### Step 2: Create Data Directory
@@ -65,35 +65,54 @@ nano .env  # or use your preferred editor
 # Build with default features (GitHub only)
 cargo build --release
 
+# Build with MCP server support
+cargo build --release --features mcp
+
 # Build with Telegram support
 cargo build --release --features telegram
 
 # Build with Discord support
 cargo build --release --features discord
 
-# Build with all notification features
-cargo build --release --features telegram,discord
+# Build with all features
+cargo build --release --features telegram,discord,mcp
 ```
 
 ## First-Time Setup
 
-### Step 1: Fetch EASY Problems
+### Step 1: Fetch LeetCode Problems
 
-Before running the daily message, fetch the list of EASY problems from LeetCode:
+Before running the daily message, fetch the problem lists from LeetCode:
 
 ```bash
-./target/release/leetcode-daily --fetch-easy
+./target/release/leetcode-daily --fetch-leetcode
 ```
 
 Expected output:
 ```
-Fetching EASY problems...
+Fetching LeetCode problems...
 EASY problems saved to data/leetcode_easy.txt
+MEDIUM problems saved to data/leetcode_medium.txt
+HARD problems saved to data/leetcode_hard.txt
 ```
 
-This creates `data/leetcode_easy.txt` containing all free EASY problems from LeetCode.
+This creates three files containing all free problems from LeetCode by difficulty.
 
-### Step 2: Verify Configuration
+### Step 2: Sync Deep-ML Problems
+
+Sync the Deep-ML problem list from GitHub:
+
+```bash
+./target/release/leetcode-daily --sync-deepml
+```
+
+Expected output:
+```
+Syncing Deep-ML problems from GitHub...
+Deep-ML problems saved to data/deepml_problems.txt
+```
+
+### Step 3: Verify Configuration
 
 Run a dry-run to verify your configuration without posting:
 
@@ -103,27 +122,25 @@ Run a dry-run to verify your configuration without posting:
 
 Expected output (example):
 ```
-Wake up time: 2024-01-15 07:30:00
+☀️ Good morning — 2024-01-15 07:30:00
 
-Good morning!
+Day 15 · 15/365 (4.1%) ██░░░░░░░░░░░░░░░░░░
 
-Day 15 of the year.
+📚 Today's Problems
 
-15/365 (4.1%) ██░░░░░░░░░░░░░░░░░░
+🟢 LeetCode Easy: 1. Two Sum
+https://leetcode.com/problems/two-sum/
 
-🟢 Today's LeetCode EASY:
-[1. Two Sum](https://leetcode.com/problems/two-sum/)
-Keep going! 🚀
+🟡 Deep-ML Medium: Matrix-Vector Dot Product
+https://deep-ml.com/problem/1
 
-🏃 Running Stats:
-Yesterday: 5.23 km (1 sessions)
-This month: 45.67 km (12 sessions)
-This year: 45.67 km (12 sessions)
+🏃 Yesterday: 5.23 km · This month: 45.67 km · This year: 45.67 km
 
+📜 On this day:
 • 2020: [COVID-19 pandemic](https://en.wikipedia.org/wiki/COVID-19_pandemic) (I was 30 years old)
 • 2001: [Wikipedia launched](https://en.wikipedia.org/wiki/Wikipedia) (I was 11 years old)
 
-Today's Quote:
+💬 Today's Quote
 The only way to do great work is to love what you do.
 
 —— Steve Jobs
@@ -135,27 +152,30 @@ Here's a complete example showing a typical workflow:
 
 ```bash
 # 1. Navigate to project directory
-cd rust-leetcode-daily
+cd get-up/rust-leetcode-daily
 
 # 2. Ensure .env is configured with at minimum:
 #    GITHUB_TOKEN, REPO_OWNER, REPO_NAME, BIRTH_YEAR, TIMEZONE
 
-# 3. Fetch EASY problems (first time only)
-cargo run --release -- --fetch-easy
+# 3. Fetch LeetCode problems (first time only)
+cargo run --release -- --fetch-leetcode
 
-# 4. Test with dry-run
+# 4. Sync Deep-ML problems (first time only)
+cargo run --release -- --sync-deepml
+
+# 5. Test with dry-run
 cargo run --release -- --dry-run
 
-# 5. Post to GitHub (during wake-up hours: 3-9 AM)
+# 6. Post to GitHub (during wake-up hours: 3-9 AM)
 cargo run --release -- --post
 
-# 6. Send to Telegram (if configured)
+# 7. Send to Telegram (if configured)
 cargo run --release --features telegram -- --telegram
 
-# 7. Send to Discord (if configured)
+# 8. Send to Discord (if configured)
 cargo run --release --features discord -- --discord
 
-# 8. Full deployment (all channels)
+# 9. Full deployment (all channels)
 cargo run --release --features telegram,discord -- --post --telegram --discord
 ```
 
@@ -175,25 +195,35 @@ ls -la target/release/leetcode-daily
 
 Expected output:
 ```
-A CLI tool for daily motivational messages with LeetCode problems
+A CLI tool and MCP server for daily motivational messages with LeetCode and Deep-ML problems
 
 Usage: leetcode-daily [OPTIONS]
 
 Options:
-      --fetch-easy  Fetch and save all EASY problems to data/leetcode_easy.txt
-      --post        Post the generated message to GitHub Issue #1
-      --telegram    Send notification via Telegram
-      --discord     Send notification via Discord
-      --dry-run     Print message to stdout without posting
-  -h, --help        Print help
-  -V, --version     Print version
+      --fetch-leetcode  Fetch all LeetCode problems (Easy, Medium, Hard)
+      --fetch-easy      Fetch only EASY problems (legacy)
+      --sync-deepml     Sync Deep-ML problems from GitHub
+      --post            Post to GitHub Issue #1
+      --telegram        Send via Telegram
+      --discord         Send via Discord
+      --dry-run         Print without posting
+      --json            Output JSON
+      --xml             Output XML
+      --night           Run night routine
+  -h, --help            Print help
+  -V, --version         Print version
 ```
 
 ### Check 3: Data Files
 
 ```bash
-# Should exist after --fetch-easy
+# Should exist after --fetch-leetcode
 ls -la data/leetcode_easy.txt
+ls -la data/leetcode_medium.txt
+ls -la data/leetcode_hard.txt
+
+# Should exist after --sync-deepml
+ls -la data/deepml_problems.txt
 
 # Will be created on first run
 ls -la data/used_problems.txt

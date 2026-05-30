@@ -1,6 +1,6 @@
 # API Reference
 
-This document provides comprehensive reference documentation for LeetCode Daily's CLI, modules, structs, and traits.
+This document provides comprehensive reference documentation for the daily routine CLI, modules, structs, and traits.
 
 ## CLI Arguments
 
@@ -14,19 +14,27 @@ leetcode-daily [OPTIONS]
 
 | Option | Type | Description |
 |--------|------|-------------|
-| `--fetch-easy` | Flag | Fetch and save all EASY problems to `data/leetcode_easy.txt` |
+| `--fetch-leetcode` | Flag | Fetch all LeetCode problems (Easy, Medium, Hard) to `data/leetcode_*.txt` |
+| `--fetch-easy` | Flag | Fetch only EASY problems (legacy) |
+| `--sync-deepml` | Flag | Sync Deep-ML problems from GitHub to `data/deepml_problems.txt` |
 | `--post` | Flag | Post the generated message to GitHub Issue #1 |
 | `--telegram` | Flag | Send notification via Telegram |
 | `--discord` | Flag | Send notification via Discord |
 | `--dry-run` | Flag | Print message to stdout without posting |
+| `--json` | Flag | Output structured JSON |
+| `--xml` | Flag | Output structured XML |
+| `--night` | Flag | Run the night routine variant |
 | `-h, --help` | Flag | Display help information |
 | `-V, --version` | Flag | Display version information |
 
 ### Usage Examples
 
 ```bash
-# Fetch EASY problems from LeetCode
-leetcode-daily --fetch-easy
+# Fetch all LeetCode difficulties
+leetcode-daily --fetch-leetcode
+
+# Sync Deep-ML problems
+leetcode-daily --sync-deepml
 
 # Preview message without sending
 leetcode-daily --dry-run
@@ -37,23 +45,18 @@ leetcode-daily --post
 # Post to all configured channels
 leetcode-daily --post --telegram --discord
 
-# Combined workflow
-leetcode-daily --post --telegram --discord --dry-run  # dry-run overrides
+# JSON output for agent pipelines
+leetcode-daily --json --dry-run
 ```
 
 ### Argument Interactions
 
-```
-┌────────────────────────────────────────────────────────────────────┐
-│ Argument Precedence (when combined)                                 │
-├────────────────────────────────────────────────────────────────────┤
-│ --dry-run     │ Overrides --post, --telegram, --discord            │
-│               │ Prints to stdout instead of sending                │
-├───────────────┼────────────────────────────────────────────────────┤
-│ --fetch-easy  │ Exclusive operation                                │
-│               │ Exits after fetching, ignores other flags          │
-└───────────────┴────────────────────────────────────────────────────┘
-```
+| Argument | Behavior |
+|----------|----------|
+| `--dry-run` | Overrides `--post`, `--telegram`, `--discord`. Prints to stdout instead of sending |
+| `--fetch-leetcode` | Exclusive operation. Exits after fetching, ignores other flags |
+| `--sync-deepml` | Exclusive operation. Exits after syncing, ignores other flags |
+| `--fetch-easy` | Exclusive operation. Exits after fetching, ignores other flags |
 
 ## Exit Codes
 
@@ -62,21 +65,6 @@ leetcode-daily --post --telegram --discord --dry-run  # dry-run overrides
 | 0 | Success | Operation completed successfully |
 | 1 | General Error | Configuration error, API failure, or runtime error |
 | 2 | Config Error | Missing required environment variable |
-
-### Exit Code Examples
-
-```bash
-# Check exit code (bash)
-leetcode-daily --dry-run
-echo $?  # 0 for success
-
-# Use in scripts
-if leetcode-daily --post; then
-    echo "Posted successfully"
-else
-    echo "Failed to post"
-fi
-```
 
 ## Module Documentation
 
@@ -104,26 +92,13 @@ pub struct Config {
     pub telegram_chat_id: Option<String>,
     pub discord_token: Option<String>,
     pub discord_channel_id: Option<String>,
+    pub discord_user_id: Option<String>,
     pub birth_year: i32,
     pub timezone: Tz,
     pub leetcode_endpoint: String,
     pub leetcode_variant: LeetCodeVariant,
 }
 ```
-
-| Field | Type | Required | Description |
-|-------|------|----------|-------------|
-| `github_token` | `String` | Yes | GitHub Personal Access Token |
-| `repo_owner` | `String` | Yes | Repository owner username |
-| `repo_name` | `String` | Yes | Repository name |
-| `telegram_token` | `Option<String>` | No | Telegram bot token |
-| `telegram_chat_id` | `Option<String>` | No | Telegram chat ID |
-| `discord_token` | `Option<String>` | No | Discord bot token |
-| `discord_channel_id` | `Option<String>` | No | Discord channel ID |
-| `birth_year` | `i32` | Yes | Birth year for age calculations |
-| `timezone` | `Tz` | Yes | IANA timezone identifier |
-| `leetcode_endpoint` | `String` | No | LeetCode GraphQL endpoint |
-| `leetcode_variant` | `LeetCodeVariant` | No | Platform variant (Com/Cn) |
 
 #### `LeetCodeVariant` Enum
 
@@ -136,60 +111,73 @@ pub enum LeetCodeVariant {
 
 ---
 
-### Module: `leetcode`
+### Module: `providers`
 
-**Path**: `src/leetcode.rs`
+**Path**: `src/providers/`
 
-LeetCode API interaction and problem management.
+Problem provider abstraction with shared selection logic.
 
 #### Exports
 
 | Item | Type | Description |
 |------|------|-------------|
-| `LeetCode` | Struct | LeetCode API client |
-| `Question` | Struct | Problem representation |
+| `select_problem` | Function | Shared problem selection logic |
+| `LeetCodeProvider` | Struct | LeetCode API client |
+| `DeepMLProvider` | Struct | Deep-ML GitHub sync client |
 
-#### `LeetCode` Struct
+#### `LeetCodeProvider` Methods
+
+| Method | Description |
+|--------|-------------|
+| `new` | Create new provider from config |
+| `fetch_easy_list` | Fetch EASY problems |
+| `fetch_medium_list` | Fetch MEDIUM problems |
+| `fetch_hard_list` | Fetch HARD problems |
+| `get_problem` | Get today's problem with daily challenge priority |
+
+#### `DeepMLProvider` Methods
+
+| Method | Description |
+|--------|-------------|
+| `new` | Create new provider |
+| `sync_problems` | Sync all problems from GitHub repo |
+| `get_problem` | Get today's problem from cache |
+
+#### `Problem` Type
 
 ```rust
-pub struct LeetCode {
-    client: Client,
-    endpoint: String,
-    variant: LeetCodeVariant,
-}
-```
-
-##### Methods
-
-| Method | Signature | Description |
-|--------|-----------|-------------|
-| `new` | `fn new(config: &Config) -> Self` | Create new LeetCode client |
-| `fetch_easy_list` | `async fn fetch_easy_list(&self, output_file: &str) -> Result<()>` | Fetch all EASY problems |
-| `get_daily_challenge` | `async fn get_daily_challenge(&self) -> Result<Option<Question>>` | Get official daily challenge |
-| `get_today_problem` | `async fn get_today_problem(&self, easy_file: &str, used_file: &str) -> Result<Question>` | Get today's problem |
-| `pick_daily_problem` | `async fn pick_daily_problem(&self, easy_file: &str, used_file: &str) -> Result<Question>` | Pick random unused problem |
-
-#### `Question` Struct
-
-```rust
-pub struct Question {
+pub struct Problem {
     pub id: String,
     pub title: String,
     pub slug: String,
-    pub difficulty: String,
-    pub paid_only: bool,
+    pub difficulty: Difficulty,
     pub is_daily_challenge: bool,
 }
 ```
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `id` | `String` | Frontend question ID (e.g., "1") |
-| `title` | `String` | Problem title (e.g., "Two Sum") |
-| `slug` | `String` | URL slug (e.g., "two-sum") |
-| `difficulty` | `String` | Difficulty level |
-| `paid_only` | `bool` | Whether it's a premium problem |
-| `is_daily_challenge` | `bool` | Whether it's today's daily challenge |
+---
+
+### Module: `scheduler`
+
+**Path**: `src/scheduler.rs`
+
+Difficulty scheduling for daily problems.
+
+#### Exports
+
+| Item | Type | Description |
+|------|------|-------------|
+| `Schedule` | Enum | Day schedule (Weekday or Weekend) |
+| `get_schedule` | Function | Get schedule for platform and date |
+
+#### `Schedule` Enum
+
+```rust
+pub enum Schedule {
+    Weekday { difficulty: Difficulty },
+    Weekend { difficulties: [Difficulty; 2] },
+}
+```
 
 ---
 
@@ -221,102 +209,75 @@ pub struct RunningStats {
 }
 ```
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `yesterday_km` | `f64` | Total km run yesterday |
-| `yesterday_count` | `i32` | Number of sessions yesterday |
-| `month_km` | `f64` | Total km this month |
-| `month_count` | `i32` | Number of sessions this month |
-| `year_km` | `f64` | Total km this year |
-| `year_count` | `i32` | Number of sessions this year |
-
-#### Function Signatures
-
-```rust
-pub async fn fetch_quote(client: &reqwest::Client) -> Result<String>
-
-pub async fn fetch_history(
-    client: &reqwest::Client,
-    birth_year: i32,
-    month: u32,
-    day: u32,
-) -> Result<Vec<String>>
-
-pub async fn fetch_running_stats(parquet_file: &str) -> Result<RunningStats>
-```
-
 ---
 
-### Module: `message`
+### Module: `format`
 
-**Path**: `src/message.rs`
+**Path**: `src/format.rs`
 
-Message formatting and building.
+Message formatting and problem display.
 
 #### Exports
 
 | Item | Type | Description |
 |------|------|-------------|
-| `build_message` | Function | Build complete daily message |
-| `format_leetcode` | Function | Format LeetCode problem |
-| `format_running` | Function | Format running statistics |
-| `format_history` | Function | Format historical events |
-
-#### Function Signatures
-
-```rust
-pub fn build_message(
-    get_up_time: &str,
-    day_of_year: u32,
-    year_progress: &str,
-    leetcode: &str,
-    running_info: &str,
-    history_today: &str,
-    quote: &str,
-    _config: &Config,
-) -> String
-
-pub fn format_leetcode(problem: &Question, variant: &LeetCodeVariant) -> String
-
-pub fn format_running(stats: &RunningStats) -> String
-
-pub fn format_history(history: &[String]) -> String
-```
+| `build_formatted_message` | Function | Build complete daily message |
+| `get_problem_emoji` | Function | Get emoji for platform + difficulty |
 
 ---
 
-### Module: `utils`
+### Module: `routine`
 
-**Path**: `src/utils.rs`
+**Path**: `src/routine.rs`
 
-Utility functions for date/time and file operations.
+Routine engine with idempotent execution.
 
 #### Exports
 
 | Item | Type | Description |
 |------|------|-------------|
-| `get_day_of_year` | Function | Calculate day of year |
-| `get_year_progress` | Function | Calculate year progress with bar |
-| `get_local_time` | Function | Get current time in configured timezone |
-| `read_lines` | Function | Read non-empty lines from file |
-| `append_line` | Function | Append line to file |
-| `pick_random` | Function | Pick random element from slice |
+| `RoutineOptions` | Struct | Routine configuration |
+| `RoutineResult` | Struct | Complete routine output |
+| `Section` | Enum | Available sections (Problems, Running, etc.) |
+| `run_routine` | Function | Main routine entry point |
 
-#### Function Signatures
+#### `RoutineOptions` Struct
 
 ```rust
-pub fn get_day_of_year(now: &DateTime<Tz>) -> u32
-
-pub fn get_year_progress(now: &DateTime<Tz>) -> String
-
-pub fn get_local_time(config: &Config) -> DateTime<Tz>
-
-pub async fn read_lines(filename: &str) -> Result<Vec<String>>
-
-pub async fn append_line(filename: &str, line: &str) -> Result<()>
-
-pub fn pick_random<T: Clone>(items: &[T]) -> Option<T>
+pub struct RoutineOptions {
+    pub routine_type: RoutineType,
+    pub sections: Vec<Section>,
+    pub format: OutputFormat,
+}
 ```
+
+#### `Section` Enum
+
+```rust
+pub enum Section {
+    Problems,
+    Running,
+    History,
+    Quote,
+    YearProgress,
+}
+```
+
+---
+
+### Module: `types`
+
+**Path**: `src/types.rs`
+
+Shared types used across the codebase.
+
+#### Exports
+
+| Item | Type | Description |
+|------|------|-------------|
+| `Difficulty` | Enum | Easy, Medium, Hard |
+| `Platform` | Enum | LeetCode, DeepML |
+| `ProblemResult` | Struct | Problem with platform and URL |
 
 ---
 
@@ -338,10 +299,6 @@ Notification trait and implementations.
 
 ### `Notifier` Trait
 
-**Path**: `src/notification/mod.rs`
-
-Async trait for sending notifications.
-
 ```rust
 #[async_trait]
 pub trait Notifier: Send + Sync {
@@ -356,48 +313,13 @@ pub trait Notifier: Send + Sync {
 | `TelegramNotifier` | `telegram` | Sends via Telegram Bot API |
 | `DiscordNotifier` | `discord` | Sends via Discord HTTP API |
 
-### `TelegramNotifier`
-
-```rust
-pub struct TelegramNotifier {
-    bot: teloxide::Bot,
-    chat_id: teloxide::types::ChatId,
-}
-
-impl TelegramNotifier {
-    pub fn new(bot_token: String, chat_id: String) -> Self
-}
-
-#[async_trait]
-impl Notifier for TelegramNotifier {
-    async fn send_message(&self, message: &str) -> Result<()>
-}
-```
-
-### `DiscordNotifier`
-
-```rust
-pub struct DiscordNotifier {
-    http: serenity::http::Http,
-    channel_id: serenity::model::id::ChannelId,
-}
-
-impl DiscordNotifier {
-    pub fn new(token: String, channel_id: String) -> Self
-}
-
-#[async_trait]
-impl Notifier for DiscordNotifier {
-    async fn send_message(&self, message: &str) -> Result<()>
-}
-```
-
 ## Feature Flags
 
 | Feature | Dependencies | Description |
 |---------|--------------|-------------|
 | `telegram` | `teloxide` | Enable Telegram notifications |
 | `discord` | `serenity` | Enable Discord notifications |
+| `mcp` | `rmcp`, `axum` | Enable MCP server |
 | (default) | none | GitHub-only mode |
 
 ### Building with Features
@@ -406,14 +328,14 @@ impl Notifier for DiscordNotifier {
 # Default (no notifications)
 cargo build --release
 
-# Telegram only
-cargo build --release --features telegram
+# With MCP server
+cargo build --release --features mcp
 
-# Discord only
-cargo build --release --features discord
+# Telegram + MCP
+cargo build --release --features telegram,mcp
 
 # All features
-cargo build --release --features telegram,discord
+cargo build --release --features telegram,discord,mcp
 ```
 
 ## Error Handling
@@ -428,8 +350,8 @@ All fallible operations return `anyhow::Result<T>`. Errors are contextualized wi
 | Invalid timezone | `"Invalid timezone: {tz}"` |
 | API failure | `"Failed to fetch quote"` |
 | File I/O | `"Failed to open file: {filename}"` |
-| Problem selection | `"No available EASY problems found"` |
-| Feature not enabled | `"Telegram feature not enabled. Recompile with --features telegram"` |
+| Problem selection | `"No available problems found"` |
+| Feature not enabled | `"Telegram feature not enabled"` |
 
 ## Related Documentation
 

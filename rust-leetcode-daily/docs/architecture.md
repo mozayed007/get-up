@@ -1,28 +1,40 @@
 # Architecture Overview
 
-This document describes the architecture, design patterns, and data flow of rust-leetcode-daily.
+This document describes the architecture, design patterns, and data flow of the daily routine system.
 
 ## Project Structure
 
 ```
-leetcode-daily/
-├── Cargo.toml                 # Dependencies and feature flags
-├── .env.example               # Environment template
-├── src/
-│   ├── main.rs               # Entry point, CLI, orchestration
-│   ├── config.rs             # Configuration loading and types
-│   ├── leetcode.rs           # LeetCode GraphQL client
-│   ├── api.rs                # External API clients (quote, history, running)
-│   ├── message.rs            # Message composition
-│   ├── utils.rs              # Utilities (date, file I/O)
-│   └── notification/
-│       ├── mod.rs            # Notifier trait definition
-│       ├── telegram.rs       # Telegram implementation
-│       └── discord.rs        # Discord implementation
-└── data/
-    ├── leetcode_easy.txt     # Cached EASY problems
-    ├── used_problems.txt     # Problem usage tracking
-    └── running.parquet       # Running statistics (optional)
+get-up/
+├── rust-leetcode-daily/
+│   ├── Cargo.toml                 # Dependencies and feature flags
+│   ├── .env.example               # Environment template
+│   ├── src/
+│   │   ├── main.rs               # Entry point, CLI, orchestration
+│   │   ├── config.rs             # Configuration loading and types
+│   │   ├── providers/            # Problem provider abstraction
+│   │   │   ├── mod.rs            # Shared selection logic
+│   │   │   ├── leetcode.rs       # LeetCode provider
+│   │   │   └── deepml.rs         # Deep-ML provider
+│   │   ├── scheduler.rs          # Difficulty scheduling
+│   │   ├── format.rs             # Message formatting
+│   │   ├── serialization.rs      # JSON/XML serialization
+│   │   ├── api.rs                # External API clients
+│   │   ├── types.rs              # Shared types
+│   │   ├── message.rs            # Greeting helper
+│   │   ├── routine.rs            # Routine engine
+│   │   ├── utils.rs              # Utilities
+│   │   └── notification/
+│   │       ├── mod.rs            # Notifier trait
+│   │       ├── telegram.rs       # Telegram adapter
+│   │       └── discord.rs        # Discord adapter
+│   └── data/
+│       ├── leetcode_easy.txt     # Cached EASY problems
+│       ├── leetcode_medium.txt   # Cached MEDIUM problems
+│       ├── leetcode_hard.txt     # Cached HARD problems
+│       ├── deepml_problems.txt   # Cached Deep-ML problems
+│       ├── used_problems.txt     # Problem usage tracking
+│       └── running.parquet       # Running statistics (optional)
 ```
 
 ## Module Diagram
@@ -32,7 +44,7 @@ leetcode-daily/
 │                                main.rs                                    │
 │  ┌────────────────────────────────────────────────────────────────────┐  │
 │  │                          CLI Parsing (clap)                         │  │
-│  │   --fetch-easy | --post | --telegram | --discord | --dry-run        │  │
+│  │   --fetch-leetcode | --sync-deepml | --post | --dry-run          │  │
 │  └────────────────────────────────────────────────────────────────────┘  │
 │                                    │                                      │
 │                                    ▼                                      │
@@ -44,31 +56,40 @@ leetcode-daily/
 │                                    │                                      │
 └────────────────────────────────────┼──────────────────────────────────────┘
                                      │
-         ┌───────────────────────────┼───────────────────────────┐
-         │                           │                           │
-         ▼                           ▼                           ▼
+          ┌──────────────────────────┼──────────────────────────┐
+          │                          │                          │
+          ▼                          ▼                          ▼
 ┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
-│   leetcode.rs   │       │     api.rs      │       │    utils.rs     │
+│   providers/    │       │     api.rs      │       │    utils.rs     │
 │                 │       │                 │       │                 │
 │  LeetCode       │       │  fetch_quote()  │       │  get_day_of_    │
-│  GraphQL API    │       │  fetch_history()│       │    year()       │
-│                 │       │  fetch_running()│       │  get_year_      │
-│  Question       │       │                 │       │    progress()   │
-│  struct         │       │  RunningStats   │       │  read_lines()   │
-│                 │       │  struct         │       │  append_line()  │
+│  Deep-ML        │       │  fetch_history()│       │    year()       │
+│  select_problem │       │  fetch_running()│       │  get_year_      │
+│  (shared logic) │       │                 │       │    progress()   │
+│                 │       │  RunningStats   │       │  read_lines()   │
+│                 │       │                 │       │  append_line()  │
 └────────┬────────┘       └────────┬────────┘       └─────────────────┘
-         │                         │
-         │                         │
-         └────────────┬────────────┘
+         │                           │
+         │                           │
+         └────────────┬──────────────┘
                       │
                       ▼
          ┌────────────────────────┐
-         │      message.rs        │
+         │      scheduler.rs        │
          │                        │
-         │  build_message()       │
-         │  format_leetcode()     │
-         │  format_running()      │
-         │  format_history()      │
+         │  Schedule enum         │
+         │  get_schedule()        │
+         │  (weekday/weekend)     │
+         │                        │
+         └────────────┬───────────┘
+                      │
+                      │
+                      ▼
+         ┌────────────────────────┐
+         │      format.rs           │
+         │                        │
+         │  build_formatted_message │
+         │  get_problem_emoji       │
          │                        │
          └────────────┬───────────┘
                       │
@@ -117,28 +138,22 @@ async fn main() -> Result<()> {
     // 2. Load configuration
     let config = Config::load()?;
     
-    // 3. Handle --fetch-easy (early exit)
-    if args.fetch_easy { /* ... */ }
+    // 3. Handle --fetch-leetcode (early exit)
+    if args.fetch_leetcode { /* ... */ }
     
-    // 4. Check wake-up time
+    // 4. Handle --sync-deepml (early exit)
+    if args.sync_deepml { /* ... */ }
+    
+    // 5. Check wake-up time
     let is_early = current_hour >= 3 && current_hour <= 9;
     
-    // 5. Fetch all data (parallel would be ideal)
-    let quote = fetch_quote().await?;
-    let history = fetch_history().await?;
-    let running = fetch_running_stats().await?;
-    let problem = get_today_problem().await?;
-    
-    // 6. Build message
-    let message = build_message(/* ... */);
+    // 6. Run routine
+    let result = run_routine(&config, &options).await?;
     
     // 7. Handle --dry-run
     if args.dry_run { /* print and exit */ }
     
-    // 8. Check if late
-    if !is_early { /* print "late" and exit */ }
-    
-    // 9. Send notifications
+    // 8. Send notifications
     if args.post { /* GitHub */ }
     if args.telegram { /* Telegram */ }
     if args.discord { /* Discord */ }
@@ -155,71 +170,63 @@ async fn main() -> Result<()> {
 - Provide typed access to settings
 - Handle timezone parsing
 
-**Design:**
+---
+
+### `providers/` - Problem Provider Abstraction
+
+**Responsibilities:**
+- Fetch problem lists from LeetCode (Easy, Medium, Hard)
+- Sync Deep-ML problems from GitHub
+- Select random unused problems with deterministic seeding
+- Track used problems
+
+**Shared Selection Logic:**
 
 ```rust
-pub struct Config {
-    // All configuration as typed fields
-}
-
-impl Config {
-    pub fn load() -> Result<Self> {
-        dotenv().ok();  // Load .env file
-        
-        // Parse and validate each field
-        let github_token = env::var("GITHUB_TOKEN")?;
-        // ...
-        
-        Ok(Config { /* fields */ })
-    }
+async fn select_problem(
+    cache_file: &str,
+    used_file: &str,
+    difficulty: Difficulty,
+    platform: Platform,
+    url_generator: impl Fn(&ProblemCache) -> String,
+    seed: u64,
+) -> Result<ProblemResult> {
+    // Read cache, filter by difficulty, filter used, pick random
+    // ...
 }
 ```
 
-**Validation:**
-- Required fields return error if missing
-- Optional fields use `Option<String>`
-- Timezone validated against IANA database
-- Birth year parsed as integer
-
----
-
-### `leetcode.rs` - LeetCode Integration
-
-**Responsibilities:**
-- Fetch EASY problem list from LeetCode
-- Get official daily challenge
-- Select random problem (seeded by date)
-- Track used problems
-- Format problem messages
-
-**Problem Selection Algorithm:**
+**LeetCode Problem Selection Algorithm:**
 
 ```rust
-async fn get_today_problem() -> Result<Question> {
+async fn get_problem() -> Result<ProblemResult> {
     // Try 1: Get official daily challenge
     if let Some(daily) = get_daily_challenge().await? {
-        // Only use if EASY and not paid
-        if daily.difficulty == "EASY" && !daily.paid_only {
-            if !is_used(&daily.slug) {
-                mark_used(&daily.slug);
-                return Ok(daily);
-            }
+        if daily.difficulty == target && !is_used(&daily.slug) {
+            return Ok(daily);
         }
     }
     
-    // Fallback: Pick random from EASY pool
-    pick_daily_problem().await
+    // Fallback: Pick random from difficulty pool
+    select_problem(cache_file, used_file, difficulty, ...)
 }
+```
 
-async fn pick_daily_problem() -> Result<Question> {
-    let available = filter_unused(easy_problems);
-    
-    // Seeded random for consistent daily selection
-    let seed = year * 1000 + day_of_year;
-    let problem = seeded_random_pick(available, seed);
-    
-    mark_used(&problem.slug);
-    Ok(problem)
+---
+
+### `scheduler.rs` - Difficulty Scheduling
+
+**Responsibilities:**
+- Generate weekday difficulty pattern (3 Easy + 2 Medium)
+- Handle weekend schedule (Medium + Hard)
+- Provide deterministic seeding per week
+
+**Schedule Types:**
+
+```rust
+pub enum Schedule {
+    Weekday { difficulty: Difficulty },
+    Weekend { difficulties: [Difficulty; 2] },
 }
 ```
 
@@ -233,73 +240,14 @@ async fn pick_daily_problem() -> Result<Question> {
 - Parse running statistics from Parquet
 - Handle API failures gracefully
 
-**Error Handling:**
-
-```rust
-pub async fn fetch_quote(client: &Client) -> Result<String> {
-    match client.get(QUOTE_URL).send().await?.json().await {
-        Ok(response) => Ok(format!("{} — {}", response.content, response.author)),
-        Err(_) => Ok(DEFAULT_QUOTE.to_string()),  // Fallback
-    }
-}
-```
-
-**Parquet Processing:**
-
-```rust
-pub async fn fetch_running_stats(file: &str) -> Result<RunningStats> {
-    let df = LazyFrame::scan_parquet(file, Default::default())?;
-    
-    // Calculate aggregates for different periods
-    let yesterday = df.clone().filter(/* yesterday */).sum();
-    let month = df.clone().filter(/* this month */).sum();
-    let year = df.filter(/* this year */).sum();
-    
-    Ok(RunningStats { /* aggregated values */ })
-}
-```
-
 ---
 
-### `message.rs` - Message Composition
+### `format.rs` - Message Formatting
 
 **Responsibilities:**
 - Combine all data into final message
-- Format each section appropriately
-- Generate progress bars
-- Apply markdown formatting
-
-**Message Template:**
-
-```rust
-pub fn build_message(/* all data */) -> String {
-    format!(
-        r#"Wake up time: {}
-
-Good morning!
-
-Day {} of the year.
-
-{}
-
-{}
-
-{}
-
-{}
-
-Today's Quote:
-{}"#,
-        get_up_time,
-        day_of_year,
-        year_progress,
-        leetcode_info,
-        running_info,
-        history_today,
-        quote,
-    )
-}
-```
+- Format each section with appropriate emojis
+- Generate progress display
 
 ---
 
@@ -311,13 +259,9 @@ Today's Quote:
 - Implement Discord adapter
 - Handle feature-gated compilation
 
-## Data Flow Diagram
+## Data Flow
 
 ```
-┌────────────────────────────────────────────────────────────────────────────┐
-│                             DATA FLOW                                       │
-└────────────────────────────────────────────────────────────────────────────┘
-
 START
   │
   ▼
@@ -341,21 +285,22 @@ START
     ▼              ▼              ▼
 ┌─────────┐  ┌──────────┐  ┌─────────────┐
 │ LeetCode│  │  APIs    │  │   Files     │
-│         │  │          │  │             │
-│ • Daily │  │ • Quote  │  │ • easy.txt  │
-│   chall │  │ • History│  │ • used.txt  │
-│ • EASY  │  │          │  │ • running   │
-│   list  │  │          │  │   .parquet  │
+│ Provider│  │          │  │             │
+│         │  │ • Quote  │  │ • easy.txt  │
+│ • Daily │  │ • History│  │ • medium.txt│
+│   chall │  │          │  │ • hard.txt  │
+│ • Diff  │  │          │  │ • deepml.txt│
+│   pool  │  │          │  │ • used.txt  │
 └────┬────┘  └────┬─────┘  └──────┬──────┘
      │            │               │
      └────────────┼───────────────┘
-                  │
-                  ▼
+                   │
+                   ▼
 ┌─────────────────────────────────────┐
-│  Question Selection                 │
+│  Problem Selection                  │
 │  ┌─────────────────────────────┐    │
-│  │ 1. Try official daily       │    │
-│  │ 2. Check if EASY & free     │    │
+│  │ 1. Get schedule for date    │    │
+│  │ 2. Try official daily       │    │
 │  │ 3. Check if not used        │    │
 │  │ 4. Fallback to seeded pick  │    │
 │  └─────────────────────────────┘    │
@@ -364,7 +309,7 @@ START
                    ▼
 ┌─────────────────────────────────────┐
 │  Message Building                   │
-│  - Format LeetCode problem          │
+│  - Format problems (with emojis)    │
 │  - Format running stats             │
 │  - Format historical events         │
 │  - Combine with time/quote          │
@@ -414,30 +359,7 @@ The notification system uses the Strategy pattern via Rust traits:
     └───────────────┘ └───────────────┘ └───────────────┘
 ```
 
-**Benefits:**
-- Easy to add new notification channels
-- Consistent interface across all adapters
-- Feature-gated compilation
-- Testable with mocks
-
-**Implementation Example:**
-
-```rust
-// notification/mod.rs
-pub trait Notifier: Send + Sync {
-    async fn send_message(&self, message: &str) -> Result<()>;
-}
-
-// notification/telegram.rs
-impl Notifier for TelegramNotifier {
-    async fn send_message(&self, message: &str) -> Result<()> {
-        self.bot.send_message(self.chat_id, message).await?;
-        Ok(())
-    }
-}
-```
-
-## Feature Flags Architecture
+## Feature Flags
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -448,6 +370,7 @@ impl Notifier for TelegramNotifier {
 │  default = []                                               │
 │  telegram = ["dep:teloxide"]                                │
 │  discord = ["dep:serenity"]                                 │
+│  mcp = ["dep:rmcp", "dep:axum"]                             │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
                           │
@@ -458,7 +381,7 @@ impl Notifier for TelegramNotifier {
     │  default  │   │  telegram │   │  discord  │
     │   only    │   │           │   │           │
     │           │   │ teloxide  │   │ serenity  │
-    │ octocrab  │   │ added     │   │ added     │
+    │ octocrab  │   │           │   │           │
     │ reqwest   │   │           │   │           │
     │ polars    │   │           │   │           │
     │ chrono    │   │           │   │           │
@@ -473,22 +396,8 @@ impl Notifier for TelegramNotifier {
               │                       │
               │  #[cfg(feature = "telegram")]  │
               │  #[cfg(feature = "discord")]   │
+              │  #[cfg(feature = "mcp")]       │
               └───────────────────────┘
-```
-
-**Conditional Compilation:**
-
-```rust
-// In main.rs
-#[cfg(feature = "telegram")]
-let telegram_notifier = config.telegram_token.as_ref().and_then(|token| {
-    config.telegram_chat_id.as_ref().map(|chat_id| {
-        TelegramNotifier::new(token.clone(), chat_id.clone())
-    })
-});
-
-#[cfg(not(feature = "telegram"))]
-let telegram_notifier: Option<TelegramNotifier> = None;
 ```
 
 ## Error Handling Strategy
@@ -512,7 +421,7 @@ tokio::fs::read_to_string(path).await
 
 // Business logic errors
 if available.is_empty() {
-    return Err(anyhow!("No available EASY problems found"));
+    return Err(anyhow!("No available problems found"));
 }
 ```
 
@@ -538,7 +447,7 @@ if available.is_empty() {
 │  ┌─────────────────────────────────────┐                 │
 │  │ anyhow::Error chain                 │                 │
 │  │                                     │                 │
-│  │ "Failed to fetch EASY problems"     │                 │
+│  │ "Failed to fetch problems"          │                 │
 │  │   └─ "HTTP request failed"          │                 │
 │  │       └─ "Connection refused"       │                 │
 │  └─────────────────────────────────────┘                 │
@@ -554,6 +463,7 @@ if available.is_empty() {
 | History API | Network error | Empty history list |
 | Running stats | File not found | Zeroed stats |
 | LeetCode API | Network error | Return error (required) |
+| Deep-ML API | Network error | Use existing cache |
 | GitHub API | Auth error | Return error (required) |
 
 ## Related Documentation

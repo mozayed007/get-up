@@ -1,6 +1,6 @@
 # Deployment Guide
 
-This guide covers deploying rust-leetcode-daily to run automatically every day.
+This guide covers deploying rust-routine-daily to run automatically every day.
 
 ## Building for Production
 

@@ -6,7 +6,7 @@ This document describes the architecture, design patterns, and data flow of the 
 
 ```
 get-up/
-├── rust-leetcode-daily/
+├── rust-routine-daily/
 │   ├── Cargo.toml                 # Dependencies and feature flags
 │   ├── .env.example               # Environment template
 │   ├── src/

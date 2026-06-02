@@ -40,7 +40,7 @@ git --version
 
 ```bash
 git clone https://github.com/mozayed007/get-up.git
-cd get-up/rust-leetcode-daily
+cd get-up/rust-routine-daily
 ```
 
 ### Step 2: Create Data Directory
@@ -152,7 +152,7 @@ Here's a complete example showing a typical workflow:
 
 ```bash
 # 1. Navigate to project directory
-cd get-up/rust-leetcode-daily
+cd get-up/rust-routine-daily
 
 # 2. Ensure .env is configured with at minimum:
 #    GITHUB_TOKEN, REPO_OWNER, REPO_NAME, BIRTH_YEAR, TIMEZONE

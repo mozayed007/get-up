@@ -201,7 +201,7 @@ The only way to do great work is to love what you do.
 ## Project Structure
 
 ```
-rust-leetcode-daily/
+rust-routine-daily/
 ├── Cargo.toml
 ├── src/
 │   ├── lib.rs              # Library crate root

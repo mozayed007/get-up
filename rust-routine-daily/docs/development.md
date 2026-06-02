@@ -1,6 +1,6 @@
 # Development Guide
 
-This guide covers development setup, testing, code style, and contributing guidelines for rust-leetcode-daily.
+This guide covers development setup, testing, code style, and contributing guidelines for rust-routine-daily.
 
 ## Table of Contents
 
@@ -25,8 +25,8 @@ This guide covers development setup, testing, code style, and contributing guide
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/rust-leetcode-daily.git
-cd rust-leetcode-daily
+git clone https://github.com/yourusername/rust-routine-daily.git
+cd rust-routine-daily
 
 # Copy environment template
 cp .env.example .env

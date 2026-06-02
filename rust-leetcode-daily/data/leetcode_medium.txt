@@ -1,0 +1,1544 @@
+3941|Password Strength|password-strength|Medium
+3932|Count K-th Roots in a Range|count-k-th-roots-in-a-range|Medium
+3927|Minimize Array Sum Using Divisible Replacements|minimize-array-sum-using-divisible-replacements|Medium
+3937|Minimum Operations to Make Array Modulo Alternating I|minimum-operations-to-make-array-modulo-alternating-i|Medium
+3918|Sum of Primes Between Number and Its Reverse|sum-of-primes-between-number-and-its-reverse|Medium
+3926|Count Valid Word Occurrences|count-valid-word-occurrences|Medium
+3909|Compare Sums of Bitonic Parts|compare-sums-of-bitonic-parts|Medium
+3919|Minimum Cost to Move Between Indices|minimum-cost-to-move-between-indices|Medium
+3904|Smallest Stable Index II|smallest-stable-index-ii|Medium
+3905|Multi Source Flood Fill|multi-source-flood-fill|Medium
+3913|Sort Vowels by Frequency|sort-vowels-by-frequency|Medium
+3895|Count Digit Appearances|count-digit-appearances|Medium
+3896|Minimum Operations to Transform Array into Alternating Prime|minimum-operations-to-transform-array-into-alternating-prime|Medium
+3889|Mirror Frequency Distance|mirror-frequency-distance|Medium
+3914|Minimum Operations to Make Array Non Decreasing|minimum-operations-to-make-array-non-decreasing|Medium
+3890|Integers With Multiple Sum of Two Cubes|integers-with-multiple-sum-of-two-cubes|Medium
+3885|Design Event Manager|design-event-manager|Medium
+3899|Angles of a Triangle|angles-of-a-triangle|Medium
+3900|Longest Balanced Substring After One Swap|longest-balanced-substring-after-one-swap|Medium
+3876|Construct Uniform Parity Array II|construct-uniform-parity-array-ii|Medium
+3868|Minimum Cost to Equalize Arrays Using Swaps|minimum-cost-to-equalize-arrays-using-swaps|Medium
+3881|Direction Assignments with Exactly K Visible People|direction-assignments-with-exactly-k-visible-people|Medium
+3871|Count Commas in Range II|count-commas-in-range-ii|Medium
+3867|Sum of GCD of Formed Pairs|sum-of-gcd-of-formed-pairs|Medium
+3862|Find the Smallest Balanced Index|find-the-smallest-balanced-index|Medium
+3872|Longest Arithmetic Sequence After Changing At Most One Element|longest-arithmetic-sequence-after-changing-at-most-one-element|Medium
+3848|Check Digitorial Permutation|check-digitorial-permutation|Medium
+3847|Find the Score Difference in a Game|find-the-score-difference-in-a-game|Medium
+3844|Longest Almost-Palindromic Substring|longest-almost-palindromic-substring|Medium
+3863|Minimum Operations to Sort a String|minimum-operations-to-sort-a-string|Medium
+3854|Minimum Operations to Make Array Parity Alternating|minimum-operations-to-make-array-parity-alternating|Medium
+3843|First Element with Unique Frequency|first-element-with-unique-frequency|Medium
+3834|Merge Adjacent Equal Elements|merge-adjacent-equal-elements|Medium
+3835|Count Subarrays With Cost Less Than or Equal to K|count-subarrays-with-cost-less-than-or-equal-to-k|Medium
+3882|Minimum XOR Path in a Grid|minimum-xor-path-in-a-grid|Medium
+3818|Minimum Prefix Removal to Make Array Strictly Increasing|minimum-prefix-removal-to-make-array-strictly-increasing|Medium
+3810|Minimum Operations to Reach Target Array|minimum-operations-to-reach-target-array|Medium
+3809|Best Reachable Tower|best-reachable-tower|Medium
+3942|Minimum Operations to Sort a Permutation|minimum-operations-to-sort-a-permutation|Medium
+3805|Count Caesar Cipher Pairs|count-caesar-cipher-pairs|Medium
+3820|Pythagorean Distance Nodes in a Tree|pythagorean-distance-nodes-in-a-tree|Medium
+3824|Minimum K to Reduce Array Within Limit|minimum-k-to-reduce-array-within-limit|Medium
+3790|Smallest All-Ones Multiple|smallest-all-ones-multiple|Medium
+3788|Maximum Score of a Split|maximum-score-of-a-split|Medium
+3819|Rotate Non Negative Elements|rotate-non-negative-elements|Medium
+3779|Minimum Number of Operations to Have Distinct Elements|minimum-number-of-operations-to-have-distinct-elements|Medium
+3858|Minimum Bitwise OR From Grid|minimum-bitwise-or-from-grid|Medium
+3780|Maximum Sum of Three Numbers Divisible by Three|maximum-sum-of-three-numbers-divisible-by-three|Medium
+3775|Reverse Words With Same Vowel Count|reverse-words-with-same-vowel-count|Medium
+3800|Minimum Cost to Make Two Binary Strings Equal|minimum-cost-to-make-two-binary-strings-equal|Medium
+3795|Minimum Subarray Length With Distinct Sum At Least K|minimum-subarray-length-with-distinct-sum-at-least-k|Medium
+3891|Minimum Increase to Maximize Special Indices|minimum-increase-to-maximize-special-indices|Medium
+3789|Minimum Cost to Acquire Required Items|minimum-cost-to-acquire-required-items|Medium
+3771|Total Score of Dungeon Runs|total-score-of-dungeon-runs|Medium
+3811|Number of Alternating XOR Partitions|number-of-alternating-xor-partitions|Medium
+3759|Count Elements With at Least K Greater Values|count-elements-with-at-least-k-greater-values|Medium
+3761|Minimum Absolute Distance Between Mirror Pairs|minimum-absolute-distance-between-mirror-pairs|Medium
+3784|Minimum Deletion Cost to Make All Characters Equal|minimum-deletion-cost-to-make-all-characters-equal|Medium
+3839|Number of Prefix Connected Groups|number-of-prefix-connected-groups|Medium
+3756|Concatenate Non-Zero Digits and Multiply by Sum II|concatenate-non-zero-digits-and-multiply-by-sum-ii|Medium
+3923|Minimum Generations to Target Point|minimum-generations-to-target-point|Medium
+3922|Minimum Flips to Make Binary String Coherent|minimum-flips-to-make-binary-string-coherent|Medium
+3781|Maximum Score After Binary Swaps|maximum-score-after-binary-swaps|Medium
+3804|Number of Centered Subarrays|number-of-centered-subarrays|Medium
+3828|Final Element After Subarray Deletions|final-element-after-subarray-deletions|Medium
+3741|Minimum Distance Between Three Equal Elements II|minimum-distance-between-three-equal-elements-ii|Medium
+3829|Design Ride Sharing System|design-ride-sharing-system|Medium
+3732|Maximum Product of Three Elements After One Replacement|maximum-product-of-three-elements-after-one-replacement|Medium
+3765|Complete Prime Number|complete-prime-number|Medium
+3766|Minimum Operations to Make Binary Palindrome|minimum-operations-to-make-binary-palindrome|Medium
+3738|Longest Non-Decreasing Subarray After Replacing at Most One Element|longest-non-decreasing-subarray-after-replacing-at-most-one-element|Medium
+3877|Minimum Removals to Achieve Target XOR|minimum-removals-to-achieve-target-xor|Medium
+3746|Minimum String Length After Balanced Removals|minimum-string-length-after-balanced-removals|Medium
+3767|Maximize Points After Choosing K Tasks|maximize-points-after-choosing-k-tasks|Medium
+3760|Maximum Substrings With Distinct Start|maximum-substrings-with-distinct-start|Medium
+3770|Largest Prime from Consecutive Prime Sum|largest-prime-from-consecutive-prime-sum|Medium
+3723|Maximize Sum of Squares of Digits|maximize-sum-of-squares-of-digits|Medium
+3728|Stable Subarrays With Equal Boundary and Interior Sum|stable-subarrays-with-equal-boundary-and-interior-sum|Medium
+3814|Maximum Capacity Within Budget|maximum-capacity-within-budget|Medium
+3727|Maximum Alternating Sum of Squares|maximum-alternating-sum-of-squares|Medium
+3752|Lexicographically Smallest Negated Permutation that Sums to Target|lexicographically-smallest-negated-permutation-that-sums-to-target|Medium
+3737|Count Subarrays With Majority Element I|count-subarrays-with-majority-element-i|Medium
+3722|Lexicographically Smallest String After Reverse|lexicographically-smallest-string-after-reverse|Medium
+3799|Word Squares II|word-squares-ii|Medium
+3815|Design Auction System|design-auction-system|Medium
+3840|House Robber V|house-robber-v|Medium
+3709|Design Exam Scores Tracker|design-exam-scores-tracker|Medium
+3751|Total Waviness of Numbers in Range I|total-waviness-of-numbers-in-range-i|Medium
+3714|Longest Balanced Substring II|longest-balanced-substring-ii|Medium
+3713|Longest Balanced Substring I|longest-balanced-substring-i|Medium
+3747|Count Distinct Integers After Removing Zeros|count-distinct-integers-after-removing-zeros|Medium
+3733|Minimum Time to Complete All Deliveries|minimum-time-to-complete-all-deliveries|Medium
+3719|Longest Balanced Subarray I|longest-balanced-subarray-i|Medium
+3849|Maximum Bitwise XOR After Rearrangement|maximum-bitwise-xor-after-rearrangement|Medium
+3724|Minimum Operations to Transform Array|minimum-operations-to-transform-array|Medium
+3693|Climbing Stairs II|climbing-stairs-ii|Medium
+3702|Longest Subsequence With Non-Zero Bitwise XOR|longest-subsequence-with-non-zero-bitwise-xor|Medium
+3825|Longest Strictly Increasing Subsequence With Non-Zero Bitwise AND|longest-strictly-increasing-subsequence-with-non-zero-bitwise-and|Medium
+3857|Minimum Cost to Split into Ones|minimum-cost-to-split-into-ones|Medium
+3694|Distinct Points Reachable After Substring Removal|distinct-points-reachable-after-substring-removal|Medium
+3720|Lexicographically Smallest Permutation Greater Than Target|lexicographically-smallest-permutation-greater-than-target|Medium
+3703|Remove K-Balanced Substrings|remove-k-balanced-substrings|Medium
+3776|Minimum Moves to Balance Circular Array|minimum-moves-to-balance-circular-array|Medium
+3698|Split Array With Minimum Difference|split-array-with-minimum-difference|Medium
+3853|Merge Close Characters|merge-close-characters|Medium
+3689|Maximum Total Subarray Value I|maximum-total-subarray-value-i|Medium
+3708|Longest Fibonacci Subarray|longest-fibonacci-subarray|Medium
+3676|Count Bowl Subarrays|count-bowl-subarrays|Medium
+3675|Minimum Operations to Transform String|minimum-operations-to-transform-string|Medium
+3680|Generate Schedule|generate-schedule|Medium
+3742|Maximum Path Score in a Grid|maximum-path-score-in-a-grid|Medium
+3660|Jump Game IX|jump-game-ix|Medium
+3652|Best Time to Buy and Sell Stock using Strategy|best-time-to-buy-and-sell-stock-using-strategy|Medium
+3659|Partition Array Into K-Distinct Groups|partition-array-into-k-distinct-groups|Medium
+3653|XOR After Range Multiplication Queries I|xor-after-range-multiplication-queries-i|Medium
+3635|Earliest Finish Time for Land and Water Rides II|earliest-finish-time-for-land-and-water-rides-ii|Medium
+3654|Minimum Sum After Divisible Sum Deletions|minimum-sum-after-divisible-sum-deletions|Medium
+3649|Number of Perfect Pairs|number-of-perfect-pairs|Medium
+3645|Maximum Total from Optimal Activation Order|maximum-total-from-optimal-activation-order|Medium
+3634|Minimum Removals to Balance Array|minimum-removals-to-balance-array|Medium
+3638|Maximum Balanced Shipments|maximum-balanced-shipments|Medium
+3679| Minimum Discards to Balance Inventory|minimum-discards-to-balance-inventory|Medium
+3644|Maximum K to Sort a Permutation|maximum-k-to-sort-a-permutation|Medium
+3628|Maximum Number of Subsequences After One Inserting|maximum-number-of-subsequences-after-one-inserting|Medium
+3669|Balanced K-Factor Decomposition|balanced-k-factor-decomposition|Medium
+3755|Find Maximum Balanced XOR Subarray Length|find-maximum-balanced-xor-subarray-length|Medium
+3648|Minimum Sensors to Cover Grid|minimum-sensors-to-cover-grid|Medium
+3639|Minimum Time to Activate String|minimum-time-to-activate-string|Medium
+3665|Twisted Mirror Path Count|twisted-mirror-path-count|Medium
+3618|Split Array by Prime Indices|split-array-by-prime-indices|Medium
+3629|Minimum Jumps to Reach End via Prime Teleportation|minimum-jumps-to-reach-end-via-prime-teleportation|Medium
+3612|Process String with Special Operations I|process-string-with-special-operations-i|Medium
+3690|Split and Merge Array Transformation|split-and-merge-array-transformation|Medium
+3603|Minimum Cost Path with Alternating Directions II|minimum-cost-path-with-alternating-directions-ii|Medium
+3604|Minimum Time to Reach Destination in Directed Graph|minimum-time-to-reach-destination-in-directed-graph|Medium
+3670|Maximum Product of Two Integers With No Common Bits|maximum-product-of-two-integers-with-no-common-bits|Medium
+3599|Partition Array to Minimize XOR|partition-array-to-minimize-xor|Medium
+3593|Minimum Increments to Equalize Leaf Paths|minimum-increments-to-equalize-leaf-paths|Medium
+3608|Minimum Time for K Connected Components|minimum-time-for-k-connected-components|Medium
+3589|Count Prime-Gap Balanced Subarrays|count-prime-gap-balanced-subarrays|Medium
+3597|Partition String |partition-string|Medium
+3587|Minimum Adjacent Swaps to Alternate Parity|minimum-adjacent-swaps-to-alternate-parity|Medium
+3592|Inverse Coin Change|inverse-coin-change|Medium
+3938|Maximum Path Intersection Sum in a Grid|maximum-path-intersection-sum-in-a-grid|Medium
+3572|Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values|maximize-ysum-by-picking-a-triplet-of-distinct-xvalues|Medium
+3573|Best Time to Buy and Sell Stock V|best-time-to-buy-and-sell-stock-v|Medium
+3650|Minimum Cost Path with Edge Reversals|minimum-cost-path-with-edge-reversals|Medium
+3623|Count Number of Trapezoids I|count-number-of-trapezoids-i|Medium
+3583|Count Special Triplets|count-special-triplets|Medium
+3567|Minimum Absolute Difference in Sliding Submatrix|minimum-absolute-difference-in-sliding-submatrix|Medium
+3613|Minimize Maximum Component Cost|minimize-maximum-component-cost|Medium
+3664|Two-Letter Card Game|two-letter-card-game|Medium
+3576|Transform Array to All Equal Elements|transform-array-to-all-equal-elements|Medium
+3685|Subsequence Sum After Capping Elements|subsequence-sum-after-capping-elements|Medium
+3568|Minimum Moves to Clean the Classroom|minimum-moves-to-clean-the-classroom|Medium
+3588|Find Maximum Area of a Triangle|find-maximum-area-of-a-triangle|Medium
+3577|Count the Number of Computer Unlocking Permutations|count-the-number-of-computer-unlocking-permutations|Medium
+3607|Power Grid Maintenance|power-grid-maintenance|Medium
+3561|Resulting String After Adjacent Removals|resulting-string-after-adjacent-removals|Medium
+3557|Find Maximum Number of Non Intersecting Substrings|find-maximum-number-of-non-intersecting-substrings|Medium
+3543|Maximum Weighted K-Edge Path|maximum-weighted-k-edge-path|Medium
+3546|Equal Sum Grid Partition I|equal-sum-grid-partition-i|Medium
+3551|Minimum Swaps to Sort by Digit Sum|minimum-swaps-to-sort-by-digit-sum|Medium
+3558|Number of Ways to Assign Edge Weights I|number-of-ways-to-assign-edge-weights-i|Medium
+3566|Partition Array into Two Equal Product Subsets|partition-array-into-two-equal-product-subsets|Medium
+3532|Path Existence Queries in a Graph I|path-existence-queries-in-a-graph-i|Medium
+3552|Grid Teleportation Traversal|grid-teleportation-traversal|Medium
+3578|Count Partitions With Max-Min Difference at Most K|count-partitions-with-max-min-difference-at-most-k|Medium
+3542|Minimum Operations to Convert All Elements to Zero|minimum-operations-to-convert-all-elements-to-zero|Medium
+3524|Find X Value of Array I|find-x-value-of-array-i|Medium
+3508|Implement Router|implement-router|Medium
+3513|Number of Unique XOR Triplets I|number-of-unique-xor-triplets-i|Medium
+3619|Count Islands With Total Value Divisible by K|count-islands-with-total-value-divisible-by-k|Medium
+3537|Fill a Special Grid|fill-a-special-grid|Medium
+3529|Count Cells in Overlapping Horizontal and Vertical Substrings|count-cells-in-overlapping-horizontal-and-vertical-substrings|Medium
+3514|Number of Unique XOR Triplets II|number-of-unique-xor-triplets-ii|Medium
+3531|Count Covered Buildings|count-covered-buildings|Medium
+3556|Sum of Largest Prime Substrings|sum-of-largest-prime-substrings|Medium
+3517|Smallest Palindromic Rearrangement I|smallest-palindromic-rearrangement-i|Medium
+3493|Properties Graph|properties-graph|Medium
+3796|Find Maximum Value in a Constrained Sequence|find-maximum-value-in-a-constrained-sequence|Medium
+3499|Maximize Active Section with Trade I|maximize-active-section-with-trade-i|Medium
+3933|Largest Local Values in a Matrix II|largest-local-values-in-a-matrix-ii|Medium
+3598|Longest Common Prefix Between Adjacent Strings After Removals|longest-common-prefix-between-adjacent-strings-after-removals|Medium
+3484|Design Spreadsheet|design-spreadsheet|Medium
+3489|Zero Array Transformation IV|zero-array-transformation-iv|Medium
+3494|Find the Minimum Amount of Time to Brew Potions|find-the-minimum-amount-of-time-to-brew-potions|Medium
+3503|Longest Palindrome After Substring Concatenation I|longest-palindrome-after-substring-concatenation-i|Medium
+3479|Fruits Into Baskets III|fruits-into-baskets-iii|Medium
+3472|Longest Palindromic Subsequence After at Most K Operations|longest-palindromic-subsequence-after-at-most-k-operations|Medium
+3468|Find the Number of Copy Arrays|find-the-number-of-copy-arrays|Medium
+3457|Eat Pizzas!|eat-pizzas|Medium
+3469|Find Minimum Cost to Remove Array Elements|find-minimum-cost-to-remove-array-elements|Medium
+3458|Select K Disjoint Special Substrings|select-k-disjoint-special-substrings|Medium
+3627|Maximum Median Sum of Subsequences of Size 3|maximum-median-sum-of-subsequences-of-size-3|Medium
+3462|Maximum Sum With at Most K Elements|maximum-sum-with-at-most-k-elements|Medium
+3453|Separate Squares I|separate-squares-i|Medium
+3447|Assign Elements to Groups with Constraints|assign-elements-to-groups-with-constraints|Medium
+3478|Choose K Elements With Maximum Sum|choose-k-elements-with-maximum-sum|Medium
+3584|Maximum Product of First and Last Elements of a Subsequence|maximum-product-of-first-and-last-elements-of-a-subsequence|Medium
+3443|Maximum Manhattan Distance After K Changes|maximum-manhattan-distance-after-k-changes|Medium
+3434|Maximum Frequency After Subarray Operation|maximum-frequency-after-subarray-operation|Medium
+3488|Closest Equal Element Queries|closest-equal-element-queries|Medium
+3446|Sort Matrix by Diagonals|sort-matrix-by-diagonals|Medium
+3947|Maximum Number of Items From Sale II|maximum-number-of-items-from-sale-ii|Medium
+3439|Reschedule Meetings for Maximum Free Time I|reschedule-meetings-for-maximum-free-time-i|Medium
+3946|Maximum Number of Items From Sale I|maximum-number-of-items-from-sale-i|Medium
+3440|Reschedule Meetings for Maximum Free Time II|reschedule-meetings-for-maximum-free-time-ii|Medium
+3523|Make Array Non-decreasing|make-array-non-decreasing|Medium
+3429|Paint House IV|paint-house-iv|Medium
+3522|Calculate Score After Performing Instructions|calculate-score-after-performing-instructions|Medium
+3528|Unit Conversion I|unit-conversion-i|Medium
+3473|Sum of K Subarrays With Length at Least M|sum-of-k-subarrays-with-length-at-least-m|Medium
+3433|Count Mentions Per User|count-mentions-per-user|Medium
+3419|Minimize the Maximum Edge Weight of Graph|minimize-the-maximum-edge-weight-of-graph|Medium
+3409|Longest Subsequence With Decreasing Adjacent Difference|longest-subsequence-with-decreasing-adjacent-difference|Medium
+3413|Maximum Coins From K Consecutive Bags|maximum-coins-from-k-consecutive-bags|Medium
+3428|Maximum and Minimum Sums of at Most Size K Subsequences|maximum-and-minimum-sums-of-at-most-size-k-subsequences|Medium
+3424|Minimum Cost to Make Arrays Identical|minimum-cost-to-make-arrays-identical|Medium
+3527|Find the Most Common Response|find-the-most-common-response|Medium
+3404|Count Special Subsequences|count-special-subsequences|Medium
+3388|Count Beautiful Splits in an Array|count-beautiful-splits-in-an-array|Medium
+3403|Find the Lexicographically Largest String From the Box I|find-the-lexicographically-largest-string-from-the-box-i|Medium
+3380|Maximum Area Rectangle With Point Constraints I|maximum-area-rectangle-with-point-constraints-i|Medium
+3408|Design Task Manager|design-task-manager|Medium
+3418|Maximum Amount of Money Robot Can Earn|maximum-amount-of-money-robot-can-earn|Medium
+3393|Count Paths With the Given XOR Value|count-paths-with-the-given-xor-value|Medium
+3394|Check if Grid can be Cut into Sections|check-if-grid-can-be-cut-into-sections|Medium
+3377|Digit Operations to Make Two Integers Equal|digit-operations-to-make-two-integers-equal|Medium
+3366|Minimum Array Sum|minimum-array-sum|Medium
+3381|Maximum Subarray Sum With Length Divisible by K|maximum-subarray-sum-with-length-divisible-by-k|Medium
+3376|Minimum Time to Break Locks I|minimum-time-to-break-locks-i|Medium
+3362|Zero Array Transformation III|zero-array-transformation-iii|Medium
+3356|Zero Array Transformation II|zero-array-transformation-ii|Medium
+3355|Zero Array Transformation I|zero-array-transformation-i|Medium
+3412|Find Mirror Score of a String|find-mirror-score-of-a-string|Medium
+3372|Maximize the Number of Target Nodes After Connecting Trees I|maximize-the-number-of-target-nodes-after-connecting-trees-i|Medium
+3335|Total Characters in String After Transformations I|total-characters-in-string-after-transformations-i|Medium
+3342|Find Minimum Time to Reach Last Room II|find-minimum-time-to-reach-last-room-ii|Medium
+3341|Find Minimum Time to Reach Last Room I|find-minimum-time-to-reach-last-room-i|Medium
+3346|Maximum Frequency of an Element After Performing Operations I|maximum-frequency-of-an-element-after-performing-operations-i|Medium
+3397|Maximum Number of Distinct Elements After Operations|maximum-number-of-distinct-elements-after-operations|Medium
+3350|Adjacent Increasing Subarrays Detection II|adjacent-increasing-subarrays-detection-ii|Medium
+3387|Maximize Amount After Two Days of Conversions|maximize-amount-after-two-days-of-conversions|Medium
+3315|Construct the Minimum Bitwise Array II|construct-the-minimum-bitwise-array-ii|Medium
+3326|Minimum Division Operations to Make Array Non Decreasing|minimum-division-operations-to-make-array-non-decreasing|Medium
+3365|Rearrange K Substrings to Form Target String|rearrange-k-substrings-to-form-target-string|Medium
+3371|Identify the Largest Outlier in an Array|identify-the-largest-outlier-in-an-array|Medium
+3334|Find the Maximum Factor Score of Array|find-the-maximum-factor-score-of-array|Medium
+3361|Shift Distance Between Two Strings|shift-distance-between-two-strings|Medium
+3332|Maximum Points Tourist Can Earn|maximum-points-tourist-can-earn|Medium
+3302|Find the Lexicographically Smallest Valid Sequence|find-the-lexicographically-smallest-valid-sequence|Medium
+3309|Maximum Possible Number by Binary Concatenation|maximum-possible-number-by-binary-concatenation|Medium
+3331|Find Subtree Sizes After Changes|find-subtree-sizes-after-changes|Medium
+3297|Count Substrings That Can Be Rearranged to Contain a String I|count-substrings-that-can-be-rearranged-to-contain-a-string-i|Medium
+3305|Count of Substrings Containing Every Vowel and K Consonants I|count-of-substrings-containing-every-vowel-and-k-consonants-i|Medium
+3306|Count of Substrings Containing Every Vowel and K Consonants II|count-of-substrings-containing-every-vowel-and-k-consonants-ii|Medium
+3324|Find the Sequence of Strings Appeared on the Screen|find-the-sequence-of-strings-appeared-on-the-screen|Medium
+3310|Remove Methods From Project|remove-methods-from-project|Medium
+3291|Minimum Number of Valid Strings to Form Target I|minimum-number-of-valid-strings-to-form-target-i|Medium
+3286|Find a Safe Walk Through a Grid|find-a-safe-walk-through-a-grid|Medium
+3295|Report Spam Message|report-spam-message|Medium
+3271|Hash Divided String|hash-divided-string|Medium
+3265|Count Almost Equal Pairs I|count-almost-equal-pairs-i|Medium
+3282|Reach End of Array With Max Score|reach-end-of-array-with-max-score|Medium
+3239|Minimum Number of Flips to Make Binary Grid Palindromic I|minimum-number-of-flips-to-make-binary-grid-palindromic-i|Medium
+3259|Maximum Energy Boost From Two Drinks|maximum-energy-boost-from-two-drinks|Medium
+3240|Minimum Number of Flips to Make Binary Grid Palindromic II|minimum-number-of-flips-to-make-binary-grid-palindromic-ii|Medium
+3255|Find the Power of K-Size Subarrays II|find-the-power-of-k-size-subarrays-ii|Medium
+3254|Find the Power of K-Size Subarrays I|find-the-power-of-k-size-subarrays-i|Medium
+3290|Maximum Multiplication Score|maximum-multiplication-score|Medium
+3243|Shortest Distance After Road Addition Queries I|shortest-distance-after-road-addition-queries-i|Medium
+3301|Maximize the Total Height of Unique Towers|maximize-the-total-height-of-unique-towers|Medium
+3319|K-th Largest Perfect Subtree Size in Binary Tree|k-th-largest-perfect-subtree-size-in-binary-tree|Medium
+3233|Find the Count of Numbers Which Are Not Special|find-the-count-of-numbers-which-are-not-special|Medium
+3325|Count Substrings With K-Frequency Characters I|count-substrings-with-k-frequency-characters-i|Medium
+3217|Delete Nodes From Linked List Present in Array|delete-nodes-from-linked-list-present-in-array|Medium
+3224|Minimum Array Changes to Make Differences Equal|minimum-array-changes-to-make-differences-equal|Medium
+3296|Minimum Number of Seconds to Make Mountain Height Zero|minimum-number-of-seconds-to-make-mountain-height-zero|Medium
+3275|K-th Nearest Obstacle Queries|k-th-nearest-obstacle-queries|Medium
+3218|Minimum Cost for Cutting Cake I|minimum-cost-for-cutting-cake-i|Medium
+3228|Maximum Number of Operations to Move Ones to the End|maximum-number-of-operations-to-move-ones-to-the-end|Medium
+3212|Count Submatrices With Equal Frequency of X and Y|count-submatrices-with-equal-frequency-of-x-and-y|Medium
+3202|Find the Maximum Length of Valid Subsequence II|find-the-maximum-length-of-valid-subsequence-ii|Medium
+3201|Find the Maximum Length of Valid Subsequence I|find-the-maximum-length-of-valid-subsequence-i|Medium
+3316|Find Maximum Removals From Source String|find-maximum-removals-from-source-string|Medium
+3249|Count the Number of Good Nodes|count-the-number-of-good-nodes|Medium
+3281|Maximize Score of Numbers in Ranges|maximize-score-of-numbers-in-ranges|Medium
+3208|Alternating Groups II|alternating-groups-ii|Medium
+3234|Count the Number of Substrings With Dominant Ones|count-the-number-of-substrings-with-dominant-ones|Medium
+3192|Minimum Operations to Make Binary Array Elements Equal to One II|minimum-operations-to-make-binary-array-elements-equal-to-one-ii|Medium
+3191|Minimum Operations to Make Binary Array Elements Equal to One I|minimum-operations-to-make-binary-array-elements-equal-to-one-i|Medium
+3196|Maximize Total Cost of Alternating Subarrays|maximize-total-cost-of-alternating-subarrays|Medium
+3227|Vowels Game in a String|vowels-game-in-a-string|Medium
+3195|Find the Minimum Area to Cover All Ones I|find-the-minimum-area-to-cover-all-ones-i|Medium
+3176|Find the Maximum Length of a Good Subsequence I|find-the-maximum-length-of-a-good-subsequence-i|Medium
+3223|Minimum Length of String After Operations|minimum-length-of-string-after-operations|Medium
+3211|Generate Binary Strings Without Adjacent Zeros|generate-binary-strings-without-adjacent-zeros|Medium
+3163|String Compression III|string-compression-iii|Medium
+3170|Lexicographically Minimum String After Removing Stars|lexicographically-minimum-string-after-removing-stars|Medium
+3164|Find the Number of Good Pairs II|find-the-number-of-good-pairs-ii|Medium
+3180|Maximum Total Reward Using Operations I|maximum-total-reward-using-operations-i|Medium
+3186|Maximum Total Damage With Spell Casting|maximum-total-damage-with-spell-casting|Medium
+3160|Find the Number of Distinct Colors Among the Balls|find-the-number-of-distinct-colors-among-the-balls|Medium
+3169|Count Days Without Meetings|count-days-without-meetings|Medium
+3152|Special Array II|special-array-ii|Medium
+3179|Find the N-th Value After K Seconds|find-the-n-th-value-after-k-seconds|Medium
+3159|Find Occurrences of an Element in an Array|find-occurrences-of-an-element-in-an-array|Medium
+3143|Maximum Points Inside the Square|maximum-points-inside-the-square|Medium
+3185|Count Pairs That Form a Complete Day II|count-pairs-that-form-a-complete-day-ii|Medium
+3153|Sum of Digit Differences of All Pairs|sum-of-digit-differences-of-all-pairs|Medium
+3175|Find The First Player to win K Games in a Row|find-the-first-player-to-win-k-games-in-a-row|Medium
+3129|Find All Possible Stable Binary Arrays I|find-all-possible-stable-binary-arrays-i|Medium
+3121|Count the Number of Special Characters II|count-the-number-of-special-characters-ii|Medium
+3122|Minimum Number of Operations to Satisfy Conditions|minimum-number-of-operations-to-satisfy-conditions|Medium
+3144|Minimum Substring Partition of Equal Character Frequency|minimum-substring-partition-of-equal-character-frequency|Medium
+3132|Find the Integer Added to Array II|find-the-integer-added-to-array-ii|Medium
+3138|Minimum Length of Anagram Concatenation|minimum-length-of-anagram-concatenation|Medium
+3133|Minimum Array End|minimum-array-end|Medium
+3148|Maximum Difference Score in a Grid|maximum-difference-score-in-a-grid|Medium
+3111|Minimum Rectangles to Cover Points|minimum-rectangles-to-cover-points|Medium
+3112|Minimum Time to Visit Disappearing Nodes|minimum-time-to-visit-disappearing-nodes|Medium
+3128|Right Triangles|right-triangles|Medium
+3107|Minimum Operations to Make Median of Array Equal to K|minimum-operations-to-make-median-of-array-equal-to-k|Medium
+3137|Minimum Number of Operations to Make Word K-Periodic|minimum-number-of-operations-to-make-word-k-periodic|Medium
+3147|Taking Maximum Energy From the Mystic Dungeon|taking-maximum-energy-from-the-mystic-dungeon|Medium
+3097|Shortest Subarray With OR at Least K II|shortest-subarray-with-or-at-least-k-ii|Medium
+3101|Count Alternating Subarrays|count-alternating-subarrays|Medium
+3115|Maximum Prime Difference|maximum-prime-difference|Medium
+3092|Most Frequent IDs|most-frequent-ids|Medium
+3085|Minimum Deletions to Make String K-Special|minimum-deletions-to-make-string-k-special|Medium
+3076|Shortest Uncommon Substring in an Array|shortest-uncommon-substring-in-an-array|Medium
+3096|Minimum Levels to Gain More Points|minimum-levels-to-gain-more-points|Medium
+3081|Replace Question Marks in String to Minimize Its Value|replace-question-marks-in-string-to-minimize-its-value|Medium
+3075|Maximize Happiness of Selected Children|maximize-happiness-of-selected-children|Medium
+3106|Lexicographically Smallest String After Operations With Constraint|lexicographically-smallest-string-after-operations-with-constraint|Medium
+3070|Count Submatrices with Top-Left Element and Sum Less Than k|count-submatrices-with-top-left-element-and-sum-less-than-k|Medium
+3084|Count Substrings Starting and Ending with Given Character|count-substrings-starting-and-ending-with-given-character|Medium
+3100|Water Bottles II|water-bottles-ii|Medium
+3071|Minimum Operations to Write the Letter Y on a Grid|minimum-operations-to-write-the-letter-y-on-a-grid|Medium
+3066|Minimum Operations to Exceed Threshold Value II|minimum-operations-to-exceed-threshold-value-ii|Medium
+3043|Find the Length of the Longest Common Prefix|find-the-length-of-the-longest-common-prefix|Medium
+3091|Apply Operations to Make Sum of Array Greater Than or Equal to k|apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k|Medium
+3067|Count Pairs of Connectable Servers in a Weighted Tree Network|count-pairs-of-connectable-servers-in-a-weighted-tree-network|Medium
+3047|Find the Largest Area of Square Inside Two Rectangles|find-the-largest-area-of-square-inside-two-rectangles|Medium
+3040|Maximum Number of Operations With the Same Score II|maximum-number-of-operations-with-the-same-score-ii|Medium
+3035|Maximum Palindromes After Operations|maximum-palindromes-after-operations|Medium
+3044|Most Frequent Prime|most-frequent-prime|Medium
+3039|Apply Operations to Make String Empty|apply-operations-to-make-string-empty|Medium
+3080|Mark Elements on Array by Performing Queries|mark-elements-on-array-by-performing-queries|Medium
+3020|Find the Maximum Number of Elements in Subset|find-the-maximum-number-of-elements-in-subset|Medium
+3029|Minimum Time to Revert Word to Initial State I|minimum-time-to-revert-word-to-initial-state-i|Medium
+3048|Earliest Second to Mark Indices I|earliest-second-to-mark-indices-i|Medium
+3011|Find if Array Can Be Sorted|find-if-array-can-be-sorted|Medium
+3021|Alice and Bob Playing Flower Game|alice-and-bob-playing-flower-game|Medium
+3025|Find the Number of Ways to Place People I|find-the-number-of-ways-to-place-people-i|Medium
+3016|Minimum Number of Pushes to Type Word II|minimum-number-of-pushes-to-type-word-ii|Medium
+3030|Find the Grid of Region Average|find-the-grid-of-region-average|Medium
+3015|Count the Number of Houses at a Certain Distance I|count-the-number-of-houses-at-a-certain-distance-i|Medium
+3001|Minimum Moves to Capture The Queen|minimum-moves-to-capture-the-queen|Medium
+3034|Number of Subarrays That Match a Pattern I|number-of-subarrays-that-match-a-pattern-i|Medium
+2981|Find Longest Special Substring That Occurs Thrice I|find-longest-special-substring-that-occurs-thrice-i|Medium
+2982|Find Longest Special Substring That Occurs Thrice II|find-longest-special-substring-that-occurs-thrice-ii|Medium
+3026|Maximum Good Subarray Sum|maximum-good-subarray-sum|Medium
+3207|Maximum Points After Enemy Battles|maximum-points-after-enemy-battles|Medium
+2971|Find Polygon With the Largest Perimeter|find-polygon-with-the-largest-perimeter|Medium
+2975|Maximum Square Area by Removing Fences From a Field|maximum-square-area-by-removing-fences-from-a-field|Medium
+2997|Minimum Number of Operations to Make Array XOR Equal to K|minimum-number-of-operations-to-make-array-xor-equal-to-k|Medium
+3006|Find Beautiful Indices in the Given Array I|find-beautiful-indices-in-the-given-array-i|Medium
+3012|Minimize Length of Array Using Operations|minimize-length-of-array-using-operations|Medium
+2966|Divide Array Into Arrays With Max Difference|divide-array-into-arrays-with-max-difference|Medium
+3007|Maximum Number That Sum of the Prices Is Less Than or Equal to K|maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k|Medium
+2998|Minimum Number of Operations to Make X and Y Equal|minimum-number-of-operations-to-make-x-and-y-equal|Medium
+2976|Minimum Cost to Convert String I|minimum-cost-to-convert-string-i|Medium
+2961|Double Modular Exponentiation|double-modular-exponentiation|Medium
+2952|Minimum Number of Coins to be Added|minimum-number-of-coins-to-be-added|Medium
+2957|Remove Adjacent Almost-Equal Characters|remove-adjacent-almost-equal-characters|Medium
+2967|Minimum Cost to Make Array Equalindromic|minimum-cost-to-make-array-equalindromic|Medium
+3002|Maximum Size of a Set After Removals|maximum-size-of-a-set-after-removals|Medium
+2958|Length of Longest Subarray With at Most K Frequency|length-of-longest-subarray-with-at-most-k-frequency|Medium
+2948|Make Lexicographically Smallest Array by Swapping Elements|make-lexicographically-smallest-array-by-swapping-elements|Medium
+2943|Maximize Area of Square Hole in Grid|maximize-area-of-square-hole-in-grid|Medium
+2962|Count Subarrays Where Max Element Appears at Least K Times|count-subarrays-where-max-element-appears-at-least-k-times|Medium
+2947|Count Beautiful Substrings I|count-beautiful-substrings-i|Medium
+2944|Minimum Number of Coins for Fruits|minimum-number-of-coins-for-fruits|Medium
+2933|High-Access Employees|high-access-employees|Medium
+2929|Distribute Candies Among Children II|distribute-candies-among-children-ii|Medium
+2930|Number of Strings Which Can Be Rearranged to Contain Substring|number-of-strings-which-can-be-rearranged-to-contain-substring|Medium
+2938|Separate Black and White Balls|separate-black-and-white-balls|Medium
+2939|Maximum Xor Product|maximum-xor-product|Medium
+2925|Maximum Score After Applying Operations on a Tree|maximum-score-after-applying-operations-on-a-tree|Medium
+2934|Minimum Operations to Maximize Last Elements in Arrays|minimum-operations-to-maximize-last-elements-in-arrays|Medium
+2924|Find Champion II|find-champion-ii|Medium
+2909|Minimum Sum of Mountain Triplets II|minimum-sum-of-mountain-triplets-ii|Medium
+2919|Minimum Increment Operations to Make Array Beautiful|minimum-increment-operations-to-make-array-beautiful|Medium
+2914|Minimum Number of Changes to Make Binary String Beautiful|minimum-number-of-changes-to-make-binary-string-beautiful|Medium
+2918|Minimum Equal Sum of Two Arrays After Replacing Zeros|minimum-equal-sum-of-two-arrays-after-replacing-zeros|Medium
+2905|Find Indices With Index and Value Difference II|find-indices-with-index-and-value-difference-ii|Medium
+2910|Minimum Number of Groups to Create a Valid Assignment|minimum-number-of-groups-to-create-a-valid-assignment|Medium
+2874|Maximum Value of an Ordered Triplet II|maximum-value-of-an-ordered-triplet-ii|Medium
+2895|Minimum Processing Time|minimum-processing-time|Medium
+2904|Shortest and Lexicographically Smallest Beautiful String|shortest-and-lexicographically-smallest-beautiful-string|Medium
+2901|Longest Unequal Adjacent Groups Subsequence II|longest-unequal-adjacent-groups-subsequence-ii|Medium
+2875|Minimum Size Subarray in Infinite Array|minimum-size-subarray-in-infinite-array|Medium
+2865|Beautiful Towers I|beautiful-towers-i|Medium
+2866|Beautiful Towers II|beautiful-towers-ii|Medium
+2915|Length of the Longest Subsequence That Sums to Target|length-of-the-longest-subsequence-that-sums-to-target|Medium
+2860|Happy Students|happy-students|Medium
+2861|Maximum Number of Alloys|maximum-number-of-alloys|Medium
+2870|Minimum Number of Operations to Make Array Empty|minimum-number-of-operations-to-make-array-empty|Medium
+2850|Minimum Moves to Spread Stones Over Grid|minimum-moves-to-spread-stones-over-grid|Medium
+2856|Minimum Array Length After Pair Removals|minimum-array-length-after-pair-removals|Medium
+2871|Split Array Into Maximum Number of Subarrays|split-array-into-maximum-number-of-subarrays|Medium
+2849|Determine if a Cell Is Reachable at a Given Time|determine-if-a-cell-is-reachable-at-a-given-time|Medium
+2844|Minimum Operations to Make a Special Number|minimum-operations-to-make-a-special-number|Medium
+2896|Apply Operations to Make Two Strings Equal|apply-operations-to-make-two-strings-equal|Medium
+2906|Construct Product Matrix|construct-product-matrix|Medium
+2834|Find the Minimum Possible Sum of a Beautiful Array|find-the-minimum-possible-sum-of-a-beautiful-array|Medium
+2825|Make String a Subsequence Using Cyclic Increments|make-string-a-subsequence-using-cyclic-increments|Medium
+2817|Minimum Absolute Difference Between Elements With Constraint|minimum-absolute-difference-between-elements-with-constraint|Medium
+2830|Maximize the Profit as the Salesman|maximize-the-profit-as-the-salesman|Medium
+2840|Check if Strings Can be Made Equal With Operations II|check-if-strings-can-be-made-equal-with-operations-ii|Medium
+2841|Maximum Sum of Almost Unique Subarray|maximum-sum-of-almost-unique-subarray|Medium
+2857|Count Pairs of Points With Distance k|count-pairs-of-points-with-distance-k|Medium
+2808|Minimum Seconds to Equalize a Circular Array|minimum-seconds-to-equalize-a-circular-array|Medium
+2811|Check if it is Possible to Split Array|check-if-it-is-possible-to-split-array|Medium
+2845|Count of Interesting Subarrays|count-of-interesting-subarrays|Medium
+2812|Find the Safest Path in a Grid|find-the-safest-path-in-a-grid|Medium
+2826|Sorting Three Groups|sorting-three-groups|Medium
+2807|Insert Greatest Common Divisors in Linked List|insert-greatest-common-divisors-in-linked-list|Medium
+2786|Visit Array Positions to Maximize Score|visit-array-positions-to-maximize-score|Medium
+2779|Maximum Beauty of an Array After Applying Operation|maximum-beauty-of-an-array-after-applying-operation|Medium
+2768|Number of Black Blocks|number-of-black-blocks|Medium
+2780|Minimum Index of a Valid Split|minimum-index-of-a-valid-split|Medium
+2785|Sort Vowels in a String|sort-vowels-in-a-string|Medium
+2767|Partition String Into Minimum Beautiful Substrings|partition-string-into-minimum-beautiful-substrings|Medium
+2787|Ways to Express an Integer as Sum of Powers|ways-to-express-an-integer-as-sum-of-powers|Medium
+2772|Apply Operations to Make All Array Elements Equal to Zero|apply-operations-to-make-all-array-elements-equal-to-zero|Medium
+2800|Shortest String That Contains Three Strings|shortest-string-that-contains-three-strings|Medium
+2761|Prime Pairs With Target Sum|prime-pairs-with-target-sum|Medium
+2789|Largest Element in an Array after Merge Operations|largest-element-in-an-array-after-merge-operations|Medium
+2816|Double a Number Represented as a Linked List|double-a-number-represented-as-a-linked-list|Medium
+2771|Longest Non-decreasing Subarray From Two Arrays|longest-non-decreasing-subarray-from-two-arrays|Medium
+2762|Continuous Subarrays|continuous-subarrays|Medium
+2750|Ways to Split Array Into Good Subarrays|ways-to-split-array-into-good-subarrays|Medium
+2799|Count Complete Subarrays in an Array|count-complete-subarrays-in-an-array|Medium
+2770|Maximum Number of Jumps to Reach the Last Index|maximum-number-of-jumps-to-reach-the-last-index|Medium
+2746|Decremental String Concatenation|decremental-string-concatenation|Medium
+2745|Construct the Longest New String|construct-the-longest-new-string|Medium
+2741|Special Permutations|special-permutations|Medium
+2740|Find the Value of the Partition|find-the-value-of-the-partition|Medium
+2718|Sum of Matrix After Queries|sum-of-matrix-after-queries|Medium
+2749|Minimum Operations to Make the Integer Zero|minimum-operations-to-make-the-integer-zero|Medium
+2766|Relocate Marbles|relocate-marbles|Medium
+2747|Count Zero Request Servers|count-zero-request-servers|Medium
+2831|Find the Longest Equal Subarray|find-the-longest-equal-subarray|Medium
+2734|Lexicographically Smallest String After Substring Operation|lexicographically-smallest-string-after-substring-operation|Medium
+2712|Minimum Cost to Make All Characters Equal|minimum-cost-to-make-all-characters-equal|Medium
+2829|Determine the Minimum Sum of a k-avoiding Array|determine-the-minimum-sum-of-a-k-avoiding-array|Medium
+2735|Collecting Chocolates|collecting-chocolates|Medium
+2698|Find the Punishment Number of an Integer|find-the-punishment-number-of-an-integer|Medium
+2711|Difference of Number of Distinct Values on Diagonals|difference-of-number-of-distinct-values-on-diagonals|Medium
+2684|Maximum Number of Moves in a Grid|maximum-number-of-moves-in-a-grid|Medium
+2685|Count the Number of Complete Components|count-the-number-of-complete-components|Medium
+2683|Neighboring Bitwise XOR|neighboring-bitwise-xor|Medium
+2731|Movement of Robots|movement-of-robots|Medium
+2730|Find the Longest Semi-Repetitive Substring|find-the-longest-semi-repetitive-substring|Medium
+2673|Make Costs of Paths Equal in a Binary Tree|make-costs-of-paths-equal-in-a-binary-tree|Medium
+2672|Number of Adjacent Elements With the Same Color|number-of-adjacent-elements-with-the-same-color|Medium
+2671|Frequency Tracker|frequency-tracker|Medium
+2657|Find the Prefix Common Array of Two Arrays|find-the-prefix-common-array-of-two-arrays|Medium
+2658|Maximum Number of Fish in a Grid|maximum-number-of-fish-in-a-grid|Medium
+2707|Extra Characters in a String|extra-characters-in-a-string|Medium
+2708|Maximum Strength of a Group|maximum-strength-of-a-group|Medium
+2654|Minimum Number of Operations to Make All Array Elements Equal to 1|minimum-number-of-operations-to-make-all-array-elements-equal-to-1|Medium
+2653|Sliding Subarray Beauty|sliding-subarray-beauty|Medium
+2645|Minimum Additions to Make Valid String|minimum-additions-to-make-valid-string|Medium
+2680|Maximum OR|maximum-or|Medium
+2679|Sum in a Matrix|sum-in-a-matrix|Medium
+2611|Mice and Cheese|mice-and-cheese|Medium
+2610|Convert an Array Into a 2D Array With Conditions|convert-an-array-into-a-2d-array-with-conditions|Medium
+2615|Sum of Distances|sum-of-distances|Medium
+2616|Minimize the Maximum Difference of Pairs|minimize-the-maximum-difference-of-pairs|Medium
+2602|Minimum Operations to Make All Array Elements Equal|minimum-operations-to-make-all-array-elements-equal|Medium
+2601|Prime Subtraction Operation|prime-subtraction-operation|Medium
+2575|Find the Divisibility Array of a String|find-the-divisibility-array-of-a-string|Medium
+2576|Find the Maximum Number of Marked Indices|find-the-maximum-number-of-marked-indices|Medium
+2571|Minimum Operations to Reduce an Integer to 0|minimum-operations-to-reduce-an-integer-to-0|Medium
+2572|Count the Number of Square-Free Subsets|count-the-number-of-square-free-subsets|Medium
+2567|Minimum Score by Changing Two Elements|minimum-score-by-changing-two-elements|Medium
+2568|Minimum Impossible OR|minimum-impossible-or|Medium
+2564|Substring XOR Queries|substring-xor-queries|Medium
+2563|Count the Number of Fair Pairs|count-the-number-of-fair-pairs|Medium
+2597|The Number of Beautiful Subsets|the-number-of-beautiful-subsets|Medium
+2593|Find Score of an Array After Marking All Elements|find-score-of-an-array-after-marking-all-elements|Medium
+2559|Count Vowel Strings in Ranges|count-vowel-strings-in-ranges|Medium
+2560|House Robber IV|house-robber-iv|Medium
+2662|Minimum Cost of a Path With Special Roads|minimum-cost-of-a-path-with-special-roads|Medium
+2661|First Completely Painted Row or Column|first-completely-painted-row-or-column|Medium
+2550|Count Collisions of Monkeys on a Polygon|count-collisions-of-monkeys-on-a-polygon|Medium
+2641|Cousins in Binary Tree II|cousins-in-binary-tree-ii|Medium
+2640|Find the Score of All Prefixes of an Array|find-the-score-of-all-prefixes-of-an-array|Medium
+2555|Maximize Win From Two Segments|maximize-win-from-two-segments|Medium
+2607|Make K-Subarray Sums Equal|make-k-subarray-sums-equal|Medium
+2606|Find the Substring With Maximum Cost|find-the-substring-with-maximum-cost|Medium
+2594|Minimum Time to Repair Cars|minimum-time-to-repair-cars|Medium
+2592|Maximize Greatness of an Array|maximize-greatness-of-an-array|Medium
+2596|Check Knight Tour Configuration|check-knight-tour-configuration|Medium
+2598|Smallest Missing Non-negative Integer After Operations|smallest-missing-non-negative-integer-after-operations|Medium
+2588|Count the Number of Beautiful Subarrays|count-the-number-of-beautiful-subarrays|Medium
+2587|Rearrange Array to Maximize Prefix Score|rearrange-array-to-maximize-prefix-score|Medium
+2580|Count Ways to Group Overlapping Ranges|count-ways-to-group-overlapping-ranges|Medium
+2579|Count Total Number of Colored Cells|count-total-number-of-colored-cells|Medium
+2583|Kth Largest Sum in a Binary Tree|kth-largest-sum-in-a-binary-tree|Medium
+2556|Disconnect Path in a Binary Matrix by at Most One Flip|disconnect-path-in-a-binary-matrix-by-at-most-one-flip|Medium
+2554|Maximum Number of Integers to Choose From a Range I|maximum-number-of-integers-to-choose-from-a-range-i|Medium
+2542|Maximum Subsequence Score|maximum-subsequence-score|Medium
+2546|Apply Bitwise Operations to Make Strings Equal|apply-bitwise-operations-to-make-strings-equal|Medium
+2545|Sort the Students by Their Kth Score|sort-the-students-by-their-kth-score|Medium
+2513|Minimize the Maximum of Two Arrays|minimize-the-maximum-of-two-arrays|Medium
+2537|Count the Number of Good Subarrays|count-the-number-of-good-subarrays|Medium
+2536|Increment Submatrices by One|increment-submatrices-by-one|Medium
+2527|Find Xor-Beauty of Array|find-xor-beauty-of-array|Medium
+2526|Find Consecutive Integers from a Data Stream|find-consecutive-integers-from-a-data-stream|Medium
+2530|Maximal Score After Applying K Operations|maximal-score-after-applying-k-operations|Medium
+2531|Make Number of Distinct Characters Equal|make-number-of-distinct-characters-equal|Medium
+2523|Closest Prime Numbers in Range|closest-prime-numbers-in-range|Medium
+2521|Distinct Prime Factors of Product of Array|distinct-prime-factors-of-product-of-array|Medium
+2482|Difference Between Ones and Zeros in Row and Column|difference-between-ones-and-zeros-in-row-and-column|Medium
+2541|Minimum Operations to Make Array Equal II|minimum-operations-to-make-array-equal-ii|Medium
+2512|Reward Top K Students|reward-top-k-students|Medium
+2517|Maximum Tastiness of Candy Basket|maximum-tastiness-of-candy-basket|Medium
+2516|Take K of Each Character From Left and Right|take-k-of-each-character-from-left-and-right|Medium
+2507|Smallest Value After Replacing With Sum of Prime Factors|smallest-value-after-replacing-with-sum-of-prime-factors|Medium
+2498|Frog Jump II|frog-jump-ii|Medium
+2497|Maximum Star Sum of a Graph|maximum-star-sum-of-a-graph|Medium
+2502|Design Memory Allocator|design-memory-allocator|Medium
+2501|Longest Square Streak in an Array|longest-square-streak-in-an-array|Medium
+2492|Minimum Score of a Path Between Two Cities|minimum-score-of-a-path-between-two-cities|Medium
+2491|Divide Players Into Teams of Equal Skill|divide-players-into-teams-of-equal-skill|Medium
+2483|Minimum Penalty for a Shop|minimum-penalty-for-a-shop|Medium
+2487|Remove Nodes From Linked List|remove-nodes-from-linked-list|Medium
+2486|Append Characters to String to Make Subsequence|append-characters-to-string-to-make-subsequence|Medium
+2477|Minimum Fuel Cost to Report to the Capital|minimum-fuel-cost-to-report-to-the-capital|Medium
+2476|Closest Nodes Queries in a Binary Search Tree|closest-nodes-queries-in-a-binary-search-tree|Medium
+2467|Most Profitable Path in a Tree|most-profitable-path-in-a-tree|Medium
+2466|Count Ways To Build Good Strings|count-ways-to-build-good-strings|Medium
+2471|Minimum Number of Operations to Sort a Binary Tree by Level|minimum-number-of-operations-to-sort-a-binary-tree-by-level|Medium
+2470|Number of Subarrays With LCM Equal to K|number-of-subarrays-with-lcm-equal-to-k|Medium
+2462|Total Cost to Hire K Workers|total-cost-to-hire-k-workers|Medium
+2461|Maximum Sum of Distinct Subarrays With Length K|maximum-sum-of-distinct-subarrays-with-length-k|Medium
+2452|Words Within Two Edits of Dictionary|words-within-two-edits-of-dictionary|Medium
+2453|Destroy Sequential Targets|destroy-sequential-targets|Medium
+2447|Number of Subarrays With GCD Equal to K|number-of-subarrays-with-gcd-equal-to-k|Medium
+2457|Minimum Addition to Make Integer Beautiful|minimum-addition-to-make-integer-beautiful|Medium
+2456|Most Popular Video Creator|most-popular-video-creator|Medium
+2443|Sum of Number and Its Reverse|sum-of-number-and-its-reverse|Medium
+2425|Bitwise XOR of All Pairings|bitwise-xor-of-all-pairings|Medium
+2439|Minimize Maximum of Array|minimize-maximum-of-array|Medium
+2438|Range Product Queries of Powers|range-product-queries-of-powers|Medium
+2442|Count Number of Distinct Integers After Reverse Operations|count-number-of-distinct-integers-after-reverse-operations|Medium
+2434|Using a Robot to Print the Lexicographically Smallest String|using-a-robot-to-print-the-lexicographically-smallest-string|Medium
+2433|Find The Original Array of Prefix Xor|find-the-original-array-of-prefix-xor|Medium
+2424|Longest Uploaded Prefix|longest-uploaded-prefix|Medium
+2522|Partition String Into Substrings With Values at Most K|partition-string-into-substrings-with-values-at-most-k|Medium
+2429|Minimize XOR|minimize-xor|Medium
+2428|Maximum Sum of an Hourglass|maximum-sum-of-an-hourglass|Medium
+2420|Find All Good Indices|find-all-good-indices|Medium
+2419|Longest Subarray With Maximum Bitwise AND|longest-subarray-with-maximum-bitwise-and|Medium
+2411|Smallest Subarrays With Maximum Bitwise OR|smallest-subarrays-with-maximum-bitwise-or|Medium
+2410|Maximum Matching of Players With Trainers|maximum-matching-of-players-with-trainers|Medium
+2415|Reverse Odd Levels of Binary Tree|reverse-odd-levels-of-binary-tree|Medium
+2414|Length of the Longest Alphabetical Continuous Substring|length-of-the-longest-alphabetical-continuous-substring|Medium
+2406|Divide Intervals Into Minimum Number of Groups|divide-intervals-into-minimum-number-of-groups|Medium
+2405|Optimal Partition of String|optimal-partition-of-string|Medium
+2365|Task Scheduler II|task-scheduler-ii|Medium
+2397|Maximum Rows Covered by Columns|maximum-rows-covered-by-columns|Medium
+2396|Strictly Palindromic Number|strictly-palindromic-number|Medium
+2401|Longest Nice Subarray|longest-nice-subarray|Medium
+2400|Number of Ways to Reach a Position After Exactly k Steps|number-of-ways-to-reach-a-position-after-exactly-k-steps|Medium
+2384|Largest Palindromic Number|largest-palindromic-number|Medium
+2342|Max Sum of a Pair With Equal Sum of Digits|max-sum-of-a-pair-with-equal-sum-of-digits|Medium
+2391|Minimum Amount of Time to Collect Garbage|minimum-amount-of-time-to-collect-garbage|Medium
+2390|Removing Stars From a String|removing-stars-from-a-string|Medium
+2381|Shifting Letters II|shifting-letters-ii|Medium
+2380|Time Needed to Rearrange a Binary String|time-needed-to-rearrange-a-binary-string|Medium
+2385|Amount of Time for Binary Tree to Be Infected|amount-of-time-for-binary-tree-to-be-infected|Medium
+2375|Construct Smallest Number From DI String|construct-smallest-number-from-di-string|Medium
+2374|Node With Highest Edge Score|node-with-highest-edge-score|Medium
+2364|Count Number of Bad Pairs|count-number-of-bad-pairs|Medium
+2368|Reachable Nodes With Restrictions|reachable-nodes-with-restrictions|Medium
+2370|Longest Ideal Subsequence|longest-ideal-subsequence|Medium
+2369|Check if There is a Valid Partition For The Array|check-if-there-is-a-valid-partition-for-the-array|Medium
+2359|Find Closest Node to Given Two Nodes|find-closest-node-to-given-two-nodes|Medium
+2358|Maximum Number of Groups Entering a Competition|maximum-number-of-groups-entering-a-competition|Medium
+2349|Design a Number Container System|design-a-number-container-system|Medium
+2348|Number of Zero-Filled Subarrays|number-of-zero-filled-subarrays|Medium
+2353|Design a Food Rating System|design-a-food-rating-system|Medium
+2352|Equal Row and Column Pairs|equal-row-and-column-pairs|Medium
+2343|Query Kth Smallest Trimmed Number|query-kth-smallest-trimmed-number|Medium
+2333|Minimum Sum of Squared Difference|minimum-sum-of-squared-difference|Medium
+2332|The Latest Time to Catch a Bus|the-latest-time-to-catch-a-bus|Medium
+2337|Move Pieces to Obtain a String|move-pieces-to-obtain-a-string|Medium
+2336|Smallest Number in Infinite Set|smallest-number-in-infinite-set|Medium
+2326|Spiral Matrix IV|spiral-matrix-iv|Medium
+2327|Number of People Aware of a Secret|number-of-people-aware-of-a-secret|Medium
+2316|Count Unreachable Pairs of Nodes in an Undirected Graph|count-unreachable-pairs-of-nodes-in-an-undirected-graph|Medium
+2317|Maximum XOR After Operations |maximum-xor-after-operations|Medium
+2320|Count Number of Ways to Place Houses|count-number-of-ways-to-place-houses|Medium
+2311|Longest Binary Subsequence Less Than or Equal to K|longest-binary-subsequence-less-than-or-equal-to-k|Medium
+2300|Successful Pairs of Spells and Potions|successful-pairs-of-spells-and-potions|Medium
+2295|Replace Elements in an Array|replace-elements-in-an-array|Medium
+2294|Partition Array Such That Maximum Difference Is K|partition-array-such-that-maximum-difference-is-k|Medium
+2285|Maximum Total Importance of Roads|maximum-total-importance-of-roads|Medium
+2284|Sender With Largest Word Count|sender-with-largest-word-count|Medium
+2289|Steps to Make Array Non-decreasing|steps-to-make-array-non-decreasing|Medium
+2288|Apply Discount to Prices|apply-discount-to-prices|Medium
+2280|Minimum Lines to Represent a Line Chart|minimum-lines-to-represent-a-line-chart|Medium
+2279|Maximum Bags With Full Capacity of Rocks|maximum-bags-with-full-capacity-of-rocks|Medium
+2245|Maximum Trailing Zeros in a Cornered Path|maximum-trailing-zeros-in-a-cornered-path|Medium
+2244|Minimum Rounds to Complete All Tasks|minimum-rounds-to-complete-all-tasks|Medium
+2271|Maximum White Tiles Covered by a Carpet|maximum-white-tiles-covered-by-a-carpet|Medium
+2270|Number of Ways to Split Array|number-of-ways-to-split-array|Medium
+2275|Largest Combination With Bitwise AND Greater Than Zero|largest-combination-with-bitwise-and-greater-than-zero|Medium
+2274|Maximum Consecutive Floors Without Special Floors|maximum-consecutive-floors-without-special-floors|Medium
+2241|Design an ATM Machine|design-an-atm-machine|Medium
+2240|Number of Ways to Buy Pens and Pencils|number-of-ways-to-buy-pens-and-pencils|Medium
+2266|Count Number of Texts|count-number-of-texts|Medium
+2265|Count Nodes Equal to Average of Subtree|count-nodes-equal-to-average-of-subtree|Medium
+2257|Count Unguarded Cells in the Grid|count-unguarded-cells-in-the-grid|Medium
+2256|Minimum Average Difference|minimum-average-difference|Medium
+2261|K Divisible Elements Subarrays|k-divisible-elements-subarrays|Medium
+2260|Minimum Consecutive Cards to Pick Up|minimum-consecutive-cards-to-pick-up|Medium
+2250|Count Number of Rectangles Containing Each Point|count-number-of-rectangles-containing-each-point|Medium
+2249|Count Lattice Points Inside a Circle|count-lattice-points-inside-a-circle|Medium
+2233|Maximum Product After K Increments|maximum-product-after-k-increments|Medium
+2232|Minimize Result by Adding Parentheses to Expression|minimize-result-by-adding-parentheses-to-expression|Medium
+2222|Number of Ways to Select Buildings|number-of-ways-to-select-buildings|Medium
+2221|Find Triangular Sum of an Array|find-triangular-sum-of-an-array|Medium
+2212|Maximum Points in an Archery Competition|maximum-points-in-an-archery-competition|Medium
+2211|Count Collisions on a Road|count-collisions-on-a-road|Medium
+2208|Minimum Operations to Halve Array Sum|minimum-operations-to-halve-array-sum|Medium
+2207|Maximize Number of Subsequences in a String|maximize-number-of-subsequences-in-a-string|Medium
+2196|Create Binary Tree From Descriptions|create-binary-tree-from-descriptions|Medium
+2195|Append K Integers With Minimal Sum|append-k-integers-with-minimal-sum|Medium
+2182|Construct String With Repeat Limit|construct-string-with-repeat-limit|Medium
+2181|Merge Nodes in Between Zeros|merge-nodes-in-between-zeros|Medium
+2187|Minimum Time to Complete Trips|minimum-time-to-complete-trips|Medium
+2186|Minimum Number of Steps to Make Two Strings Anagram II|minimum-number-of-steps-to-make-two-strings-anagram-ii|Medium
+2171|Removing Minimum Number of Magic Beans|removing-minimum-number-of-magic-beans|Medium
+2170|Minimum Operations to Make the Array Alternating|minimum-operations-to-make-the-array-alternating|Medium
+2166|Design Bitset|design-bitset|Medium
+2165|Smallest Value of the Rearranged Number|smallest-value-of-the-rearranged-number|Medium
+2178|Maximum Split of Positive Even Integers|maximum-split-of-positive-even-integers|Medium
+2177|Find Three Consecutive Integers That Sum to a Given Number|find-three-consecutive-integers-that-sum-to-a-given-number|Medium
+2149|Rearrange Array Elements by Sign|rearrange-array-elements-by-sign|Medium
+2150|Find All Lonely Numbers in the Array|find-all-lonely-numbers-in-the-array|Medium
+2162|Minimum Cost to Set Cooking Time|minimum-cost-to-set-cooking-time|Medium
+2161|Partition Array According to Given Pivot|partition-array-according-to-given-pivot|Medium
+2140|Solving Questions With Brainpower|solving-questions-with-brainpower|Medium
+2155|All Divisions With the Highest Score of a Binary Array|all-divisions-with-the-highest-score-of-a-binary-array|Medium
+2135|Count Words Obtained After Adding a Letter|count-words-obtained-after-adding-a-letter|Medium
+2134|Minimum Swaps to Group All 1's Together II|minimum-swaps-to-group-all-1s-together-ii|Medium
+2146|K Highest Ranked Items Within a Price Range|k-highest-ranked-items-within-a-price-range|Medium
+2145|Count the Hidden Sequences|count-the-hidden-sequences|Medium
+2126|Destroying Asteroids|destroying-asteroids|Medium
+2125|Number of Laser Beams in a Bank|number-of-laser-beams-in-a-bank|Medium
+2121|Intervals Between Identical Elements|intervals-between-identical-elements|Medium
+2120|Execution of All Suffix Instructions Staying in a Grid|execution-of-all-suffix-instructions-staying-in-a-grid|Medium
+2131|Longest Palindrome by Concatenating Two Letter Words|longest-palindrome-by-concatenating-two-letter-words|Medium
+2130|Maximum Twin Sum of a Linked List|maximum-twin-sum-of-a-linked-list|Medium
+2110|Number of Smooth Descent Periods of a Stock|number-of-smooth-descent-periods-of-a-stock|Medium
+2109|Adding Spaces to a String|adding-spaces-to-a-string|Medium
+2105|Watering Plants II|watering-plants-ii|Medium
+2104|Sum of Subarray Ranges|sum-of-subarray-ranges|Medium
+2116|Check if a Parentheses String Can Be Valid|check-if-a-parentheses-string-can-be-valid|Medium
+2115|Find All Possible Recipes from Given Supplies|find-all-possible-recipes-from-given-supplies|Medium
+2096|Step-By-Step Directions From a Binary Tree Node to Another|step-by-step-directions-from-a-binary-tree-node-to-another|Medium
+2095|Delete the Middle Node of a Linked List|delete-the-middle-node-of-a-linked-list|Medium
+2091|Removing Minimum and Maximum From Array|removing-minimum-and-maximum-from-array|Medium
+2090|K Radius Subarray Averages|k-radius-subarray-averages|Medium
+2101|Detonate the Maximum Bombs|detonate-the-maximum-bombs|Medium
+2100|Find Good Days to Rob the Bank|find-good-days-to-rob-the-bank|Medium
+2075|Decode the Slanted Ciphertext|decode-the-slanted-ciphertext|Medium
+2074|Reverse Nodes in Even Length Groups|reverse-nodes-in-even-length-groups|Medium
+2087|Minimum Cost Homecoming of a Robot in a Grid|minimum-cost-homecoming-of-a-robot-in-a-grid|Medium
+2086|Minimum Number of Food Buckets to Feed the Hamsters|minimum-number-of-food-buckets-to-feed-the-hamsters|Medium
+2064|Minimized Maximum of Products Distributed to Any Store|minimized-maximum-of-products-distributed-to-any-store|Medium
+2063|Vowels of All Substrings|vowels-of-all-substrings|Medium
+2059|Minimum Operations to Convert Number|minimum-operations-to-convert-number|Medium
+2058|Find the Minimum and Maximum Number of Nodes Between Critical Points|find-the-minimum-and-maximum-number-of-nodes-between-critical-points|Medium
+2070|Most Beautiful Item for Each Query|most-beautiful-item-for-each-query|Medium
+2069|Walking Robot Simulation II|walking-robot-simulation-ii|Medium
+2049|Count Nodes With the Highest Score|count-nodes-with-the-highest-score|Medium
+2048|Next Greater Numerically Balanced Number|next-greater-numerically-balanced-number|Medium
+2044|Count Number of Maximum Bitwise-OR Subsets|count-number-of-maximum-bitwise-or-subsets|Medium
+2043|Simple Bank System|simple-bank-system|Medium
+2055|Plates Between Candles|plates-between-candles|Medium
+2054|Two Best Non-Overlapping Events|two-best-non-overlapping-events|Medium
+2034|Stock Price Fluctuation |stock-price-fluctuation|Medium
+2033|Minimum Operations to Make a Uni-Value Grid|minimum-operations-to-make-a-uni-value-grid|Medium
+2029|Stone Game IX|stone-game-ix|Medium
+2028|Find Missing Observations|find-missing-observations|Medium
+2039|The Time When the Network Becomes Idle|the-time-when-the-network-becomes-idle|Medium
+2038|Remove Colored Pieces if Both Neighbors are the Same Color|remove-colored-pieces-if-both-neighbors-are-the-same-color|Medium
+2018|Check if Word Can Be Placed In Crossword|check-if-word-can-be-placed-in-crossword|Medium
+2017|Grid Game|grid-game|Medium
+2013|Detect Squares|detect-squares|Medium
+2012|Sum of Beauty in the Array|sum-of-beauty-in-the-array|Medium
+2024|Maximize the Confusion of an Exam|maximize-the-confusion-of-an-exam|Medium
+2023|Number of Pairs of Strings With Concatenation Equal to Target|number-of-pairs-of-strings-with-concatenation-equal-to-target|Medium
+2002|Maximum Product of the Length of Two Palindromic Subsequences|maximum-product-of-the-length-of-two-palindromic-subsequences|Medium
+2001|Number of Pairs of Interchangeable Rectangles|number-of-pairs-of-interchangeable-rectangles|Medium
+1997|First Day Where You Have Been in All the Rooms|first-day-where-you-have-been-in-all-the-rooms|Medium
+1996|The Number of Weak Characters in the Game|the-number-of-weak-characters-in-the-game|Medium
+2008|Maximum Earnings From Taxi|maximum-earnings-from-taxi|Medium
+2007|Find Original Array From Doubled Array|find-original-array-from-doubled-array|Medium
+1986|Minimum Number of Work Sessions to Finish the Tasks|minimum-number-of-work-sessions-to-finish-the-tasks|Medium
+1985|Find the Kth Largest Integer in the Array|find-the-kth-largest-integer-in-the-array|Medium
+1981|Minimize the Difference Between Target and Chosen Elements|minimize-the-difference-between-target-and-chosen-elements|Medium
+1980|Find Unique Binary String|find-unique-binary-string|Medium
+1993|Operations on Tree|operations-on-tree|Medium
+1992|Find All Groups of Farmland|find-all-groups-of-farmland|Medium
+1969|Minimum Non-Zero Product of the Array Elements|minimum-non-zero-product-of-the-array-elements|Medium
+1963|Minimum Number of Swaps to Make the String Balanced|minimum-number-of-swaps-to-make-the-string-balanced|Medium
+1962|Remove Stones to Minimize the Total|remove-stones-to-minimize-the-total|Medium
+1976|Number of Ways to Arrive at Destination|number-of-ways-to-arrive-at-destination|Medium
+1975|Maximum Matrix Sum|maximum-matrix-sum|Medium
+1968|Array With Elements Not Equal to Average of Neighbors|array-with-elements-not-equal-to-average-of-neighbors|Medium
+1953|Maximum Number of Weeks for Which You Can Work|maximum-number-of-weeks-for-which-you-can-work|Medium
+1959|Minimum Total Space Wasted With K Resizing Operations|minimum-total-space-wasted-with-k-resizing-operations|Medium
+1958|Check if Move is Legal|check-if-move-is-legal|Medium
+1947|Maximum Compatibility Score Sum|maximum-compatibility-score-sum|Medium
+1946|Largest Number After Mutating Substring|largest-number-after-mutating-substring|Medium
+1937|Maximum Number of Points with Cost|maximum-number-of-points-with-cost|Medium
+1936|Add Minimum Number of Rungs|add-minimum-number-of-rungs|Medium
+1930|Unique Length-3 Palindromic Subsequences|unique-length-3-palindromic-subsequences|Medium
+1943|Describe the Painting|describe-the-painting|Medium
+1942|The Number of the Smallest Unoccupied Chair|the-number-of-the-smallest-unoccupied-chair|Medium
+1922|Count Good Numbers|count-good-numbers|Medium
+1921|Eliminate Maximum Number of Monsters|eliminate-maximum-number-of-monsters|Medium
+1901|Find a Peak Element II|find-a-peak-element-ii|Medium
+1915|Number of Wonderful Substrings|number-of-wonderful-substrings|Medium
+1914|Cyclically Rotating a Grid|cyclically-rotating-a-grid|Medium
+1927|Sum Game|sum-game|Medium
+1926|Nearest Exit from Entrance in Maze|nearest-exit-from-entrance-in-maze|Medium
+1905|Count Sub Islands|count-sub-islands|Medium
+1906|Minimum Absolute Difference Queries|minimum-absolute-difference-queries|Medium
+1904|The Number of Full Rounds You Have Played|the-number-of-full-rounds-you-have-played|Medium
+1884|Egg Drop With 2 Eggs and N Floors|egg-drop-with-2-eggs-and-n-floors|Medium
+1898|Maximum Number of Removable Characters|maximum-number-of-removable-characters|Medium
+1899|Merge Triplets to Form Target Triplet|merge-triplets-to-form-target-triplet|Medium
+1911|Maximum Alternating Subsequence Sum|maximum-alternating-subsequence-sum|Medium
+1910|Remove All Occurrences of a Substring|remove-all-occurrences-of-a-substring|Medium
+1888|Minimum Number of Flips to Make the Binary String Alternating|minimum-number-of-flips-to-make-the-binary-string-alternating|Medium
+1887|Reduction Operations to Make the Array Elements Equal|reduction-operations-to-make-the-array-elements-equal|Medium
+1882|Process Tasks Using Servers|process-tasks-using-servers|Medium
+1881|Maximum Value after Insertion|maximum-value-after-insertion|Medium
+1894|Find the Student that Will Replace the Chalk|find-the-student-that-will-replace-the-chalk|Medium
+1871|Jump Game VII|jump-game-vii|Medium
+1870|Minimum Speed to Arrive on Time|minimum-speed-to-arrive-on-time|Medium
+1865|Finding Pairs With a Certain Sum|finding-pairs-with-a-certain-sum|Medium
+1864|Minimum Number of Swaps to Make the Binary String Alternating|minimum-number-of-swaps-to-make-the-binary-string-alternating|Medium
+1878|Get Biggest Three Rhombus Sums in a Grid|get-biggest-three-rhombus-sums-in-a-grid|Medium
+1877|Minimize Maximum Pair Sum in Array|minimize-maximum-pair-sum-in-array|Medium
+1856|Maximum Subarray Min-Product|maximum-subarray-min-product|Medium
+1855|Maximum Distance Between a Pair of Values|maximum-distance-between-a-pair-of-values|Medium
+1850|Minimum Adjacent Swaps to Reach the Kth Smallest Number|minimum-adjacent-swaps-to-reach-the-kth-smallest-number|Medium
+1849|Splitting a String Into Descending Consecutive Values|splitting-a-string-into-descending-consecutive-values|Medium
+1861|Rotating the Box|rotating-the-box|Medium
+1860|Incremental Memory Leak|incremental-memory-leak|Medium
+1839|Longest Substring Of All Vowels in Order|longest-substring-of-all-vowels-in-order|Medium
+1838|Frequency of the Most Frequent Element|frequency-of-the-most-frequent-element|Medium
+1834|Single-Threaded CPU|single-threaded-cpu|Medium
+1833|Maximum Ice Cream Bars|maximum-ice-cream-bars|Medium
+1846|Maximum Element After Decreasing and Rearranging|maximum-element-after-decreasing-and-rearranging|Medium
+1845|Seat Reservation Manager|seat-reservation-manager|Medium
+1824|Minimum Sideway Jumps|minimum-sideway-jumps|Medium
+1823|Find the Winner of the Circular Game|find-the-winner-of-the-circular-game|Medium
+1818|Minimum Absolute Sum Difference|minimum-absolute-sum-difference|Medium
+1817|Finding the Users Active Minutes|finding-the-users-active-minutes|Medium
+1829|Maximum XOR for Each Query|maximum-xor-for-each-query|Medium
+1828|Queries on Number of Points Inside a Circle|queries-on-number-of-points-inside-a-circle|Medium
+1806|Minimum Number of Operations to Reinitialize a Permutation|minimum-number-of-operations-to-reinitialize-a-permutation|Medium
+1807|Evaluate the Bracket Pairs of a String|evaluate-the-bracket-pairs-of-a-string|Medium
+1798|Maximum Number of Consecutive Values You Can Make|maximum-number-of-consecutive-values-you-can-make|Medium
+1802|Maximum Value at a Given Index in a Bounded Array|maximum-value-at-a-given-index-in-a-bounded-array|Medium
+1801|Number of Orders in the Backlog|number-of-orders-in-the-backlog|Medium
+1814|Count Nice Pairs in an Array|count-nice-pairs-in-an-array|Medium
+1813|Sentence Similarity III|sentence-similarity-iii|Medium
+1792|Maximum Average Pass Ratio|maximum-average-pass-ratio|Medium
+1786|Number of Restricted Paths From First to Last Node|number-of-restricted-paths-from-first-to-last-node|Medium
+1785|Minimum Elements to Add to Form a Given Sum|minimum-elements-to-add-to-form-a-given-sum|Medium
+1797|Design Authentication Manager|design-authentication-manager|Medium
+1775|Equal Sum Arrays With Minimum Number of Operations|equal-sum-arrays-with-minimum-number-of-operations|Medium
+1774|Closest Dessert Cost|closest-dessert-cost|Medium
+1769|Minimum Number of Operations to Move All Balls to Each Box|minimum-number-of-operations-to-move-all-balls-to-each-box|Medium
+1781|Sum of Beauty of All Substrings|sum-of-beauty-of-all-substrings|Medium
+1780|Check if Number is a Sum of Powers of Three|check-if-number-is-a-sum-of-powers-of-three|Medium
+1760|Minimum Limit of Balls in a Bag|minimum-limit-of-balls-in-a-bag|Medium
+1759|Count Number of Homogenous Substrings|count-number-of-homogenous-substrings|Medium
+1754|Largest Merge Of Two Strings|largest-merge-of-two-strings|Medium
+1753|Maximum Score From Removing Stones|maximum-score-from-removing-stones|Medium
+1765|Map of Highest Peak|map-of-highest-peak|Medium
+1764|Form Array by Concatenating Subarrays of Another Array|form-array-by-concatenating-subarrays-of-another-array|Medium
+1744|Can You Eat Your Favorite Candy on Your Favorite Day?|can-you-eat-your-favorite-candy-on-your-favorite-day|Medium
+1743|Restore the Array From Adjacent Pairs|restore-the-array-from-adjacent-pairs|Medium
+1738|Find Kth Largest XOR Coordinate Value|find-kth-largest-xor-coordinate-value|Medium
+1737|Change Minimum Characters to Satisfy One of Three Conditions|change-minimum-characters-to-satisfy-one-of-three-conditions|Medium
+1750|Minimum Length of String After Deleting Similar Ends|minimum-length-of-string-after-deleting-similar-ends|Medium
+1749|Maximum Absolute Sum of Any Subarray|maximum-absolute-sum-of-any-subarray|Medium
+1727|Largest Submatrix With Rearrangements|largest-submatrix-with-rearrangements|Medium
+1722|Minimize Hamming Distance After Swap Operations|minimize-hamming-distance-after-swap-operations|Medium
+1734|Decode XORed Permutation|decode-xored-permutation|Medium
+1733|Minimum Number of People to Teach|minimum-number-of-people-to-teach|Medium
+1712|Ways to Split Array Into Three Subarrays|ways-to-split-array-into-three-subarrays|Medium
+1711|Count Good Meals|count-good-meals|Medium
+1705|Maximum Number of Eaten Apples|maximum-number-of-eaten-apples|Medium
+1718|Construct the Lexicographically Largest Valid Sequence|construct-the-lexicographically-largest-valid-sequence|Medium
+1717|Maximum Score From Removing Substrings|maximum-score-from-removing-substrings|Medium
+1696|Jump Game VI|jump-game-vi|Medium
+1695|Maximum Erasure Value|maximum-erasure-value|Medium
+1690|Stone Game VII|stone-game-vii|Medium
+1689|Partitioning Into Minimum Number Of Deci-Binary Numbers|partitioning-into-minimum-number-of-deci-binary-numbers|Medium
+1702|Maximum Binary String After Change|maximum-binary-string-after-change|Medium
+1701|Average Waiting Time|average-waiting-time|Medium
+1680|Concatenation of Consecutive Binary Numbers|concatenation-of-consecutive-binary-numbers|Medium
+1679|Max Number of K-Sum Pairs|max-number-of-k-sum-pairs|Medium
+1674|Minimum Moves to Make Array Complementary|minimum-moves-to-make-array-complementary|Medium
+1673|Find the Most Competitive Subsequence|find-the-most-competitive-subsequence|Medium
+1686|Stone Game VI|stone-game-vi|Medium
+1685|Sum of Absolute Differences in a Sorted Array|sum-of-absolute-differences-in-a-sorted-array|Medium
+1664|Ways to Make a Fair Array|ways-to-make-a-fair-array|Medium
+1663|Smallest String With A Given Numeric Value|smallest-string-with-a-given-numeric-value|Medium
+1657|Determine if Two Strings Are Close|determine-if-two-strings-are-close|Medium
+1658|Minimum Operations to Reduce X to Zero|minimum-operations-to-reduce-x-to-zero|Medium
+1648|Sell Diminishing-Valued Colored Balls|sell-diminishing-valued-colored-balls|Medium
+1647|Minimum Deletions to Make Character Frequencies Unique|minimum-deletions-to-make-character-frequencies-unique|Medium
+1670|Design Front Middle Back Queue|design-front-middle-back-queue|Medium
+1669|Merge In Between Linked Lists|merge-in-between-linked-lists|Medium
+1642|Furthest Building You Can Reach|furthest-building-you-can-reach|Medium
+1641|Count Sorted Vowel Strings|count-sorted-vowel-strings|Medium
+1654|Minimum Jumps to Reach Home|minimum-jumps-to-reach-home|Medium
+1653|Minimum Deletions to Make String Balanced|minimum-deletions-to-make-string-balanced|Medium
+1631|Path With Minimum Effort|path-with-minimum-effort|Medium
+1630|Arithmetic Subarrays|arithmetic-subarrays|Medium
+1626|Best Team With No Conflicts|best-team-with-no-conflicts|Medium
+1625|Lexicographically Smallest String After Applying Operations|lexicographically-smallest-string-after-applying-operations|Medium
+1638|Count Substrings That Differ by One Character|count-substrings-that-differ-by-one-character|Medium
+1616|Split Two Strings to Make Palindrome|split-two-strings-to-make-palindrome|Medium
+1615|Maximal Network Rank|maximal-network-rank|Medium
+1609|Even Odd Tree|even-odd-tree|Medium
+1620|Coordinate With Maximum Network Quality|coordinate-with-maximum-network-quality|Medium
+1621|Number of Sets of K Non-Overlapping Line Segments|number-of-sets-of-k-non-overlapping-line-segments|Medium
+1600|Throne Inheritance|throne-inheritance|Medium
+1599|Maximum Profit of Operating a Centennial Wheel|maximum-profit-of-operating-a-centennial-wheel|Medium
+1594|Maximum Non Negative Product in a Matrix|maximum-non-negative-product-in-a-matrix|Medium
+1593|Split a String Into the Max Number of Unique Substrings|split-a-string-into-the-max-number-of-unique-substrings|Medium
+1605|Find Valid Matrix Given Row and Column Sums|find-valid-matrix-given-row-and-column-sums|Medium
+1604|Alert Using Same Key-Card Three or More Times in a One Hour Period|alert-using-same-key-card-three-or-more-times-in-a-one-hour-period|Medium
+1584|Min Cost to Connect All Points|min-cost-to-connect-all-points|Medium
+1583|Count Unhappy Friends|count-unhappy-friends|Medium
+1578|Minimum Time to Make Rope Colorful|minimum-time-to-make-rope-colorful|Medium
+1577|Number of Ways Where Square of Number Is Equal to Product of Two Numbers|number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers|Medium
+1589|Maximum Sum Obtained of Any Permutation|maximum-sum-obtained-of-any-permutation|Medium
+1590|Make Sum Divisible by P|make-sum-divisible-by-p|Medium
+1567|Maximum Length of Subarray With Positive Product|maximum-length-of-subarray-with-positive-product|Medium
+1562|Find Latest Group of Size M|find-latest-group-of-size-m|Medium
+1561|Maximum Number of Coins You Can Get|maximum-number-of-coins-you-can-get|Medium
+1574|Shortest Subarray to be Removed to Make Array Sorted|shortest-subarray-to-be-removed-to-make-array-sorted|Medium
+1573|Number of Ways to Split a String|number-of-ways-to-split-a-string|Medium
+1552|Magnetic Force Between Two Balls|magnetic-force-between-two-balls|Medium
+1551|Minimum Operations to Make Array Equal|minimum-operations-to-make-array-equal|Medium
+1545|Find Kth Bit in Nth Binary String|find-kth-bit-in-nth-binary-string|Medium
+1559|Detect Cycles in 2D Grid|detect-cycles-in-2d-grid|Medium
+1558|Minimum Numbers of Function Calls to Make Target Array|minimum-numbers-of-function-calls-to-make-target-array|Medium
+1557|Minimum Number of Vertices to Reach All Nodes|minimum-number-of-vertices-to-reach-all-nodes|Medium
+1536|Minimum Swaps to Arrange a Binary Grid|minimum-swaps-to-arrange-a-binary-grid|Medium
+1535|Find the Winner of an Array Game|find-the-winner-of-an-array-game|Medium
+1530|Number of Good Leaf Nodes Pairs|number-of-good-leaf-nodes-pairs|Medium
+1529|Minimum Suffix Flips|minimum-suffix-flips|Medium
+1546|Maximum Number of Non-Overlapping Subarrays With Sum Equals Target|maximum-number-of-non-overlapping-subarrays-with-sum-equals-target|Medium
+1541|Minimum Insertions to Balance a Parentheses String|minimum-insertions-to-balance-a-parentheses-string|Medium
+1540|Can Convert String in K Moves|can-convert-string-in-k-moves|Medium
+1519|Number of Nodes in the Sub-Tree With the Same Label|number-of-nodes-in-the-sub-tree-with-the-same-label|Medium
+1513|Number of Substrings With Only 1s|number-of-substrings-with-only-1s|Medium
+1525|Number of Good Ways to Split a String|number-of-good-ways-to-split-a-string|Medium
+1524|Number of Sub-arrays With Odd Sum|number-of-sub-arrays-with-odd-sum|Medium
+1504|Count Submatrices With All Ones|count-submatrices-with-all-ones|Medium
+1503|Last Moment Before All Ants Fall Out of a Plank|last-moment-before-all-ants-fall-out-of-a-plank|Medium
+1498|Number of Subsequences That Satisfy the Given Sum Condition|number-of-subsequences-that-satisfy-the-given-sum-condition|Medium
+1497|Check If Array Pairs Are Divisible by k|check-if-array-pairs-are-divisible-by-k|Medium
+1509|Minimum Difference Between Largest and Smallest Value in Three Moves|minimum-difference-between-largest-and-smallest-value-in-three-moves|Medium
+1508|Range Sum of Sorted Subarray Sums|range-sum-of-sorted-subarray-sums|Medium
+1488|Avoid Flood in The City|avoid-flood-in-the-city|Medium
+1487|Making File Names Unique|making-file-names-unique|Medium
+1482|Minimum Number of Days to Make m Bouquets|minimum-number-of-days-to-make-m-bouquets|Medium
+1481|Least Number of Unique Integers after K Removals|least-number-of-unique-integers-after-k-removals|Medium
+1493|Longest Subarray of 1's After Deleting One Element|longest-subarray-of-1s-after-deleting-one-element|Medium
+1492|The kth Factor of n|the-kth-factor-of-n|Medium
+1472|Design Browser History|design-browser-history|Medium
+1471|The k Strongest Values in an Array|the-k-strongest-values-in-an-array|Medium
+1466|Reorder Routes to Make All Paths Lead to the City Zero|reorder-routes-to-make-all-paths-lead-to-the-city-zero|Medium
+1465|Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts|maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts|Medium
+1477|Find Two Non-overlapping Sub-arrays Each With Target Sum|find-two-non-overlapping-sub-arrays-each-with-target-sum|Medium
+1476|Subrectangle Queries|subrectangle-queries|Medium
+1457|Pseudo-Palindromic Paths in a Binary Tree|pseudo-palindromic-paths-in-a-binary-tree|Medium
+1456|Maximum Number of Vowels in a Substring of Given Length|maximum-number-of-vowels-in-a-substring-of-given-length|Medium
+1452|People Whose List of Favorite Companies Is Not a Subset of Another List|people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list|Medium
+1451|Rearrange Words in a Sentence|rearrange-words-in-a-sentence|Medium
+1462|Course Schedule IV|course-schedule-iv|Medium
+1461|Check If a String Contains All Binary Codes of Size K|check-if-a-string-contains-all-binary-codes-of-size-k|Medium
+1443|Minimum Time to Collect All Apples in a Tree|minimum-time-to-collect-all-apples-in-a-tree|Medium
+1442|Count Triplets That Can Form Two Arrays of Equal XOR|count-triplets-that-can-form-two-arrays-of-equal-xor|Medium
+1441|Build an Array With Stack Operations|build-an-array-with-stack-operations|Medium
+1438|Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit|longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit|Medium
+1448|Count Good Nodes in Binary Tree|count-good-nodes-in-binary-tree|Medium
+1447|Simplified Fractions|simplified-fractions|Medium
+1424|Diagonal Traverse II|diagonal-traverse-ii|Medium
+1423|Maximum Points You Can Obtain from Cards|maximum-points-you-can-obtain-from-cards|Medium
+1419|Minimum Number of Frogs Croaking|minimum-number-of-frogs-croaking|Medium
+1418|Display Table of Food Orders in a Restaurant|display-table-of-food-orders-in-a-restaurant|Medium
+1433|Check If a String Can Break Another String|check-if-a-string-can-break-another-string|Medium
+1432|Max Difference You Can Get From Changing an Integer|max-difference-you-can-get-from-changing-an-integer|Medium
+1410|HTML Entity Parser|html-entity-parser|Medium
+1409|Queries on a Permutation With Key|queries-on-a-permutation-with-key|Medium
+1404|Number of Steps to Reduce a Number in Binary Representation to One|number-of-steps-to-reduce-a-number-in-binary-representation-to-one|Medium
+1415|The k-th Lexicographical String of All Happy Strings of Length n|the-k-th-lexicographical-string-of-all-happy-strings-of-length-n|Medium
+1414|Find the Minimum Number of Fibonacci Numbers Whose Sum Is K|find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k|Medium
+1396|Design Underground System|design-underground-system|Medium
+1395|Count Number of Teams|count-number-of-teams|Medium
+1391|Check if There is a Valid Path in a Grid|check-if-there-is-a-valid-path-in-a-grid|Medium
+1400|Construct K Palindrome Strings|construct-k-palindrome-strings|Medium
+1401|Circle and Rectangle Overlapping|circle-and-rectangle-overlapping|Medium
+1381|Design a Stack With Increment Operation|design-a-stack-with-increment-operation|Medium
+1376|Time Needed to Inform All Employees|time-needed-to-inform-all-employees|Medium
+1375|Number of Times Binary String Is Prefix-Aligned|number-of-times-binary-string-is-prefix-aligned|Medium
+1387|Sort Integers by The Power Value|sort-integers-by-the-power-value|Medium
+1386|Cinema Seat Allocation|cinema-seat-allocation|Medium
+1367|Linked List in Binary Tree|linked-list-in-binary-tree|Medium
+1366|Rank Teams by Votes|rank-teams-by-votes|Medium
+1353|Maximum Number of Events That Can Be Attended|maximum-number-of-events-that-can-be-attended|Medium
+1352|Product of the Last K Numbers|product-of-the-last-k-numbers|Medium
+1372|Longest ZigZag Path in a Binary Tree|longest-zigzag-path-in-a-binary-tree|Medium
+1371|Find the Longest Substring Containing Vowels in Even Counts|find-the-longest-substring-containing-vowels-in-even-counts|Medium
+1348|Tweet Counts Per Frequency|tweet-counts-per-frequency|Medium
+1347|Minimum Number of Steps to Make Two Strings Anagram|minimum-number-of-steps-to-make-two-strings-anagram|Medium
+1339|Maximum Product of Splitted Binary Tree|maximum-product-of-splitted-binary-tree|Medium
+1338|Reduce Array Size to The Half|reduce-array-size-to-the-half|Medium
+1358|Number of Substrings Containing All Three Characters|number-of-substrings-containing-all-three-characters|Medium
+1357|Apply Discount Every n Orders|apply-discount-every-n-orders|Medium
+1334|Find the City With the Smallest Number of Neighbors at a Threshold Distance|find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance|Medium
+1333|Filter Restaurants by Vegan-Friendly, Price and Distance|filter-restaurants-by-vegan-friendly-price-and-distance|Medium
+1325|Delete Leaves With a Given Value|delete-leaves-with-a-given-value|Medium
+1324|Print Words Vertically|print-words-vertically|Medium
+1344|Angle Between Hands of a Clock|angle-between-hands-of-a-clock|Medium
+1343|Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold|number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold|Medium
+1319|Number of Operations to Make Network Connected|number-of-operations-to-make-network-connected|Medium
+1318|Minimum Flips to Make a OR b Equal to c|minimum-flips-to-make-a-or-b-equal-to-c|Medium
+1311|Get Watched Videos by Your Friends|get-watched-videos-by-your-friends|Medium
+1310|XOR Queries of a Subarray|xor-queries-of-a-subarray|Medium
+2192|All Ancestors of a Node in a Directed Acyclic Graph|all-ancestors-of-a-node-in-a-directed-acyclic-graph|Medium
+1306|Jump Game III|jump-game-iii|Medium
+1305|All Elements in Two Binary Search Trees|all-elements-in-two-binary-search-trees|Medium
+1297|Maximum Number of Occurrences of a Substring|maximum-number-of-occurrences-of-a-substring|Medium
+1296|Divide Array in Sets of K Consecutive Numbers|divide-array-in-sets-of-k-consecutive-numbers|Medium
+2305|Fair Distribution of Cookies|fair-distribution-of-cookies|Medium
+1292|Maximum Side Length of a Square with Sum Less than or Equal to Threshold|maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold|Medium
+1283|Find the Smallest Divisor Given a Threshold|find-the-smallest-divisor-given-a-threshold|Medium
+1282|Group the People Given the Group Size They Belong To|group-the-people-given-the-group-size-they-belong-to|Medium
+1277|Count Square Submatrices with All Ones|count-square-submatrices-with-all-ones|Medium
+1276|Number of Burgers with No Waste of Ingredients|number-of-burgers-with-no-waste-of-ingredients|Medium
+1268|Search Suggestions System|search-suggestions-system|Medium
+1267|Count Servers that Communicate|count-servers-that-communicate|Medium
+2304|Minimum Path Cost in a Grid|minimum-path-cost-in-a-grid|Medium
+1262|Greatest Sum Divisible by Three|greatest-sum-divisible-by-three|Medium
+1261|Find Elements in a Contaminated Binary Tree|find-elements-in-a-contaminated-binary-tree|Medium
+1254|Number of Closed Islands|number-of-closed-islands|Medium
+1253|Reconstruct a 2-Row Binary Matrix|reconstruct-a-2-row-binary-matrix|Medium
+2217|Find Palindrome With Fixed Length|find-palindrome-with-fixed-length|Medium
+1249|Minimum Remove to Make Valid Parentheses|minimum-remove-to-make-valid-parentheses|Medium
+1248|Count Number of Nice Subarrays|count-number-of-nice-subarrays|Medium
+1247|Minimum Swaps to Make Strings Equal|minimum-swaps-to-make-strings-equal|Medium
+1726|Tuple with Same Product|tuple-with-same-product|Medium
+1227|Airplane Seat Assignment Probability|airplane-seat-assignment-probability|Medium
+1239|Maximum Length of a Concatenated String with Unique Characters|maximum-length-of-a-concatenated-string-with-unique-characters|Medium
+1238|Circular Permutation in Binary Representation|circular-permutation-in-binary-representation|Medium
+1237|Find Positive Integer Solution for a Given Equation|find-positive-integer-solution-for-a-given-equation|Medium
+2216|Minimum Deletions to Make Array Beautiful|minimum-deletions-to-make-array-beautiful|Medium
+2225|Find Players With Zero or One Losses|find-players-with-zero-or-one-losses|Medium
+1234|Replace the Substring for Balanced String|replace-the-substring-for-balanced-string|Medium
+1233|Remove Sub-Folders from the Filesystem|remove-sub-folders-from-the-filesystem|Medium
+2202|Maximize the Topmost Element After K Moves|maximize-the-topmost-element-after-k-moves|Medium
+1222|Queens That Can Attack the King|queens-that-can-attack-the-king|Medium
+2226|Maximum Candies Allocated to K Children|maximum-candies-allocated-to-k-children|Medium
+2310|Sum of Numbers With Units Digit K|sum-of-numbers-with-units-digit-k|Medium
+2191|Sort the Jumbled Numbers|sort-the-jumbled-numbers|Medium
+1219|Path with Maximum Gold|path-with-maximum-gold|Medium
+1218|Longest Arithmetic Subsequence of Given Difference|longest-arithmetic-subsequence-of-given-difference|Medium
+1514|Path with Maximum Probability|path-with-maximum-probability|Medium
+1706|Where Will the Ball Fall|where-will-the-ball-fall|Medium
+1208|Get Equal Substrings Within Budget|get-equal-substrings-within-budget|Medium
+1209|Remove All Adjacent Duplicates in String II|remove-all-adjacent-duplicates-in-string-ii|Medium
+2201|Count Artifacts That Can Be Extracted|count-artifacts-that-can-be-extracted|Medium
+1895|Largest Magic Square|largest-magic-square|Medium
+2079|Watering Plants|watering-plants|Medium
+1202|Smallest String With Swaps|smallest-string-with-swaps|Medium
+1201|Ugly Number III|ugly-number-iii|Medium
+1405|Longest Happy String|longest-happy-string|Medium
+2139|Minimum Moves to Reach Target Score|minimum-moves-to-reach-target-score|Medium
+1191|K-Concatenation Maximum Sum|k-concatenation-maximum-sum|Medium
+1190|Reverse Substrings Between Each Pair of Parentheses|reverse-substrings-between-each-pair-of-parentheses|Medium
+1954|Minimum Garden Perimeter to Collect Enough Apples|minimum-garden-perimeter-to-collect-enough-apples|Medium
+2080|Range Frequency Queries|range-frequency-queries|Medium
+1186|Maximum Subarray Sum with One Deletion|maximum-subarray-sum-with-one-deletion|Medium
+1382|Balance a Binary Search Tree|balance-a-binary-search-tree|Medium
+1390|Four Divisors|four-divisors|Medium
+1177|Can Make Palindrome from Substring|can-make-palindrome-from-substring|Medium
+1362|Closest Divisors|closest-divisors|Medium
+1361|Validate Binary Tree Nodes|validate-binary-tree-nodes|Medium
+1170|Compare Strings by Frequency of the Smallest Character|compare-strings-by-frequency-of-the-smallest-character|Medium
+1169|Invalid Transactions|invalid-transactions|Medium
+1171|Remove Zero Sum Consecutive Nodes from Linked List|remove-zero-sum-consecutive-nodes-from-linked-list|Medium
+1155|Number of Dice Rolls With Target Sum|number-of-dice-rolls-with-target-sum|Medium
+1156|Swap For Longest Repeated Character Substring|swap-for-longest-repeated-character-substring|Medium
+1302|Deepest Leaves Sum|deepest-leaves-sum|Medium
+1329|Sort the Matrix Diagonally|sort-the-matrix-diagonally|Medium
+1328|Break a Palindrome|break-a-palindrome|Medium
+1143|Longest Common Subsequence|longest-common-subsequence|Medium
+1146|Snapshot Array|snapshot-array|Medium
+1145|Binary Tree Coloring Game|binary-tree-coloring-game|Medium
+1144|Decrease Elements To Make Array Zigzag|decrease-elements-to-make-array-zigzag|Medium
+1315|Sum of Nodes with Even-Valued Grandparent|sum-of-nodes-with-even-valued-grandparent|Medium
+1314|Matrix Block Sum|matrix-block-sum|Medium
+1140|Stone Game II|stone-game-ii|Medium
+1139|Largest 1-Bordered Square|largest-1-bordered-square|Medium
+1138|Alphabet Board Path|alphabet-board-path|Medium
+1300|Sum of Mutated Array Closest to Target|sum-of-mutated-array-closest-to-target|Medium
+1131|Maximum of Absolute Value Expression|maximum-of-absolute-value-expression|Medium
+1129|Shortest Path with Alternating Colors|shortest-path-with-alternating-colors|Medium
+1130|Minimum Cost Tree From Leaf Values|minimum-cost-tree-from-leaf-values|Medium
+1288|Remove Covered Intervals|remove-covered-intervals|Medium
+1124|Longest Well-Performing Interval|longest-well-performing-interval|Medium
+1123|Lowest Common Ancestor of Deepest Leaves|lowest-common-ancestor-of-deepest-leaves|Medium
+1291|Sequential Digits|sequential-digits|Medium
+1286|Iterator for Combination|iterator-for-combination|Medium
+1111|Maximum Nesting Depth of Two Valid Parentheses Strings|maximum-nesting-depth-of-two-valid-parentheses-strings|Medium
+1110|Delete Nodes And Return Forest|delete-nodes-and-return-forest|Medium
+1109|Corporate Flight Bookings|corporate-flight-bookings|Medium
+1105|Filling Bookcase Shelves|filling-bookcase-shelves|Medium
+1104|Path In Zigzag Labelled Binary Tree|path-in-zigzag-labelled-binary-tree|Medium
+1094|Car Pooling|car-pooling|Medium
+1093|Statistics from a Large Sample|statistics-from-a-large-sample|Medium
+1091|Shortest Path in Binary Matrix|shortest-path-in-binary-matrix|Medium
+1090|Largest Values From Labels|largest-values-from-labels|Medium
+1079|Letter Tile Possibilities|letter-tile-possibilities|Medium
+1081|Smallest Subsequence of Distinct Characters|smallest-subsequence-of-distinct-characters|Medium
+1080|Insufficient Nodes in Root to Leaf Paths|insufficient-nodes-in-root-to-leaf-paths|Medium
+1073|Adding Two Negabinary Numbers|adding-two-negabinary-numbers|Medium
+1072|Flip Columns For Maximum Number of Equal Rows|flip-columns-for-maximum-number-of-equal-rows|Medium
+1054|Distant Barcodes|distant-barcodes|Medium
+1053|Previous Permutation With One Swap|previous-permutation-with-one-swap|Medium
+1052|Grumpy Bookstore Owner|grumpy-bookstore-owner|Medium
+1049|Last Stone Weight II|last-stone-weight-ii|Medium
+1048|Longest String Chain|longest-string-chain|Medium
+1043|Partition Array for Maximum Sum|partition-array-for-maximum-sum|Medium
+1042|Flower Planting With No Adjacent|flower-planting-with-no-adjacent|Medium
+1041|Robot Bounded In Circle|robot-bounded-in-circle|Medium
+1162|As Far from Land as Possible|as-far-from-land-as-possible|Medium
+1161|Maximum Level Sum of a Binary Tree|maximum-level-sum-of-a-binary-tree|Medium
+1038|Binary Search Tree to Greater Sum Tree|binary-search-tree-to-greater-sum-tree|Medium
+1040|Moving Stones Until Consecutive II|moving-stones-until-consecutive-ii|Medium
+1039|Minimum Score Triangulation of Polygon|minimum-score-triangulation-of-polygon|Medium
+1035|Uncrossed Lines|uncrossed-lines|Medium
+1034|Coloring A Border|coloring-a-border|Medium
+1033|Moving Stones Until Consecutive|moving-stones-until-consecutive|Medium
+1031|Maximum Sum of Two Non-Overlapping Subarrays|maximum-sum-of-two-non-overlapping-subarrays|Medium
+1029|Two City Scheduling|two-city-scheduling|Medium
+1026|Maximum Difference Between Node and Ancestor|maximum-difference-between-node-and-ancestor|Medium
+1027|Longest Arithmetic Subsequence|longest-arithmetic-subsequence|Medium
+1024|Video Stitching|video-stitching|Medium
+1023|Camelcase Matching|camelcase-matching|Medium
+1020|Number of Enclaves|number-of-enclaves|Medium
+1019|Next Greater Node In Linked List|next-greater-node-in-linked-list|Medium
+1017|Convert to Base -2|convert-to-base-2|Medium
+1016|Binary String With Substrings Representing 1 To N|binary-string-with-substrings-representing-1-to-n|Medium
+1015|Smallest Integer Divisible by K|smallest-integer-divisible-by-k|Medium
+1014|Best Sightseeing Pair|best-sightseeing-pair|Medium
+1061|Lexicographically Smallest Equivalent String|lexicographically-smallest-equivalent-string|Medium
+1011|Capacity To Ship Packages Within D Days|capacity-to-ship-packages-within-d-days|Medium
+1010|Pairs of Songs With Total Durations Divisible by 60|pairs-of-songs-with-total-durations-divisible-by-60|Medium
+1008|Construct Binary Search Tree from Preorder Traversal|construct-binary-search-tree-from-preorder-traversal|Medium
+1007|Minimum Domino Rotations For Equal Row|minimum-domino-rotations-for-equal-row|Medium
+1006|Clumsy Factorial|clumsy-factorial|Medium
+1004|Max Consecutive Ones III|max-consecutive-ones-iii|Medium
+1003|Check If Word Is Valid After Substitutions|check-if-word-is-valid-after-substitutions|Medium
+998|Maximum Binary Tree II|maximum-binary-tree-ii|Medium
+994|Rotting Oranges|rotting-oranges|Medium
+991|Broken Calculator|broken-calculator|Medium
+990|Satisfiability of Equality Equations|satisfiability-of-equality-equations|Medium
+988|Smallest String Starting From Leaf|smallest-string-starting-from-leaf|Medium
+986|Interval List Intersections|interval-list-intersections|Medium
+985|Sum of Even Numbers After Queries|sum-of-even-numbers-after-queries|Medium
+984|String Without AAA or BBB|string-without-aaa-or-bbb|Medium
+983|Minimum Cost For Tickets|minimum-cost-for-tickets|Medium
+981|Time Based Key-Value Store|time-based-key-value-store|Medium
+979|Distribute Coins in Binary Tree|distribute-coins-in-binary-tree|Medium
+978|Longest Turbulent Subarray|longest-turbulent-subarray|Medium
+974|Subarray Sums Divisible by K|subarray-sums-divisible-by-k|Medium
+973|K Closest Points to Origin|k-closest-points-to-origin|Medium
+971|Flip Binary Tree To Match Preorder Traversal|flip-binary-tree-to-match-preorder-traversal|Medium
+970|Powerful Integers|powerful-integers|Medium
+969|Pancake Sorting|pancake-sorting|Medium
+967|Numbers With Same Consecutive Differences|numbers-with-same-consecutive-differences|Medium
+966|Vowel Spellchecker|vowel-spellchecker|Medium
+963|Minimum Area Rectangle II|minimum-area-rectangle-ii|Medium
+962|Maximum Width Ramp|maximum-width-ramp|Medium
+959|Regions Cut By Slashes|regions-cut-by-slashes|Medium
+958|Check Completeness of a Binary Tree|check-completeness-of-a-binary-tree|Medium
+957|Prison Cells After N Days|prison-cells-after-n-days|Medium
+955|Delete Columns to Make Sorted II|delete-columns-to-make-sorted-ii|Medium
+954|Array of Doubled Pairs|array-of-doubled-pairs|Medium
+951|Flip Equivalent Binary Trees|flip-equivalent-binary-trees|Medium
+950|Reveal Cards In Increasing Order|reveal-cards-in-increasing-order|Medium
+949|Largest Time for Given Digits|largest-time-for-given-digits|Medium
+948|Bag of Tokens|bag-of-tokens|Medium
+947|Most Stones Removed with Same Row or Column|most-stones-removed-with-same-row-or-column|Medium
+946|Validate Stack Sequences|validate-stack-sequences|Medium
+945|Minimum Increment to Make Array Unique|minimum-increment-to-make-array-unique|Medium
+939|Minimum Area Rectangle|minimum-area-rectangle|Medium
+937|Reorder Data in Log Files|reorder-data-in-log-files|Medium
+935|Knight Dialer|knight-dialer|Medium
+934|Shortest Bridge|shortest-bridge|Medium
+932|Beautiful Array|beautiful-array|Medium
+931|Minimum Falling Path Sum|minimum-falling-path-sum|Medium
+930|Binary Subarrays With Sum|binary-subarrays-with-sum|Medium
+926|Flip String to Monotone Increasing|flip-string-to-monotone-increasing|Medium
+923|3Sum With Multiplicity|3sum-with-multiplicity|Medium
+921|Minimum Add to Make Parentheses Valid|minimum-add-to-make-parentheses-valid|Medium
+919|Complete Binary Tree Inserter|complete-binary-tree-inserter|Medium
+918|Maximum Sum Circular Subarray|maximum-sum-circular-subarray|Medium
+916|Word Subsets|word-subsets|Medium
+915|Partition Array into Disjoint Intervals|partition-array-into-disjoint-intervals|Medium
+912|Sort an Array|sort-an-array|Medium
+911|Online Election|online-election|Medium
+910|Smallest Range II|smallest-range-ii|Medium
+909|Snakes and Ladders|snakes-and-ladders|Medium
+907|Sum of Subarray Minimums|sum-of-subarray-minimums|Medium
+904|Fruit Into Baskets|fruit-into-baskets|Medium
+901|Online Stock Span|online-stock-span|Medium
+900|RLE Iterator|rle-iterator|Medium
+898|Bitwise ORs of Subarrays|bitwise-ors-of-subarrays|Medium
+894|All Possible Full Binary Trees|all-possible-full-binary-trees|Medium
+893|Groups of Special-Equivalent Strings|groups-of-special-equivalent-strings|Medium
+890|Find and Replace Pattern|find-and-replace-pattern|Medium
+889|Construct Binary Tree from Preorder and Postorder Traversal|construct-binary-tree-from-preorder-and-postorder-traversal|Medium
+886|Possible Bipartition|possible-bipartition|Medium
+885|Spiral Matrix III|spiral-matrix-iii|Medium
+881|Boats to Save People|boats-to-save-people|Medium
+880|Decoded String at Index|decoded-string-at-index|Medium
+478|Generate Random Point in a Circle|generate-random-point-in-a-circle|Medium
+497|Random Point in Non-overlapping Rectangles|random-point-in-non-overlapping-rectangles|Medium
+519|Random Flip Matrix|random-flip-matrix|Medium
+528|Random Pick with Weight|random-pick-with-weight|Medium
+877|Stone Game|stone-game|Medium
+875|Koko Eating Bananas|koko-eating-bananas|Medium
+874|Walking Robot Simulation|walking-robot-simulation|Medium
+873|Length of Longest Fibonacci Subsequence|length-of-longest-fibonacci-subsequence|Medium
+470|Implement Rand10() Using Rand7()|implement-rand10-using-rand7|Medium
+870|Advantage Shuffle|advantage-shuffle|Medium
+869|Reordered Power of 2|reordered-power-of-2|Medium
+866|Prime Palindrome|prime-palindrome|Medium
+865|Smallest Subtree with all the Deepest Nodes|smallest-subtree-with-all-the-deepest-nodes|Medium
+863|All Nodes Distance K in Binary Tree|all-nodes-distance-k-in-binary-tree|Medium
+861|Score After Flipping Matrix|score-after-flipping-matrix|Medium
+858|Mirror Reflection|mirror-reflection|Medium
+856|Score of Parentheses|score-of-parentheses|Medium
+855|Exam Room|exam-room|Medium
+853|Car Fleet|car-fleet|Medium
+852|Peak Index in a Mountain Array|peak-index-in-a-mountain-array|Medium
+851|Loud and Rich|loud-and-rich|Medium
+849|Maximize Distance to Closest Person|maximize-distance-to-closest-person|Medium
+848|Shifting Letters|shifting-letters|Medium
+846|Hand of Straights|hand-of-straights|Medium
+845|Longest Mountain in Array|longest-mountain-in-array|Medium
+842|Split Array into Fibonacci Sequence|split-array-into-fibonacci-sequence|Medium
+841|Keys and Rooms|keys-and-rooms|Medium
+840|Magic Squares In Grid|magic-squares-in-grid|Medium
+838|Push Dominoes|push-dominoes|Medium
+837|New 21 Game|new-21-game|Medium
+835|Image Overlap|image-overlap|Medium
+833|Find And Replace in String|find-and-replace-in-string|Medium
+622|Design Circular Queue|design-circular-queue|Medium
+641|Design Circular Deque|design-circular-deque|Medium
+831|Masking Personal Information|masking-personal-information|Medium
+826|Most Profit Assigning Work|most-profit-assigning-work|Medium
+825|Friends Of Appropriate Ages|friends-of-appropriate-ages|Medium
+823|Binary Trees With Factors|binary-trees-with-factors|Medium
+822|Card Flipping Game|card-flipping-game|Medium
+820|Short Encoding of Words|short-encoding-of-words|Medium
+707|Design Linked List|design-linked-list|Medium
+817|Linked List Components|linked-list-components|Medium
+816|Ambiguous Coordinates|ambiguous-coordinates|Medium
+814|Binary Tree Pruning|binary-tree-pruning|Medium
+813|Largest Sum of Averages|largest-sum-of-averages|Medium
+811|Subdomain Visit Count|subdomain-visit-count|Medium
+809|Expressive Words|expressive-words|Medium
+808|Soup Servings|soup-servings|Medium
+807|Max Increase to Keep City Skyline|max-increase-to-keep-city-skyline|Medium
+802|Find Eventual Safe States|find-eventual-safe-states|Medium
+799|Champagne Tower|champagne-tower|Medium
+797|All Paths From Source to Target|all-paths-from-source-to-target|Medium
+795|Number of Subarrays with Bounded Maximum|number-of-subarrays-with-bounded-maximum|Medium
+794|Valid Tic-Tac-Toe State|valid-tic-tac-toe-state|Medium
+792|Number of Matching Subsequences|number-of-matching-subsequences|Medium
+791|Custom Sort String|custom-sort-string|Medium
+790|Domino and Tromino Tiling|domino-and-tromino-tiling|Medium
+789|Escape The Ghosts|escape-the-ghosts|Medium
+788|Rotated Digits|rotated-digits|Medium
+787|Cheapest Flights Within K Stops|cheapest-flights-within-k-stops|Medium
+786|K-th Smallest Prime Fraction|k-th-smallest-prime-fraction|Medium
+785|Is Graph Bipartite?|is-graph-bipartite|Medium
+784|Letter Case Permutation|letter-case-permutation|Medium
+781|Rabbits in Forest|rabbits-in-forest|Medium
+779|K-th Symbol in Grammar|k-th-symbol-in-grammar|Medium
+777|Swap Adjacent in LR String|swap-adjacent-in-lr-string|Medium
+775|Global and Local Inversions|global-and-local-inversions|Medium
+701|Insert into a Binary Search Tree|insert-into-a-binary-search-tree|Medium
+769|Max Chunks To Make Sorted|max-chunks-to-make-sorted|Medium
+767|Reorganize String|reorganize-string|Medium
+558|Logical OR of Two Binary Grids Represented as Quad-Trees|logical-or-of-two-binary-grids-represented-as-quad-trees|Medium
+427|Construct Quad Tree|construct-quad-tree|Medium
+764|Largest Plus Sign|largest-plus-sign|Medium
+763|Partition Labels|partition-labels|Medium
+430|Flatten a Multilevel Doubly Linked List|flatten-a-multilevel-doubly-linked-list|Medium
+429|N-ary Tree Level Order Traversal|n-ary-tree-level-order-traversal|Medium
+756|Pyramid Transition Matrix|pyramid-transition-matrix|Medium
+754|Reach a Number|reach-a-number|Medium
+752|Open the Lock|open-the-lock|Medium
+743|Network Delay Time|network-delay-time|Medium
+740|Delete and Earn|delete-and-earn|Medium
+739|Daily Temperatures|daily-temperatures|Medium
+738|Monotone Increasing Digits|monotone-increasing-digits|Medium
+735|Asteroid Collision|asteroid-collision|Medium
+731|My Calendar II|my-calendar-ii|Medium
+729|My Calendar I|my-calendar-i|Medium
+725|Split Linked List in Parts|split-linked-list-in-parts|Medium
+722|Remove Comments|remove-comments|Medium
+721|Accounts Merge|accounts-merge|Medium
+720|Longest Word in Dictionary|longest-word-in-dictionary|Medium
+718|Maximum Length of Repeated Subarray|maximum-length-of-repeated-subarray|Medium
+714|Best Time to Buy and Sell Stock with Transaction Fee|best-time-to-buy-and-sell-stock-with-transaction-fee|Medium
+713|Subarray Product Less Than K|subarray-product-less-than-k|Medium
+712|Minimum ASCII Delete Sum for Two Strings|minimum-ascii-delete-sum-for-two-strings|Medium
+698|Partition to K Equal Sum Subsets|partition-to-k-equal-sum-subsets|Medium
+695|Max Area of Island|max-area-of-island|Medium
+692|Top K Frequent Words|top-k-frequent-words|Medium
+690|Employee Importance|employee-importance|Medium
+688|Knight Probability in Chessboard|knight-probability-in-chessboard|Medium
+687|Longest Univalue Path|longest-univalue-path|Medium
+686|Repeated String Match|repeated-string-match|Medium
+684|Redundant Connection|redundant-connection|Medium
+678|Valid Parenthesis String|valid-parenthesis-string|Medium
+677|Map Sum Pairs|map-sum-pairs|Medium
+676|Implement Magic Dictionary|implement-magic-dictionary|Medium
+673|Number of Longest Increasing Subsequence|number-of-longest-increasing-subsequence|Medium
+672|Bulb Switcher II|bulb-switcher-ii|Medium
+670|Maximum Swap|maximum-swap|Medium
+669|Trim a Binary Search Tree|trim-a-binary-search-tree|Medium
+667|Beautiful Arrangement II|beautiful-arrangement-ii|Medium
+665|Non-decreasing Array|non-decreasing-array|Medium
+662|Maximum Width of Binary Tree|maximum-width-of-binary-tree|Medium
+659|Split Array into Consecutive Subsequences|split-array-into-consecutive-subsequences|Medium
+658|Find K Closest Elements|find-k-closest-elements|Medium
+655|Print Binary Tree|print-binary-tree|Medium
+654|Maximum Binary Tree|maximum-binary-tree|Medium
+652|Find Duplicate Subtrees|find-duplicate-subtrees|Medium
+650|2 Keys Keyboard|2-keys-keyboard|Medium
+649|Dota2 Senate|dota2-senate|Medium
+648|Replace Words|replace-words|Medium
+647|Palindromic Substrings|palindromic-substrings|Medium
+646|Maximum Length of Pair Chain|maximum-length-of-pair-chain|Medium
+640|Solve the Equation|solve-the-equation|Medium
+638|Shopping Offers|shopping-offers|Medium
+636|Exclusive Time of Functions|exclusive-time-of-functions|Medium
+633|Sum of Square Numbers|sum-of-square-numbers|Medium
+624|Maximum Distance in Arrays|maximum-distance-in-arrays|Medium
+623|Add One Row to Tree|add-one-row-to-tree|Medium
+621|Task Scheduler|task-scheduler|Medium
+611|Valid Triangle Number|valid-triangle-number|Medium
+609|Find Duplicate File in System|find-duplicate-file-in-system|Medium
+606|Construct String from Binary Tree|construct-string-from-binary-tree|Medium
+593|Valid Square|valid-square|Medium
+592|Fraction Addition and Subtraction|fraction-addition-and-subtraction|Medium
+583|Delete Operation for Two Strings|delete-operation-for-two-strings|Medium
+581|Shortest Unsorted Continuous Subarray|shortest-unsorted-continuous-subarray|Medium
+576|Out of Boundary Paths|out-of-boundary-paths|Medium
+567|Permutation in String|permutation-in-string|Medium
+565|Array Nesting|array-nesting|Medium
+560|Subarray Sum Equals K|subarray-sum-equals-k|Medium
+556|Next Greater Element III|next-greater-element-iii|Medium
+554|Brick Wall|brick-wall|Medium
+553|Optimal Division|optimal-division|Medium
+547|Number of Provinces|number-of-provinces|Medium
+542|01 Matrix|01-matrix|Medium
+540|Single Element in a Sorted Array|single-element-in-a-sorted-array|Medium
+539|Minimum Time Difference|minimum-time-difference|Medium
+538|Convert BST to Greater Tree|convert-bst-to-greater-tree|Medium
+537|Complex Number Multiplication|complex-number-multiplication|Medium
+535|Encode and Decode TinyURL|encode-and-decode-tinyurl|Medium
+532|K-diff Pairs in an Array|k-diff-pairs-in-an-array|Medium
+529|Minesweeper|minesweeper|Medium
+1721|Swapping Nodes in a Linked List|swapping-nodes-in-a-linked-list|Medium
+526|Beautiful Arrangement|beautiful-arrangement|Medium
+525|Contiguous Array|contiguous-array|Medium
+524|Longest Word in Dictionary through Deleting|longest-word-in-dictionary-through-deleting|Medium
+523|Continuous Subarray Sum|continuous-subarray-sum|Medium
+522|Longest Uncommon Subsequence II|longest-uncommon-subsequence-ii|Medium
+518|Coin Change II|coin-change-ii|Medium
+516|Longest Palindromic Subsequence|longest-palindromic-subsequence|Medium
+515|Find Largest Value in Each Tree Row|find-largest-value-in-each-tree-row|Medium
+513|Find Bottom Left Tree Value|find-bottom-left-tree-value|Medium
+508|Most Frequent Subtree Sum|most-frequent-subtree-sum|Medium
+503|Next Greater Element II|next-greater-element-ii|Medium
+498|Diagonal Traverse|diagonal-traverse|Medium
+494|Target Sum|target-sum|Medium
+491|Non-decreasing Subsequences|non-decreasing-subsequences|Medium
+486|Predict the Winner|predict-the-winner|Medium
+481|Magical String|magical-string|Medium
+477|Total Hamming Distance|total-hamming-distance|Medium
+475|Heaters|heaters|Medium
+474|Ones and Zeroes|ones-and-zeroes|Medium
+473|Matchsticks to Square|matchsticks-to-square|Medium
+468|Validate IP Address|validate-ip-address|Medium
+467|Unique Substrings in Wraparound String|unique-substrings-in-wraparound-string|Medium
+464|Can I Win|can-i-win|Medium
+462|Minimum Moves to Equal Array Elements II|minimum-moves-to-equal-array-elements-ii|Medium
+457|Circular Array Loop|circular-array-loop|Medium
+456|132 Pattern|132-pattern|Medium
+454|4Sum II|4sum-ii|Medium
+453|Minimum Moves to Equal Array Elements|minimum-moves-to-equal-array-elements|Medium
+452|Minimum Number of Arrows to Burst Balloons|minimum-number-of-arrows-to-burst-balloons|Medium
+451|Sort Characters By Frequency|sort-characters-by-frequency|Medium
+450|Delete Node in a BST|delete-node-in-a-bst|Medium
+449|Serialize and Deserialize BST|serialize-and-deserialize-bst|Medium
+447|Number of Boomerangs|number-of-boomerangs|Medium
+445|Add Two Numbers II|add-two-numbers-ii|Medium
+443|String Compression|string-compression|Medium
+442|Find All Duplicates in an Array|find-all-duplicates-in-an-array|Medium
+438|Find All Anagrams in a String|find-all-anagrams-in-a-string|Medium
+437|Path Sum III|path-sum-iii|Medium
+436|Find Right Interval|find-right-interval|Medium
+435|Non-overlapping Intervals|non-overlapping-intervals|Medium
+433|Minimum Genetic Mutation|minimum-genetic-mutation|Medium
+424|Longest Repeating Character Replacement|longest-repeating-character-replacement|Medium
+423|Reconstruct Original Digits from English|reconstruct-original-digits-from-english|Medium
+421|Maximum XOR of Two Numbers in an Array|maximum-xor-of-two-numbers-in-an-array|Medium
+419|Battleships in a Board|battleships-in-a-board|Medium
+417|Pacific Atlantic Water Flow|pacific-atlantic-water-flow|Medium
+416|Partition Equal Subset Sum|partition-equal-subset-sum|Medium
+413|Arithmetic Slices|arithmetic-slices|Medium
+406|Queue Reconstruction by Height|queue-reconstruction-by-height|Medium
+402|Remove K Digits|remove-k-digits|Medium
+400|Nth Digit|nth-digit|Medium
+399|Evaluate Division|evaluate-division|Medium
+398|Random Pick Index|random-pick-index|Medium
+397|Integer Replacement|integer-replacement|Medium
+396|Rotate Function|rotate-function|Medium
+395|Longest Substring with At Least K Repeating Characters|longest-substring-with-at-least-k-repeating-characters|Medium
+394|Decode String|decode-string|Medium
+393|UTF-8 Validation|utf-8-validation|Medium
+390|Elimination Game|elimination-game|Medium
+388|Longest Absolute File Path|longest-absolute-file-path|Medium
+386|Lexicographical Numbers|lexicographical-numbers|Medium
+385|Mini Parser|mini-parser|Medium
+384|Shuffle an Array|shuffle-an-array|Medium
+382|Linked List Random Node|linked-list-random-node|Medium
+380|Insert Delete GetRandom O(1)|insert-delete-getrandom-o1|Medium
+378|Kth Smallest Element in a Sorted Matrix|kth-smallest-element-in-a-sorted-matrix|Medium
+377|Combination Sum IV|combination-sum-iv|Medium
+376|Wiggle Subsequence|wiggle-subsequence|Medium
+375|Guess Number Higher or Lower II|guess-number-higher-or-lower-ii|Medium
+373|Find K Pairs with Smallest Sums|find-k-pairs-with-smallest-sums|Medium
+372|Super Pow|super-pow|Medium
+371|Sum of Two Integers|sum-of-two-integers|Medium
+368|Largest Divisible Subset|largest-divisible-subset|Medium
+365|Water and Jug Problem|water-and-jug-problem|Medium
+357|Count Numbers with Unique Digits|count-numbers-with-unique-digits|Medium
+355|Design Twitter|design-twitter|Medium
+347|Top K Frequent Elements|top-k-frequent-elements|Medium
+343|Integer Break|integer-break|Medium
+341|Flatten Nested List Iterator|flatten-nested-list-iterator|Medium
+337|House Robber III|house-robber-iii|Medium
+334|Increasing Triplet Subsequence|increasing-triplet-subsequence|Medium
+331|Verify Preorder Serialization of a Binary Tree|verify-preorder-serialization-of-a-binary-tree|Medium
+328|Odd Even Linked List|odd-even-linked-list|Medium
+324|Wiggle Sort II|wiggle-sort-ii|Medium
+322|Coin Change|coin-change|Medium
+319|Bulb Switcher|bulb-switcher|Medium
+318|Maximum Product of Word Lengths|maximum-product-of-word-lengths|Medium
+316|Remove Duplicate Letters|remove-duplicate-letters|Medium
+313|Super Ugly Number|super-ugly-number|Medium
+310|Minimum Height Trees|minimum-height-trees|Medium
+309|Best Time to Buy and Sell Stock with Cooldown|best-time-to-buy-and-sell-stock-with-cooldown|Medium
+307|Range Sum Query - Mutable|range-sum-query-mutable|Medium
+306|Additive Number|additive-number|Medium
+304|Range Sum Query 2D - Immutable|range-sum-query-2d-immutable|Medium
+300|Longest Increasing Subsequence|longest-increasing-subsequence|Medium
+299|Bulls and Cows|bulls-and-cows|Medium
+289|Game of Life|game-of-life|Medium
+287|Find the Duplicate Number|find-the-duplicate-number|Medium
+284|Peeking Iterator|peeking-iterator|Medium
+279|Perfect Squares|perfect-squares|Medium
+275|H-Index II|h-index-ii|Medium
+274|H-Index|h-index|Medium
+264|Ugly Number II|ugly-number-ii|Medium
+260|Single Number III|single-number-iii|Medium
+241|Different Ways to Add Parentheses|different-ways-to-add-parentheses|Medium
+240|Search a 2D Matrix II|search-a-2d-matrix-ii|Medium
+238|Product of Array Except Self|product-of-array-except-self|Medium
+237|Delete Node in a Linked List|delete-node-in-a-linked-list|Medium
+236|Lowest Common Ancestor of a Binary Tree|lowest-common-ancestor-of-a-binary-tree|Medium
+235|Lowest Common Ancestor of a Binary Search Tree|lowest-common-ancestor-of-a-binary-search-tree|Medium
+230|Kth Smallest Element in a BST|kth-smallest-element-in-a-bst|Medium
+229|Majority Element II|majority-element-ii|Medium
+227|Basic Calculator II|basic-calculator-ii|Medium
+223|Rectangle Area|rectangle-area|Medium
+221|Maximal Square|maximal-square|Medium
+216|Combination Sum III|combination-sum-iii|Medium
+215|Kth Largest Element in an Array|kth-largest-element-in-an-array|Medium
+213|House Robber II|house-robber-ii|Medium
+211|Design Add and Search Words Data Structure|design-add-and-search-words-data-structure|Medium
+210|Course Schedule II|course-schedule-ii|Medium
+209|Minimum Size Subarray Sum|minimum-size-subarray-sum|Medium
+208|Implement Trie (Prefix Tree)|implement-trie-prefix-tree|Medium
+207|Course Schedule|course-schedule|Medium
+204|Count Primes|count-primes|Medium
+201|Bitwise AND of Numbers Range|bitwise-and-of-numbers-range|Medium
+200|Number of Islands|number-of-islands|Medium
+199|Binary Tree Right Side View|binary-tree-right-side-view|Medium
+198|House Robber|house-robber|Medium
+189|Rotate Array|rotate-array|Medium
+187|Repeated DNA Sequences|repeated-dna-sequences|Medium
+179|Largest Number|largest-number|Medium
+173|Binary Search Tree Iterator|binary-search-tree-iterator|Medium
+172|Factorial Trailing Zeroes|factorial-trailing-zeroes|Medium
+167|Two Sum II - Input Array Is Sorted|two-sum-ii-input-array-is-sorted|Medium
+166|Fraction to Recurring Decimal|fraction-to-recurring-decimal|Medium
+165|Compare Version Numbers|compare-version-numbers|Medium
+164|Maximum Gap|maximum-gap|Medium
+162|Find Peak Element|find-peak-element|Medium
+155|Min Stack|min-stack|Medium
+153|Find Minimum in Rotated Sorted Array|find-minimum-in-rotated-sorted-array|Medium
+152|Maximum Product Subarray|maximum-product-subarray|Medium
+151|Reverse Words in a String|reverse-words-in-a-string|Medium
+150|Evaluate Reverse Polish Notation|evaluate-reverse-polish-notation|Medium
+148|Sort List|sort-list|Medium
+147|Insertion Sort List|insertion-sort-list|Medium
+146|LRU Cache|lru-cache|Medium
+143|Reorder List|reorder-list|Medium
+142|Linked List Cycle II|linked-list-cycle-ii|Medium
+139|Word Break|word-break|Medium
+138|Copy List with Random Pointer|copy-list-with-random-pointer|Medium
+137|Single Number II|single-number-ii|Medium
+134|Gas Station|gas-station|Medium
+133|Clone Graph|clone-graph|Medium
+131|Palindrome Partitioning|palindrome-partitioning|Medium
+130|Surrounded Regions|surrounded-regions|Medium
+129|Sum Root to Leaf Numbers|sum-root-to-leaf-numbers|Medium
+128|Longest Consecutive Sequence|longest-consecutive-sequence|Medium
+122|Best Time to Buy and Sell Stock II|best-time-to-buy-and-sell-stock-ii|Medium
+120|Triangle|triangle|Medium
+117|Populating Next Right Pointers in Each Node II|populating-next-right-pointers-in-each-node-ii|Medium
+116|Populating Next Right Pointers in Each Node|populating-next-right-pointers-in-each-node|Medium
+114|Flatten Binary Tree to Linked List|flatten-binary-tree-to-linked-list|Medium
+113|Path Sum II|path-sum-ii|Medium
+109|Convert Sorted List to Binary Search Tree|convert-sorted-list-to-binary-search-tree|Medium
+107|Binary Tree Level Order Traversal II|binary-tree-level-order-traversal-ii|Medium
+106|Construct Binary Tree from Inorder and Postorder Traversal|construct-binary-tree-from-inorder-and-postorder-traversal|Medium
+105|Construct Binary Tree from Preorder and Inorder Traversal|construct-binary-tree-from-preorder-and-inorder-traversal|Medium
+103|Binary Tree Zigzag Level Order Traversal|binary-tree-zigzag-level-order-traversal|Medium
+102|Binary Tree Level Order Traversal|binary-tree-level-order-traversal|Medium
+99|Recover Binary Search Tree|recover-binary-search-tree|Medium
+98|Validate Binary Search Tree|validate-binary-search-tree|Medium
+97|Interleaving String|interleaving-string|Medium
+96|Unique Binary Search Trees|unique-binary-search-trees|Medium
+95|Unique Binary Search Trees II|unique-binary-search-trees-ii|Medium
+93|Restore IP Addresses|restore-ip-addresses|Medium
+92|Reverse Linked List II|reverse-linked-list-ii|Medium
+91|Decode Ways|decode-ways|Medium
+90|Subsets II|subsets-ii|Medium
+89|Gray Code|gray-code|Medium
+86|Partition List|partition-list|Medium
+82|Remove Duplicates from Sorted List II|remove-duplicates-from-sorted-list-ii|Medium
+81|Search in Rotated Sorted Array II|search-in-rotated-sorted-array-ii|Medium
+80|Remove Duplicates from Sorted Array II|remove-duplicates-from-sorted-array-ii|Medium
+79|Word Search|word-search|Medium
+78|Subsets|subsets|Medium
+77|Combinations|combinations|Medium
+75|Sort Colors|sort-colors|Medium
+74|Search a 2D Matrix|search-a-2d-matrix|Medium
+73|Set Matrix Zeroes|set-matrix-zeroes|Medium
+72|Edit Distance|edit-distance|Medium
+71|Simplify Path|simplify-path|Medium
+64|Minimum Path Sum|minimum-path-sum|Medium
+63|Unique Paths II|unique-paths-ii|Medium
+62|Unique Paths|unique-paths|Medium
+61|Rotate List|rotate-list|Medium
+59|Spiral Matrix II|spiral-matrix-ii|Medium
+57|Insert Interval|insert-interval|Medium
+56|Merge Intervals|merge-intervals|Medium
+55|Jump Game|jump-game|Medium
+54|Spiral Matrix|spiral-matrix|Medium
+53|Maximum Subarray|maximum-subarray|Medium
+50|Pow(x, n)|powx-n|Medium
+49|Group Anagrams|group-anagrams|Medium
+48|Rotate Image|rotate-image|Medium
+47|Permutations II|permutations-ii|Medium
+46|Permutations|permutations|Medium
+45|Jump Game II|jump-game-ii|Medium
+43|Multiply Strings|multiply-strings|Medium
+40|Combination Sum II|combination-sum-ii|Medium
+39|Combination Sum|combination-sum|Medium
+38|Count and Say|count-and-say|Medium
+36|Valid Sudoku|valid-sudoku|Medium
+34|Find First and Last Position of Element in Sorted Array|find-first-and-last-position-of-element-in-sorted-array|Medium
+33|Search in Rotated Sorted Array|search-in-rotated-sorted-array|Medium
+31|Next Permutation|next-permutation|Medium
+29|Divide Two Integers|divide-two-integers|Medium
+24|Swap Nodes in Pairs|swap-nodes-in-pairs|Medium
+22|Generate Parentheses|generate-parentheses|Medium
+19|Remove Nth Node From End of List|remove-nth-node-from-end-of-list|Medium
+18|4Sum|4sum|Medium
+17|Letter Combinations of a Phone Number|letter-combinations-of-a-phone-number|Medium
+16|3Sum Closest|3sum-closest|Medium
+15|3Sum|3sum|Medium
+12|Integer to Roman|integer-to-roman|Medium
+11|Container With Most Water|container-with-most-water|Medium
+8|String to Integer (atoi)|string-to-integer-atoi|Medium
+7|Reverse Integer|reverse-integer|Medium
+6|Zigzag Conversion|zigzag-conversion|Medium
+5|Longest Palindromic Substring|longest-palindromic-substring|Medium
+3|Longest Substring Without Repeating Characters|longest-substring-without-repeating-characters|Medium
+2|Add Two Numbers|add-two-numbers|Medium

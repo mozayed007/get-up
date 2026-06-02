@@ -1,0 +1,164 @@
+1|Matrix-Vector Dot Product|deep-ml-problem-1|Easy
+10|Calculate Covariance Matrix|deep-ml-problem-10|Easy
+100|Implement the Softsign Activation Function|deep-ml-problem-100|Easy
+101|Implement the GRPO Objective Function|deep-ml-problem-101|Hard
+102|Implement the Swish Activation Function|deep-ml-problem-102|Easy
+103|Implement the SELU Activation Function|deep-ml-problem-103|Easy
+104|Binary Classification with Logistic Regression|deep-ml-problem-104|Easy
+105|Train Softmax Regression with Gradient Descent|deep-ml-problem-105|Hard
+106|Train Logistic Regression with Gradient Descent|deep-ml-problem-106|Hard
+107|Implement Masked Self-Attention|deep-ml-problem-107|Medium
+108|Measure Disorder in Apple Colors|deep-ml-problem-108|Easy
+109|Implement Layer Normalization for Sequence Data|deep-ml-problem-109|Medium
+11|Solve Linear Equations using Jacobi Method|deep-ml-problem-11|Medium
+110|Evaluate Translation Quality with METEOR Score|deep-ml-problem-110|Medium
+111|Compute Pointwise Mutual Information|deep-ml-problem-111|Medium
+112|Min-Max Normalization of Feature Values|deep-ml-problem-112|Easy
+113|Implement a Simple Residual Block with Shortcut Connection|deep-ml-problem-113|Easy
+114|Implement Global Average Pooling|deep-ml-problem-114|Easy
+115|Implement Batch Normalization for BCHW Input|deep-ml-problem-115|Easy
+116|Derivative of a Polynomial|deep-ml-problem-116|Easy
+117|Compute Orthonormal Basis for 2D Vectors|deep-ml-problem-117|Medium
+118|Compute the Cross Product of Two 3D Vectors|deep-ml-problem-118|Easy
+119|Solve System of Linear Equations Using Cramer's Rule|deep-ml-problem-119|Medium
+12|Singular Value Decomposition (SVD)|deep-ml-problem-12|Hard
+120|Bhattacharyya Distance Between Two Distributions|deep-ml-problem-120|Easy
+121|Vector Element-wise Sum|deep-ml-problem-121|Easy
+122|Policy Gradient with REINFORCE|deep-ml-problem-122|Hard
+123|Calculate Computational Efficiency of MoE|deep-ml-problem-123|Easy
+124|Implement the Noisy Top-K Gating Function|deep-ml-problem-124|Medium
+125|Implement a Sparse Mixture of Experts Layer|deep-ml-problem-125|Hard
+126|Implement Group Normalization|deep-ml-problem-126|Medium
+127|Find Captain Redbeard's Hidden Treasure|deep-ml-problem-127|Medium
+128|Dynamic Tanh: Normalization-Free Transformer Activation|deep-ml-problem-128|Easy
+129|Calculate Unigram Probability from Corpus|deep-ml-problem-129|Easy
+13|Determinant of a 4x4 Matrix using Laplace's Expansion (hard)|deep-ml-problem-13|Hard
+130|Implement a Simple CNN Training Function with Backpropagation|deep-ml-problem-130|Hard
+131|Implement Efficient Sparse Window Attention|deep-ml-problem-131|Medium
+132|Simulate Markov Chain Transitions|deep-ml-problem-132|Medium
+133|Implement Q-Learning Algorithm for MDPs|deep-ml-problem-133|Medium
+134|Compute Multi-class Cross-Entropy Loss|deep-ml-problem-134|Easy
+135|Implement Early Stopping Based on Validation Loss|deep-ml-problem-135|Easy
+136|Calculate KL Divergence Between Two Multivariate Gaussian Distributions|deep-ml-problem-136|Medium
+137|Implement a Dense Block with 2D Convolutions|deep-ml-problem-137|Hard
+138|Find the Best Gini-Based Split for a Binary Decision Tree|deep-ml-problem-138|Medium
+139|Elastic Net Regression via Gradient Descent|deep-ml-problem-139|Medium
+14|Linear Regression Using Normal Equation|deep-ml-problem-14|Easy
+140|Bernoulli Naive Bayes Classifier|deep-ml-problem-140|Medium
+141|Shift and Scale Array to Target Range|deep-ml-problem-141|Easy
+142|Gridworld Policy Evaluation|deep-ml-problem-142|Medium
+143|Instance Normalization (IN) Implementation|deep-ml-problem-143|Medium
+145|Adagrad Optimizer|deep-ml-problem-145|Easy
+146|Momentum Optimizer|deep-ml-problem-146|Easy
+148|Adamax Optimizer|deep-ml-problem-148|Easy
+149|Adadelta Optimizer|deep-ml-problem-149|Medium
+15|Linear Regression Using Gradient Descent|deep-ml-problem-15|Easy
+150|Nesterov Accelerated Gradient Optimizer|deep-ml-problem-150|Easy
+151|Implement SwiGLU activation function|deep-ml-problem-151|Easy
+152|Implementing ROUGE Score|deep-ml-problem-152|Medium
+153|StepLR Learning Rate Scheduler|deep-ml-problem-153|Easy
+154|ExponentialLR Learning Rate Scheduler|deep-ml-problem-154|Easy
+155|CosineAnnealingLR Learning Rate Scheduler|deep-ml-problem-155|Medium
+157|Implement the Bellman Equation for Value Iteration|deep-ml-problem-157|Medium
+158|Incremental Mean for Online Reward Estimation|deep-ml-problem-158|Easy
+16|Feature Scaling Implementation|deep-ml-problem-16|Easy
+160|Mixed Precision Training|deep-ml-problem-160|Medium
+161|Exponential Weighted Average of Rewards|deep-ml-problem-161|Medium
+17|K-Means Clustering|deep-ml-problem-17|Medium
+173|Implement K-Nearest Neighbors|deep-ml-problem-173|Medium
+174|Train a Simple GAN on 1D Gaussian Data|deep-ml-problem-174|Hard
+175|Gaussian Process for Regression|deep-ml-problem-175|Medium
+18|Implement K-Fold Cross-Validation|deep-ml-problem-18|Medium
+182|Empirical Probability Mass Function (PMF)|deep-ml-problem-182|Easy
+183|Find PMF Normalization Constant|deep-ml-problem-183|Easy
+184|Build a Simple ETL Pipeline (MLOps)|deep-ml-problem-184|Medium
+185|Basic Data Drift Check: Mean and Variance Thresholds|deep-ml-problem-185|Easy
+19|Principal Component Analysis (PCA) Implementation|deep-ml-problem-19|Medium
+2|Transpose of a Matrix|deep-ml-problem-2|Easy
+20|Decision Tree Learning|deep-ml-problem-20|Hard
+21|Pegasos Kernel SVM Implementation|deep-ml-problem-21|Hard
+22|Sigmoid Activation Function Understanding|deep-ml-problem-22|Easy
+23|Softmax Activation Function Implementation |deep-ml-problem-23|Easy
+24|Single Neuron|deep-ml-problem-24|Easy
+25|Single Neuron with Backpropagation|deep-ml-problem-25|Medium
+26|Implementing Basic Autograd Operations|deep-ml-problem-26|Medium
+27|Transformation Matrix from Basis B to C|deep-ml-problem-27|Easy
+28|SVD of a 2x2 Matrix using eigen values & vectors|deep-ml-problem-28|Hard
+29|Random Shuffle of Dataset|deep-ml-problem-29|Easy
+3|Reshape Matrix|deep-ml-problem-3|Easy
+30|Batch Iterator for Dataset|deep-ml-problem-30|Easy
+31|Divide Dataset Based on Feature Threshold|deep-ml-problem-31|Medium
+32|Generate Sorted Polynomial Features|deep-ml-problem-32|Medium
+33|Generate Random Subsets of a Dataset|deep-ml-problem-33|Medium
+34|One-Hot Encoding of Nominal Values|deep-ml-problem-34|Easy
+35|Convert Vector to Diagonal Matrix|deep-ml-problem-35|Easy
+36|Calculate Accuracy Score|deep-ml-problem-36|Easy
+37|Calculate Correlation Matrix|deep-ml-problem-37|Medium
+38|Implement AdaBoost Fit Method|deep-ml-problem-38|Hard
+39|Implementation of Log Softmax Function|deep-ml-problem-39|Easy
+4|Calculate Mean by Row or Column|deep-ml-problem-4|Easy
+40|Implementing a Custom Dense Layer in Python|deep-ml-problem-40|Hard
+41|Simple Convolutional 2D Layer|deep-ml-problem-41|Medium
+42|Implement ReLU Activation Function|deep-ml-problem-42|Easy
+43|Implement Ridge Regression Loss Function|deep-ml-problem-43|Easy
+44|Leaky ReLU Activation Function|deep-ml-problem-44|Easy
+45|Linear Kernel Function|deep-ml-problem-45|Easy
+46|Implement Precision Metric|deep-ml-problem-46|Easy
+47|Implement Gradient Descent Variants with MSE Loss|deep-ml-problem-47|Medium
+48|Implement Reduced Row Echelon Form (RREF) Function|deep-ml-problem-48|Medium
+49|Implement Adam Optimization Algorithm|deep-ml-problem-49|Medium
+5|Scalar Multiplication of a Matrix|deep-ml-problem-5|Easy
+50|Implement Lasso Regression using Gradient Descent|deep-ml-problem-50|Medium
+51|Optimal String Alignment Distance|deep-ml-problem-51|Medium
+52|Implement Recall Metric in Binary Classification|deep-ml-problem-52|Easy
+53|Implement Self-Attention Mechanism|deep-ml-problem-53|Medium
+54|Implementing a Simple RNN|deep-ml-problem-54|Medium
+55|2D Translation Matrix Implementation|deep-ml-problem-55|Medium
+56|KL Divergence Between Two Normal Distributions|deep-ml-problem-56|Easy
+57|Gauss-Seidel Method for Solving Linear Systems|deep-ml-problem-57|Medium
+58|Gaussian Elimination for Solving Linear Systems|deep-ml-problem-58|Medium
+59|Implement Long Short-Term Memory (LSTM) Network|deep-ml-problem-59|Medium
+6|Calculate Eigenvalues of a Matrix|deep-ml-problem-6|Medium
+60|Implement TF-IDF (Term Frequency-Inverse Document Frequency)|deep-ml-problem-60|Medium
+61|Implement F-Score Calculation for Binary Classification|deep-ml-problem-61|Easy
+62|Implement a Simple RNN with Backpropagation Through Time (BPTT)|deep-ml-problem-62|Hard
+63|Implement the Conjugate Gradient Method for Solving Linear Systems|deep-ml-problem-63|Hard
+64|Implement Gini Impurity Calculation for a Set of Classes|deep-ml-problem-64|Easy
+65|Implement Compressed Row Sparse Matrix (CSR) Format Conversion|deep-ml-problem-65|Easy
+66|Implement Orthogonal Projection of a Vector onto a Line|deep-ml-problem-66|Easy
+67|Implement Compressed Column Sparse Matrix Format (CSC)|deep-ml-problem-67|Easy
+68|Find the Image of a Matrix Using Row Echelon Form|deep-ml-problem-68|Medium
+69|Calculate R-squared for Regression Analysis|deep-ml-problem-69|Easy
+7|Matrix Transformation |deep-ml-problem-7|Medium
+70|Calculate Image Brightness|deep-ml-problem-70|Easy
+71|Calculate Root Mean Square Error (RMSE)|deep-ml-problem-71|Easy
+72|Calculate Jaccard Index for Binary Classification|deep-ml-problem-72|Easy
+73|Calculate Dice Score for Classification|deep-ml-problem-73|Easy
+74|Create Composite Hypervector for a Dataset Row|deep-ml-problem-74|Medium
+75|Generate a Confusion Matrix for Binary Classification|deep-ml-problem-75|Easy
+76|Calculate Cosine Similarity Between Vectors|deep-ml-problem-76|Easy
+77|Calculate Performance Metrics for a Classification Model|deep-ml-problem-77|Medium
+78|Descriptive Statistics Calculator|deep-ml-problem-78|Easy
+79|Binomial Distribution Probability|deep-ml-problem-79|Medium
+8|Calculate 2x2 Matrix Inverse|deep-ml-problem-8|Medium
+80|Normal Distribution PDF Calculator|deep-ml-problem-80|Medium
+81|Poisson Distribution Probability Calculator|deep-ml-problem-81|Easy
+82|Grayscale Image Contrast Calculator|deep-ml-problem-82|Easy
+83|Dot Product Calculator|deep-ml-problem-83|Easy
+84|Phi Transformation for Polynomial Features|deep-ml-problem-84|Easy
+85|Positional Encoding Calculator|deep-ml-problem-85|Hard
+86|Detect Overfitting or Underfitting|deep-ml-problem-86|Easy
+87|Adam Optimizer|deep-ml-problem-87|Medium
+88|GPT-2 Text Generation|deep-ml-problem-88|Hard
+89|The Pattern Weaver's Code|deep-ml-problem-89|Medium
+9|Matrix times Matrix |deep-ml-problem-9|Medium
+90|BM25 Ranking |deep-ml-problem-90|Medium
+91|Calculate F1 Score from Predicted and True Labels|deep-ml-problem-91|Easy
+92|Linear Regression - Power Grid Optimization|deep-ml-problem-92|Medium
+93|Calculate Mean Absolute Error (MAE)|deep-ml-problem-93|Easy
+94|Implement Multi-Head Attention|deep-ml-problem-94|Hard
+95|Calculate the Phi Coefficient|deep-ml-problem-95|Easy
+96|Implement the Hard Sigmoid Activation Function|deep-ml-problem-96|Easy
+97|Implement the ELU Activation Function|deep-ml-problem-97|Easy
+98|Implement the PReLU Activation Function|deep-ml-problem-98|Easy
+99|Implement the Softplus Activation Function|deep-ml-problem-99|Easy

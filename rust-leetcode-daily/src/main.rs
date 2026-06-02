@@ -127,7 +127,7 @@ async fn main() -> Result<()> {
 
     // Handle sync-deepml
     if args.sync_deepml {
-        let provider = DeepMLProvider::new();
+        let provider = DeepMLProvider::with_token(config.github_token.clone());
         println!("Syncing Deep-ML problems from GitHub...");
         provider
             .sync_problems(DEEPML_FILE)

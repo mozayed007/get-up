@@ -1,0 +1,744 @@
+3920|Maximize Fixed Points After Deletions|maximize-fixed-points-after-deletions|Hard
+3911|K-th Smallest Remaining Even Integer in Subarray Queries|k-th-smallest-remaining-even-integer-in-subarray-queries|Hard
+3910|Count Connected Subgraphs with Even Node Sum|count-connected-subgraphs-with-even-node-sum|Hard
+3897|Maximum Value of Concatenated Binary Segments|maximum-value-of-concatenated-binary-segments|Hard
+3892|Minimum Operations to Achieve At Least K Peaks|minimum-operations-to-achieve-at-least-k-peaks|Hard
+3915|Maximum Sum of Alternating Subsequence With Distance at Least K|maximum-sum-of-alternating-subsequence-with-distance-at-least-k|Hard
+3883|Count Non Decreasing Arrays With Given Digit Sums|count-non-decreasing-arrays-with-given-digit-sums|Hard
+3886|Sum of Sortable Integers|sum-of-sortable-integers|Hard
+3873|Maximum Points Activated with One Addition|maximum-points-activated-with-one-addition|Hard
+3855|Sum of K-Digit Numbers in a Range|sum-of-k-digit-numbers-in-a-range|Hard
+3878|Count Good Subarrays|count-good-subarrays|Hard
+3901|Good Subsequence Queries|good-subsequence-queries|Hard
+3841|Palindromic Path Queries in a Tree|palindromic-path-queries-in-a-tree|Hard
+3845|Maximum Subarray XOR with Bounded Range|maximum-subarray-xor-with-bounded-range|Hard
+3836|Maximum Score Using Exactly K Pairs|maximum-score-using-exactly-k-pairs|Hard
+3830|Longest Alternating Subarray After Removing At Most One Element|longest-alternating-subarray-after-removing-at-most-one-element|Hard
+3864|Minimum Cost to Partition a Binary String|minimum-cost-to-partition-a-binary-string|Hard
+3821|Find Nth Smallest Integer With K One Bits|find-nth-smallest-integer-with-k-one-bits|Hard
+3812|Minimum Edge Toggles on a Tree|minimum-edge-toggles-on-a-tree|Hard
+3948|Lexicographically Maximum MEX Array|lexicographically-maximum-mex-array|Hard
+3782|Last Remaining Integer After Alternating Deletion Operations|last-remaining-integer-after-alternating-deletion-operations|Hard
+3869|Count Fancy Numbers in a Range|count-fancy-numbers-in-a-range|Hard
+3806|Maximum Bitwise AND After Increment Operations|maximum-bitwise-and-after-increment-operations|Hard
+3797|Count Routes to Climb a Rectangular Grid|count-routes-to-climb-a-rectangular-grid|Hard
+3772|Maximum Subgraph Score in a Tree|maximum-subgraph-score-in-a-tree|Hard
+3768|Minimum Inversion Count in Subarrays of Fixed Length|minimum-inversion-count-in-subarrays-of-fixed-length|Hard
+3801|Minimum Cost to Merge Sorted Lists|minimum-cost-to-merge-sorted-lists|Hard
+3757|Number of Effective Subsequences|number-of-effective-subsequences|Hard
+3753|Total Waviness of Numbers in Range II|total-waviness-of-numbers-in-range-ii|Hard
+3906|Count Good Integers on a Grid Path|count-good-integers-on-a-grid-path|Hard
+3826|Minimum Partition Score|minimum-partition-score|Hard
+3887|Incremental Even-Weighted Cycle Queries|incremental-even-weighted-cycle-queries|Hard
+3748|Count Stable Subarrays|count-stable-subarrays|Hard
+3934|Smallest Unique Subarray|smallest-unique-subarray|Hard
+3924|Minimum Threshold Path With Limited Heavy Edges|minimum-threshold-path-with-limited-heavy-edges|Hard
+3791|Number of Balanced Integers in a Range|number-of-balanced-integers-in-a-range|Hard
+3816|Lexicographically Smallest String After Deleting Duplicate Characters|lexicographically-smallest-string-after-deleting-duplicate-characters|Hard
+3943|Number of Pairs After Increment|number-of-pairs-after-increment|Hard
+3739|Count Subarrays With Majority Element II|count-subarrays-with-majority-element-ii|Hard
+3786|Total Sum of Interaction Cost in Tree Groups|total-sum-of-interaction-cost-in-tree-groups|Hard
+3725|Count Ways to Choose Coprime Integers from Rows|count-ways-to-choose-coprime-integers-from-rows|Hard
+3850|Count Sequences to K|count-sequences-to-k|Hard
+3777|Minimum Deletions to Make Alternating Substring|minimum-deletions-to-make-alternating-substring|Hard
+3729|Count Distinct Subarrays Divisible by K in Sorted Array|count-distinct-subarrays-divisible-by-k-in-sorted-array|Hard
+3785|Minimum Swaps to Avoid Forbidden Values|minimum-swaps-to-avoid-forbidden-values|Hard
+3704|Count No-Zero Pairs That Sum to N|count-no-zero-pairs-that-sum-to-n|Hard
+3721|Longest Balanced Subarray II|longest-balanced-subarray-ii|Hard
+3734|Lexicographically Smallest Palindromic Permutation Greater Than Target|lexicographically-smallest-palindromic-permutation-greater-than-target|Hard
+3710|Maximum Partition Factor|maximum-partition-factor|Hard
+3743|Maximize Cyclic Partition Score|maximize-cyclic-partition-score|Hard
+3686|Number of Stable Subsequences|number-of-stable-subsequences|Hard
+3677|Count Binary Palindromic Numbers|count-binary-palindromic-numbers|Hard
+3762|Minimum Operations to Equalize Subarrays|minimum-operations-to-equalize-subarrays|Hard
+3695|Maximize Alternating Sum Using Swaps|maximize-alternating-sum-using-swaps|Hard
+3691|Maximum Total Subarray Value II|maximum-total-subarray-value-ii|Hard
+3859|Count Subarrays With K Distinct Integers|count-subarrays-with-k-distinct-integers|Hard
+3681|Maximum XOR of Subsequences|maximum-xor-of-subsequences|Hard
+3671|Sum of Beautiful Subsequences|sum-of-beautiful-subsequences|Hard
+3666|Minimum Operations to Equalize Binary String|minimum-operations-to-equalize-binary-string|Hard
+3661|Maximum Walls Destroyed by Robots|maximum-walls-destroyed-by-robots|Hard
+3939|Count Non Adjacent Subsets in a Rooted Tree|count-non-adjacent-subsets-in-a-rooted-tree|Hard
+3928|Minimum Cost to Buy Apples II|minimum-cost-to-buy-apples-ii|Hard
+3655|XOR After Range Multiplication Queries II|xor-after-range-multiplication-queries-ii|Hard
+3700|Number of ZigZag Arrays II|number-of-zigzag-arrays-ii|Hard
+3699|Number of ZigZag Arrays I|number-of-zigzag-arrays-i|Hard
+3715|Sum of Perfect Square Ancestors|sum-of-perfect-square-ancestors|Hard
+3640|Trionic Array II|trionic-array-ii|Hard
+3636|Threshold Majority Queries|threshold-majority-queries|Hard
+3646|Next Special Palindrome Number|next-special-palindrome-number|Hard
+3624|Number of Integers With Popcount-Depth Equal to K II|number-of-integers-with-popcount-depth-equal-to-k-ii|Hard
+3614|Process String with Special Operations II|process-string-with-special-operations-ii|Hard
+3621|Number of Integers With Popcount-Depth Equal to K I|number-of-integers-with-popcount-depth-equal-to-k-i|Hard
+3615|Longest Palindromic Path in Graph|longest-palindromic-path-in-graph|Hard
+3609|Minimum Moves to Reach Target in Grid|minimum-moves-to-reach-target-in-grid|Hard
+3605|Minimum Stability Factor of Array|minimum-stability-factor-of-array|Hard
+3620|Network Recovery Pathways|network-recovery-pathways|Hard
+3590|Kth Smallest Path XOR Sum|kth-smallest-path-xor-sum|Hard
+3600|Maximize Spanning Tree Stability with Upgrades|maximize-spanning-tree-stability-with-upgrades|Hard
+3585|Find Weighted Median Node in Tree|find-weighted-median-node-in-tree|Hard
+3625|Count Number of Trapezoids II|count-number-of-trapezoids-ii|Hard
+3594|Minimum Time to Transport All Individuals|minimum-time-to-transport-all-individuals|Hard
+3651|Minimum Cost Path with Teleportations|minimum-cost-path-with-teleportations|Hard
+3574|Maximize Subarray GCD Score|maximize-subarray-gcd-score|Hard
+3630|Partition Array for Maximum XOR and AND|partition-array-for-maximum-xor-and-and|Hard
+3569|Maximize Count of Distinct Primes After Split|maximize-count-of-distinct-primes-after-split|Hard
+3575|Maximum Good Subtree Score|maximum-good-subtree-score|Hard
+3563|Lexicographically Smallest String After Adjacent Removals|lexicographically-smallest-string-after-adjacent-removals|Hard
+3579|Minimum Steps to Convert String with Operations|minimum-steps-to-convert-string-with-operations|Hard
+3544|Subtree Inversion Sum|subtree-inversion-sum|Hard
+3562|Maximum Profit from Trading Stocks with Discounts|maximum-profit-from-trading-stocks-with-discounts|Hard
+3553|Minimum Weighted Subgraph With the Required Paths II|minimum-weighted-subgraph-with-the-required-paths-ii|Hard
+3534|Path Existence Queries in a Graph II|path-existence-queries-in-a-graph-ii|Hard
+3539|Find Sum of Array Product of Magical Sequences|find-sum-of-array-product-of-magical-sequences|Hard
+3548|Equal Sum Grid Partition II|equal-sum-grid-partition-ii|Hard
+3547|Maximum Sum of Edge Values in a Graph|maximum-sum-of-edge-values-in-a-graph|Hard
+3559|Number of Ways to Assign Edge Weights II|number-of-ways-to-assign-edge-weights-ii|Hard
+3533|Concatenated Divisibility|concatenated-divisibility|Hard
+3525|Find X Value of Array II|find-x-value-of-array-ii|Hard
+3538|Merge Operations for Minimum Travel Time|merge-operations-for-minimum-travel-time|Hard
+3515|Shortest Path in a Weighted Tree|shortest-path-in-a-weighted-tree|Hard
+3530|Maximum Profit from Valid Topological Order in DAG|maximum-profit-from-valid-topological-order-in-dag|Hard
+3518|Smallest Palindromic Rearrangement II|smallest-palindromic-rearrangement-ii|Hard
+3519|Count Numbers with Non-Decreasing Digits |count-numbers-with-non-decreasing-digits|Hard
+3504|Longest Palindrome After Substring Concatenation II|longest-palindrome-after-substring-concatenation-ii|Hard
+3501|Maximize Active Section with Trade II|maximize-active-section-with-trade-ii|Hard
+3490|Count Beautiful Numbers|count-beautiful-numbers|Hard
+3486|Longest Special Path II|longest-special-path-ii|Hard
+3480|Maximize Subarrays After Removing One Conflicting Pair|maximize-subarrays-after-removing-one-conflicting-pair|Hard
+3485|Longest Common Prefix of K Strings After Removal|longest-common-prefix-of-k-strings-after-removal|Hard
+3470|Permutations IV|permutations-iv|Hard
+3464|Maximize the Distance Between Points on a Square|maximize-the-distance-between-points-on-a-square|Hard
+3509|Maximum Product of Subsequences With an Alternating Sum Equal to K|maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k|Hard
+3454|Separate Squares II|separate-squares-ii|Hard
+3463|Check If Digits Are Equal in String After Operations II|check-if-digits-are-equal-in-string-after-operations-ii|Hard
+3510|Minimum Pair Removal to Sort Array II|minimum-pair-removal-to-sort-array-ii|Hard
+3474|Lexicographically Smallest Generated String|lexicographically-smallest-generated-string|Hard
+3500|Minimum Cost to Divide Array Into Subarrays|minimum-cost-to-divide-array-into-subarrays|Hard
+3449|Maximize the Minimum Game Score|maximize-the-minimum-game-score|Hard
+3445|Maximum Difference Between Even and Odd Frequency II|maximum-difference-between-even-and-odd-frequency-ii|Hard
+3495|Minimum Operations to Make Array Elements Zero|minimum-operations-to-make-array-elements-zero|Hard
+3426|Manhattan Distances of All Arrangements of Pieces|manhattan-distances-of-all-arrangements-of-pieces|Hard
+3459|Length of Longest V-Shaped Diagonal Segment|length-of-longest-v-shaped-diagonal-segment|Hard
+3430|Maximum and Minimum Sums of at Most Size K Subarrays|maximum-and-minimum-sums-of-at-most-size-k-subarrays|Hard
+3505|Minimum Operations to Make Elements Within K Subarrays Equal|minimum-operations-to-make-elements-within-k-subarrays-equal|Hard
+3435|Frequencies of Shortest Supersequences|frequencies-of-shortest-supersequences|Hard
+3399|Smallest Substring With Identical Characters II|smallest-substring-with-identical-characters-ii|Hard
+3441|Minimum Cost Good Caption|minimum-cost-good-caption|Hard
+3395|Subsequences with a Unique Middle Mode I|subsequences-with-a-unique-middle-mode-i|Hard
+3444|Minimum Increments for Target Multiples in an Array|minimum-increments-for-target-multiples-in-an-array|Hard
+3448|Count Substrings Divisible By Last Digit|count-substrings-divisible-by-last-digit|Hard
+3455|Shortest Matching Substring|shortest-matching-substring|Hard
+3398|Smallest Substring With Identical Characters I|smallest-substring-with-identical-characters-i|Hard
+3382|Maximum Area Rectangle With Point Constraints II|maximum-area-rectangle-with-point-constraints-ii|Hard
+3410|Maximize Subarray Sum After Removing All Occurrences of One Element|maximize-subarray-sum-after-removing-all-occurrences-of-one-element|Hard
+3425|Longest Special Path|longest-special-path|Hard
+3405|Count the Number of Arrays with K Matching Adjacent Elements|count-the-number-of-arrays-with-k-matching-adjacent-elements|Hard
+3378|Count Connected Components in LCM Graph|count-connected-components-in-lcm-graph|Hard
+3367|Maximize Sum of Weights after Edge Removals|maximize-sum-of-weights-after-edge-removals|Hard
+3420|Count Non-Decreasing Subarrays After K Operations|count-non-decreasing-subarrays-after-k-operations|Hard
+3357|Minimize the Maximum Adjacent Element Difference|minimize-the-maximum-adjacent-element-difference|Hard
+3363|Find the Maximum Number of Fruits Collected|find-the-maximum-number-of-fruits-collected|Hard
+3351|Sum of Good Subsequences|sum-of-good-subsequences|Hard
+3373|Maximize the Number of Target Nodes After Connecting Trees II|maximize-the-number-of-target-nodes-after-connecting-trees-ii|Hard
+3347|Maximum Frequency of an Element After Performing Operations II|maximum-frequency-of-an-element-after-performing-operations-ii|Hard
+3389|Minimum Operations to Make Character Frequencies Equal|minimum-operations-to-make-character-frequencies-equal|Hard
+3343|Count Number of Balanced Permutations|count-number-of-balanced-permutations|Hard
+3348|Smallest Divisible Digit Product II|smallest-divisible-digit-product-ii|Hard
+3352|Count K-Reducible Numbers Less Than N|count-k-reducible-numbers-less-than-n|Hard
+3337|Total Characters in String After Transformations II|total-characters-in-string-after-transformations-ii|Hard
+3333|Find the Original Typed String II|find-the-original-typed-string-ii|Hard
+3336|Find the Number of Subsequences With Equal GCD|find-the-number-of-subsequences-with-equal-gcd|Hard
+3317|Find the Number of Possible Ways for an Event|find-the-number-of-possible-ways-for-an-event|Hard
+3327|Check if DFS Strings Are Palindromes|check-if-dfs-strings-are-palindromes|Hard
+3307|Find the K-th Character in String Game II|find-the-k-th-character-in-string-game-ii|Hard
+3321|Find X-Sum of All K-Long Subarrays II|find-x-sum-of-all-k-long-subarrays-ii|Hard
+3320|Count The Number of Winning Sequences|count-the-number-of-winning-sequences|Hard
+3312|Sorted GCD Pair Queries|sorted-gcd-pair-queries|Hard
+3303|Find the Occurrence of First Almost Equal Substring|find-the-occurrence-of-first-almost-equal-substring|Hard
+3311|Construct 2D Grid Matching Graph Layout|construct-2d-grid-matching-graph-layout|Hard
+3287|Find the Maximum Sequence Value of Array|find-the-maximum-sequence-value-of-array|Hard
+3298|Count Substrings That Can Be Rearranged to Contain a String II|count-substrings-that-can-be-rearranged-to-contain-a-string-ii|Hard
+3288|Length of the Longest Increasing Path|length-of-the-longest-increasing-path|Hard
+3276|Select Cells in Grid With Maximum Score|select-cells-in-grid-with-maximum-score|Hard
+3414|Maximum Score of Non-overlapping Intervals|maximum-score-of-non-overlapping-intervals|Hard
+3283|Maximum Number of Moves to Kill All Pawns|maximum-number-of-moves-to-kill-all-pawns|Hard
+3292|Minimum Number of Valid Strings to Form Target II|minimum-number-of-valid-strings-to-form-target-ii|Hard
+3266|Final Array State After K Multiplication Operations II|final-array-state-after-k-multiplication-operations-ii|Hard
+3260|Find the Largest Palindrome Divisible by K|find-the-largest-palindrome-divisible-by-k|Hard
+3277|Maximum XOR Score Subarray Queries|maximum-xor-score-subarray-queries|Hard
+3256|Maximum Value Sum by Placing Three Rooks I|maximum-value-sum-by-placing-three-rooks-i|Hard
+3272|Find the Count of Good Integers|find-the-count-of-good-integers|Hard
+3261|Count Substrings That Satisfy K-Constraint II|count-substrings-that-satisfy-k-constraint-ii|Hard
+3267|Count Almost Equal Pairs II|count-almost-equal-pairs-ii|Hard
+3257|Maximum Value Sum by Placing Three Rooks II|maximum-value-sum-by-placing-three-rooks-ii|Hard
+3251|Find the Count of Monotonic Pairs II|find-the-count-of-monotonic-pairs-ii|Hard
+3250|Find the Count of Monotonic Pairs I|find-the-count-of-monotonic-pairs-i|Hard
+3241|Time Taken to Mark All Nodes|time-taken-to-mark-all-nodes|Hard
+3273|Minimum Amount of Damage Dealt to Bob|minimum-amount-of-damage-dealt-to-bob|Hard
+3245|Alternating Groups III|alternating-groups-iii|Hard
+3244|Shortest Distance After Road Addition Queries II|shortest-distance-after-road-addition-queries-ii|Hard
+3219|Minimum Cost for Cutting Cake II|minimum-cost-for-cutting-cake-ii|Hard
+3213|Construct String with Minimum Cost|construct-string-with-minimum-cost|Hard
+3235|Check if the Rectangle Corner Is Reachable|check-if-the-rectangle-corner-is-reachable|Hard
+3225|Maximum Score From Grid Operations|maximum-score-from-grid-operations|Hard
+3209|Number of Subarrays With AND Value of K|number-of-subarrays-with-and-value-of-k|Hard
+3193|Count the Number of Inversions|count-the-number-of-inversions|Hard
+3197|Find the Minimum Area to Cover All Ones II|find-the-minimum-area-to-cover-all-ones-ii|Hard
+3229|Minimum Operations to Make Array Equal to Target|minimum-operations-to-make-array-equal-to-target|Hard
+3177|Find the Maximum Length of a Good Subsequence II|find-the-maximum-length-of-a-good-subsequence-ii|Hard
+3181|Maximum Total Reward Using Operations II|maximum-total-reward-using-operations-ii|Hard
+3203|Find Minimum Diameter After Merging Two Trees|find-minimum-diameter-after-merging-two-trees|Hard
+3187|Peaks in Array|peaks-in-array|Hard
+3171|Find Subarray With Bitwise OR Closest to K|find-subarray-with-bitwise-or-closest-to-k|Hard
+3161|Block Placement Queries|block-placement-queries|Hard
+3149|Find the Minimum Cost Array Permutation|find-the-minimum-cost-array-permutation|Hard
+3165|Maximum Sum of Subsequence With Non-adjacent Elements|maximum-sum-of-subsequence-with-non-adjacent-elements|Hard
+3154|Find Number of Ways to Reach the K-th Stair|find-number-of-ways-to-reach-the-k-th-stair|Hard
+3145|Find Products of Elements of Big Array|find-products-of-elements-of-big-array|Hard
+3130|Find All Possible Stable Binary Arrays II|find-all-possible-stable-binary-arrays-ii|Hard
+3139|Minimum Cost to Equalize Array|minimum-cost-to-equalize-array|Hard
+3123|Find Edges in Shortest Paths|find-edges-in-shortest-paths|Hard
+3113|Find the Number of Subarrays Where Boundary Elements Are Maximum|find-the-number-of-subarrays-where-boundary-elements-are-maximum|Hard
+3093|Longest Common Suffix Queries|longest-common-suffix-queries|Hard
+3116|Kth Smallest Amount With Single Denomination Combination|kth-smallest-amount-with-single-denomination-combination|Hard
+3117|Minimum Sum of Values by Dividing Array|minimum-sum-of-values-by-dividing-array|Hard
+3134|Find the Median of the Uniqueness Array|find-the-median-of-the-uniqueness-array|Hard
+3072|Distribute Elements Into Two Arrays II|distribute-elements-into-two-arrays-ii|Hard
+3108|Minimum Cost Walk in Weighted Graph|minimum-cost-walk-in-weighted-graph|Hard
+3082|Find the Sum of the Power of All Subsequences|find-the-sum-of-the-power-of-all-subsequences|Hard
+3102|Minimize Manhattan Distances|minimize-manhattan-distances|Hard
+3086|Minimum Moves to Pick K Ones|minimum-moves-to-pick-k-ones|Hard
+3098|Find the Sum of Subsequence Powers|find-the-sum-of-subsequence-powers|Hard
+3077|Maximum Strength of K Disjoint Subarrays|maximum-strength-of-k-disjoint-subarrays|Hard
+3017|Count the Number of Houses at a Certain Distance II|count-the-number-of-houses-at-a-certain-distance-ii|Hard
+3068|Find the Maximum Sum of Node Values|find-the-maximum-sum-of-node-values|Hard
+3045|Count Prefix and Suffix Pairs II|count-prefix-and-suffix-pairs-ii|Hard
+3008|Find Beautiful Indices in the Given Array II|find-beautiful-indices-in-the-given-array-ii|Hard
+3041|Maximize Consecutive Elements in an Array After Modification|maximize-consecutive-elements-in-an-array-after-modification|Hard
+3031|Minimum Time to Revert Word to Initial State II|minimum-time-to-revert-word-to-initial-state-ii|Hard
+3036|Number of Subarrays That Match a Pattern II|number-of-subarrays-that-match-a-pattern-ii|Hard
+3049|Earliest Second to Mark Indices II|earliest-second-to-mark-indices-ii|Hard
+3027|Find the Number of Ways to Place People II|find-the-number-of-ways-to-place-people-ii|Hard
+3022|Minimize OR of Remaining Elements Using Operations|minimize-or-of-remaining-elements-using-operations|Hard
+3013|Divide an Array Into Subarrays With Minimum Cost II|divide-an-array-into-subarrays-with-minimum-cost-ii|Hard
+2972|Count the Number of Incremovable Subarrays II|count-the-number-of-incremovable-subarrays-ii|Hard
+2999|Count the Number of Powerful Integers|count-the-number-of-powerful-integers|Hard
+2977|Minimum Cost to Convert String II|minimum-cost-to-convert-string-ii|Hard
+3003|Maximize the Number of Partitions After Operations|maximize-the-number-of-partitions-after-operations|Hard
+2954|Count the Number of Infection Sequences|count-the-number-of-infection-sequences|Hard
+2953|Count Complete Substrings|count-complete-substrings|Hard
+2973|Find Number of Coins to Place in Tree Nodes|find-number-of-coins-to-place-in-tree-nodes|Hard
+2959|Number of Possible Sets of Closing Branches|number-of-possible-sets-of-closing-branches|Hard
+2963|Count the Number of Good Partitions|count-the-number-of-good-partitions|Hard
+2945|Find Maximum Non-decreasing Array Length|find-maximum-non-decreasing-array-length|Hard
+2949|Count Beautiful Substrings II|count-beautiful-substrings-ii|Hard
+2983|Palindrome Rearrangement Queries|palindrome-rearrangement-queries|Hard
+2935|Maximum Strong Pair XOR II|maximum-strong-pair-xor-ii|Hard
+2968|Apply Operations to Maximize Frequency Score|apply-operations-to-maximize-frequency-score|Hard
+2926|Maximum Balanced Subsequence Sum|maximum-balanced-subsequence-sum|Hard
+2940|Find Building Where Alice and Bob Can Meet|find-building-where-alice-and-bob-can-meet|Hard
+2920|Maximum Points After Collecting Coins From All Nodes|maximum-points-after-collecting-coins-from-all-nodes|Hard
+2897|Apply Operations on Array to Maximize Sum of Squares|apply-operations-on-array-to-maximize-sum-of-squares|Hard
+2876|Count Visited Nodes in a Directed Graph|count-visited-nodes-in-a-directed-graph|Hard
+2916|Subarrays Distinct Element Sum of Squares II|subarrays-distinct-element-sum-of-squares-ii|Hard
+2867|Count Valid Paths in a Tree|count-valid-paths-in-a-tree|Hard
+2931|Maximum Spending After Buying Items|maximum-spending-after-buying-items|Hard
+2858|Minimum Edge Reversals So Every Node Is Reachable|minimum-edge-reversals-so-every-node-is-reachable|Hard
+2902|Count of Sub-Multisets With Bounded Sum|count-of-sub-multisets-with-bounded-sum|Hard
+2846|Minimum Edge Weight Equilibrium Queries in a Tree|minimum-edge-weight-equilibrium-queries-in-a-tree|Hard
+2872|Maximum Number of K-Divisible Components|maximum-number-of-k-divisible-components|Hard
+2842|Count K-Subsequences of a String With Maximum Beauty|count-k-subsequences-of-a-string-with-maximum-beauty|Hard
+2862|Maximum Element-Sum of a Complete Subset of Indices|maximum-element-sum-of-a-complete-subset-of-indices|Hard
+2836|Maximize Value of Function in a Ball Passing Game|maximize-value-of-function-in-a-ball-passing-game|Hard
+2835|Minimum Operations to Form Subsequence With Target Sum|minimum-operations-to-form-subsequence-with-target-sum|Hard
+2851|String Transformation|string-transformation|Hard
+2827|Number of Beautiful Integers in the Range|number-of-beautiful-integers-in-the-range|Hard
+2818|Apply Operations to Maximize Score|apply-operations-to-maximize-score|Hard
+2809|Minimum Time to Make Array Sum At Most x|minimum-time-to-make-array-sum-at-most-x|Hard
+2801|Count Stepping Numbers in Range|count-stepping-numbers-in-range|Hard
+2790|Maximum Number of Groups With Increasing Length|maximum-number-of-groups-with-increasing-length|Hard
+2791|Count Paths That Can Form a Palindrome in a Tree|count-paths-that-can-form-a-palindrome-in-a-tree|Hard
+2813|Maximum Elegance of a K-Length Subsequence|maximum-elegance-of-a-k-length-subsequence|Hard
+2781|Length of the Longest Valid Substring|length-of-the-longest-valid-substring|Hard
+2911|Minimum Changes to Make K Semi-palindromes|minimum-changes-to-make-k-semi-palindromes|Hard
+2763|Sum of Imbalance Numbers of All Subarrays|sum-of-imbalance-numbers-of-all-subarrays|Hard
+2751|Robot Collisions|robot-collisions|Hard
+2736|Maximum Sum Queries|maximum-sum-queries|Hard
+2709|Greatest Common Divisor Traversal|greatest-common-divisor-traversal|Hard
+2732|Find a Good Subset of the Matrix|find-a-good-subset-of-the-matrix|Hard
+2713|Maximum Strictly Increasing Cells in a Matrix|maximum-strictly-increasing-cells-in-a-matrix|Hard
+2742|Painting the Walls|painting-the-walls|Hard
+2699|Modify Graph Edge Weights|modify-graph-edge-weights|Hard
+2681|Power of Heroes|power-of-heroes|Hard
+2659|Make Array Empty|make-array-empty|Hard
+2719|Count of Integers|count-of-integers|Hard
+2646|Minimize the Total Price of the Trips|minimize-the-total-price-of-the-trips|Hard
+2612|Minimum Reverse Operations|minimum-reverse-operations|Hard
+2603|Collect Coins in a Tree|collect-coins-in-a-tree|Hard
+2577|Minimum Time to Visit a Cell In a Grid|minimum-time-to-visit-a-cell-in-a-grid|Hard
+2573|Find the String with LCP|find-the-string-with-lcp|Hard
+2569|Handling Sum Queries After Update|handling-sum-queries-after-update|Hard
+2565|Subsequence With the Minimum Score|subsequence-with-the-minimum-score|Hard
+2617|Minimum Number of Visited Cells in a Grid|minimum-number-of-visited-cells-in-a-grid|Hard
+2561|Rearranging Fruits|rearranging-fruits|Hard
+2663|Lexicographically Smallest Beautiful String|lexicographically-smallest-beautiful-string|Hard
+2552|Count Increasing Quadruplets|count-increasing-quadruplets|Hard
+2551|Put Marbles in Bags|put-marbles-in-bags|Hard
+2642|Design Graph With Shortest Path Calculator|design-graph-with-shortest-path-calculator|Hard
+2608|Shortest Cycle in a Graph|shortest-cycle-in-a-graph|Hard
+2589|Minimum Time to Complete All Tasks|minimum-time-to-complete-all-tasks|Hard
+2581|Count Number of Possible Root Nodes|count-number-of-possible-root-nodes|Hard
+2585|Number of Ways to Earn Points|number-of-ways-to-earn-points|Hard
+2584|Split the Array to Make Coprime Products|split-the-array-to-make-coprime-products|Hard
+2532|Time to Cross a Bridge|time-to-cross-a-bridge|Hard
+2543|Check if Point Is Reachable|check-if-point-is-reachable|Hard
+2547|Minimum Cost to Split an Array|minimum-cost-to-split-an-array|Hard
+2538|Difference Between Maximum and Minimum Price Sum|difference-between-maximum-and-minimum-price-sum|Hard
+2528|Maximize the Minimum Powered City|maximize-the-minimum-powered-city|Hard
+2514|Count Anagrams|count-anagrams|Hard
+2518|Number of Great Partitions|number-of-great-partitions|Hard
+2509|Cycle Length Queries in a Tree|cycle-length-queries-in-a-tree|Hard
+2508|Add Edges to Make Degrees of All Nodes Even|add-edges-to-make-degrees-of-all-nodes-even|Hard
+2499|Minimum Total Cost to Make Arrays Unequal|minimum-total-cost-to-make-arrays-unequal|Hard
+2503|Maximum Number of Points From Grid Queries|maximum-number-of-points-from-grid-queries|Hard
+2493|Divide Nodes Into the Maximum Number of Groups|divide-nodes-into-the-maximum-number-of-groups|Hard
+2484|Count Palindromic Subsequences|count-palindromic-subsequences|Hard
+2488|Count Subarrays With Median K|count-subarrays-with-median-k|Hard
+2478|Number of Beautiful Partitions|number-of-beautiful-partitions|Hard
+2468|Split Message Based on Limit|split-message-based-on-limit|Hard
+2472|Maximum Number of Non-overlapping Palindrome Substrings|maximum-number-of-non-overlapping-palindrome-substrings|Hard
+2463|Minimum Total Distance Traveled|minimum-total-distance-traveled|Hard
+2454|Next Greater Element IV|next-greater-element-iv|Hard
+2458|Height of Binary Tree After Subtree Removal Queries|height-of-binary-tree-after-subtree-removal-queries|Hard
+2449|Minimum Number of Operations to Make Arrays Similar|minimum-number-of-operations-to-make-arrays-similar|Hard
+2448|Minimum Cost to Make Array Equal|minimum-cost-to-make-array-equal|Hard
+2440|Create Components With Same Value|create-components-with-same-value|Hard
+2444|Count Subarrays With Fixed Bounds|count-subarrays-with-fixed-bounds|Hard
+2407|Longest Increasing Subsequence II|longest-increasing-subsequence-ii|Hard
+2435|Paths in Matrix Whose Sum Is Divisible by K|paths-in-matrix-whose-sum-is-divisible-by-k|Hard
+2426|Number of Pairs Satisfying Inequality|number-of-pairs-satisfying-inequality|Hard
+2430|Maximum Deletions on a String|maximum-deletions-on-a-string|Hard
+2421|Number of Good Paths|number-of-good-paths|Hard
+2412|Minimum Money Required Before Transactions|minimum-money-required-before-transactions|Hard
+2416|Sum of Prefix Scores of Strings|sum-of-prefix-scores-of-strings|Hard
+2402|Meeting Rooms III|meeting-rooms-iii|Hard
+2392|Build a Matrix With Conditions|build-a-matrix-with-conditions|Hard
+2382|Maximum Segment Sum After Removals|maximum-segment-sum-after-removals|Hard
+2386|Find the K-Sum of an Array|find-the-k-sum-of-an-array|Hard
+2376|Count Special Integers|count-special-integers|Hard
+2366|Minimum Replacements to Sort the Array|minimum-replacements-to-sort-the-array|Hard
+2398|Maximum Number of Robots Within Budget|maximum-number-of-robots-within-budget|Hard
+2360|Longest Cycle in a Graph|longest-cycle-in-a-graph|Hard
+2350|Shortest Impossible Sequence of Rolls|shortest-impossible-sequence-of-rolls|Hard
+2354|Number of Excellent Pairs|number-of-excellent-pairs|Hard
+2344|Minimum Deletions to Make Array Divisible|minimum-deletions-to-make-array-divisible|Hard
+2334|Subarray With Elements Greater Than Varying Threshold|subarray-with-elements-greater-than-varying-threshold|Hard
+2338|Count the Number of Ideal Arrays|count-the-number-of-ideal-arrays|Hard
+2328|Number of Increasing Paths in a Grid|number-of-increasing-paths-in-a-grid|Hard
+2318|Number of Distinct Roll Sequences|number-of-distinct-roll-sequences|Hard
+2322|Minimum Score After Removals on a Tree|minimum-score-after-removals-on-a-tree|Hard
+2302|Count Subarrays With Score Less Than K|count-subarrays-with-score-less-than-k|Hard
+2301|Match Substring After Replacement|match-substring-after-replacement|Hard
+2306|Naming a Company|naming-a-company|Hard
+2296|Design a Text Editor|design-a-text-editor|Hard
+2286|Booking Concert Tickets in Groups|booking-concert-tickets-in-groups|Hard
+2290|Minimum Obstacle Removal to Reach Corner|minimum-obstacle-removal-to-reach-corner|Hard
+2281|Sum of Total Strength of Wizards|sum-of-total-strength-of-wizards|Hard
+2246|Longest Path With Different Adjacent Characters|longest-path-with-different-adjacent-characters|Hard
+2272|Substring With Largest Variance|substring-with-largest-variance|Hard
+2276|Count Integers in Intervals|count-integers-in-intervals|Hard
+2242|Maximum Score of a Node Sequence|maximum-score-of-a-node-sequence|Hard
+2267| Check if There Is a Valid Parentheses String Path|check-if-there-is-a-valid-parentheses-string-path|Hard
+2258|Escape the Spreading Fire|escape-the-spreading-fire|Hard
+2262|Total Appeal of A String|total-appeal-of-a-string|Hard
+2251|Number of Flowers in Full Bloom|number-of-flowers-in-full-bloom|Hard
+2234|Maximum Total Beauty of the Gardens|maximum-total-beauty-of-the-gardens|Hard
+2223|Sum of Scores of Built Strings|sum-of-scores-of-built-strings|Hard
+2203|Minimum Weighted Subgraph With the Required Paths|minimum-weighted-subgraph-with-the-required-paths|Hard
+2213|Longest Substring of One Repeating Character|longest-substring-of-one-repeating-character|Hard
+2209|Minimum White Tiles After Covering With Carpets|minimum-white-tiles-after-covering-with-carpets|Hard
+2197|Replace Non-Coprime Numbers in Array|replace-non-coprime-numbers-in-array|Hard
+2183|Count Array Pairs Divisible by K|count-array-pairs-divisible-by-k|Hard
+2188|Minimum Time to Finish the Race|minimum-time-to-finish-the-race|Hard
+2172|Maximum AND Sum of Array|maximum-and-sum-of-array|Hard
+2167|Minimum Time to Remove All Cars Containing Illegal Goods|minimum-time-to-remove-all-cars-containing-illegal-goods|Hard
+2179|Count Good Triplets in an Array|count-good-triplets-in-an-array|Hard
+2157|Groups of Strings|groups-of-strings|Hard
+2156|Find Substring With Given Hash Value|find-substring-with-given-hash-value|Hard
+2151|Maximum Good People Based on Statements|maximum-good-people-based-on-statements|Hard
+2163|Minimum Difference in Sums After Removal of Elements|minimum-difference-in-sums-after-removal-of-elements|Hard
+2141|Maximum Running Time of N Computers|maximum-running-time-of-n-computers|Hard
+2136|Earliest Possible Day of Full Bloom|earliest-possible-day-of-full-bloom|Hard
+2147|Number of Ways to Divide a Long Corridor|number-of-ways-to-divide-a-long-corridor|Hard
+2127|Maximum Employees to Be Invited to a Meeting|maximum-employees-to-be-invited-to-a-meeting|Hard
+2122|Recover the Original Array|recover-the-original-array|Hard
+2111|Minimum Operations to Make the Array K-Increasing|minimum-operations-to-make-the-array-k-increasing|Hard
+2106|Maximum Fruits Harvested After at Most K Steps|maximum-fruits-harvested-after-at-most-k-steps|Hard
+2117|Abbreviating the Product of a Range|abbreviating-the-product-of-a-range|Hard
+2092|Find All People With Secret|find-all-people-with-secret|Hard
+2102|Sequentially Ordinal Rank Tracker|sequentially-ordinal-rank-tracker|Hard
+2081|Sum of k-Mirror Numbers|sum-of-k-mirror-numbers|Hard
+2097|Valid Arrangement of Pairs|valid-arrangement-of-pairs|Hard
+2132|Stamping the Grid|stamping-the-grid|Hard
+2076|Process Restricted Friend Requests|process-restricted-friend-requests|Hard
+2088|Count Fertile Pyramids in a Land|count-fertile-pyramids-in-a-land|Hard
+2065|Maximum Path Quality of a Graph|maximum-path-quality-of-a-graph|Hard
+2060|Check if an Original String Exists Given Two Encoded Strings|check-if-an-original-string-exists-given-two-encoded-strings|Hard
+2071|Maximum Number of Tasks You Can Assign|maximum-number-of-tasks-you-can-assign|Hard
+2050|Parallel Courses III|parallel-courses-iii|Hard
+2045|Second Minimum Time to Reach Destination|second-minimum-time-to-reach-destination|Hard
+2056|Number of Valid Move Combinations On Chessboard|number-of-valid-move-combinations-on-chessboard|Hard
+2035|Partition Array Into Two Arrays to Minimize Sum Difference|partition-array-into-two-arrays-to-minimize-sum-difference|Hard
+2030|Smallest K-Length Subsequence With Occurrences of a Letter|smallest-k-length-subsequence-with-occurrences-of-a-letter|Hard
+2040|Kth Smallest Product of Two Sorted Arrays|kth-smallest-product-of-two-sorted-arrays|Hard
+2019|The Score of Students Solving Math Expression|the-score-of-students-solving-math-expression|Hard
+2014|Longest Subsequence Repeated k Times|longest-subsequence-repeated-k-times|Hard
+2025|Maximum Number of Ways to Partition an Array|maximum-number-of-ways-to-partition-an-array|Hard
+2003|Smallest Missing Genetic Value in Each Subtree|smallest-missing-genetic-value-in-each-subtree|Hard
+1998|GCD Sort of an Array|gcd-sort-of-an-array|Hard
+2009|Minimum Number of Operations to Make Array Continuous|minimum-number-of-operations-to-make-array-continuous|Hard
+1987|Number of Unique Good Subsequences|number-of-unique-good-subsequences|Hard
+1982|Find Array Given Subset Sums|find-array-given-subset-sums|Hard
+1994|The Number of Good Subsets|the-number-of-good-subsets|Hard
+1970|Last Day Where You Can Still Cross|last-day-where-you-can-still-cross|Hard
+1964|Find the Longest Valid Obstacle Course at Each Position|find-the-longest-valid-obstacle-course-at-each-position|Hard
+1977|Number of Ways to Separate Numbers|number-of-ways-to-separate-numbers|Hard
+1955|Count Number of Special Subsequences|count-number-of-special-subsequences|Hard
+1948|Delete Duplicate Folders in System|delete-duplicate-folders-in-system|Hard
+1938|Maximum Genetic Difference Query|maximum-genetic-difference-query|Hard
+1931|Painting a Grid With Three Different Colors|painting-a-grid-with-three-different-colors|Hard
+1932|Merge BSTs to Create Single BST|merge-bsts-to-create-single-bst|Hard
+1923|Longest Common Subpath|longest-common-subpath|Hard
+1928|Minimum Cost to Reach Destination in Time|minimum-cost-to-reach-destination-in-time|Hard
+1900|The Earliest and Latest Rounds Where Players Compete|the-earliest-and-latest-rounds-where-players-compete|Hard
+1912|Design Movie Rental System|design-movie-rental-system|Hard
+1889|Minimum Space Wasted From Packaging|minimum-space-wasted-from-packaging|Hard
+1883|Minimum Skips to Arrive at Meeting On Time|minimum-skips-to-arrive-at-meeting-on-time|Hard
+1896|Minimum Cost to Change the Final Value of Expression|minimum-cost-to-change-the-final-value-of-expression|Hard
+1872|Stone Game VIII|stone-game-viii|Hard
+1866|Number of Ways to Rearrange Sticks With K Sticks Visible|number-of-ways-to-rearrange-sticks-with-k-sticks-visible|Hard
+1879|Minimum XOR Sum of Two Arrays|minimum-xor-sum-of-two-arrays|Hard
+1857|Largest Color Value in a Directed Graph|largest-color-value-in-a-directed-graph|Hard
+1851|Minimum Interval to Include Each Query|minimum-interval-to-include-each-query|Hard
+1840|Maximum Building Height|maximum-building-height|Hard
+1835|Find XOR Sum of All Pairs Bitwise AND|find-xor-sum-of-all-pairs-bitwise-and|Hard
+1847|Closest Room|closest-room|Hard
+1825|Finding MK Average|finding-mk-average|Hard
+1819|Number of Different Subsequences GCDs|number-of-different-subsequences-gcds|Hard
+1830|Minimum Number of Operations to Make String Sorted|minimum-number-of-operations-to-make-string-sorted|Hard
+1808|Maximize Number of Nice Divisors|maximize-number-of-nice-divisors|Hard
+1815|Maximum Number of Groups Getting Fresh Donuts|maximum-number-of-groups-getting-fresh-donuts|Hard
+1793|Maximum Score of a Good Subarray|maximum-score-of-a-good-subarray|Hard
+1787|Make the XOR of All Segments Equal to Zero|make-the-xor-of-all-segments-equal-to-zero|Hard
+1803|Count Pairs With XOR in a Range|count-pairs-with-xor-in-a-range|Hard
+1799|Maximize Score After N Operations|maximize-score-after-n-operations|Hard
+1776|Car Fleet II|car-fleet-ii|Hard
+1771|Maximize Palindrome Length From Subsequences|maximize-palindrome-length-from-subsequences|Hard
+1770|Maximum Score from Performing Multiplication Operations|maximum-score-from-performing-multiplication-operations|Hard
+1782|Count Pairs Of Nodes|count-pairs-of-nodes|Hard
+1761|Minimum Degree of a Connected Trio in a Graph|minimum-degree-of-a-connected-trio-in-a-graph|Hard
+1755|Closest Subsequence Sum|closest-subsequence-sum|Hard
+1766|Tree of Coprimes|tree-of-coprimes|Hard
+1745|Palindrome Partitioning IV|palindrome-partitioning-iv|Hard
+1739|Building Boxes|building-boxes|Hard
+1751|Maximum Number of Events That Can Be Attended II|maximum-number-of-events-that-can-be-attended-ii|Hard
+1735|Count Ways to Make Array With Product|count-ways-to-make-array-with-product|Hard
+1713|Minimum Operations to Make a Subsequence|minimum-operations-to-make-a-subsequence|Hard
+1707|Maximum XOR With an Element From Array|maximum-xor-with-an-element-from-array|Hard
+1723|Find Minimum Time to Finish All Jobs|find-minimum-time-to-finish-all-jobs|Hard
+1719|Number Of Ways To Reconstruct A Tree|number-of-ways-to-reconstruct-a-tree|Hard
+1697|Checking Existence of Edge Length Limited Paths|checking-existence-of-edge-length-limited-paths|Hard
+1703|Minimum Adjacent Swaps for K Consecutive Ones|minimum-adjacent-swaps-for-k-consecutive-ones|Hard
+1681|Minimum Incompatibility|minimum-incompatibility|Hard
+1675|Minimize Deviation in Array|minimize-deviation-in-array|Hard
+1687|Delivering Boxes from Storage to Ports|delivering-boxes-from-storage-to-ports|Hard
+1665|Minimum Initial Energy to Finish Tasks|minimum-initial-energy-to-finish-tasks|Hard
+1659|Maximize Grid Happiness|maximize-grid-happiness|Hard
+1649|Create Sorted Array through Instructions|create-sorted-array-through-instructions|Hard
+1671|Minimum Number of Removals to Make Mountain Array|minimum-number-of-removals-to-make-mountain-array|Hard
+1655|Distribute Repeating Integers|distribute-repeating-integers|Hard
+1639|Number of Ways to Form a Target String Given a Dictionary|number-of-ways-to-form-a-target-string-given-a-dictionary|Hard
+1617|Count Subtrees With Max Distance Between Cities|count-subtrees-with-max-distance-between-cities|Hard
+1610|Maximum Number of Visible Points|maximum-number-of-visible-points|Hard
+1611|Minimum One Bit Operations to Make Integers Zero|minimum-one-bit-operations-to-make-integers-zero|Hard
+1622|Fancy Sequence|fancy-sequence|Hard
+1728|Cat and Mouse II|cat-and-mouse-ii|Hard
+1601|Maximum Number of Achievable Transfer Requests|maximum-number-of-achievable-transfer-requests|Hard
+1595|Minimum Cost to Connect Two Groups of Points|minimum-cost-to-connect-two-groups-of-points|Hard
+1606|Find Servers That Handled Most Number of Requests|find-servers-that-handled-most-number-of-requests|Hard
+1585|Check If String Is Transformable With Substring Sort Operations|check-if-string-is-transformable-with-substring-sort-operations|Hard
+1579|Remove Max Number of Edges to Keep Graph Fully Traversable|remove-max-number-of-edges-to-keep-graph-fully-traversable|Hard
+1591|Strange Printer II|strange-printer-ii|Hard
+1569|Number of Ways to Reorder Array to Get Same BST|number-of-ways-to-reorder-array-to-get-same-bst|Hard
+1568|Minimum Number of Days to Disconnect Island|minimum-number-of-days-to-disconnect-island|Hard
+1563|Stone Game V|stone-game-v|Hard
+1575|Count All Possible Routes|count-all-possible-routes|Hard
+1553|Minimum Number of Days to Eat N Oranges|minimum-number-of-days-to-eat-n-oranges|Hard
+1547|Minimum Cost to Cut a Stick|minimum-cost-to-cut-a-stick|Hard
+1542|Find Longest Awesome Substring|find-longest-awesome-substring|Hard
+1537|Get the Maximum Score|get-the-maximum-score|Hard
+1521|Find a Value of a Mysterious Function Closest to Target|find-a-value-of-a-mysterious-function-closest-to-target|Hard
+1520|Maximum Number of Non-Overlapping Substrings|maximum-number-of-non-overlapping-substrings|Hard
+1515|Best Position for a Service Centre|best-position-for-a-service-centre|Hard
+1531|String Compression II|string-compression-ii|Hard
+1526|Minimum Number of Increments on Subarrays to Form a Target Array|minimum-number-of-increments-on-subarrays-to-form-a-target-array|Hard
+1505|Minimum Possible Integer After at Most K Adjacent Swaps On Digits|minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits|Hard
+1499|Max Value of Equation|max-value-of-equation|Hard
+1510|Stone Game IV|stone-game-iv|Hard
+1489|Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree|find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree|Hard
+1494|Parallel Courses II|parallel-courses-ii|Hard
+1473|Paint House III|paint-house-iii|Hard
+1467|Probability of a Two Boxes Having The Same Number of Distinct Balls|probability-of-a-two-boxes-having-the-same-number-of-distinct-balls|Hard
+1478|Allocate Mailboxes|allocate-mailboxes|Hard
+1458|Max Dot Product of Two Subsequences|max-dot-product-of-two-subsequences|Hard
+1453|Maximum Number of Darts Inside of a Circular Dartboard|maximum-number-of-darts-inside-of-a-circular-dartboard|Hard
+1463|Cherry Pickup II|cherry-pickup-ii|Hard
+1444|Number of Ways of Cutting a Pizza|number-of-ways-of-cutting-a-pizza|Hard
+1439|Find the Kth Smallest Sum of a Matrix With Sorted Rows|find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows|Hard
+1449|Form Largest Integer With Digits That Add up to Target|form-largest-integer-with-digits-that-add-up-to-target|Hard
+1420|Build Array Where You Can Find The Maximum Exactly K Comparisons|build-array-where-you-can-find-the-maximum-exactly-k-comparisons|Hard
+1434|Number of Ways to Wear Different Hats to Each Other|number-of-ways-to-wear-different-hats-to-each-other|Hard
+1411|Number of Ways to Paint N × 3 Grid|number-of-ways-to-paint-n-3-grid|Hard
+1406|Stone Game III|stone-game-iii|Hard
+1416|Restore The Array|restore-the-array|Hard
+1397|Find All Good Strings|find-all-good-strings|Hard
+1392|Longest Happy Prefix|longest-happy-prefix|Hard
+1402|Reducing Dishes|reducing-dishes|Hard
+1383|Maximum Performance of a Team|maximum-performance-of-a-team|Hard
+1377|Frog Position After T Seconds|frog-position-after-t-seconds|Hard
+1388|Pizza With 3n Slices|pizza-with-3n-slices|Hard
+1368|Minimum Cost to Make at Least One Valid Path in a Grid|minimum-cost-to-make-at-least-one-valid-path-in-a-grid|Hard
+1354|Construct Target Array With Multiple Sums|construct-target-array-with-multiple-sums|Hard
+1373|Maximum Sum BST in Binary Tree|maximum-sum-bst-in-binary-tree|Hard
+1349|Maximum Students Taking Exam|maximum-students-taking-exam|Hard
+1340|Jump Game V|jump-game-v|Hard
+1359|Count All Valid Pickup and Delivery Options|count-all-valid-pickup-and-delivery-options|Hard
+1335|Minimum Difficulty of a Job Schedule|minimum-difficulty-of-a-job-schedule|Hard
+1326|Minimum Number of Taps to Open to Water a Garden|minimum-number-of-taps-to-open-to-water-a-garden|Hard
+1345|Jump Game IV|jump-game-iv|Hard
+1320|Minimum Distance to Type a Word Using Two Fingers|minimum-distance-to-type-a-word-using-two-fingers|Hard
+1312|Minimum Insertion Steps to Make a String Palindrome|minimum-insertion-steps-to-make-a-string-palindrome|Hard
+2227|Encrypt and Decrypt Strings|encrypt-and-decrypt-strings|Hard
+1307|Verbal Arithmetic Puzzle|verbal-arithmetic-puzzle|Hard
+1298|Maximum Candies You Can Get from Boxes|maximum-candies-you-can-get-from-boxes|Hard
+1293|Shortest Path in a Grid with Obstacles Elimination|shortest-path-in-a-grid-with-obstacles-elimination|Hard
+1284|Minimum Number of Flips to Convert Binary Matrix to Zero Matrix|minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix|Hard
+1278|Palindrome Partitioning III|palindrome-partitioning-iii|Hard
+1269|Number of Ways to Stay in the Same Place After Some Steps|number-of-ways-to-stay-in-the-same-place-after-some-steps|Hard
+2218|Maximum Value of K Coins From Piles|maximum-value-of-k-coins-from-piles|Hard
+1263|Minimum Moves to Move a Box to Their Target Location|minimum-moves-to-move-a-box-to-their-target-location|Hard
+1255|Maximum Score Words Formed by Letters|maximum-score-words-formed-by-letters|Hard
+2312|Selling Pieces of Wood|selling-pieces-of-wood|Hard
+1250|Check If It Is a Good Array|check-if-it-is-a-good-array|Hard
+1691|Maximum Height by Stacking Cuboids |maximum-height-by-stacking-cuboids|Hard
+1240|Tiling a Rectangle with the Fewest Squares|tiling-a-rectangle-with-the-fewest-squares|Hard
+2193|Minimum Number of Moves to Make Palindrome|minimum-number-of-moves-to-make-palindrome|Hard
+1235|Maximum Profit in Job Scheduling|maximum-profit-in-job-scheduling|Hard
+2321|Maximum Score Of Spliced Array|maximum-score-of-spliced-array|Hard
+1224|Maximum Equal Frequency|maximum-equal-frequency|Hard
+1223|Dice Roll Simulation|dice-roll-simulation|Hard
+1206|Design Skiplist|design-skiplist|Hard
+1960|Maximum Product of the Length of Two Palindromic Substrings|maximum-product-of-the-length-of-two-palindromic-substrings|Hard
+1220|Count Vowels Permutation|count-vowels-permutation|Hard
+1862|Sum of Floored Pairs|sum-of-floored-pairs|Hard
+1210|Minimum Moves to Reach Target with Rotations|minimum-moves-to-reach-target-with-rotations|Hard
+1916|Count Ways to Build Rooms in an Ant Colony|count-ways-to-build-rooms-in-an-ant-colony|Hard
+1203|Sort Items by Groups Respecting Dependencies|sort-items-by-groups-respecting-dependencies|Hard
+1944|Number of Visible People in a Queue|number-of-visible-people-in-a-queue|Hard
+1192|Critical Connections in a Network|critical-connections-in-a-network|Hard
+1483|Kth Ancestor of a Tree Node|kth-ancestor-of-a-tree-node|Hard
+1187|Make Array Strictly Increasing|make-array-strictly-increasing|Hard
+1425|Constrained Subsequence Sum|constrained-subsequence-sum|Hard
+1178|Number of Valid Words for Each Puzzle|number-of-valid-words-for-each-puzzle|Hard
+1363|Largest Multiple of Three|largest-multiple-of-three|Hard
+1172|Dinner Plate Stacks|dinner-plate-stacks|Hard
+1157|Online Majority Element In Subarray|online-majority-element-in-subarray|Hard
+1632|Rank Transform of a Matrix|rank-transform-of-a-matrix|Hard
+1330|Reverse Subarray To Maximize Array Value|reverse-subarray-to-maximize-array-value|Hard
+1147|Longest Chunked Palindrome Decomposition|longest-chunked-palindrome-decomposition|Hard
+1316|Distinct Echo Substrings|distinct-echo-substrings|Hard
+1301|Number of Paths with Max Score|number-of-paths-with-max-score|Hard
+1289|Minimum Falling Path Sum II|minimum-falling-path-sum-ii|Hard
+1627|Graph Connectivity With Threshold|graph-connectivity-with-threshold|Hard
+1125|Smallest Sufficient Team|smallest-sufficient-team|Hard
+1106|Parsing A Boolean Expression|parsing-a-boolean-expression|Hard
+1096|Brace Expansion II|brace-expansion-ii|Hard
+1095|Find in Mountain Array|find-in-mountain-array|Hard
+1092|Shortest Common Supersequence |shortest-common-supersequence|Hard
+1074|Number of Submatrices That Sum to Target|number-of-submatrices-that-sum-to-target|Hard
+1163|Last Substring in Lexicographical Order|last-substring-in-lexicographical-order|Hard
+1044|Longest Duplicate Substring|longest-duplicate-substring|Hard
+1036|Escape a Large Maze|escape-a-large-maze|Hard
+1032|Stream of Characters|stream-of-characters|Hard
+1028|Recover a Tree From Preorder Traversal|recover-a-tree-from-preorder-traversal|Hard
+1012|Numbers With Repeated Digits|numbers-with-repeated-digits|Hard
+1001|Grid Illumination|grid-illumination|Hard
+1000|Minimum Cost to Merge Stones|minimum-cost-to-merge-stones|Hard
+996|Number of Squareful Arrays|number-of-squareful-arrays|Hard
+995|Minimum Number of K Consecutive Bit Flips|minimum-number-of-k-consecutive-bit-flips|Hard
+992|Subarrays with K Different Integers|subarrays-with-k-different-integers|Hard
+987|Vertical Order Traversal of a Binary Tree|vertical-order-traversal-of-a-binary-tree|Hard
+982|Triples with Bitwise AND Equal To Zero|triples-with-bitwise-and-equal-to-zero|Hard
+980|Unique Paths III|unique-paths-iii|Hard
+975|Odd Even Jump|odd-even-jump|Hard
+972|Equal Rational Numbers|equal-rational-numbers|Hard
+968|Binary Tree Cameras|binary-tree-cameras|Hard
+964|Least Operators to Express Number|least-operators-to-express-number|Hard
+960|Delete Columns to Make Sorted III|delete-columns-to-make-sorted-iii|Hard
+956|Tallest Billboard|tallest-billboard|Hard
+952|Largest Component Size by Common Factor|largest-component-size-by-common-factor|Hard
+943|Find the Shortest Superstring|find-the-shortest-superstring|Hard
+940|Distinct Subsequences II|distinct-subsequences-ii|Hard
+936|Stamping The Sequence|stamping-the-sequence|Hard
+928|Minimize Malware Spread II|minimize-malware-spread-ii|Hard
+927|Three Equal Parts|three-equal-parts|Hard
+924|Minimize Malware Spread|minimize-malware-spread|Hard
+920|Number of Music Playlists|number-of-music-playlists|Hard
+913|Cat and Mouse|cat-and-mouse|Hard
+906|Super Palindromes|super-palindromes|Hard
+903|Valid Permutations for DI Sequence|valid-permutations-for-di-sequence|Hard
+902|Numbers At Most N Given Digit Set|numbers-at-most-n-given-digit-set|Hard
+899|Orderly Queue|orderly-queue|Hard
+895|Maximum Frequency Stack|maximum-frequency-stack|Hard
+891|Sum of Subsequence Widths|sum-of-subsequence-widths|Hard
+887|Super Egg Drop|super-egg-drop|Hard
+882|Reachable Nodes In Subdivided Graph|reachable-nodes-in-subdivided-graph|Hard
+879|Profitable Schemes|profitable-schemes|Hard
+878|Nth Magical Number|nth-magical-number|Hard
+871|Minimum Number of Refueling Stops|minimum-number-of-refueling-stops|Hard
+864|Shortest Path to Get All Keys|shortest-path-to-get-all-keys|Hard
+710|Random Pick with Blacklist|random-pick-with-blacklist|Hard
+862|Shortest Subarray with Sum at Least K|shortest-subarray-with-sum-at-least-k|Hard
+857|Minimum Cost to Hire K Workers|minimum-cost-to-hire-k-workers|Hard
+854|K-Similar Strings|k-similar-strings|Hard
+850|Rectangle Area II|rectangle-area-ii|Hard
+847|Shortest Path Visiting All Nodes|shortest-path-visiting-all-nodes|Hard
+843|Guess the Word|guess-the-word|Hard
+839|Similar String Groups|similar-string-groups|Hard
+834|Sum of Distances in Tree|sum-of-distances-in-tree|Hard
+829|Consecutive Numbers Sum|consecutive-numbers-sum|Hard
+828|Count Unique Characters of All Substrings of a Given String|count-unique-characters-of-all-substrings-of-a-given-string|Hard
+827|Making A Large Island|making-a-large-island|Hard
+818|Race Car|race-car|Hard
+815|Bus Routes|bus-routes|Hard
+810|Chalkboard XOR Game|chalkboard-xor-game|Hard
+805|Split Array With Same Average|split-array-with-same-average|Hard
+803|Bricks Falling When Hit|bricks-falling-when-hit|Hard
+801|Minimum Swaps To Make Sequences Increasing|minimum-swaps-to-make-sequences-increasing|Hard
+798|Smallest Rotation with Highest Score|smallest-rotation-with-highest-score|Hard
+793|Preimage Size of Factorial Zeroes Function|preimage-size-of-factorial-zeroes-function|Hard
+782|Transform to Chessboard|transform-to-chessboard|Hard
+780|Reaching Points|reaching-points|Hard
+778|Swim in Rising Water|swim-in-rising-water|Hard
+773|Sliding Puzzle|sliding-puzzle|Hard
+770|Basic Calculator IV|basic-calculator-iv|Hard
+768|Max Chunks To Make Sorted II|max-chunks-to-make-sorted-ii|Hard
+765|Couples Holding Hands|couples-holding-hands|Hard
+761|Special Binary String|special-binary-string|Hard
+757|Set Intersection Size At Least Two|set-intersection-size-at-least-two|Hard
+753|Cracking the Safe|cracking-the-safe|Hard
+749|Contain Virus|contain-virus|Hard
+745|Prefix and Suffix Search|prefix-and-suffix-search|Hard
+741|Cherry Pickup|cherry-pickup|Hard
+736|Parse Lisp Expression|parse-lisp-expression|Hard
+732|My Calendar III|my-calendar-iii|Hard
+730|Count Different Palindromic Subsequences|count-different-palindromic-subsequences|Hard
+726|Number of Atoms|number-of-atoms|Hard
+719|Find K-th Smallest Pair Distance|find-k-th-smallest-pair-distance|Hard
+715|Range Module|range-module|Hard
+699|Falling Squares|falling-squares|Hard
+691|Stickers to Spell Word|stickers-to-spell-word|Hard
+689|Maximum Sum of 3 Non-Overlapping Subarrays|maximum-sum-of-3-non-overlapping-subarrays|Hard
+685|Redundant Connection II|redundant-connection-ii|Hard
+679|24 Game|24-game|Hard
+675|Cut Off Trees for Golf Event|cut-off-trees-for-golf-event|Hard
+668|Kth Smallest Number in Multiplication Table|kth-smallest-number-in-multiplication-table|Hard
+664|Strange Printer|strange-printer|Hard
+639|Decode Ways II|decode-ways-ii|Hard
+632|Smallest Range Covering Elements from K Lists|smallest-range-covering-elements-from-k-lists|Hard
+630|Course Schedule III|course-schedule-iii|Hard
+629|K Inverse Pairs Array|k-inverse-pairs-array|Hard
+600|Non-negative Integers without Consecutive Ones|non-negative-integers-without-consecutive-ones|Hard
+591|Tag Validator|tag-validator|Hard
+587|Erect the Fence|erect-the-fence|Hard
+564|Find the Closest Palindrome|find-the-closest-palindrome|Hard
+552|Student Attendance Record II|student-attendance-record-ii|Hard
+546|Remove Boxes|remove-boxes|Hard
+517|Super Washing Machines|super-washing-machines|Hard
+514|Freedom Trail|freedom-trail|Hard
+502|IPO|ipo|Hard
+493|Reverse Pairs|reverse-pairs|Hard
+1643|Kth Smallest Instructions|kth-smallest-instructions|Hard
+488|Zuma Game|zuma-game|Hard
+483|Smallest Good Base|smallest-good-base|Hard
+480|Sliding Window Median|sliding-window-median|Hard
+479|Largest Palindrome Product|largest-palindrome-product|Hard
+472|Concatenated Words|concatenated-words|Hard
+466|Count The Repetitions|count-the-repetitions|Hard
+460|LFU Cache|lfu-cache|Hard
+458|Poor Pigs|poor-pigs|Hard
+446|Arithmetic Slices II - Subsequence|arithmetic-slices-ii-subsequence|Hard
+440|K-th Smallest in Lexicographical Order|k-th-smallest-in-lexicographical-order|Hard
+432|All O`one Data Structure|all-oone-data-structure|Hard
+420|Strong Password Checker|strong-password-checker|Hard
+410|Split Array Largest Sum|split-array-largest-sum|Hard
+407|Trapping Rain Water II|trapping-rain-water-ii|Hard
+403|Frog Jump|frog-jump|Hard
+391|Perfect Rectangle|perfect-rectangle|Hard
+381|Insert Delete GetRandom O(1) - Duplicates allowed|insert-delete-getrandom-o1-duplicates-allowed|Hard
+363|Max Sum of Rectangle No Larger Than K|max-sum-of-rectangle-no-larger-than-k|Hard
+354|Russian Doll Envelopes|russian-doll-envelopes|Hard
+352|Data Stream as Disjoint Intervals|data-stream-as-disjoint-intervals|Hard
+336|Palindrome Pairs|palindrome-pairs|Hard
+335|Self Crossing|self-crossing|Hard
+332|Reconstruct Itinerary|reconstruct-itinerary|Hard
+330|Patching Array|patching-array|Hard
+329|Longest Increasing Path in a Matrix|longest-increasing-path-in-a-matrix|Hard
+327|Count of Range Sum|count-of-range-sum|Hard
+321|Create Maximum Number|create-maximum-number|Hard
+315|Count of Smaller Numbers After Self|count-of-smaller-numbers-after-self|Hard
+312|Burst Balloons|burst-balloons|Hard
+301|Remove Invalid Parentheses|remove-invalid-parentheses|Hard
+297|Serialize and Deserialize Binary Tree|serialize-and-deserialize-binary-tree|Hard
+295|Find Median from Data Stream|find-median-from-data-stream|Hard
+282|Expression Add Operators|expression-add-operators|Hard
+273|Integer to English Words|integer-to-english-words|Hard
+239|Sliding Window Maximum|sliding-window-maximum|Hard
+233|Number of Digit One|number-of-digit-one|Hard
+224|Basic Calculator|basic-calculator|Hard
+220|Contains Duplicate III|contains-duplicate-iii|Hard
+218|The Skyline Problem|the-skyline-problem|Hard
+214|Shortest Palindrome|shortest-palindrome|Hard
+212|Word Search II|word-search-ii|Hard
+188|Best Time to Buy and Sell Stock IV|best-time-to-buy-and-sell-stock-iv|Hard
+174|Dungeon Game|dungeon-game|Hard
+154|Find Minimum in Rotated Sorted Array II|find-minimum-in-rotated-sorted-array-ii|Hard
+149|Max Points on a Line|max-points-on-a-line|Hard
+140|Word Break II|word-break-ii|Hard
+135|Candy|candy|Hard
+132|Palindrome Partitioning II|palindrome-partitioning-ii|Hard
+127|Word Ladder|word-ladder|Hard
+126|Word Ladder II|word-ladder-ii|Hard
+124|Binary Tree Maximum Path Sum|binary-tree-maximum-path-sum|Hard
+123|Best Time to Buy and Sell Stock III|best-time-to-buy-and-sell-stock-iii|Hard
+115|Distinct Subsequences|distinct-subsequences|Hard
+87|Scramble String|scramble-string|Hard
+85|Maximal Rectangle|maximal-rectangle|Hard
+84|Largest Rectangle in Histogram|largest-rectangle-in-histogram|Hard
+76|Minimum Window Substring|minimum-window-substring|Hard
+68|Text Justification|text-justification|Hard
+65|Valid Number|valid-number|Hard
+60|Permutation Sequence|permutation-sequence|Hard
+52|N-Queens II|n-queens-ii|Hard
+51|N-Queens|n-queens|Hard
+44|Wildcard Matching|wildcard-matching|Hard
+42|Trapping Rain Water|trapping-rain-water|Hard
+41|First Missing Positive|first-missing-positive|Hard
+37|Sudoku Solver|sudoku-solver|Hard
+32|Longest Valid Parentheses|longest-valid-parentheses|Hard
+30|Substring with Concatenation of All Words|substring-with-concatenation-of-all-words|Hard
+25|Reverse Nodes in k-Group|reverse-nodes-in-k-group|Hard
+23|Merge k Sorted Lists|merge-k-sorted-lists|Hard
+10|Regular Expression Matching|regular-expression-matching|Hard
+4|Median of Two Sorted Arrays|median-of-two-sorted-arrays|Hard

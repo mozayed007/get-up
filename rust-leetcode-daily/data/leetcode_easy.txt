@@ -1,723 +1,724 @@
-3936|Minimum Swaps to Move Zeros to End|minimum-swaps-to-move-zeros-to-end
-3940|Limit Occurrences in Sorted Array|limit-occurrences-in-sorted-array
-3931|Check Adjacent Digit Differences|check-adjacent-digit-differences
-3925|Concatenate Array With Reverse|concatenate-array-with-reverse
-3917|Count Indices With Opposite Parity|count-indices-with-opposite-parity
-3912|Valid Elements in an Array|valid-elements-in-an-array
-3908|Valid Digit Number|valid-digit-number
-3903|Smallest Stable Index I|smallest-stable-index-i
-3921|Score Validator|score-validator
-3894|Traffic Signal Color|traffic-signal-color
-3898|Find the Degree of Each Vertex|find-the-degree-of-each-vertex
-3884|First Matching Character From Both Ends|first-matching-character-from-both-ends
-3875|Construct Uniform Parity Array I|construct-uniform-parity-array-i
-3880|Minimum Absolute Difference Between Two Values|minimum-absolute-difference-between-two-values
-3866|First Unique Even Element|first-unique-even-element
-3861|Minimum Capacity Box|minimum-capacity-box
-3870|Count Commas in Range|count-commas-in-range
-3852|Smallest Pair With Different Frequencies|smallest-pair-with-different-frequencies
-3856|Trim Trailing Vowels|trim-trailing-vowels
-3838|Weighted Word Mapping|weighted-word-mapping
-3833|Count Dominant Indices|count-dominant-indices
-3842|Toggle Light Bulbs|toggle-light-bulbs
-3823|Reverse Letters Then Special Characters in a String|reverse-letters-then-special-characters-in-a-string
-3827|Count Monobit Integers|count-monobit-integers
-3803|Count Residue Prefixes|count-residue-prefixes
-3798|Largest Even Number|largest-even-number
-3813|Vowel-Consonant Score|vowel-consonant-score
-3794|Reverse String Prefix|reverse-string-prefix
-3783|Mirror Distance of an Integer|mirror-distance-of-an-integer
-3774|Absolute Difference Between Maximum and Minimum K Elements|absolute-difference-between-maximum-and-minimum-k-elements
-3769|Sort Integers by Binary Reflection|sort-integers-by-binary-reflection
-3754|Concatenate Non-Zero Digits and Multiply by Sum I|concatenate-non-zero-digits-and-multiply-by-sum-i
-3750|Minimum Number of Flips to Reverse Binary String|minimum-number-of-flips-to-reverse-binary-string
-3736|Minimum Moves to Equal Array Elements III|minimum-moves-to-equal-array-elements-iii
-3740|Minimum Distance Between Three Equal Elements I|minimum-distance-between-three-equal-elements-i
-3745|Maximize Expression of Three Elements|maximize-expression-of-three-elements
-3731|Find Missing Elements|find-missing-elements
-3718|Smallest Missing Multiple of K|smallest-missing-multiple-of-k
-3712|Sum of Elements With Frequency Divisible by K|sum-of-elements-with-frequency-divisible-by-k
-3701|Compute Alternating Sum|compute-alternating-sum
-3692|Majority Frequency Characters|majority-frequency-characters
-3707|Equal Score Substrings|equal-score-substrings
-3726|Remove Zeros in Decimal Representation|remove-zeros-in-decimal-representation
-3697|Compute Decimal Representation|compute-decimal-representation
-3683|Earliest Time to Finish One Task|earliest-time-to-finish-one-task
-3678|Smallest Absent Positive Greater Than Average|smallest-absent-positive-greater-than-average
-3688|Bitwise OR of Even Numbers in an Array|bitwise-or-of-even-numbers-in-an-array
-3668|Restore Finishing Order|restore-finishing-order
-3674|Minimum Operations to Equalize Array|minimum-operations-to-equalize-array
-3684|Maximize Sum of At Most K Distinct Elements|maximize-sum-of-at-most-k-distinct-elements
-3658|GCD of Odd and Even Sums|gcd-of-odd-and-even-sums
-3663|Find The Least Frequent Digit|find-the-least-frequent-digit
-3643|Flip Square Submatrix Vertically|flip-square-submatrix-vertically
-3633|Earliest Finish Time for Land and Water Rides I|earliest-finish-time-for-land-and-water-rides-i
-3637|Trionic Array I|trionic-array-i
-3606|Coupon Code Validator|coupon-code-validator
-3622|Check Divisibility by Digit Sum and Product|check-divisibility-by-digit-sum-and-product
-3591|Check if Any Element Has Prime Frequency|check-if-any-element-has-prime-frequency
-3602|Hexadecimal and Hexatrigesimal Conversion|hexadecimal-and-hexatrigesimal-conversion
-3582|Generate Tag for Video Caption|generate-tag-for-video-caption
-3560|Find Minimum Log Transportation Cost|find-minimum-log-transportation-cost
-3541|Find Most Frequent Vowel and Consonant|find-most-frequent-vowel-and-consonant
-3545|Minimum Deletions for At Most K Distinct Characters|minimum-deletions-for-at-most-k-distinct-characters
-3550|Smallest Index With Digit Sum Equal to Index|smallest-index-with-digit-sum-equal-to-index
-3536|Maximum Product of Two Digits|maximum-product-of-two-digits
-3512|Minimum Operations to Make Array Sum Divisible by K|minimum-operations-to-make-array-sum-divisible-by-k
-3502|Minimum Cost to Reach Every Position|minimum-cost-to-reach-every-position
-3516|Find Closest Person|find-closest-person
-3492|Maximum Containers on a Ship|maximum-containers-on-a-ship
-3498|Reverse Degree of a String|reverse-degree-of-a-string
-3483|Unique 3-Digit Even Numbers|unique-3-digit-even-numbers
-3477|Fruits Into Baskets II|fruits-into-baskets-ii
-3487|Maximum Unique Subarray Sum After Deletion|maximum-unique-subarray-sum-after-deletion
-3467|Transform Array by Parity|transform-array-by-parity
-3507|Minimum Pair Removal to Sort Array I|minimum-pair-removal-to-sort-array-i
-3461|Check If Digits Are Equal in String After Operations I|check-if-digits-are-equal-in-string-after-operations-i
-3442|Maximum Difference Between Even and Odd Frequency I|maximum-difference-between-even-and-odd-frequency-i
-3423|Maximum Difference Between Adjacent Elements in a Circular Array|maximum-difference-between-adjacent-elements-in-a-circular-array
-3438|Find Valid Pair of Adjacent Digits in String|find-valid-pair-of-adjacent-digits-in-string
-3427|Sum of Variable Length Subarrays|sum-of-variable-length-subarrays
-3452|Sum of Good Numbers|sum-of-good-numbers
-3456|Find Special Substring of Length K|find-special-substring-of-length-k
-3417|Zigzag Grid Traversal With Skip|zigzag-grid-traversal-with-skip
-3471|Find the Largest Almost Missing Integer|find-the-largest-almost-missing-integer
-3432|Count Partitions with Even Sum Difference|count-partitions-with-even-sum-difference
-3411|Maximum Subarray With Equal Products|maximum-subarray-with-equal-products
-3402|Minimum Operations to Make Columns Strictly Increasing|minimum-operations-to-make-columns-strictly-increasing
-3392|Count Subarrays of Length Three With a Condition|count-subarrays-of-length-three-with-a-condition
-3407|Substring Matching Pattern|substring-matching-pattern
-3370|Smallest Number With All Set Bits|smallest-number-with-all-set-bits
-3396|Minimum Number of Operations to Make Elements in Array Distinct|minimum-number-of-operations-to-make-elements-in-array-distinct
-3379|Transformed Array|transformed-array
-3364|Minimum Positive Sum Subarray |minimum-positive-sum-subarray
-3340|Check Balanced String|check-balanced-string
-3386|Button with Longest Push Time|button-with-longest-push-time
-3345|Smallest Divisible Digit Product I|smallest-divisible-digit-product-i
-3360|Stone Removal Game|stone-removal-game
-3375|Minimum Operations to Make Array Values Equal to K|minimum-operations-to-make-array-values-equal-to-k
-3330|Find the Original Typed String I|find-the-original-typed-string-i
-3354|Make Array Elements Equal to Zero|make-array-elements-equal-to-zero
-3349|Adjacent Increasing Subarrays Detection I|adjacent-increasing-subarrays-detection-i
-3318|Find X-Sum of All K-Long Subarrays I|find-x-sum-of-all-k-long-subarrays-i
-3300|Minimum Element After Replacement With Digit Sum|minimum-element-after-replacement-with-digit-sum
-3314|Construct the Minimum Bitwise Array I|construct-the-minimum-bitwise-array-i
-3304|Find the K-th Character in String Game I|find-the-k-th-character-in-string-game-i
-3285|Find Indices of Stable Mountains|find-indices-of-stable-mountains
-3289|The Two Sneaky Numbers of Digitville|the-two-sneaky-numbers-of-digitville
-3270|Find the Key of the Numbers|find-the-key-of-the-numbers
-3280|Convert Date to Binary|convert-date-to-binary
-3264|Final Array State After K Multiplication Operations I|final-array-state-after-k-multiplication-operations-i
-3274|Check if Two Chessboard Squares Have the Same Color|check-if-two-chessboard-squares-have-the-same-color
-3258|Count Substrings That Satisfy K-Constraint I|count-substrings-that-satisfy-k-constraint-i
-3248|Snake in Matrix|snake-in-matrix
-3238|Find the Number of Winning Players|find-the-number-of-winning-players
-3242|Design Neighbor Sum Service|design-neighbor-sum-service
-3232|Find if Digit Game Can Be Won|find-if-digit-game-can-be-won
-3222|Find the Winning Player in Coin Game|find-the-winning-player-in-coin-game
-3226|Number of Bit Changes to Make Two Integers Equal|number-of-bit-changes-to-make-two-integers-equal
-3216|Lexicographically Smallest String After a Swap|lexicographically-smallest-string-after-a-swap
-3190|Find Minimum Operations to Make All Elements Divisible by Three|find-minimum-operations-to-make-all-elements-divisible-by-three
-3194|Minimum Average of Smallest and Largest Elements|minimum-average-of-smallest-and-largest-elements
-3200|Maximum Height of a Triangle|maximum-height-of-a-triangle
-3210|Find the Encrypted String|find-the-encrypted-string
-3206|Alternating Groups I|alternating-groups-i
-3178|Find the Child Who Has the Ball After K Seconds|find-the-child-who-has-the-ball-after-k-seconds
-3174|Clear Digits|clear-digits
-3162|Find the Number of Good Pairs I|find-the-number-of-good-pairs-i
-3151|Special Array I|special-array-i
-3158|Find the XOR of Numbers Which Appear Twice|find-the-xor-of-numbers-which-appear-twice
-3168|Minimum Number of Chairs in a Waiting Room|minimum-number-of-chairs-in-a-waiting-room
-3184|Count Pairs That Form a Complete Day I|count-pairs-that-form-a-complete-day-i
-3142|Check if Grid Satisfies Conditions|check-if-grid-satisfies-conditions
-3146|Permutation Difference between Two Strings|permutation-difference-between-two-strings
-3120|Count the Number of Special Characters I|count-the-number-of-special-characters-i
-3127|Make a Square with the Same Color|make-a-square-with-the-same-color
-3131|Find the Integer Added to Array I|find-the-integer-added-to-array-i
-3136|Valid Word|valid-word
-3095|Shortest Subarray With OR at Least K I|shortest-subarray-with-or-at-least-k-i
-3110|Score of a String|score-of-a-string
-3105|Longest Strictly Increasing or Strictly Decreasing Subarray|longest-strictly-increasing-or-strictly-decreasing-subarray
-3099|Harshad Number|harshad-number
-3079|Find the Sum of Encrypted Integers|find-the-sum-of-encrypted-integers
-3114|Latest Time You Can Obtain After Replacing Characters|latest-time-you-can-obtain-after-replacing-characters
-3083|Existence of a Substring in a String and Its Reverse|existence-of-a-substring-in-a-string-and-its-reverse
-3090|Maximum Length Substring With Two Occurrences|maximum-length-substring-with-two-occurrences
-3069|Distribute Elements Into Two Arrays I|distribute-elements-into-two-arrays-i
-3074|Apple Redistribution into Boxes|apple-redistribution-into-boxes
-3065|Minimum Operations to Exceed Threshold Value I|minimum-operations-to-exceed-threshold-value-i
-3033|Modify the Matrix|modify-the-matrix
-3046|Split the Array|split-the-array
-3024|Type of Triangle|type-of-triangle
-3038|Maximum Number of Operations With the Same Score I|maximum-number-of-operations-with-the-same-score-i
-3019|Number of Changing Keys|number-of-changing-keys
-3028|Ant on the Boundary|ant-on-the-boundary
-3042|Count Prefix and Suffix Pairs I|count-prefix-and-suffix-pairs-i
-3014|Minimum Number of Pushes to Type Word I|minimum-number-of-pushes-to-type-word-i
-3010|Divide an Array Into Subarrays With Minimum Cost I|divide-an-array-into-subarrays-with-minimum-cost-i
-2970|Count the Number of Incremovable Subarrays I|count-the-number-of-incremovable-subarrays-i
-3000|Maximum Area of Longest Diagonal Rectangle|maximum-area-of-longest-diagonal-rectangle
-2980|Check if Bitwise OR Has Trailing Zeros|check-if-bitwise-or-has-trailing-zeros
-3005|Count Elements With Maximum Frequency|count-elements-with-maximum-frequency
-2996|Smallest Missing Integer Greater Than Sequential Prefix Sum|smallest-missing-integer-greater-than-sequential-prefix-sum
-2965|Find Missing and Repeated Values|find-missing-and-repeated-values
-2974|Minimum Number Game|minimum-number-game
-2951|Find the Peaks|find-the-peaks
-2960|Count Tested Devices After Test Operations|count-tested-devices-after-test-operations
-2946|Matrix Similarity After Cyclic Shifts|matrix-similarity-after-cyclic-shifts
-2937|Make Three Strings Equal|make-three-strings-equal
-2956|Find Common Elements Between Two Arrays|find-common-elements-between-two-arrays
-2928|Distribute Candies Among Children I|distribute-candies-among-children-i
-2942|Find Words Containing Character|find-words-containing-character
-2932|Maximum Strong Pair XOR I|maximum-strong-pair-xor-i
-2923|Find Champion I|find-champion-i
-2917|Find the K-or of an Array|find-the-k-or-of-an-array
-2908|Minimum Sum of Mountain Triplets I|minimum-sum-of-mountain-triplets-i
-2894|Divisible and Non-divisible Sums Difference|divisible-and-non-divisible-sums-difference
-2903|Find Indices With Index and Value Difference I|find-indices-with-index-and-value-difference-i
-2899|Last Visited Integers|last-visited-integers
-2913|Subarrays Distinct Element Sum of Squares I|subarrays-distinct-element-sum-of-squares-i
-2873|Maximum Value of an Ordered Triplet I|maximum-value-of-an-ordered-triplet-i
-2900|Longest Unequal Adjacent Groups Subsequence I|longest-unequal-adjacent-groups-subsequence-i
-2859|Sum of Values at Indices With K Set Bits|sum-of-values-at-indices-with-k-set-bits
-2864|Maximum Odd Binary Number|maximum-odd-binary-number
-2855|Minimum Right Shifts to Sort the Array|minimum-right-shifts-to-sort-the-array
-2869|Minimum Operations to Collect Elements|minimum-operations-to-collect-elements
-2848|Points That Intersect With Cars|points-that-intersect-with-cars
-2833|Furthest Point From Origin|furthest-point-from-origin
-2839|Check if Strings Can be Made Equal With Operations I|check-if-strings-can-be-made-equal-with-operations-i
-2843|  Count Symmetric Integers|count-symmetric-integers
-2828|Check if a String Is an Acronym of Words|check-if-a-string-is-an-acronym-of-words
-2806|Account Balance After Rounded Purchase|account-balance-after-rounded-purchase
-2824|Count Pairs Whose Sum is Less than Target|count-pairs-whose-sum-is-less-than-target
-2815|Max Pair Sum in an Array|max-pair-sum-in-an-array
-2784|Check if Array is Good|check-if-array-is-good
-2810|Faulty Keyboard|faulty-keyboard
-2788|Split Strings by Separator|split-strings-by-separator
-2798|Number of Employees Who Met the Target|number-of-employees-who-met-the-target
-2765|Longest Alternating Subarray|longest-alternating-subarray
-2760|Longest Even Odd Subarray With Threshold|longest-even-odd-subarray-with-threshold
-2739|Total Distance Traveled|total-distance-traveled
-2744|Find Maximum Number of String Pairs|find-maximum-number-of-string-pairs
-2778|Sum of Squares of Special Elements |sum-of-squares-of-special-elements
-2733|Neither Minimum nor Maximum|neither-minimum-nor-maximum
-2748|Number of Beautiful Pairs|number-of-beautiful-pairs
-2716|Minimize String Length|minimize-string-length
-2729|Check if The Number is Fascinating|check-if-the-number-is-fascinating
-2710|Remove Trailing Zeros From a String|remove-trailing-zeros-from-a-string
-2697|Lexicographically Smallest Palindrome|lexicographically-smallest-palindrome
-2769|Find the Maximum Achievable Number|find-the-maximum-achievable-number
-2696|Minimum String Length After Removing Substrings|minimum-string-length-after-removing-substrings
-2682|Find the Losers of the Circular Game|find-the-losers-of-the-circular-game
-2717|Semi-Ordered Permutation|semi-ordered-permutation
-2670|Find the Distinct Difference Array|find-the-distinct-difference-array
-2656|Maximum Sum With Exactly K Elements |maximum-sum-with-exactly-k-elements
-2706|Buy Two Chocolates|buy-two-chocolates
-2652|Sum Multiples|sum-multiples
-2651|Calculate Delayed Arrival Time|calculate-delayed-arrival-time
-2643|Row With Maximum Ones|row-with-maximum-ones
-2678|Number of Senior Citizens|number-of-senior-citizens
-2609|Find the Longest Balanced Substring of a Binary String|find-the-longest-balanced-substring-of-a-binary-string
-2614|Prime In Diagonal|prime-in-diagonal
-2600|K Items With the Maximum Sum|k-items-with-the-maximum-sum
-2574|Left and Right Sum Differences|left-and-right-sum-differences
-2570|Merge Two 2D Arrays by Summing Values|merge-two-2d-arrays-by-summing-values
-2566|Maximum Difference by Remapping a Digit|maximum-difference-by-remapping-a-digit
-2562|Find the Array Concatenation Value|find-the-array-concatenation-value
-2644|Find the Maximum Divisibility Score|find-the-maximum-divisibility-score
-2558|Take Gifts From the Richest Pile|take-gifts-from-the-richest-pile
-2660|Determine the Winner of a Bowling Game|determine-the-winner-of-a-bowling-game
-2549|Count Distinct Numbers on Board|count-distinct-numbers-on-board
-2639|Find the Width of Columns of a Grid|find-the-width-of-columns-of-a-grid
-2605|Form Smallest Number From Two Digit Arrays|form-smallest-number-from-two-digit-arrays
-2591|Distribute Money to Maximum Children|distribute-money-to-maximum-children
-2595|Number of Even and Odd Bits|number-of-even-and-odd-bits
-2586|Count the Number of Vowel Strings in Range|count-the-number-of-vowel-strings-in-range
-2578|Split With Minimum Sum|split-with-minimum-sum
-2582|Pass the Pillow|pass-the-pillow
-2553|Separate the Digits in an Array|separate-the-digits-in-an-array
-2540|Minimum Common Value|minimum-common-value
-2544|Alternating Digit Sum|alternating-digit-sum
-2535|Difference Between Element Sum and Digit Sum of an Array|difference-between-element-sum-and-digit-sum-of-an-array
-2525|Categorize Box According to Criteria|categorize-box-according-to-criteria
-2529|Maximum Count of Positive Integer and Negative Integer|maximum-count-of-positive-integer-and-negative-integer
-2520|Count the Digits That Divide a Number|count-the-digits-that-divide-a-number
-2511|Maximum Enemy Forts That Can Be Captured|maximum-enemy-forts-that-can-be-captured
-2515|Shortest Distance to Target String in a Circular Array|shortest-distance-to-target-string-in-a-circular-array
-2506|Count Pairs Of Similar Strings|count-pairs-of-similar-strings
-2496|Maximum Value of a String in an Array|maximum-value-of-a-string-in-an-array
-2500|Delete Greatest Value in Each Row|delete-greatest-value-in-each-row
-2490|Circular Sentence|circular-sentence
-2481|Minimum Cuts to Divide a Circle|minimum-cuts-to-divide-a-circle
-2485|Find the Pivot Integer|find-the-pivot-integer
-2475|Number of Unequal Triplets in Array|number-of-unequal-triplets-in-array
-2465|Number of Distinct Averages|number-of-distinct-averages
-2469|Convert the Temperature|convert-the-temperature
-2460|Apply Operations to an Array|apply-operations-to-an-array
-2451|Odd String Difference|odd-string-difference
-2455|Average Value of Even Numbers That Are Divisible by Three|average-value-of-even-numbers-that-are-divisible-by-three
-2446|Determine if Two Events Have Conflict|determine-if-two-events-have-conflict
-2423|Remove Letter To Equalize Frequency|remove-letter-to-equalize-frequency
-2437|Number of Valid Clock Times|number-of-valid-clock-times
-2441|Largest Positive Integer That Exists With Its Negative|largest-positive-integer-that-exists-with-its-negative
-2432|The Employee That Worked on the Longest Task|the-employee-that-worked-on-the-longest-task
-2427|Number of Common Factors|number-of-common-factors
-2418|Sort the People|sort-the-people
-2409|Count Days Spent Together|count-days-spent-together
-2413|Smallest Even Multiple|smallest-even-multiple
-2404|Most Frequent Even Element|most-frequent-even-element
-2395|Find Subarrays With Equal Sum|find-subarrays-with-equal-sum
-2399|Check Distances Between Same Letters|check-distances-between-same-letters
-2389|Longest Subsequence With Limited Sum|longest-subsequence-with-limited-sum
-2379|Minimum Recolors to Get K Consecutive Black Blocks|minimum-recolors-to-get-k-consecutive-black-blocks
-2383|Minimum Hours of Training to Win a Competition|minimum-hours-of-training-to-win-a-competition
-2373|Largest Local Values in a Matrix|largest-local-values-in-a-matrix
-2363|Merge Similar Items|merge-similar-items
-2367|Number of Arithmetic Triplets|number-of-arithmetic-triplets
-2357|Make Array Zero by Subtracting Equal Amounts|make-array-zero-by-subtracting-equal-amounts
-2347|Best Poker Hand|best-poker-hand
-2351|First Letter to Appear Twice|first-letter-to-appear-twice
-2341|Maximum Number of Pairs in Array|maximum-number-of-pairs-in-array
-2331|Evaluate Boolean Binary Tree|evaluate-boolean-binary-tree
-2335|Minimum Amount of Time to Fill Cups|minimum-amount-of-time-to-fill-cups
-2325|Decode the Message|decode-the-message
-2315|Count Asterisks|count-asterisks
-2319|Check if Matrix Is X-Matrix|check-if-matrix-is-x-matrix
-2299|Strong Password Checker II|strong-password-checker-ii
-2293|Min Max Game|min-max-game
-2236|Root Equals Sum of Children|root-equals-sum-of-children
-2235|Add Two Integers|add-two-integers
-2283|Check if Number Has Equal Digit Count and Digit Value|check-if-number-has-equal-digit-count-and-digit-value
-2287|Rearrange Characters to Make Target String|rearrange-characters-to-make-target-string
-2278|Percentage of Letter in String|percentage-of-letter-in-string
-2243|Calculate Digit Sum of a String|calculate-digit-sum-of-a-string
-2239|Find Closest Number to Zero|find-closest-number-to-zero
-2264|Largest 3-Same-Digit Number in String|largest-3-same-digit-number-in-string
-2224|Minimum Number of Operations to Convert Time|minimum-number-of-operations-to-convert-time
-2255|Count Prefixes of a Given String|count-prefixes-of-a-given-string
-2259|Remove Digit From Number to Maximize Result|remove-digit-from-number-to-maximize-result
-2248|Intersection of Multiple Arrays|intersection-of-multiple-arrays
-2231|Largest Number After Digit Swaps by Parity|largest-number-after-digit-swaps-by-parity
-2220|Minimum Bit Flips to Convert Number|minimum-bit-flips-to-convert-number
-2200|Find All K-Distant Indices in an Array|find-all-k-distant-indices-in-an-array
-2210|Count Hills and Valleys in an Array|count-hills-and-valleys-in-an-array
-2190|Most Frequent Number Following Key In an Array|most-frequent-number-following-key-in-an-array
-2206|Divide Array Into Equal Pairs|divide-array-into-equal-pairs
-2194|Cells in a Range on an Excel Sheet|cells-in-a-range-on-an-excel-sheet
-2180|Count Integers With Even Digit Sum|count-integers-with-even-digit-sum
-2185|Counting Words With a Given Prefix|counting-words-with-a-given-prefix
-2169|Count Operations to Obtain Zero|count-operations-to-obtain-zero
-2164|Sort Even and Odd Indices Independently|sort-even-and-odd-indices-independently
-2176|Count Equal and Divisible Pairs in an Array|count-equal-and-divisible-pairs-in-an-array
-2154|Keep Multiplying Found Values by Two|keep-multiplying-found-values-by-two
-2148|Count Elements With Strictly Smaller and Greater Elements |count-elements-with-strictly-smaller-and-greater-elements
-2160|Minimum Sum of Four Digit Number After Splitting Digits|minimum-sum-of-four-digit-number-after-splitting-digits
-2138|Divide a String Into Groups of Size k|divide-a-string-into-groups-of-size-k
-2133|Check if Every Row and Column Contains All Numbers|check-if-every-row-and-column-contains-all-numbers
-2144|Minimum Cost of Buying Candies With Discount|minimum-cost-of-buying-candies-with-discount
-2124|Check if All A's Appears Before All B's|check-if-all-as-appears-before-all-bs
-2119|A Number After a Double Reversal|a-number-after-a-double-reversal
-2129|Capitalize the Title|capitalize-the-title
-2108|Find First Palindromic String in the Array|find-first-palindromic-string-in-the-array
-2103|Rings and Rods|rings-and-rods
-2114|Maximum Number of Words Found in Sentences|maximum-number-of-words-found-in-sentences
-2094|Finding 3-Digit Even Numbers|finding-3-digit-even-numbers
-2089|Find Target Indices After Sorting Array|find-target-indices-after-sorting-array
-2099|Find Subsequence of Length K With the Largest Sum|find-subsequence-of-length-k-with-the-largest-sum
-2078|Two Furthest Houses With Different Colors|two-furthest-houses-with-different-colors
-2073|Time Needed to Buy Tickets|time-needed-to-buy-tickets
-2085|Count Common Words With One Occurrence|count-common-words-with-one-occurrence
-2062|Count Vowel Substrings of a String|count-vowel-substrings-of-a-string
-2057|Smallest Index With Equal Value|smallest-index-with-equal-value
-2068|Check Whether Two Strings are Almost Equivalent|check-whether-two-strings-are-almost-equivalent
-2047|Number of Valid Words in a Sentence|number-of-valid-words-in-a-sentence
-2042|Check if Numbers Are Ascending in a Sentence|check-if-numbers-are-ascending-in-a-sentence
-2053|Kth Distinct String in an Array|kth-distinct-string-in-an-array
-2032|Two Out of Three|two-out-of-three
-2027|Minimum Moves to Convert String|minimum-moves-to-convert-string
-2037|Minimum Number of Moves to Seat Everyone|minimum-number-of-moves-to-seat-everyone
-2016|Maximum Difference Between Increasing Elements|maximum-difference-between-increasing-elements
-2011|Final Value of Variable After Performing Operations|final-value-of-variable-after-performing-operations
-2022|Convert 1D Array Into 2D Array|convert-1d-array-into-2d-array
-2000|Reverse Prefix of Word|reverse-prefix-of-word
-1995|Count Special Quadruplets|count-special-quadruplets
-1971|Find if Path Exists in Graph|find-if-path-exists-in-graph
-2006|Count Number of Pairs With Absolute Difference K|count-number-of-pairs-with-absolute-difference-k
-1984|Minimum Difference Between Highest and Lowest of K Scores|minimum-difference-between-highest-and-lowest-of-k-scores
-1979|Find Greatest Common Divisor of Array|find-greatest-common-divisor-of-array
-1991|Find the Middle Index in Array|find-the-middle-index-in-array
-1967|Number of Strings That Appear as Substrings in Word|number-of-strings-that-appear-as-substrings-in-word
-1961|Check If String Is a Prefix of Array|check-if-string-is-a-prefix-of-array
-1974|Minimum Time to Type Word Using Special Typewriter|minimum-time-to-type-word-using-special-typewriter
-1952|Three Divisors|three-divisors
-1945|Sum of Digits of String After Convert|sum-of-digits-of-string-after-convert
-1929|Concatenation of Array|concatenation-of-array
-1941|Check if All Characters Have Equal Number of Occurrences|check-if-all-characters-have-equal-number-of-occurrences
-1920|Build Array from Permutation|build-array-from-permutation
-1913|Maximum Product Difference Between Two Pairs|maximum-product-difference-between-two-pairs
-1925|Count Square Sum Triples|count-square-sum-triples
-1903|Largest Odd Number in String|largest-odd-number-in-string
-1897|Redistribute Characters to Make All Strings Equal|redistribute-characters-to-make-all-strings-equal
-1909|Remove One Element to Make the Array Strictly Increasing|remove-one-element-to-make-the-array-strictly-increasing
-1886|Determine Whether Matrix Can Be Obtained By Rotation|determine-whether-matrix-can-be-obtained-by-rotation
-1880|Check if Word Equals Summation of Two Words|check-if-word-equals-summation-of-two-words
-1893|Check if All the Integers in a Range Are Covered|check-if-all-the-integers-in-a-range-are-covered
-1869|Longer Contiguous Segments of Ones than Zeros|longer-contiguous-segments-of-ones-than-zeros
-1863|Sum of All Subset XOR Totals|sum-of-all-subset-xor-totals
-1876|Substrings of Size Three with Distinct Characters|substrings-of-size-three-with-distinct-characters
-1854|Maximum Population Year|maximum-population-year
-1848|Minimum Distance to the Target Element|minimum-distance-to-the-target-element
-1859|Sorting the Sentence|sorting-the-sentence
-1837|Sum of Digits in Base K|sum-of-digits-in-base-k
-1832|Check if the Sentence Is Pangram|check-if-the-sentence-is-pangram
-1844|Replace All Digits with Characters|replace-all-digits-with-characters
-1822|Sign of the Product of an Array|sign-of-the-product-of-an-array
-1816|Truncate Sentence|truncate-sentence
-1827|Minimum Operations to Make the Array Increasing|minimum-operations-to-make-the-array-increasing
-1805|Number of Different Integers in a String|number-of-different-integers-in-a-string
-1800|Maximum Ascending Subarray Sum|maximum-ascending-subarray-sum
-1812|Determine Color of a Chessboard Square|determine-color-of-a-chessboard-square
-1791|Find Center of Star Graph|find-center-of-star-graph
-1790|Check if One String Swap Can Make Strings Equal|check-if-one-string-swap-can-make-strings-equal
-1784|Check if Binary String Has at Most One Segment of Ones|check-if-binary-string-has-at-most-one-segment-of-ones
-1796|Second Largest Digit in a String|second-largest-digit-in-a-string
-1773|Count Items Matching a Rule|count-items-matching-a-rule
-1768|Merge Strings Alternately|merge-strings-alternately
-1779|Find Nearest Point That Has the Same X or Y Coordinate|find-nearest-point-that-has-the-same-x-or-y-coordinate
-1758|Minimum Changes To Make Alternating Binary String|minimum-changes-to-make-alternating-binary-string
-1752|Check if Array Is Sorted and Rotated|check-if-array-is-sorted-and-rotated
-1763|Longest Nice Substring|longest-nice-substring
-1736|Latest Time by Replacing Hidden Digits|latest-time-by-replacing-hidden-digits
-1748|Sum of Unique Elements|sum-of-unique-elements
-1742|Maximum Number of Balls in a Box|maximum-number-of-balls-in-a-box
-1725|Number Of Rectangles That Can Form The Largest Square|number-of-rectangles-that-can-form-the-largest-square
-1720|Decode XORed Array|decode-xored-array
-1732|Find the Highest Altitude|find-the-highest-altitude
-1710|Maximum Units on a Truck|maximum-units-on-a-truck
-1704|Determine if String Halves Are Alike|determine-if-string-halves-are-alike
-1716|Calculate Money in Leetcode Bank|calculate-money-in-leetcode-bank
-1694|Reformat Phone Number|reformat-phone-number
-1688|Count of Matches in Tournament|count-of-matches-in-tournament
-1700|Number of Students Unable to Eat Lunch|number-of-students-unable-to-eat-lunch
-1678|Goal Parser Interpretation|goal-parser-interpretation
-1672|Richest Customer Wealth|richest-customer-wealth
-1684|Count the Number of Consistent Strings|count-the-number-of-consistent-strings
-1662|Check If Two String Arrays are Equivalent|check-if-two-string-arrays-are-equivalent
-1656|Design an Ordered Stream|design-an-ordered-stream
-1646|Get Maximum in Generated Array|get-maximum-in-generated-array
-1668|Maximum Repeating Substring|maximum-repeating-substring
-1640|Check Array Formation Through Concatenation|check-array-formation-through-concatenation
-1652|Defuse the Bomb|defuse-the-bomb
-1629|Slowest Key|slowest-key
-1624|Largest Substring Between Two Equal Characters|largest-substring-between-two-equal-characters
-1637|Widest Vertical Area Between Two Points Containing No Points|widest-vertical-area-between-two-points-containing-no-points
-1636|Sort Array by Increasing Frequency|sort-array-by-increasing-frequency
-1614|Maximum Nesting Depth of the Parentheses|maximum-nesting-depth-of-the-parentheses
-1608|Special Array With X Elements Greater Than or Equal X|special-array-with-x-elements-greater-than-or-equal-x
-1598|Crawler Log Folder|crawler-log-folder
-1592|Rearrange Spaces Between Words|rearrange-spaces-between-words
-1603|Design Parking System|design-parking-system
-1582|Special Positions in a Binary Matrix|special-positions-in-a-binary-matrix
-1576|Replace All ?'s to Avoid Consecutive Repeating Characters|replace-all-s-to-avoid-consecutive-repeating-characters
-1588|Sum of All Odd Length Subarrays|sum-of-all-odd-length-subarrays
-1566|Detect Pattern of Length M Repeated K or More Times|detect-pattern-of-length-m-repeated-k-or-more-times
-1560|Most Visited Sector in  a Circular Track|most-visited-sector-in-a-circular-track
-1572|Matrix Diagonal Sum|matrix-diagonal-sum
-1544|Make The String Great|make-the-string-great
-1556|Thousand Separator|thousand-separator
-1534|Count Good Triplets|count-good-triplets
-1528|Shuffle String|shuffle-string
-1539|Kth Missing Positive Number|kth-missing-positive-number
-1518|Water Bottles|water-bottles
-1512|Number of Good Pairs|number-of-good-pairs
-1523|Count Odd Numbers in an Interval Range|count-odd-numbers-in-an-interval-range
-1502|Can Make Arithmetic Progression From Sequence|can-make-arithmetic-progression-from-sequence
-1496|Path Crossing|path-crossing
-1486|XOR Operation in an Array|xor-operation-in-an-array
-1480|Running Sum of 1d Array|running-sum-of-1d-array
-1491|Average Salary Excluding the Minimum and Maximum Salary|average-salary-excluding-the-minimum-and-maximum-salary
-1470|Shuffle the Array|shuffle-the-array
-1464|Maximum Product of Two Elements in an Array|maximum-product-of-two-elements-in-an-array
-1475|Final Prices With a Special Discount in a Shop|final-prices-with-a-special-discount-in-a-shop
-1455|Check If a Word Occurs As a Prefix of Any Word in a Sentence|check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence
-1450|Number of Students Doing Homework at a Given Time|number-of-students-doing-homework-at-a-given-time
-1460|Make Two Arrays Equal by Reversing Subarrays|make-two-arrays-equal-by-reversing-subarrays
-1437|Check If All 1's Are at Least Length K Places Away|check-if-all-1s-are-at-least-length-k-places-away
-1436|Destination City|destination-city
-1446|Consecutive Characters|consecutive-characters
-1422|Maximum Score After Splitting a String|maximum-score-after-splitting-a-string
-1417|Reformat The String|reformat-the-string
-1431|Kids With the Greatest Number of Candies|kids-with-the-greatest-number-of-candies
-1408|String Matching in an Array|string-matching-in-an-array
-1403|Minimum Subsequence in Non-Increasing Order|minimum-subsequence-in-non-increasing-order
-1413|Minimum Value to Get Positive Step by Step Sum|minimum-value-to-get-positive-step-by-step-sum
-1394|Find Lucky Integer in an Array|find-lucky-integer-in-an-array
-1389|Create Target Array in the Given Order|create-target-array-in-the-given-order
-1399|Count Largest Group|count-largest-group
-1379|Find a Corresponding Node of a Binary Tree in a Clone of That Tree|find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree
-1380|Lucky Numbers in a Matrix|lucky-numbers-in-a-matrix
-1374|Generate a String With Characters That Have Odd Counts|generate-a-string-with-characters-that-have-odd-counts
-1385|Find the Distance Value Between Two Arrays|find-the-distance-value-between-two-arrays
-1365|How Many Numbers Are Smaller Than the Current Number|how-many-numbers-are-smaller-than-the-current-number
-1351|Count Negative Numbers in a Sorted Matrix|count-negative-numbers-in-a-sorted-matrix
-1370|Increasing Decreasing String|increasing-decreasing-string
-1346|Check If N and Its Double Exist|check-if-n-and-its-double-exist
-1337|The K Weakest Rows in a Matrix|the-k-weakest-rows-in-a-matrix
-1356|Sort Integers by The Number of 1 Bits|sort-integers-by-the-number-of-1-bits
-1332|Remove Palindromic Subsequences|remove-palindromic-subsequences
-1323|Maximum 69 Number|maximum-69-number
-1342|Number of Steps to Reduce a Number to Zero|number-of-steps-to-reduce-a-number-to-zero
-1317|Convert Integer to the Sum of Two No-Zero Integers|convert-integer-to-the-sum-of-two-no-zero-integers
-1309|Decrypt String from Alphabet to Integer Mapping|decrypt-string-from-alphabet-to-integer-mapping
-2269|Find the K-Beauty of a Number|find-the-k-beauty-of-a-number
-1304|Find N Unique Integers Sum up to Zero|find-n-unique-integers-sum-up-to-zero
-1295|Find Numbers with Even Number of Digits|find-numbers-with-even-number-of-digits
-1290|Convert Binary Number in a Linked List to Integer|convert-binary-number-in-a-linked-list-to-integer
-1281|Subtract the Product and Sum of Digits of an Integer|subtract-the-product-and-sum-of-digits-of-an-integer
-1275|Find Winner on a Tic Tac Toe Game|find-winner-on-a-tic-tac-toe-game
-1266|Minimum Time Visiting All Points|minimum-time-visiting-all-points
-2215|Find the Difference of Two Arrays|find-the-difference-of-two-arrays
-1260|Shift 2D Grid|shift-2d-grid
-2303|Calculate Amount Paid in Taxes|calculate-amount-paid-in-taxes
-1252|Cells with Odd Values in a Matrix|cells-with-odd-values-in-a-matrix
-2309|Greatest English Letter in Upper and Lower Case|greatest-english-letter-in-upper-and-lower-case
-2273|Find Resultant Array After Removing Anagrams|find-resultant-array-after-removing-anagrams
-1232|Check If It Is a Straight Line|check-if-it-is-a-straight-line
-1221|Split a String in Balanced Strings|split-a-string-in-balanced-strings
-1217|Minimum Cost to Move Chips to The Same Position|minimum-cost-to-move-chips-to-the-same-position
-1207|Unique Number of Occurrences|unique-number-of-occurrences
-1200|Minimum Absolute Difference|minimum-absolute-difference
-1957|Delete Characters to Make Fancy String|delete-characters-to-make-fancy-string
-1189|Maximum Number of Balloons|maximum-number-of-balloons
-1550|Three Consecutive Odds|three-consecutive-odds
-1185|Day of the Week|day-of-the-week
-1184|Distance Between Bus Stops|distance-between-bus-stops
-1507|Reformat Date|reformat-date
-1175|Prime Arrangements|prime-arrangements
-1360|Number of Days Between Two Dates|number-of-days-between-two-dates
-1935|Maximum Number of Words You Can Type|maximum-number-of-words-you-can-type
-1154|Day of the Year|day-of-the-year
-1331|Rank Transform of an Array|rank-transform-of-an-array
-1313|Decompress Run-Length Encoded List|decompress-run-length-encoded-list
-1137|N-th Tribonacci Number|n-th-tribonacci-number
-1299|Replace Elements with Greatest Element on Right Side|replace-elements-with-greatest-element-on-right-side
-1128|Number of Equivalent Domino Pairs|number-of-equivalent-domino-pairs
-1287|Element Appearing More Than 25% In Sorted Array|element-appearing-more-than-25-in-sorted-array
-1122|Relative Sort Array|relative-sort-array
-1619|Mean of Array After Removing Some Elements|mean-of-array-after-removing-some-elements
-1108|Defanging an IP Address|defanging-an-ip-address
-1103|Distribute Candies to People|distribute-candies-to-people
-1089|Duplicate Zeros|duplicate-zeros
-1078|Occurrences After Bigram|occurrences-after-bigram
-1071|Greatest Common Divisor of Strings|greatest-common-divisor-of-strings
-1051|Height Checker|height-checker
-1047|Remove All Adjacent Duplicates In String|remove-all-adjacent-duplicates-in-string
-1046|Last Stone Weight|last-stone-weight
-1037|Valid Boomerang|valid-boomerang
-1160|Find Words That Can Be Formed by Characters|find-words-that-can-be-formed-by-characters
-1030|Matrix Cells in Distance Order|matrix-cells-in-distance-order
-1025|Divisor Game|divisor-game
-1022|Sum of Root To Leaf Binary Numbers|sum-of-root-to-leaf-binary-numbers
-1021|Remove Outermost Parentheses|remove-outermost-parentheses
-1018|Binary Prefix Divisible By 5|binary-prefix-divisible-by-5
-1013|Partition Array Into Three Parts With Equal Sum|partition-array-into-three-parts-with-equal-sum
-1009|Complement of Base 10 Integer|complement-of-base-10-integer
-1005|Maximize Sum Of Array After K Negations|maximize-sum-of-array-after-k-negations
-1002|Find Common Characters|find-common-characters
-999|Available Captures for Rook|available-captures-for-rook
-997|Find the Town Judge|find-the-town-judge
-993|Cousins in Binary Tree|cousins-in-binary-tree
-989|Add to Array-Form of Integer|add-to-array-form-of-integer
-977|Squares of a Sorted Array|squares-of-a-sorted-array
-976|Largest Perimeter Triangle|largest-perimeter-triangle
-509|Fibonacci Number|fibonacci-number
-965|Univalued Binary Tree|univalued-binary-tree
-961|N-Repeated Element in Size 2N Array|n-repeated-element-in-size-2n-array
-953|Verifying an Alien Dictionary|verifying-an-alien-dictionary
-944|Delete Columns to Make Sorted|delete-columns-to-make-sorted
-942|DI String Match|di-string-match
-941|Valid Mountain Array|valid-mountain-array
-938|Range Sum of BST|range-sum-of-bst
-933|Number of Recent Calls|number-of-recent-calls
-929|Unique Email Addresses|unique-email-addresses
-925|Long Pressed Name|long-pressed-name
-922|Sort Array By Parity II|sort-array-by-parity-ii
-917|Reverse Only Letters|reverse-only-letters
-914|X of a Kind in a Deck of Cards|x-of-a-kind-in-a-deck-of-cards
-908|Smallest Range I|smallest-range-i
-905|Sort Array By Parity|sort-array-by-parity
-897|Increasing Order Search Tree|increasing-order-search-tree
-896|Monotonic Array|monotonic-array
-892|Surface Area of 3D Shapes|surface-area-of-3d-shapes
-888|Fair Candy Swap|fair-candy-swap
-884|Uncommon Words from Two Sentences|uncommon-words-from-two-sentences
-883|Projection Area of 3D Shapes|projection-area-of-3d-shapes
-876|Middle of the Linked List|middle-of-the-linked-list
-872|Leaf-Similar Trees|leaf-similar-trees
-868|Binary Gap|binary-gap
-867|Transpose Matrix|transpose-matrix
-860|Lemonade Change|lemonade-change
-859|Buddy Strings|buddy-strings
-844|Backspace String Compare|backspace-string-compare
-836|Rectangle Overlap|rectangle-overlap
-832|Flipping an Image|flipping-an-image
-830|Positions of Large Groups|positions-of-large-groups
-824|Goat Latin|goat-latin
-821|Shortest Distance to a Character|shortest-distance-to-a-character
-819|Most Common Word|most-common-word
-812|Largest Triangle Area|largest-triangle-area
-806|Number of Lines To Write String|number-of-lines-to-write-string
-804|Unique Morse Code Words|unique-morse-code-words
-706|Design HashMap|design-hashmap
-705|Design HashSet|design-hashset
-796|Rotate String|rotate-string
-783|Minimum Distance Between BST Nodes|minimum-distance-between-bst-nodes
-704|Binary Search|binary-search
-703|Kth Largest Element in a Stream|kth-largest-element-in-a-stream
-700|Search in a Binary Search Tree|search-in-a-binary-search-tree
-771|Jewels and Stones|jewels-and-stones
-766|Toeplitz Matrix|toeplitz-matrix
-590|N-ary Tree Postorder Traversal|n-ary-tree-postorder-traversal
-589|N-ary Tree Preorder Traversal|n-ary-tree-preorder-traversal
-559|Maximum Depth of N-ary Tree|maximum-depth-of-n-ary-tree
-762|Prime Number of Set Bits in Binary Representation|prime-number-of-set-bits-in-binary-representation
-748|Shortest Completing Word|shortest-completing-word
-747|Largest Number At Least Twice of Others|largest-number-at-least-twice-of-others
-746|Min Cost Climbing Stairs|min-cost-climbing-stairs
-744|Find Smallest Letter Greater Than Target|find-smallest-letter-greater-than-target
-709|To Lower Case|to-lower-case
-733|Flood Fill|flood-fill
-728|Self Dividing Numbers|self-dividing-numbers
-724|Find Pivot Index|find-pivot-index
-717|1-bit and 2-bit Characters|1-bit-and-2-bit-characters
-697|Degree of an Array|degree-of-an-array
-696|Count Binary Substrings|count-binary-substrings
-693|Binary Number with Alternating Bits|binary-number-with-alternating-bits
-682|Baseball Game|baseball-game
-680|Valid Palindrome II|valid-palindrome-ii
-674|Longest Continuous Increasing Subsequence|longest-continuous-increasing-subsequence
-671|Second Minimum Node In a Binary Tree|second-minimum-node-in-a-binary-tree
-661|Image Smoother|image-smoother
-657|Robot Return to Origin|robot-return-to-origin
-653|Two Sum IV - Input is a BST|two-sum-iv-input-is-a-bst
-645|Set Mismatch|set-mismatch
-643|Maximum Average Subarray I|maximum-average-subarray-i
-637|Average of Levels in Binary Tree|average-of-levels-in-binary-tree
-628|Maximum Product of Three Numbers|maximum-product-of-three-numbers
-617|Merge Two Binary Trees|merge-two-binary-trees
-605|Can Place Flowers|can-place-flowers
-599|Minimum Index Sum of Two Lists|minimum-index-sum-of-two-lists
-598|Range Addition II|range-addition-ii
-594|Longest Harmonious Subsequence|longest-harmonious-subsequence
-575|Distribute Candies|distribute-candies
-572|Subtree of Another Tree|subtree-of-another-tree
-566|Reshape the Matrix|reshape-the-matrix
-563|Binary Tree Tilt|binary-tree-tilt
-561|Array Partition|array-partition
-557|Reverse Words in a String III|reverse-words-in-a-string-iii
-551|Student Attendance Record I|student-attendance-record-i
-543|Diameter of Binary Tree|diameter-of-binary-tree
-541|Reverse String II|reverse-string-ii
-530|Minimum Absolute Difference in BST|minimum-absolute-difference-in-bst
-521|Longest Uncommon Subsequence I|longest-uncommon-subsequence-i
-520|Detect Capital|detect-capital
-507|Perfect Number|perfect-number
-506|Relative Ranks|relative-ranks
-504|Base 7|base-7
-501|Find Mode in Binary Search Tree|find-mode-in-binary-search-tree
-500|Keyboard Row|keyboard-row
-496|Next Greater Element I|next-greater-element-i
-495|Teemo Attacking|teemo-attacking
-492|Construct the Rectangle|construct-the-rectangle
-485|Max Consecutive Ones|max-consecutive-ones
-482|License Key Formatting|license-key-formatting
-476|Number Complement|number-complement
-463|Island Perimeter|island-perimeter
-461|Hamming Distance|hamming-distance
-459|Repeated Substring Pattern|repeated-substring-pattern
-455|Assign Cookies|assign-cookies
-448|Find All Numbers Disappeared in an Array|find-all-numbers-disappeared-in-an-array
-441|Arranging Coins|arranging-coins
-434|Number of Segments in a String|number-of-segments-in-a-string
-415|Add Strings|add-strings
-414|Third Maximum Number|third-maximum-number
-412|Fizz Buzz|fizz-buzz
-409|Longest Palindrome|longest-palindrome
-405|Convert a Number to Hexadecimal|convert-a-number-to-hexadecimal
-404|Sum of Left Leaves|sum-of-left-leaves
-401|Binary Watch|binary-watch
-392|Is Subsequence|is-subsequence
-389|Find the Difference|find-the-difference
-387|First Unique Character in a String|first-unique-character-in-a-string
-383|Ransom Note|ransom-note
-374|Guess Number Higher or Lower|guess-number-higher-or-lower
-367|Valid Perfect Square|valid-perfect-square
-350|Intersection of Two Arrays II|intersection-of-two-arrays-ii
-349|Intersection of Two Arrays|intersection-of-two-arrays
-345|Reverse Vowels of a String|reverse-vowels-of-a-string
-344|Reverse String|reverse-string
-342|Power of Four|power-of-four
-338|Counting Bits|counting-bits
-326|Power of Three|power-of-three
-303|Range Sum Query - Immutable|range-sum-query-immutable
-292|Nim Game|nim-game
-290|Word Pattern|word-pattern
-283|Move Zeroes|move-zeroes
-278|First Bad Version|first-bad-version
-268|Missing Number|missing-number
-263|Ugly Number|ugly-number
-258|Add Digits|add-digits
-257|Binary Tree Paths|binary-tree-paths
-242|Valid Anagram|valid-anagram
-234|Palindrome Linked List|palindrome-linked-list
-232|Implement Queue using Stacks|implement-queue-using-stacks
-231|Power of Two|power-of-two
-228|Summary Ranges|summary-ranges
-226|Invert Binary Tree|invert-binary-tree
-225|Implement Stack using Queues|implement-stack-using-queues
-222|Count Complete Tree Nodes|count-complete-tree-nodes
-219|Contains Duplicate II|contains-duplicate-ii
-217|Contains Duplicate|contains-duplicate
-206|Reverse Linked List|reverse-linked-list
-205|Isomorphic Strings|isomorphic-strings
-203|Remove Linked List Elements|remove-linked-list-elements
-202|Happy Number|happy-number
-191|Number of 1 Bits|number-of-1-bits
-190|Reverse Bits|reverse-bits
-171|Excel Sheet Column Number|excel-sheet-column-number
-169|Majority Element|majority-element
-168|Excel Sheet Column Title|excel-sheet-column-title
-160|Intersection of Two Linked Lists|intersection-of-two-linked-lists
-145|Binary Tree Postorder Traversal|binary-tree-postorder-traversal
-144|Binary Tree Preorder Traversal|binary-tree-preorder-traversal
-141|Linked List Cycle|linked-list-cycle
-136|Single Number|single-number
-125|Valid Palindrome|valid-palindrome
-121|Best Time to Buy and Sell Stock|best-time-to-buy-and-sell-stock
-119|Pascal's Triangle II|pascals-triangle-ii
-118|Pascal's Triangle|pascals-triangle
-112|Path Sum|path-sum
-111|Minimum Depth of Binary Tree|minimum-depth-of-binary-tree
-110|Balanced Binary Tree|balanced-binary-tree
-108|Convert Sorted Array to Binary Search Tree|convert-sorted-array-to-binary-search-tree
-104|Maximum Depth of Binary Tree|maximum-depth-of-binary-tree
-101|Symmetric Tree|symmetric-tree
-100|Same Tree|same-tree
-94|Binary Tree Inorder Traversal|binary-tree-inorder-traversal
-88|Merge Sorted Array|merge-sorted-array
-83|Remove Duplicates from Sorted List|remove-duplicates-from-sorted-list
-70|Climbing Stairs|climbing-stairs
-69|Sqrt(x)|sqrtx
-67|Add Binary|add-binary
-66|Plus One|plus-one
-58|Length of Last Word|length-of-last-word
-35|Search Insert Position|search-insert-position
-28|Find the Index of the First Occurrence in a String|find-the-index-of-the-first-occurrence-in-a-string
-27|Remove Element|remove-element
-26|Remove Duplicates from Sorted Array|remove-duplicates-from-sorted-array
-21|Merge Two Sorted Lists|merge-two-sorted-lists
-20|Valid Parentheses|valid-parentheses
-14|Longest Common Prefix|longest-common-prefix
-13|Roman to Integer|roman-to-integer
-9|Palindrome Number|palindrome-number
-1|Two Sum|two-sum
+3945|Digit Frequency Score|digit-frequency-score|Easy
+3936|Minimum Swaps to Move Zeros to End|minimum-swaps-to-move-zeros-to-end|Easy
+3940|Limit Occurrences in Sorted Array|limit-occurrences-in-sorted-array|Easy
+3931|Check Adjacent Digit Differences|check-adjacent-digit-differences|Easy
+3925|Concatenate Array With Reverse|concatenate-array-with-reverse|Easy
+3917|Count Indices With Opposite Parity|count-indices-with-opposite-parity|Easy
+3912|Valid Elements in an Array|valid-elements-in-an-array|Easy
+3908|Valid Digit Number|valid-digit-number|Easy
+3903|Smallest Stable Index I|smallest-stable-index-i|Easy
+3921|Score Validator|score-validator|Easy
+3894|Traffic Signal Color|traffic-signal-color|Easy
+3898|Find the Degree of Each Vertex|find-the-degree-of-each-vertex|Easy
+3884|First Matching Character From Both Ends|first-matching-character-from-both-ends|Easy
+3875|Construct Uniform Parity Array I|construct-uniform-parity-array-i|Easy
+3880|Minimum Absolute Difference Between Two Values|minimum-absolute-difference-between-two-values|Easy
+3866|First Unique Even Element|first-unique-even-element|Easy
+3861|Minimum Capacity Box|minimum-capacity-box|Easy
+3870|Count Commas in Range|count-commas-in-range|Easy
+3852|Smallest Pair With Different Frequencies|smallest-pair-with-different-frequencies|Easy
+3856|Trim Trailing Vowels|trim-trailing-vowels|Easy
+3838|Weighted Word Mapping|weighted-word-mapping|Easy
+3833|Count Dominant Indices|count-dominant-indices|Easy
+3842|Toggle Light Bulbs|toggle-light-bulbs|Easy
+3823|Reverse Letters Then Special Characters in a String|reverse-letters-then-special-characters-in-a-string|Easy
+3827|Count Monobit Integers|count-monobit-integers|Easy
+3803|Count Residue Prefixes|count-residue-prefixes|Easy
+3798|Largest Even Number|largest-even-number|Easy
+3813|Vowel-Consonant Score|vowel-consonant-score|Easy
+3794|Reverse String Prefix|reverse-string-prefix|Easy
+3783|Mirror Distance of an Integer|mirror-distance-of-an-integer|Easy
+3774|Absolute Difference Between Maximum and Minimum K Elements|absolute-difference-between-maximum-and-minimum-k-elements|Easy
+3769|Sort Integers by Binary Reflection|sort-integers-by-binary-reflection|Easy
+3754|Concatenate Non-Zero Digits and Multiply by Sum I|concatenate-non-zero-digits-and-multiply-by-sum-i|Easy
+3750|Minimum Number of Flips to Reverse Binary String|minimum-number-of-flips-to-reverse-binary-string|Easy
+3736|Minimum Moves to Equal Array Elements III|minimum-moves-to-equal-array-elements-iii|Easy
+3740|Minimum Distance Between Three Equal Elements I|minimum-distance-between-three-equal-elements-i|Easy
+3745|Maximize Expression of Three Elements|maximize-expression-of-three-elements|Easy
+3731|Find Missing Elements|find-missing-elements|Easy
+3718|Smallest Missing Multiple of K|smallest-missing-multiple-of-k|Easy
+3712|Sum of Elements With Frequency Divisible by K|sum-of-elements-with-frequency-divisible-by-k|Easy
+3701|Compute Alternating Sum|compute-alternating-sum|Easy
+3692|Majority Frequency Characters|majority-frequency-characters|Easy
+3707|Equal Score Substrings|equal-score-substrings|Easy
+3726|Remove Zeros in Decimal Representation|remove-zeros-in-decimal-representation|Easy
+3697|Compute Decimal Representation|compute-decimal-representation|Easy
+3683|Earliest Time to Finish One Task|earliest-time-to-finish-one-task|Easy
+3678|Smallest Absent Positive Greater Than Average|smallest-absent-positive-greater-than-average|Easy
+3688|Bitwise OR of Even Numbers in an Array|bitwise-or-of-even-numbers-in-an-array|Easy
+3668|Restore Finishing Order|restore-finishing-order|Easy
+3674|Minimum Operations to Equalize Array|minimum-operations-to-equalize-array|Easy
+3684|Maximize Sum of At Most K Distinct Elements|maximize-sum-of-at-most-k-distinct-elements|Easy
+3658|GCD of Odd and Even Sums|gcd-of-odd-and-even-sums|Easy
+3663|Find The Least Frequent Digit|find-the-least-frequent-digit|Easy
+3643|Flip Square Submatrix Vertically|flip-square-submatrix-vertically|Easy
+3633|Earliest Finish Time for Land and Water Rides I|earliest-finish-time-for-land-and-water-rides-i|Easy
+3637|Trionic Array I|trionic-array-i|Easy
+3606|Coupon Code Validator|coupon-code-validator|Easy
+3622|Check Divisibility by Digit Sum and Product|check-divisibility-by-digit-sum-and-product|Easy
+3591|Check if Any Element Has Prime Frequency|check-if-any-element-has-prime-frequency|Easy
+3602|Hexadecimal and Hexatrigesimal Conversion|hexadecimal-and-hexatrigesimal-conversion|Easy
+3582|Generate Tag for Video Caption|generate-tag-for-video-caption|Easy
+3560|Find Minimum Log Transportation Cost|find-minimum-log-transportation-cost|Easy
+3541|Find Most Frequent Vowel and Consonant|find-most-frequent-vowel-and-consonant|Easy
+3545|Minimum Deletions for At Most K Distinct Characters|minimum-deletions-for-at-most-k-distinct-characters|Easy
+3550|Smallest Index With Digit Sum Equal to Index|smallest-index-with-digit-sum-equal-to-index|Easy
+3536|Maximum Product of Two Digits|maximum-product-of-two-digits|Easy
+3512|Minimum Operations to Make Array Sum Divisible by K|minimum-operations-to-make-array-sum-divisible-by-k|Easy
+3502|Minimum Cost to Reach Every Position|minimum-cost-to-reach-every-position|Easy
+3516|Find Closest Person|find-closest-person|Easy
+3492|Maximum Containers on a Ship|maximum-containers-on-a-ship|Easy
+3498|Reverse Degree of a String|reverse-degree-of-a-string|Easy
+3483|Unique 3-Digit Even Numbers|unique-3-digit-even-numbers|Easy
+3477|Fruits Into Baskets II|fruits-into-baskets-ii|Easy
+3487|Maximum Unique Subarray Sum After Deletion|maximum-unique-subarray-sum-after-deletion|Easy
+3467|Transform Array by Parity|transform-array-by-parity|Easy
+3507|Minimum Pair Removal to Sort Array I|minimum-pair-removal-to-sort-array-i|Easy
+3461|Check If Digits Are Equal in String After Operations I|check-if-digits-are-equal-in-string-after-operations-i|Easy
+3442|Maximum Difference Between Even and Odd Frequency I|maximum-difference-between-even-and-odd-frequency-i|Easy
+3423|Maximum Difference Between Adjacent Elements in a Circular Array|maximum-difference-between-adjacent-elements-in-a-circular-array|Easy
+3438|Find Valid Pair of Adjacent Digits in String|find-valid-pair-of-adjacent-digits-in-string|Easy
+3427|Sum of Variable Length Subarrays|sum-of-variable-length-subarrays|Easy
+3452|Sum of Good Numbers|sum-of-good-numbers|Easy
+3456|Find Special Substring of Length K|find-special-substring-of-length-k|Easy
+3417|Zigzag Grid Traversal With Skip|zigzag-grid-traversal-with-skip|Easy
+3471|Find the Largest Almost Missing Integer|find-the-largest-almost-missing-integer|Easy
+3432|Count Partitions with Even Sum Difference|count-partitions-with-even-sum-difference|Easy
+3411|Maximum Subarray With Equal Products|maximum-subarray-with-equal-products|Easy
+3402|Minimum Operations to Make Columns Strictly Increasing|minimum-operations-to-make-columns-strictly-increasing|Easy
+3392|Count Subarrays of Length Three With a Condition|count-subarrays-of-length-three-with-a-condition|Easy
+3407|Substring Matching Pattern|substring-matching-pattern|Easy
+3370|Smallest Number With All Set Bits|smallest-number-with-all-set-bits|Easy
+3396|Minimum Number of Operations to Make Elements in Array Distinct|minimum-number-of-operations-to-make-elements-in-array-distinct|Easy
+3379|Transformed Array|transformed-array|Easy
+3364|Minimum Positive Sum Subarray |minimum-positive-sum-subarray|Easy
+3340|Check Balanced String|check-balanced-string|Easy
+3386|Button with Longest Push Time|button-with-longest-push-time|Easy
+3345|Smallest Divisible Digit Product I|smallest-divisible-digit-product-i|Easy
+3360|Stone Removal Game|stone-removal-game|Easy
+3375|Minimum Operations to Make Array Values Equal to K|minimum-operations-to-make-array-values-equal-to-k|Easy
+3330|Find the Original Typed String I|find-the-original-typed-string-i|Easy
+3354|Make Array Elements Equal to Zero|make-array-elements-equal-to-zero|Easy
+3349|Adjacent Increasing Subarrays Detection I|adjacent-increasing-subarrays-detection-i|Easy
+3318|Find X-Sum of All K-Long Subarrays I|find-x-sum-of-all-k-long-subarrays-i|Easy
+3300|Minimum Element After Replacement With Digit Sum|minimum-element-after-replacement-with-digit-sum|Easy
+3314|Construct the Minimum Bitwise Array I|construct-the-minimum-bitwise-array-i|Easy
+3304|Find the K-th Character in String Game I|find-the-k-th-character-in-string-game-i|Easy
+3285|Find Indices of Stable Mountains|find-indices-of-stable-mountains|Easy
+3289|The Two Sneaky Numbers of Digitville|the-two-sneaky-numbers-of-digitville|Easy
+3270|Find the Key of the Numbers|find-the-key-of-the-numbers|Easy
+3280|Convert Date to Binary|convert-date-to-binary|Easy
+3264|Final Array State After K Multiplication Operations I|final-array-state-after-k-multiplication-operations-i|Easy
+3274|Check if Two Chessboard Squares Have the Same Color|check-if-two-chessboard-squares-have-the-same-color|Easy
+3258|Count Substrings That Satisfy K-Constraint I|count-substrings-that-satisfy-k-constraint-i|Easy
+3248|Snake in Matrix|snake-in-matrix|Easy
+3238|Find the Number of Winning Players|find-the-number-of-winning-players|Easy
+3242|Design Neighbor Sum Service|design-neighbor-sum-service|Easy
+3232|Find if Digit Game Can Be Won|find-if-digit-game-can-be-won|Easy
+3222|Find the Winning Player in Coin Game|find-the-winning-player-in-coin-game|Easy
+3226|Number of Bit Changes to Make Two Integers Equal|number-of-bit-changes-to-make-two-integers-equal|Easy
+3216|Lexicographically Smallest String After a Swap|lexicographically-smallest-string-after-a-swap|Easy
+3190|Find Minimum Operations to Make All Elements Divisible by Three|find-minimum-operations-to-make-all-elements-divisible-by-three|Easy
+3194|Minimum Average of Smallest and Largest Elements|minimum-average-of-smallest-and-largest-elements|Easy
+3200|Maximum Height of a Triangle|maximum-height-of-a-triangle|Easy
+3210|Find the Encrypted String|find-the-encrypted-string|Easy
+3206|Alternating Groups I|alternating-groups-i|Easy
+3178|Find the Child Who Has the Ball After K Seconds|find-the-child-who-has-the-ball-after-k-seconds|Easy
+3174|Clear Digits|clear-digits|Easy
+3162|Find the Number of Good Pairs I|find-the-number-of-good-pairs-i|Easy
+3151|Special Array I|special-array-i|Easy
+3158|Find the XOR of Numbers Which Appear Twice|find-the-xor-of-numbers-which-appear-twice|Easy
+3168|Minimum Number of Chairs in a Waiting Room|minimum-number-of-chairs-in-a-waiting-room|Easy
+3184|Count Pairs That Form a Complete Day I|count-pairs-that-form-a-complete-day-i|Easy
+3142|Check if Grid Satisfies Conditions|check-if-grid-satisfies-conditions|Easy
+3146|Permutation Difference between Two Strings|permutation-difference-between-two-strings|Easy
+3120|Count the Number of Special Characters I|count-the-number-of-special-characters-i|Easy
+3127|Make a Square with the Same Color|make-a-square-with-the-same-color|Easy
+3131|Find the Integer Added to Array I|find-the-integer-added-to-array-i|Easy
+3136|Valid Word|valid-word|Easy
+3095|Shortest Subarray With OR at Least K I|shortest-subarray-with-or-at-least-k-i|Easy
+3110|Score of a String|score-of-a-string|Easy
+3105|Longest Strictly Increasing or Strictly Decreasing Subarray|longest-strictly-increasing-or-strictly-decreasing-subarray|Easy
+3099|Harshad Number|harshad-number|Easy
+3079|Find the Sum of Encrypted Integers|find-the-sum-of-encrypted-integers|Easy
+3114|Latest Time You Can Obtain After Replacing Characters|latest-time-you-can-obtain-after-replacing-characters|Easy
+3083|Existence of a Substring in a String and Its Reverse|existence-of-a-substring-in-a-string-and-its-reverse|Easy
+3090|Maximum Length Substring With Two Occurrences|maximum-length-substring-with-two-occurrences|Easy
+3069|Distribute Elements Into Two Arrays I|distribute-elements-into-two-arrays-i|Easy
+3074|Apple Redistribution into Boxes|apple-redistribution-into-boxes|Easy
+3065|Minimum Operations to Exceed Threshold Value I|minimum-operations-to-exceed-threshold-value-i|Easy
+3033|Modify the Matrix|modify-the-matrix|Easy
+3046|Split the Array|split-the-array|Easy
+3024|Type of Triangle|type-of-triangle|Easy
+3038|Maximum Number of Operations With the Same Score I|maximum-number-of-operations-with-the-same-score-i|Easy
+3019|Number of Changing Keys|number-of-changing-keys|Easy
+3028|Ant on the Boundary|ant-on-the-boundary|Easy
+3042|Count Prefix and Suffix Pairs I|count-prefix-and-suffix-pairs-i|Easy
+3014|Minimum Number of Pushes to Type Word I|minimum-number-of-pushes-to-type-word-i|Easy
+3010|Divide an Array Into Subarrays With Minimum Cost I|divide-an-array-into-subarrays-with-minimum-cost-i|Easy
+2970|Count the Number of Incremovable Subarrays I|count-the-number-of-incremovable-subarrays-i|Easy
+3000|Maximum Area of Longest Diagonal Rectangle|maximum-area-of-longest-diagonal-rectangle|Easy
+2980|Check if Bitwise OR Has Trailing Zeros|check-if-bitwise-or-has-trailing-zeros|Easy
+3005|Count Elements With Maximum Frequency|count-elements-with-maximum-frequency|Easy
+2996|Smallest Missing Integer Greater Than Sequential Prefix Sum|smallest-missing-integer-greater-than-sequential-prefix-sum|Easy
+2965|Find Missing and Repeated Values|find-missing-and-repeated-values|Easy
+2974|Minimum Number Game|minimum-number-game|Easy
+2951|Find the Peaks|find-the-peaks|Easy
+2960|Count Tested Devices After Test Operations|count-tested-devices-after-test-operations|Easy
+2946|Matrix Similarity After Cyclic Shifts|matrix-similarity-after-cyclic-shifts|Easy
+2937|Make Three Strings Equal|make-three-strings-equal|Easy
+2956|Find Common Elements Between Two Arrays|find-common-elements-between-two-arrays|Easy
+2928|Distribute Candies Among Children I|distribute-candies-among-children-i|Easy
+2942|Find Words Containing Character|find-words-containing-character|Easy
+2932|Maximum Strong Pair XOR I|maximum-strong-pair-xor-i|Easy
+2923|Find Champion I|find-champion-i|Easy
+2917|Find the K-or of an Array|find-the-k-or-of-an-array|Easy
+2908|Minimum Sum of Mountain Triplets I|minimum-sum-of-mountain-triplets-i|Easy
+2894|Divisible and Non-divisible Sums Difference|divisible-and-non-divisible-sums-difference|Easy
+2903|Find Indices With Index and Value Difference I|find-indices-with-index-and-value-difference-i|Easy
+2899|Last Visited Integers|last-visited-integers|Easy
+2913|Subarrays Distinct Element Sum of Squares I|subarrays-distinct-element-sum-of-squares-i|Easy
+2873|Maximum Value of an Ordered Triplet I|maximum-value-of-an-ordered-triplet-i|Easy
+2900|Longest Unequal Adjacent Groups Subsequence I|longest-unequal-adjacent-groups-subsequence-i|Easy
+2859|Sum of Values at Indices With K Set Bits|sum-of-values-at-indices-with-k-set-bits|Easy
+2864|Maximum Odd Binary Number|maximum-odd-binary-number|Easy
+2855|Minimum Right Shifts to Sort the Array|minimum-right-shifts-to-sort-the-array|Easy
+2869|Minimum Operations to Collect Elements|minimum-operations-to-collect-elements|Easy
+2848|Points That Intersect With Cars|points-that-intersect-with-cars|Easy
+2833|Furthest Point From Origin|furthest-point-from-origin|Easy
+2839|Check if Strings Can be Made Equal With Operations I|check-if-strings-can-be-made-equal-with-operations-i|Easy
+2843|  Count Symmetric Integers|count-symmetric-integers|Easy
+2828|Check if a String Is an Acronym of Words|check-if-a-string-is-an-acronym-of-words|Easy
+2806|Account Balance After Rounded Purchase|account-balance-after-rounded-purchase|Easy
+2824|Count Pairs Whose Sum is Less than Target|count-pairs-whose-sum-is-less-than-target|Easy
+2815|Max Pair Sum in an Array|max-pair-sum-in-an-array|Easy
+2784|Check if Array is Good|check-if-array-is-good|Easy
+2810|Faulty Keyboard|faulty-keyboard|Easy
+2788|Split Strings by Separator|split-strings-by-separator|Easy
+2798|Number of Employees Who Met the Target|number-of-employees-who-met-the-target|Easy
+2765|Longest Alternating Subarray|longest-alternating-subarray|Easy
+2760|Longest Even Odd Subarray With Threshold|longest-even-odd-subarray-with-threshold|Easy
+2739|Total Distance Traveled|total-distance-traveled|Easy
+2744|Find Maximum Number of String Pairs|find-maximum-number-of-string-pairs|Easy
+2778|Sum of Squares of Special Elements |sum-of-squares-of-special-elements|Easy
+2733|Neither Minimum nor Maximum|neither-minimum-nor-maximum|Easy
+2748|Number of Beautiful Pairs|number-of-beautiful-pairs|Easy
+2716|Minimize String Length|minimize-string-length|Easy
+2729|Check if The Number is Fascinating|check-if-the-number-is-fascinating|Easy
+2710|Remove Trailing Zeros From a String|remove-trailing-zeros-from-a-string|Easy
+2697|Lexicographically Smallest Palindrome|lexicographically-smallest-palindrome|Easy
+2769|Find the Maximum Achievable Number|find-the-maximum-achievable-number|Easy
+2696|Minimum String Length After Removing Substrings|minimum-string-length-after-removing-substrings|Easy
+2682|Find the Losers of the Circular Game|find-the-losers-of-the-circular-game|Easy
+2717|Semi-Ordered Permutation|semi-ordered-permutation|Easy
+2670|Find the Distinct Difference Array|find-the-distinct-difference-array|Easy
+2656|Maximum Sum With Exactly K Elements |maximum-sum-with-exactly-k-elements|Easy
+2706|Buy Two Chocolates|buy-two-chocolates|Easy
+2652|Sum Multiples|sum-multiples|Easy
+2651|Calculate Delayed Arrival Time|calculate-delayed-arrival-time|Easy
+2643|Row With Maximum Ones|row-with-maximum-ones|Easy
+2678|Number of Senior Citizens|number-of-senior-citizens|Easy
+2609|Find the Longest Balanced Substring of a Binary String|find-the-longest-balanced-substring-of-a-binary-string|Easy
+2614|Prime In Diagonal|prime-in-diagonal|Easy
+2600|K Items With the Maximum Sum|k-items-with-the-maximum-sum|Easy
+2574|Left and Right Sum Differences|left-and-right-sum-differences|Easy
+2570|Merge Two 2D Arrays by Summing Values|merge-two-2d-arrays-by-summing-values|Easy
+2566|Maximum Difference by Remapping a Digit|maximum-difference-by-remapping-a-digit|Easy
+2562|Find the Array Concatenation Value|find-the-array-concatenation-value|Easy
+2644|Find the Maximum Divisibility Score|find-the-maximum-divisibility-score|Easy
+2558|Take Gifts From the Richest Pile|take-gifts-from-the-richest-pile|Easy
+2660|Determine the Winner of a Bowling Game|determine-the-winner-of-a-bowling-game|Easy
+2549|Count Distinct Numbers on Board|count-distinct-numbers-on-board|Easy
+2639|Find the Width of Columns of a Grid|find-the-width-of-columns-of-a-grid|Easy
+2605|Form Smallest Number From Two Digit Arrays|form-smallest-number-from-two-digit-arrays|Easy
+2591|Distribute Money to Maximum Children|distribute-money-to-maximum-children|Easy
+2595|Number of Even and Odd Bits|number-of-even-and-odd-bits|Easy
+2586|Count the Number of Vowel Strings in Range|count-the-number-of-vowel-strings-in-range|Easy
+2578|Split With Minimum Sum|split-with-minimum-sum|Easy
+2582|Pass the Pillow|pass-the-pillow|Easy
+2553|Separate the Digits in an Array|separate-the-digits-in-an-array|Easy
+2540|Minimum Common Value|minimum-common-value|Easy
+2544|Alternating Digit Sum|alternating-digit-sum|Easy
+2535|Difference Between Element Sum and Digit Sum of an Array|difference-between-element-sum-and-digit-sum-of-an-array|Easy
+2525|Categorize Box According to Criteria|categorize-box-according-to-criteria|Easy
+2529|Maximum Count of Positive Integer and Negative Integer|maximum-count-of-positive-integer-and-negative-integer|Easy
+2520|Count the Digits That Divide a Number|count-the-digits-that-divide-a-number|Easy
+2511|Maximum Enemy Forts That Can Be Captured|maximum-enemy-forts-that-can-be-captured|Easy
+2515|Shortest Distance to Target String in a Circular Array|shortest-distance-to-target-string-in-a-circular-array|Easy
+2506|Count Pairs Of Similar Strings|count-pairs-of-similar-strings|Easy
+2496|Maximum Value of a String in an Array|maximum-value-of-a-string-in-an-array|Easy
+2500|Delete Greatest Value in Each Row|delete-greatest-value-in-each-row|Easy
+2490|Circular Sentence|circular-sentence|Easy
+2481|Minimum Cuts to Divide a Circle|minimum-cuts-to-divide-a-circle|Easy
+2485|Find the Pivot Integer|find-the-pivot-integer|Easy
+2475|Number of Unequal Triplets in Array|number-of-unequal-triplets-in-array|Easy
+2465|Number of Distinct Averages|number-of-distinct-averages|Easy
+2469|Convert the Temperature|convert-the-temperature|Easy
+2460|Apply Operations to an Array|apply-operations-to-an-array|Easy
+2451|Odd String Difference|odd-string-difference|Easy
+2455|Average Value of Even Numbers That Are Divisible by Three|average-value-of-even-numbers-that-are-divisible-by-three|Easy
+2446|Determine if Two Events Have Conflict|determine-if-two-events-have-conflict|Easy
+2423|Remove Letter To Equalize Frequency|remove-letter-to-equalize-frequency|Easy
+2437|Number of Valid Clock Times|number-of-valid-clock-times|Easy
+2441|Largest Positive Integer That Exists With Its Negative|largest-positive-integer-that-exists-with-its-negative|Easy
+2432|The Employee That Worked on the Longest Task|the-employee-that-worked-on-the-longest-task|Easy
+2427|Number of Common Factors|number-of-common-factors|Easy
+2418|Sort the People|sort-the-people|Easy
+2409|Count Days Spent Together|count-days-spent-together|Easy
+2413|Smallest Even Multiple|smallest-even-multiple|Easy
+2404|Most Frequent Even Element|most-frequent-even-element|Easy
+2395|Find Subarrays With Equal Sum|find-subarrays-with-equal-sum|Easy
+2399|Check Distances Between Same Letters|check-distances-between-same-letters|Easy
+2389|Longest Subsequence With Limited Sum|longest-subsequence-with-limited-sum|Easy
+2379|Minimum Recolors to Get K Consecutive Black Blocks|minimum-recolors-to-get-k-consecutive-black-blocks|Easy
+2383|Minimum Hours of Training to Win a Competition|minimum-hours-of-training-to-win-a-competition|Easy
+2373|Largest Local Values in a Matrix|largest-local-values-in-a-matrix|Easy
+2363|Merge Similar Items|merge-similar-items|Easy
+2367|Number of Arithmetic Triplets|number-of-arithmetic-triplets|Easy
+2357|Make Array Zero by Subtracting Equal Amounts|make-array-zero-by-subtracting-equal-amounts|Easy
+2347|Best Poker Hand|best-poker-hand|Easy
+2351|First Letter to Appear Twice|first-letter-to-appear-twice|Easy
+2341|Maximum Number of Pairs in Array|maximum-number-of-pairs-in-array|Easy
+2331|Evaluate Boolean Binary Tree|evaluate-boolean-binary-tree|Easy
+2335|Minimum Amount of Time to Fill Cups|minimum-amount-of-time-to-fill-cups|Easy
+2325|Decode the Message|decode-the-message|Easy
+2315|Count Asterisks|count-asterisks|Easy
+2319|Check if Matrix Is X-Matrix|check-if-matrix-is-x-matrix|Easy
+2299|Strong Password Checker II|strong-password-checker-ii|Easy
+2293|Min Max Game|min-max-game|Easy
+2236|Root Equals Sum of Children|root-equals-sum-of-children|Easy
+2235|Add Two Integers|add-two-integers|Easy
+2283|Check if Number Has Equal Digit Count and Digit Value|check-if-number-has-equal-digit-count-and-digit-value|Easy
+2287|Rearrange Characters to Make Target String|rearrange-characters-to-make-target-string|Easy
+2278|Percentage of Letter in String|percentage-of-letter-in-string|Easy
+2243|Calculate Digit Sum of a String|calculate-digit-sum-of-a-string|Easy
+2239|Find Closest Number to Zero|find-closest-number-to-zero|Easy
+2264|Largest 3-Same-Digit Number in String|largest-3-same-digit-number-in-string|Easy
+2224|Minimum Number of Operations to Convert Time|minimum-number-of-operations-to-convert-time|Easy
+2255|Count Prefixes of a Given String|count-prefixes-of-a-given-string|Easy
+2259|Remove Digit From Number to Maximize Result|remove-digit-from-number-to-maximize-result|Easy
+2248|Intersection of Multiple Arrays|intersection-of-multiple-arrays|Easy
+2231|Largest Number After Digit Swaps by Parity|largest-number-after-digit-swaps-by-parity|Easy
+2220|Minimum Bit Flips to Convert Number|minimum-bit-flips-to-convert-number|Easy
+2200|Find All K-Distant Indices in an Array|find-all-k-distant-indices-in-an-array|Easy
+2210|Count Hills and Valleys in an Array|count-hills-and-valleys-in-an-array|Easy
+2190|Most Frequent Number Following Key In an Array|most-frequent-number-following-key-in-an-array|Easy
+2206|Divide Array Into Equal Pairs|divide-array-into-equal-pairs|Easy
+2194|Cells in a Range on an Excel Sheet|cells-in-a-range-on-an-excel-sheet|Easy
+2180|Count Integers With Even Digit Sum|count-integers-with-even-digit-sum|Easy
+2185|Counting Words With a Given Prefix|counting-words-with-a-given-prefix|Easy
+2169|Count Operations to Obtain Zero|count-operations-to-obtain-zero|Easy
+2164|Sort Even and Odd Indices Independently|sort-even-and-odd-indices-independently|Easy
+2176|Count Equal and Divisible Pairs in an Array|count-equal-and-divisible-pairs-in-an-array|Easy
+2154|Keep Multiplying Found Values by Two|keep-multiplying-found-values-by-two|Easy
+2148|Count Elements With Strictly Smaller and Greater Elements |count-elements-with-strictly-smaller-and-greater-elements|Easy
+2160|Minimum Sum of Four Digit Number After Splitting Digits|minimum-sum-of-four-digit-number-after-splitting-digits|Easy
+2138|Divide a String Into Groups of Size k|divide-a-string-into-groups-of-size-k|Easy
+2133|Check if Every Row and Column Contains All Numbers|check-if-every-row-and-column-contains-all-numbers|Easy
+2144|Minimum Cost of Buying Candies With Discount|minimum-cost-of-buying-candies-with-discount|Easy
+2124|Check if All A's Appears Before All B's|check-if-all-as-appears-before-all-bs|Easy
+2119|A Number After a Double Reversal|a-number-after-a-double-reversal|Easy
+2129|Capitalize the Title|capitalize-the-title|Easy
+2108|Find First Palindromic String in the Array|find-first-palindromic-string-in-the-array|Easy
+2103|Rings and Rods|rings-and-rods|Easy
+2114|Maximum Number of Words Found in Sentences|maximum-number-of-words-found-in-sentences|Easy
+2094|Finding 3-Digit Even Numbers|finding-3-digit-even-numbers|Easy
+2089|Find Target Indices After Sorting Array|find-target-indices-after-sorting-array|Easy
+2099|Find Subsequence of Length K With the Largest Sum|find-subsequence-of-length-k-with-the-largest-sum|Easy
+2078|Two Furthest Houses With Different Colors|two-furthest-houses-with-different-colors|Easy
+2073|Time Needed to Buy Tickets|time-needed-to-buy-tickets|Easy
+2085|Count Common Words With One Occurrence|count-common-words-with-one-occurrence|Easy
+2062|Count Vowel Substrings of a String|count-vowel-substrings-of-a-string|Easy
+2057|Smallest Index With Equal Value|smallest-index-with-equal-value|Easy
+2068|Check Whether Two Strings are Almost Equivalent|check-whether-two-strings-are-almost-equivalent|Easy
+2047|Number of Valid Words in a Sentence|number-of-valid-words-in-a-sentence|Easy
+2042|Check if Numbers Are Ascending in a Sentence|check-if-numbers-are-ascending-in-a-sentence|Easy
+2053|Kth Distinct String in an Array|kth-distinct-string-in-an-array|Easy
+2032|Two Out of Three|two-out-of-three|Easy
+2027|Minimum Moves to Convert String|minimum-moves-to-convert-string|Easy
+2037|Minimum Number of Moves to Seat Everyone|minimum-number-of-moves-to-seat-everyone|Easy
+2016|Maximum Difference Between Increasing Elements|maximum-difference-between-increasing-elements|Easy
+2011|Final Value of Variable After Performing Operations|final-value-of-variable-after-performing-operations|Easy
+2022|Convert 1D Array Into 2D Array|convert-1d-array-into-2d-array|Easy
+2000|Reverse Prefix of Word|reverse-prefix-of-word|Easy
+1995|Count Special Quadruplets|count-special-quadruplets|Easy
+1971|Find if Path Exists in Graph|find-if-path-exists-in-graph|Easy
+2006|Count Number of Pairs With Absolute Difference K|count-number-of-pairs-with-absolute-difference-k|Easy
+1984|Minimum Difference Between Highest and Lowest of K Scores|minimum-difference-between-highest-and-lowest-of-k-scores|Easy
+1979|Find Greatest Common Divisor of Array|find-greatest-common-divisor-of-array|Easy
+1991|Find the Middle Index in Array|find-the-middle-index-in-array|Easy
+1967|Number of Strings That Appear as Substrings in Word|number-of-strings-that-appear-as-substrings-in-word|Easy
+1961|Check If String Is a Prefix of Array|check-if-string-is-a-prefix-of-array|Easy
+1974|Minimum Time to Type Word Using Special Typewriter|minimum-time-to-type-word-using-special-typewriter|Easy
+1952|Three Divisors|three-divisors|Easy
+1945|Sum of Digits of String After Convert|sum-of-digits-of-string-after-convert|Easy
+1929|Concatenation of Array|concatenation-of-array|Easy
+1941|Check if All Characters Have Equal Number of Occurrences|check-if-all-characters-have-equal-number-of-occurrences|Easy
+1920|Build Array from Permutation|build-array-from-permutation|Easy
+1913|Maximum Product Difference Between Two Pairs|maximum-product-difference-between-two-pairs|Easy
+1925|Count Square Sum Triples|count-square-sum-triples|Easy
+1903|Largest Odd Number in String|largest-odd-number-in-string|Easy
+1897|Redistribute Characters to Make All Strings Equal|redistribute-characters-to-make-all-strings-equal|Easy
+1909|Remove One Element to Make the Array Strictly Increasing|remove-one-element-to-make-the-array-strictly-increasing|Easy
+1886|Determine Whether Matrix Can Be Obtained By Rotation|determine-whether-matrix-can-be-obtained-by-rotation|Easy
+1880|Check if Word Equals Summation of Two Words|check-if-word-equals-summation-of-two-words|Easy
+1893|Check if All the Integers in a Range Are Covered|check-if-all-the-integers-in-a-range-are-covered|Easy
+1869|Longer Contiguous Segments of Ones than Zeros|longer-contiguous-segments-of-ones-than-zeros|Easy
+1863|Sum of All Subset XOR Totals|sum-of-all-subset-xor-totals|Easy
+1876|Substrings of Size Three with Distinct Characters|substrings-of-size-three-with-distinct-characters|Easy
+1854|Maximum Population Year|maximum-population-year|Easy
+1848|Minimum Distance to the Target Element|minimum-distance-to-the-target-element|Easy
+1859|Sorting the Sentence|sorting-the-sentence|Easy
+1837|Sum of Digits in Base K|sum-of-digits-in-base-k|Easy
+1832|Check if the Sentence Is Pangram|check-if-the-sentence-is-pangram|Easy
+1844|Replace All Digits with Characters|replace-all-digits-with-characters|Easy
+1822|Sign of the Product of an Array|sign-of-the-product-of-an-array|Easy
+1816|Truncate Sentence|truncate-sentence|Easy
+1827|Minimum Operations to Make the Array Increasing|minimum-operations-to-make-the-array-increasing|Easy
+1805|Number of Different Integers in a String|number-of-different-integers-in-a-string|Easy
+1800|Maximum Ascending Subarray Sum|maximum-ascending-subarray-sum|Easy
+1812|Determine Color of a Chessboard Square|determine-color-of-a-chessboard-square|Easy
+1791|Find Center of Star Graph|find-center-of-star-graph|Easy
+1790|Check if One String Swap Can Make Strings Equal|check-if-one-string-swap-can-make-strings-equal|Easy
+1784|Check if Binary String Has at Most One Segment of Ones|check-if-binary-string-has-at-most-one-segment-of-ones|Easy
+1796|Second Largest Digit in a String|second-largest-digit-in-a-string|Easy
+1773|Count Items Matching a Rule|count-items-matching-a-rule|Easy
+1768|Merge Strings Alternately|merge-strings-alternately|Easy
+1779|Find Nearest Point That Has the Same X or Y Coordinate|find-nearest-point-that-has-the-same-x-or-y-coordinate|Easy
+1758|Minimum Changes To Make Alternating Binary String|minimum-changes-to-make-alternating-binary-string|Easy
+1752|Check if Array Is Sorted and Rotated|check-if-array-is-sorted-and-rotated|Easy
+1763|Longest Nice Substring|longest-nice-substring|Easy
+1736|Latest Time by Replacing Hidden Digits|latest-time-by-replacing-hidden-digits|Easy
+1748|Sum of Unique Elements|sum-of-unique-elements|Easy
+1742|Maximum Number of Balls in a Box|maximum-number-of-balls-in-a-box|Easy
+1725|Number Of Rectangles That Can Form The Largest Square|number-of-rectangles-that-can-form-the-largest-square|Easy
+1720|Decode XORed Array|decode-xored-array|Easy
+1732|Find the Highest Altitude|find-the-highest-altitude|Easy
+1710|Maximum Units on a Truck|maximum-units-on-a-truck|Easy
+1704|Determine if String Halves Are Alike|determine-if-string-halves-are-alike|Easy
+1716|Calculate Money in Leetcode Bank|calculate-money-in-leetcode-bank|Easy
+1694|Reformat Phone Number|reformat-phone-number|Easy
+1688|Count of Matches in Tournament|count-of-matches-in-tournament|Easy
+1700|Number of Students Unable to Eat Lunch|number-of-students-unable-to-eat-lunch|Easy
+1678|Goal Parser Interpretation|goal-parser-interpretation|Easy
+1672|Richest Customer Wealth|richest-customer-wealth|Easy
+1684|Count the Number of Consistent Strings|count-the-number-of-consistent-strings|Easy
+1662|Check If Two String Arrays are Equivalent|check-if-two-string-arrays-are-equivalent|Easy
+1656|Design an Ordered Stream|design-an-ordered-stream|Easy
+1646|Get Maximum in Generated Array|get-maximum-in-generated-array|Easy
+1668|Maximum Repeating Substring|maximum-repeating-substring|Easy
+1640|Check Array Formation Through Concatenation|check-array-formation-through-concatenation|Easy
+1652|Defuse the Bomb|defuse-the-bomb|Easy
+1629|Slowest Key|slowest-key|Easy
+1624|Largest Substring Between Two Equal Characters|largest-substring-between-two-equal-characters|Easy
+1637|Widest Vertical Area Between Two Points Containing No Points|widest-vertical-area-between-two-points-containing-no-points|Easy
+1636|Sort Array by Increasing Frequency|sort-array-by-increasing-frequency|Easy
+1614|Maximum Nesting Depth of the Parentheses|maximum-nesting-depth-of-the-parentheses|Easy
+1608|Special Array With X Elements Greater Than or Equal X|special-array-with-x-elements-greater-than-or-equal-x|Easy
+1598|Crawler Log Folder|crawler-log-folder|Easy
+1592|Rearrange Spaces Between Words|rearrange-spaces-between-words|Easy
+1603|Design Parking System|design-parking-system|Easy
+1582|Special Positions in a Binary Matrix|special-positions-in-a-binary-matrix|Easy
+1576|Replace All ?'s to Avoid Consecutive Repeating Characters|replace-all-s-to-avoid-consecutive-repeating-characters|Easy
+1588|Sum of All Odd Length Subarrays|sum-of-all-odd-length-subarrays|Easy
+1566|Detect Pattern of Length M Repeated K or More Times|detect-pattern-of-length-m-repeated-k-or-more-times|Easy
+1560|Most Visited Sector in  a Circular Track|most-visited-sector-in-a-circular-track|Easy
+1572|Matrix Diagonal Sum|matrix-diagonal-sum|Easy
+1544|Make The String Great|make-the-string-great|Easy
+1556|Thousand Separator|thousand-separator|Easy
+1534|Count Good Triplets|count-good-triplets|Easy
+1528|Shuffle String|shuffle-string|Easy
+1539|Kth Missing Positive Number|kth-missing-positive-number|Easy
+1518|Water Bottles|water-bottles|Easy
+1512|Number of Good Pairs|number-of-good-pairs|Easy
+1523|Count Odd Numbers in an Interval Range|count-odd-numbers-in-an-interval-range|Easy
+1502|Can Make Arithmetic Progression From Sequence|can-make-arithmetic-progression-from-sequence|Easy
+1496|Path Crossing|path-crossing|Easy
+1486|XOR Operation in an Array|xor-operation-in-an-array|Easy
+1480|Running Sum of 1d Array|running-sum-of-1d-array|Easy
+1491|Average Salary Excluding the Minimum and Maximum Salary|average-salary-excluding-the-minimum-and-maximum-salary|Easy
+1470|Shuffle the Array|shuffle-the-array|Easy
+1464|Maximum Product of Two Elements in an Array|maximum-product-of-two-elements-in-an-array|Easy
+1475|Final Prices With a Special Discount in a Shop|final-prices-with-a-special-discount-in-a-shop|Easy
+1455|Check If a Word Occurs As a Prefix of Any Word in a Sentence|check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence|Easy
+1450|Number of Students Doing Homework at a Given Time|number-of-students-doing-homework-at-a-given-time|Easy
+1460|Make Two Arrays Equal by Reversing Subarrays|make-two-arrays-equal-by-reversing-subarrays|Easy
+1437|Check If All 1's Are at Least Length K Places Away|check-if-all-1s-are-at-least-length-k-places-away|Easy
+1436|Destination City|destination-city|Easy
+1446|Consecutive Characters|consecutive-characters|Easy
+1422|Maximum Score After Splitting a String|maximum-score-after-splitting-a-string|Easy
+1417|Reformat The String|reformat-the-string|Easy
+1431|Kids With the Greatest Number of Candies|kids-with-the-greatest-number-of-candies|Easy
+1408|String Matching in an Array|string-matching-in-an-array|Easy
+1403|Minimum Subsequence in Non-Increasing Order|minimum-subsequence-in-non-increasing-order|Easy
+1413|Minimum Value to Get Positive Step by Step Sum|minimum-value-to-get-positive-step-by-step-sum|Easy
+1394|Find Lucky Integer in an Array|find-lucky-integer-in-an-array|Easy
+1389|Create Target Array in the Given Order|create-target-array-in-the-given-order|Easy
+1399|Count Largest Group|count-largest-group|Easy
+1379|Find a Corresponding Node of a Binary Tree in a Clone of That Tree|find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree|Easy
+1380|Lucky Numbers in a Matrix|lucky-numbers-in-a-matrix|Easy
+1374|Generate a String With Characters That Have Odd Counts|generate-a-string-with-characters-that-have-odd-counts|Easy
+1385|Find the Distance Value Between Two Arrays|find-the-distance-value-between-two-arrays|Easy
+1365|How Many Numbers Are Smaller Than the Current Number|how-many-numbers-are-smaller-than-the-current-number|Easy
+1351|Count Negative Numbers in a Sorted Matrix|count-negative-numbers-in-a-sorted-matrix|Easy
+1370|Increasing Decreasing String|increasing-decreasing-string|Easy
+1346|Check If N and Its Double Exist|check-if-n-and-its-double-exist|Easy
+1337|The K Weakest Rows in a Matrix|the-k-weakest-rows-in-a-matrix|Easy
+1356|Sort Integers by The Number of 1 Bits|sort-integers-by-the-number-of-1-bits|Easy
+1332|Remove Palindromic Subsequences|remove-palindromic-subsequences|Easy
+1323|Maximum 69 Number|maximum-69-number|Easy
+1342|Number of Steps to Reduce a Number to Zero|number-of-steps-to-reduce-a-number-to-zero|Easy
+1317|Convert Integer to the Sum of Two No-Zero Integers|convert-integer-to-the-sum-of-two-no-zero-integers|Easy
+1309|Decrypt String from Alphabet to Integer Mapping|decrypt-string-from-alphabet-to-integer-mapping|Easy
+2269|Find the K-Beauty of a Number|find-the-k-beauty-of-a-number|Easy
+1304|Find N Unique Integers Sum up to Zero|find-n-unique-integers-sum-up-to-zero|Easy
+1295|Find Numbers with Even Number of Digits|find-numbers-with-even-number-of-digits|Easy
+1290|Convert Binary Number in a Linked List to Integer|convert-binary-number-in-a-linked-list-to-integer|Easy
+1281|Subtract the Product and Sum of Digits of an Integer|subtract-the-product-and-sum-of-digits-of-an-integer|Easy
+1275|Find Winner on a Tic Tac Toe Game|find-winner-on-a-tic-tac-toe-game|Easy
+1266|Minimum Time Visiting All Points|minimum-time-visiting-all-points|Easy
+2215|Find the Difference of Two Arrays|find-the-difference-of-two-arrays|Easy
+1260|Shift 2D Grid|shift-2d-grid|Easy
+2303|Calculate Amount Paid in Taxes|calculate-amount-paid-in-taxes|Easy
+1252|Cells with Odd Values in a Matrix|cells-with-odd-values-in-a-matrix|Easy
+2309|Greatest English Letter in Upper and Lower Case|greatest-english-letter-in-upper-and-lower-case|Easy
+2273|Find Resultant Array After Removing Anagrams|find-resultant-array-after-removing-anagrams|Easy
+1232|Check If It Is a Straight Line|check-if-it-is-a-straight-line|Easy
+1221|Split a String in Balanced Strings|split-a-string-in-balanced-strings|Easy
+1217|Minimum Cost to Move Chips to The Same Position|minimum-cost-to-move-chips-to-the-same-position|Easy
+1207|Unique Number of Occurrences|unique-number-of-occurrences|Easy
+1200|Minimum Absolute Difference|minimum-absolute-difference|Easy
+1957|Delete Characters to Make Fancy String|delete-characters-to-make-fancy-string|Easy
+1189|Maximum Number of Balloons|maximum-number-of-balloons|Easy
+1550|Three Consecutive Odds|three-consecutive-odds|Easy
+1185|Day of the Week|day-of-the-week|Easy
+1184|Distance Between Bus Stops|distance-between-bus-stops|Easy
+1507|Reformat Date|reformat-date|Easy
+1175|Prime Arrangements|prime-arrangements|Easy
+1360|Number of Days Between Two Dates|number-of-days-between-two-dates|Easy
+1935|Maximum Number of Words You Can Type|maximum-number-of-words-you-can-type|Easy
+1154|Day of the Year|day-of-the-year|Easy
+1331|Rank Transform of an Array|rank-transform-of-an-array|Easy
+1313|Decompress Run-Length Encoded List|decompress-run-length-encoded-list|Easy
+1137|N-th Tribonacci Number|n-th-tribonacci-number|Easy
+1299|Replace Elements with Greatest Element on Right Side|replace-elements-with-greatest-element-on-right-side|Easy
+1128|Number of Equivalent Domino Pairs|number-of-equivalent-domino-pairs|Easy
+1287|Element Appearing More Than 25% In Sorted Array|element-appearing-more-than-25-in-sorted-array|Easy
+1122|Relative Sort Array|relative-sort-array|Easy
+1619|Mean of Array After Removing Some Elements|mean-of-array-after-removing-some-elements|Easy
+1108|Defanging an IP Address|defanging-an-ip-address|Easy
+1103|Distribute Candies to People|distribute-candies-to-people|Easy
+1089|Duplicate Zeros|duplicate-zeros|Easy
+1078|Occurrences After Bigram|occurrences-after-bigram|Easy
+1071|Greatest Common Divisor of Strings|greatest-common-divisor-of-strings|Easy
+1051|Height Checker|height-checker|Easy
+1047|Remove All Adjacent Duplicates In String|remove-all-adjacent-duplicates-in-string|Easy
+1046|Last Stone Weight|last-stone-weight|Easy
+1037|Valid Boomerang|valid-boomerang|Easy
+1160|Find Words That Can Be Formed by Characters|find-words-that-can-be-formed-by-characters|Easy
+1030|Matrix Cells in Distance Order|matrix-cells-in-distance-order|Easy
+1025|Divisor Game|divisor-game|Easy
+1022|Sum of Root To Leaf Binary Numbers|sum-of-root-to-leaf-binary-numbers|Easy
+1021|Remove Outermost Parentheses|remove-outermost-parentheses|Easy
+1018|Binary Prefix Divisible By 5|binary-prefix-divisible-by-5|Easy
+1013|Partition Array Into Three Parts With Equal Sum|partition-array-into-three-parts-with-equal-sum|Easy
+1009|Complement of Base 10 Integer|complement-of-base-10-integer|Easy
+1005|Maximize Sum Of Array After K Negations|maximize-sum-of-array-after-k-negations|Easy
+1002|Find Common Characters|find-common-characters|Easy
+999|Available Captures for Rook|available-captures-for-rook|Easy
+997|Find the Town Judge|find-the-town-judge|Easy
+993|Cousins in Binary Tree|cousins-in-binary-tree|Easy
+989|Add to Array-Form of Integer|add-to-array-form-of-integer|Easy
+977|Squares of a Sorted Array|squares-of-a-sorted-array|Easy
+976|Largest Perimeter Triangle|largest-perimeter-triangle|Easy
+509|Fibonacci Number|fibonacci-number|Easy
+965|Univalued Binary Tree|univalued-binary-tree|Easy
+961|N-Repeated Element in Size 2N Array|n-repeated-element-in-size-2n-array|Easy
+953|Verifying an Alien Dictionary|verifying-an-alien-dictionary|Easy
+944|Delete Columns to Make Sorted|delete-columns-to-make-sorted|Easy
+942|DI String Match|di-string-match|Easy
+941|Valid Mountain Array|valid-mountain-array|Easy
+938|Range Sum of BST|range-sum-of-bst|Easy
+933|Number of Recent Calls|number-of-recent-calls|Easy
+929|Unique Email Addresses|unique-email-addresses|Easy
+925|Long Pressed Name|long-pressed-name|Easy
+922|Sort Array By Parity II|sort-array-by-parity-ii|Easy
+917|Reverse Only Letters|reverse-only-letters|Easy
+914|X of a Kind in a Deck of Cards|x-of-a-kind-in-a-deck-of-cards|Easy
+908|Smallest Range I|smallest-range-i|Easy
+905|Sort Array By Parity|sort-array-by-parity|Easy
+897|Increasing Order Search Tree|increasing-order-search-tree|Easy
+896|Monotonic Array|monotonic-array|Easy
+892|Surface Area of 3D Shapes|surface-area-of-3d-shapes|Easy
+888|Fair Candy Swap|fair-candy-swap|Easy
+884|Uncommon Words from Two Sentences|uncommon-words-from-two-sentences|Easy
+883|Projection Area of 3D Shapes|projection-area-of-3d-shapes|Easy
+876|Middle of the Linked List|middle-of-the-linked-list|Easy
+872|Leaf-Similar Trees|leaf-similar-trees|Easy
+868|Binary Gap|binary-gap|Easy
+867|Transpose Matrix|transpose-matrix|Easy
+860|Lemonade Change|lemonade-change|Easy
+859|Buddy Strings|buddy-strings|Easy
+844|Backspace String Compare|backspace-string-compare|Easy
+836|Rectangle Overlap|rectangle-overlap|Easy
+832|Flipping an Image|flipping-an-image|Easy
+830|Positions of Large Groups|positions-of-large-groups|Easy
+824|Goat Latin|goat-latin|Easy
+821|Shortest Distance to a Character|shortest-distance-to-a-character|Easy
+819|Most Common Word|most-common-word|Easy
+812|Largest Triangle Area|largest-triangle-area|Easy
+806|Number of Lines To Write String|number-of-lines-to-write-string|Easy
+804|Unique Morse Code Words|unique-morse-code-words|Easy
+706|Design HashMap|design-hashmap|Easy
+705|Design HashSet|design-hashset|Easy
+796|Rotate String|rotate-string|Easy
+783|Minimum Distance Between BST Nodes|minimum-distance-between-bst-nodes|Easy
+704|Binary Search|binary-search|Easy
+703|Kth Largest Element in a Stream|kth-largest-element-in-a-stream|Easy
+700|Search in a Binary Search Tree|search-in-a-binary-search-tree|Easy
+771|Jewels and Stones|jewels-and-stones|Easy
+766|Toeplitz Matrix|toeplitz-matrix|Easy
+590|N-ary Tree Postorder Traversal|n-ary-tree-postorder-traversal|Easy
+589|N-ary Tree Preorder Traversal|n-ary-tree-preorder-traversal|Easy
+559|Maximum Depth of N-ary Tree|maximum-depth-of-n-ary-tree|Easy
+762|Prime Number of Set Bits in Binary Representation|prime-number-of-set-bits-in-binary-representation|Easy
+748|Shortest Completing Word|shortest-completing-word|Easy
+747|Largest Number At Least Twice of Others|largest-number-at-least-twice-of-others|Easy
+746|Min Cost Climbing Stairs|min-cost-climbing-stairs|Easy
+744|Find Smallest Letter Greater Than Target|find-smallest-letter-greater-than-target|Easy
+709|To Lower Case|to-lower-case|Easy
+733|Flood Fill|flood-fill|Easy
+728|Self Dividing Numbers|self-dividing-numbers|Easy
+724|Find Pivot Index|find-pivot-index|Easy
+717|1-bit and 2-bit Characters|1-bit-and-2-bit-characters|Easy
+697|Degree of an Array|degree-of-an-array|Easy
+696|Count Binary Substrings|count-binary-substrings|Easy
+693|Binary Number with Alternating Bits|binary-number-with-alternating-bits|Easy
+682|Baseball Game|baseball-game|Easy
+680|Valid Palindrome II|valid-palindrome-ii|Easy
+674|Longest Continuous Increasing Subsequence|longest-continuous-increasing-subsequence|Easy
+671|Second Minimum Node In a Binary Tree|second-minimum-node-in-a-binary-tree|Easy
+661|Image Smoother|image-smoother|Easy
+657|Robot Return to Origin|robot-return-to-origin|Easy
+653|Two Sum IV - Input is a BST|two-sum-iv-input-is-a-bst|Easy
+645|Set Mismatch|set-mismatch|Easy
+643|Maximum Average Subarray I|maximum-average-subarray-i|Easy
+637|Average of Levels in Binary Tree|average-of-levels-in-binary-tree|Easy
+628|Maximum Product of Three Numbers|maximum-product-of-three-numbers|Easy
+617|Merge Two Binary Trees|merge-two-binary-trees|Easy
+605|Can Place Flowers|can-place-flowers|Easy
+599|Minimum Index Sum of Two Lists|minimum-index-sum-of-two-lists|Easy
+598|Range Addition II|range-addition-ii|Easy
+594|Longest Harmonious Subsequence|longest-harmonious-subsequence|Easy
+575|Distribute Candies|distribute-candies|Easy
+572|Subtree of Another Tree|subtree-of-another-tree|Easy
+566|Reshape the Matrix|reshape-the-matrix|Easy
+563|Binary Tree Tilt|binary-tree-tilt|Easy
+561|Array Partition|array-partition|Easy
+557|Reverse Words in a String III|reverse-words-in-a-string-iii|Easy
+551|Student Attendance Record I|student-attendance-record-i|Easy
+543|Diameter of Binary Tree|diameter-of-binary-tree|Easy
+541|Reverse String II|reverse-string-ii|Easy
+530|Minimum Absolute Difference in BST|minimum-absolute-difference-in-bst|Easy
+521|Longest Uncommon Subsequence I|longest-uncommon-subsequence-i|Easy
+520|Detect Capital|detect-capital|Easy
+507|Perfect Number|perfect-number|Easy
+506|Relative Ranks|relative-ranks|Easy
+504|Base 7|base-7|Easy
+501|Find Mode in Binary Search Tree|find-mode-in-binary-search-tree|Easy
+500|Keyboard Row|keyboard-row|Easy
+496|Next Greater Element I|next-greater-element-i|Easy
+495|Teemo Attacking|teemo-attacking|Easy
+492|Construct the Rectangle|construct-the-rectangle|Easy
+485|Max Consecutive Ones|max-consecutive-ones|Easy
+482|License Key Formatting|license-key-formatting|Easy
+476|Number Complement|number-complement|Easy
+463|Island Perimeter|island-perimeter|Easy
+461|Hamming Distance|hamming-distance|Easy
+459|Repeated Substring Pattern|repeated-substring-pattern|Easy
+455|Assign Cookies|assign-cookies|Easy
+448|Find All Numbers Disappeared in an Array|find-all-numbers-disappeared-in-an-array|Easy
+441|Arranging Coins|arranging-coins|Easy
+434|Number of Segments in a String|number-of-segments-in-a-string|Easy
+415|Add Strings|add-strings|Easy
+414|Third Maximum Number|third-maximum-number|Easy
+412|Fizz Buzz|fizz-buzz|Easy
+409|Longest Palindrome|longest-palindrome|Easy
+405|Convert a Number to Hexadecimal|convert-a-number-to-hexadecimal|Easy
+404|Sum of Left Leaves|sum-of-left-leaves|Easy
+401|Binary Watch|binary-watch|Easy
+392|Is Subsequence|is-subsequence|Easy
+389|Find the Difference|find-the-difference|Easy
+387|First Unique Character in a String|first-unique-character-in-a-string|Easy
+383|Ransom Note|ransom-note|Easy
+374|Guess Number Higher or Lower|guess-number-higher-or-lower|Easy
+367|Valid Perfect Square|valid-perfect-square|Easy
+350|Intersection of Two Arrays II|intersection-of-two-arrays-ii|Easy
+349|Intersection of Two Arrays|intersection-of-two-arrays|Easy
+345|Reverse Vowels of a String|reverse-vowels-of-a-string|Easy
+344|Reverse String|reverse-string|Easy
+342|Power of Four|power-of-four|Easy
+338|Counting Bits|counting-bits|Easy
+326|Power of Three|power-of-three|Easy
+303|Range Sum Query - Immutable|range-sum-query-immutable|Easy
+292|Nim Game|nim-game|Easy
+290|Word Pattern|word-pattern|Easy
+283|Move Zeroes|move-zeroes|Easy
+278|First Bad Version|first-bad-version|Easy
+268|Missing Number|missing-number|Easy
+263|Ugly Number|ugly-number|Easy
+258|Add Digits|add-digits|Easy
+257|Binary Tree Paths|binary-tree-paths|Easy
+242|Valid Anagram|valid-anagram|Easy
+234|Palindrome Linked List|palindrome-linked-list|Easy
+232|Implement Queue using Stacks|implement-queue-using-stacks|Easy
+231|Power of Two|power-of-two|Easy
+228|Summary Ranges|summary-ranges|Easy
+226|Invert Binary Tree|invert-binary-tree|Easy
+225|Implement Stack using Queues|implement-stack-using-queues|Easy
+222|Count Complete Tree Nodes|count-complete-tree-nodes|Easy
+219|Contains Duplicate II|contains-duplicate-ii|Easy
+217|Contains Duplicate|contains-duplicate|Easy
+206|Reverse Linked List|reverse-linked-list|Easy
+205|Isomorphic Strings|isomorphic-strings|Easy
+203|Remove Linked List Elements|remove-linked-list-elements|Easy
+202|Happy Number|happy-number|Easy
+191|Number of 1 Bits|number-of-1-bits|Easy
+190|Reverse Bits|reverse-bits|Easy
+171|Excel Sheet Column Number|excel-sheet-column-number|Easy
+169|Majority Element|majority-element|Easy
+168|Excel Sheet Column Title|excel-sheet-column-title|Easy
+160|Intersection of Two Linked Lists|intersection-of-two-linked-lists|Easy
+145|Binary Tree Postorder Traversal|binary-tree-postorder-traversal|Easy
+144|Binary Tree Preorder Traversal|binary-tree-preorder-traversal|Easy
+141|Linked List Cycle|linked-list-cycle|Easy
+136|Single Number|single-number|Easy
+125|Valid Palindrome|valid-palindrome|Easy
+121|Best Time to Buy and Sell Stock|best-time-to-buy-and-sell-stock|Easy
+119|Pascal's Triangle II|pascals-triangle-ii|Easy
+118|Pascal's Triangle|pascals-triangle|Easy
+112|Path Sum|path-sum|Easy
+111|Minimum Depth of Binary Tree|minimum-depth-of-binary-tree|Easy
+110|Balanced Binary Tree|balanced-binary-tree|Easy
+108|Convert Sorted Array to Binary Search Tree|convert-sorted-array-to-binary-search-tree|Easy
+104|Maximum Depth of Binary Tree|maximum-depth-of-binary-tree|Easy
+101|Symmetric Tree|symmetric-tree|Easy
+100|Same Tree|same-tree|Easy
+94|Binary Tree Inorder Traversal|binary-tree-inorder-traversal|Easy
+88|Merge Sorted Array|merge-sorted-array|Easy
+83|Remove Duplicates from Sorted List|remove-duplicates-from-sorted-list|Easy
+70|Climbing Stairs|climbing-stairs|Easy
+69|Sqrt(x)|sqrtx|Easy
+67|Add Binary|add-binary|Easy
+66|Plus One|plus-one|Easy
+58|Length of Last Word|length-of-last-word|Easy
+35|Search Insert Position|search-insert-position|Easy
+28|Find the Index of the First Occurrence in a String|find-the-index-of-the-first-occurrence-in-a-string|Easy
+27|Remove Element|remove-element|Easy
+26|Remove Duplicates from Sorted Array|remove-duplicates-from-sorted-array|Easy
+21|Merge Two Sorted Lists|merge-two-sorted-lists|Easy
+20|Valid Parentheses|valid-parentheses|Easy
+14|Longest Common Prefix|longest-common-prefix|Easy
+13|Roman to Integer|roman-to-integer|Easy
+9|Palindrome Number|palindrome-number|Easy
+1|Two Sum|two-sum|Easy

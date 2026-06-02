@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: rust-leetcode-daily
+        working-directory: rust-routine-daily
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,8 +27,8 @@ jobs:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-            rust-leetcode-daily/target
-          key: ${{ runner.os }}-cargo-${{ hashFiles('rust-leetcode-daily/Cargo.lock') }}
+            rust-routine-daily/target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('rust-routine-daily/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-cargo-
 
@@ -50,7 +50,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add rust-leetcode-daily/data/deepml_problems.txt
+          git add rust-routine-daily/data/deepml_problems.txt
           git commit -m "chore: sync Deep-ML problems [skip ci]"
           git push
         env:

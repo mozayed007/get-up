@@ -46,7 +46,7 @@ The only way to do great work is to love what you do.
 
 ```bash
 git clone https://github.com/mozayed007/get-up.git
-cd get-up/rust-leetcode-daily
+cd get-up/rust-routine-daily
 
 cp .env.example .env
 # fill in: GITHUB_TOKEN, REPO_OWNER, REPO_NAME, BIRTH_YEAR, TIMEZONE
@@ -106,7 +106,7 @@ In your agent's MCP config:
     "get-up": {
       "command": "cargo",
       "args": ["run", "--release", "--features", "mcp", "--", "mcp"],
-      "cwd": "/path/to/get-up/rust-leetcode-daily"
+      "cwd": "/path/to/get-up/rust-routine-daily"
     }
   }
 }
@@ -244,7 +244,7 @@ get-up/
 │   ├── daily.yml            # daily cron job
 │   ├── sync-deepml.yml      # weekly Deep-ML sync
 │   └── cleanup-caches.yml   # weekly cache cleanup
-├── rust-leetcode-daily/
+├── rust-routine-daily/
 │   ├── src/
 │   │   ├── main.rs          # CLI entry, orchestration
 │   │   ├── config.rs        # env var loading

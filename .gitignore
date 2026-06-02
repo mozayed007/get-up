@@ -3,7 +3,7 @@ target/
 *.parquet
 nul
 
-rust-leetcode-daily/target/
-rust-leetcode-daily/.env
-rust-leetcode-daily/data/leetcode_easy.txt
-rust-leetcode-daily/data/used_problems.txt
+rust-routine-daily/target/
+rust-routine-daily/.env
+rust-routine-daily/data/leetcode_easy.txt
+rust-routine-daily/data/used_problems.txt

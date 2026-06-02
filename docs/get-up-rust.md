@@ -23,8 +23,8 @@ The Rust version will be a CLI tool (`leetcode-daily`), runnable via cron for da
 
 ### Step 1: Create the Project
 ```bash
-cargo new rust-leetcode-daily
-cd rust-leetcode-daily
+cargo new rust-routine-daily
+cd rust-routine-daily
 ```
 
 ### Step 2: Update Cargo.toml
@@ -118,7 +118,7 @@ used_problems.txt
 
 ## 2. Project Structure
 ```
-rust-leetcode-daily/
+rust-routine-daily/
 ├── Cargo.toml
 ├── .env.example          # Template for .env
 ├── README.md             # Usage, cron setup

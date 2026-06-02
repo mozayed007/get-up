@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: rust-leetcode-daily
+        working-directory: rust-routine-daily
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -28,8 +28,8 @@ jobs:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-            rust-leetcode-daily/target
-          key: ${{ runner.os }}-cargo-ci-${{ hashFiles('rust-leetcode-daily/Cargo.lock') }}
+            rust-routine-daily/target
+          key: ${{ runner.os }}-cargo-ci-${{ hashFiles('rust-routine-daily/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-cargo-ci-
 

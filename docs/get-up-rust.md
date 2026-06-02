@@ -2,7 +2,7 @@
 
 This document outlines a comprehensive plan for implementing a Rust-based version of the [2026 GitHub repo](https://github.com/yihong0618/2026). The original project automates daily motivational "get-up" messages posted as comments on GitHub Issue #1, including elements like time, year progress, random poems, historical events, running stats, and a LeetCode EASY problem suggestion. It fetches EASY problems from LeetCode CN (with notes on adapting to LeetCode.com) and prioritizes the daily challenge if it's EASY and unused.
 
-The Rust version will be a CLI tool (`leetcode-daily`), runnable via cron for daily execution. It supports both LeetCode CN and .com via config, handles authentication-free GraphQL queries, and includes posting to GitHub and optional Telegram notifications. Focus on modularity, async I/O, error handling, and testability.
+The Rust version will be a CLI tool (`routine-daily`), runnable via cron for daily execution. It supports both LeetCode CN and .com via config, handles authentication-free GraphQL queries, and includes posting to GitHub and optional Telegram notifications. Focus on modularity, async I/O, error handling, and testability.
 
 **Goals:**
 - Replicate core functionality with Rust's safety and performance.
@@ -32,7 +32,7 @@ Add dependencies for HTTP, async, JSON, GitHub/Telegram clients, data querying, 
 
 ```toml
 [package]
-name = "leetcode-daily"
+name = "routine-daily"
 version = "0.1.0"
 edition = "2021"
 
@@ -71,7 +71,7 @@ default = []
 telegram = ["dep:telegram-bot"]
 
 [[bin]]
-name = "leetcode-daily"
+name = "routine-daily"
 path = "src/main.rs"
 ```
 
@@ -564,7 +564,7 @@ use anyhow::Result;
 use octocrab::Octocrab;
 
 #[derive(Parser)]
-#[command(name = "leetcode-daily")]
+#[command(name = "routine-daily")]
 struct Args {
     #[arg(long)]
     fetch_easy: bool,

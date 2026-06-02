@@ -7,7 +7,7 @@ This document provides comprehensive reference documentation for the daily routi
 ### Synopsis
 
 ```
-leetcode-daily [OPTIONS]
+routine-daily [OPTIONS]
 ```
 
 ### Options
@@ -31,22 +31,22 @@ leetcode-daily [OPTIONS]
 
 ```bash
 # Fetch all LeetCode difficulties
-leetcode-daily --fetch-leetcode
+routine-daily --fetch-leetcode
 
 # Sync Deep-ML problems
-leetcode-daily --sync-deepml
+routine-daily --sync-deepml
 
 # Preview message without sending
-leetcode-daily --dry-run
+routine-daily --dry-run
 
 # Post to GitHub Issue
-leetcode-daily --post
+routine-daily --post
 
 # Post to all configured channels
-leetcode-daily --post --telegram --discord
+routine-daily --post --telegram --discord
 
 # JSON output for agent pipelines
-leetcode-daily --json --dry-run
+routine-daily --json --dry-run
 ```
 
 ### Argument Interactions

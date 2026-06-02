@@ -85,7 +85,7 @@ cargo build --release --features telegram,discord,mcp
 Before running the daily message, fetch the problem lists from LeetCode:
 
 ```bash
-./target/release/leetcode-daily --fetch-leetcode
+./target/release/routine-daily --fetch-leetcode
 ```
 
 Expected output:
@@ -103,7 +103,7 @@ This creates three files containing all free problems from LeetCode by difficult
 Sync the Deep-ML problem list from GitHub:
 
 ```bash
-./target/release/leetcode-daily --sync-deepml
+./target/release/routine-daily --sync-deepml
 ```
 
 Expected output:
@@ -117,7 +117,7 @@ Deep-ML problems saved to data/deepml_problems.txt
 Run a dry-run to verify your configuration without posting:
 
 ```bash
-./target/release/leetcode-daily --dry-run
+./target/release/routine-daily --dry-run
 ```
 
 Expected output (example):
@@ -184,20 +184,20 @@ cargo run --release --features telegram,discord -- --post --telegram --discord
 ### Check 1: Binary Exists
 
 ```bash
-ls -la target/release/leetcode-daily
+ls -la target/release/routine-daily
 ```
 
 ### Check 2: Help Output
 
 ```bash
-./target/release/leetcode-daily --help
+./target/release/routine-daily --help
 ```
 
 Expected output:
 ```
 A CLI tool and MCP server for daily motivational messages with LeetCode and Deep-ML problems
 
-Usage: leetcode-daily [OPTIONS]
+Usage: routine-daily [OPTIONS]
 
 Options:
       --fetch-leetcode  Fetch all LeetCode problems (Easy, Medium, Hard)

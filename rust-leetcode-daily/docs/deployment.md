@@ -14,7 +14,7 @@ cargo build --release
 cargo build --release --features telegram,discord
 
 # Binary location
-ls -la target/release/leetcode-daily
+ls -la target/release/routine-daily
 ```
 
 ### Build Options
@@ -68,7 +68,7 @@ panic = "abort"      # Smaller panic handling
 crontab -e
 
 # Add entry (runs at 6:00 AM daily)
-0 6 * * * cd /path/to/leetcode-daily && ./target/release/leetcode-daily --post --telegram >> /var/log/leetcode-daily.log 2>&1
+0 6 * * * cd /path/to/routine-daily && ./target/release/routine-daily --post --telegram >> /var/log/routine-daily.log 2>&1
 ```
 
 ### Cron Schedule Examples
@@ -93,17 +93,17 @@ Examples:
 
 ```bash
 # Option 1: Source .env in cron
-0 6 * * * cd /path/to/leetcode-daily && export $(cat .env | xargs) && ./target/release/leetcode-daily --post
+0 6 * * * cd /path/to/routine-daily && export $(cat .env | xargs) && ./target/release/routine-daily --post
 
 # Option 2: Use env file directly (modify code to use dotenvy in release)
 
 # Option 3: Set all variables in cron
-0 6 * * * GITHUB_TOKEN=xxx REPO_OWNER=user REPO_NAME=repo BIRTH_YEAR=1990 TIMEZONE=America/New_York /path/to/leetcode-daily --post
+0 6 * * * GITHUB_TOKEN=xxx REPO_OWNER=user REPO_NAME=repo BIRTH_YEAR=1990 TIMEZONE=America/New_York /path/to/routine-daily --post
 ```
 
 ### systemd Timer (Alternative to Cron)
 
-Create service file `/etc/systemd/system/leetcode-daily.service`:
+Create service file `/etc/systemd/system/routine-daily.service`:
 
 ```ini
 [Unit]
@@ -112,9 +112,9 @@ After=network.target
 
 [Service]
 Type=oneshot
-WorkingDirectory=/opt/leetcode-daily
-EnvironmentFile=/opt/leetcode-daily/.env
-ExecStart=/opt/leetcode-daily/leetcode-daily --post --telegram
+WorkingDirectory=/opt/routine-daily
+EnvironmentFile=/opt/routine-daily/.env
+ExecStart=/opt/routine-daily/routine-daily --post --telegram
 User=leetcode
 Group=leetcode
 
@@ -122,7 +122,7 @@ Group=leetcode
 WantedBy=multi-user.target
 ```
 
-Create timer file `/etc/systemd/system/leetcode-daily.timer`:
+Create timer file `/etc/systemd/system/routine-daily.timer`:
 
 ```ini
 [Unit]
@@ -140,8 +140,8 @@ Enable and start:
 
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enable leetcode-daily.timer
-sudo systemctl start leetcode-daily.timer
+sudo systemctl enable routine-daily.timer
+sudo systemctl start routine-daily.timer
 
 # Check status
 systemctl list-timers
@@ -166,9 +166,9 @@ systemctl list-timers
 
 5. **Actions Tab:**
    - New → Start a program
-   - Program: `C:\path\to\leetcode-daily.exe`
+   - Program: `C:\path\to\routine-daily.exe`
    - Arguments: `--post --telegram`
-   - Start in: `C:\path\to\leetcode-daily`
+   - Start in: `C:\path\to\routine-daily`
 
 6. **Conditions Tab:**
    - Uncheck "Start the task only if the computer is on AC power"
@@ -180,7 +180,7 @@ systemctl list-timers
 
 ```powershell
 # Create action
-$action = New-ScheduledTaskAction -Execute "C:\path\to\leetcode-daily.exe" -Argument "--post --telegram" -WorkingDirectory "C:\path\to\leetcode-daily"
+$action = New-ScheduledTaskAction -Execute "C:\path\to\routine-daily.exe" -Argument "--post --telegram" -WorkingDirectory "C:\path\to\routine-daily"
 
 # Create trigger (daily at 6 AM)
 $trigger = New-ScheduledTaskTrigger -Daily -At 6am
@@ -200,7 +200,7 @@ Set system environment variables:
 # Set variables
 [Environment]::SetEnvironmentVariable("GITHUB_TOKEN", "ghp_xxx", "User")
 [Environment]::SetEnvironmentVariable("REPO_OWNER", "username", "User")
-[Environment]::SetEnvironmentVariable("REPO_NAME", "leetcode-daily", "User")
+[Environment]::SetEnvironmentVariable("REPO_NAME", "routine-daily", "User")
 [Environment]::SetEnvironmentVariable("BIRTH_YEAR", "1990", "User")
 [Environment]::SetEnvironmentVariable("TIMEZONE", "America/New_York", "User")
 
@@ -253,7 +253,7 @@ jobs:
       - name: Fetch EASY problems (if needed)
         run: |
           if [ ! -f data/leetcode_easy.txt ]; then
-            ./target/release/leetcode-daily --fetch-easy
+            ./target/release/routine-daily --fetch-easy
           fi
       
       - name: Run daily message
@@ -266,7 +266,7 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          ./target/release/leetcode-daily --post --telegram
+          ./target/release/routine-daily --post --telegram
       
       - name: Commit used problems
         run: |
@@ -342,7 +342,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y ca-certificates && rm -rf /var/lib/apt/lists/*
 
 # Copy binary
-COPY --from=builder /app/target/release/leetcode-daily /usr/local/bin/
+COPY --from=builder /app/target/release/routine-daily /usr/local/bin/
 
 # Create data directory
 RUN mkdir -p /app/data
@@ -351,7 +351,7 @@ RUN mkdir -p /app/data
 WORKDIR /app
 
 # Run
-ENTRYPOINT ["leetcode-daily"]
+ENTRYPOINT ["routine-daily"]
 CMD ["--help"]
 ```
 
@@ -363,7 +363,7 @@ Create `docker-compose.yml`:
 version: '3.8'
 
 services:
-  leetcode-daily:
+  routine-daily:
     build: .
     volumes:
       - ./data:/app/data
@@ -374,20 +374,20 @@ services:
   ofelia:
     image: mcuadros/ofelia:latest
     depends_on:
-      - leetcode-daily
+      - routine-daily
     command: daemon --docker
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     labels:
-      ofelia.job-local.leetcode-daily.schedule: "0 6 * * *"
-      ofelia.job-local.leetcode-daily.command: "docker-compose run --rm leetcode-daily --post --telegram"
+      ofelia.job-local.routine-daily.schedule: "0 6 * * *"
+      ofelia.job-local.routine-daily.command: "docker-compose run --rm routine-daily --post --telegram"
 ```
 
 ### Running with Docker
 
 ```bash
 # Build image
-docker build -t leetcode-daily .
+docker build -t routine-daily .
 
 # Run once
 docker run --rm \
@@ -397,7 +397,7 @@ docker run --rm \
   -e REPO_NAME=repo \
   -e BIRTH_YEAR=1990 \
   -e TIMEZONE=America/New_York \
-  leetcode-daily --post --telegram
+  routine-daily --post --telegram
 
 # Using docker-compose
 docker-compose up
@@ -409,7 +409,7 @@ docker-compose up
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: leetcode-daily
+  name: routine-daily
 spec:
   schedule: "0 6 * * *"
   jobTemplate:
@@ -417,8 +417,8 @@ spec:
       template:
         spec:
           containers:
-          - name: leetcode-daily
-            image: leetcode-daily:latest
+          - name: routine-daily
+            image: routine-daily:latest
             args: ["--post", "--telegram"]
             env:
             - name: GITHUB_TOKEN
@@ -429,7 +429,7 @@ spec:
             - name: REPO_OWNER
               value: "your-username"
             - name: REPO_NAME
-              value: "leetcode-daily"
+              value: "routine-daily"
             - name: BIRTH_YEAR
               value: "1990"
             - name: TIMEZONE
@@ -500,7 +500,7 @@ export GITHUB_TOKEN=$(cat /run/secrets/github_token)
 
 # Or use systemd's EnvironmentFile
 # In service file:
-EnvironmentFile=/etc/leetcode-daily/secrets.conf
+EnvironmentFile=/etc/routine-daily/secrets.conf
 ```
 
 ## Monitoring and Logging
@@ -509,12 +509,12 @@ EnvironmentFile=/etc/leetcode-daily/secrets.conf
 
 ```bash
 # Redirect output
-0 6 * * * /path/to/leetcode-daily --post >> /var/log/leetcode.log 2>&1
+0 6 * * * /path/to/routine-daily --post >> /var/log/leetcode.log 2>&1
 ```
 
 ### Log Rotation
 
-Create `/etc/logrotate.d/leetcode-daily`:
+Create `/etc/logrotate.d/routine-daily`:
 
 ```
 /var/log/leetcode.log {
@@ -540,7 +540,7 @@ DIFF=$((NOW - LAST_RUN))
 
 # Alert if last run was more than 25 hours ago
 if [ $DIFF -gt 90000 ]; then
-    echo "Warning: leetcode-daily hasn't run in over 25 hours"
+    echo "Warning: routine-daily hasn't run in over 25 hours"
     exit 1
 fi
 

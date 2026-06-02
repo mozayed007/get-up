@@ -695,7 +695,7 @@ eprintln!("GraphQL Request:\n{}", request_body);
 cargo build
 
 # Debug with lldb
-rust-lldb ./target/debug/leetcode-daily -- --dry-run
+rust-lldb ./target/debug/routine-daily -- --dry-run
 
 # In lldb:
 (lldb) breakpoint set --file main.rs --line 50

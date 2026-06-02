@@ -1,11 +1,11 @@
 use anyhow::{Context, Result};
 use clap::{Parser, Subcommand};
-use leetcode_daily::config;
-use leetcode_daily::providers::deepml::DeepMLProvider;
-use leetcode_daily::providers::leetcode::LeetCodeProvider;
-use leetcode_daily::notification::{DiscordNotifier, Notifier, TelegramNotifier};
-use leetcode_daily::routine::{self, OutputFormat, RoutineOptions, RoutineType};
-use leetcode_daily::utils::append_line;
+use routine_daily::config;
+use routine_daily::providers::deepml::DeepMLProvider;
+use routine_daily::providers::leetcode::LeetCodeProvider;
+use routine_daily::notification::{DiscordNotifier, Notifier, TelegramNotifier};
+use routine_daily::routine::{self, OutputFormat, RoutineOptions, RoutineType};
+use routine_daily::utils::append_line;
 
 const LEETCODE_EASY_FILE: &str = "data/leetcode_easy.txt";
 const LEETCODE_MEDIUM_FILE: &str = "data/leetcode_medium.txt";
@@ -14,8 +14,10 @@ const DEEPML_FILE: &str = "data/deepml_problems.txt";
 const USED_FILE: &str = "data/used_problems.txt";
 
 #[derive(Parser, Debug)]
-#[command(name = "leetcode-daily")]
-#[command(about = "A CLI tool and MCP server for daily motivational messages with LeetCode and Deep-ML problems")]
+#[command(name = "routine-daily")]
+#[command(
+    about = "A CLI tool and MCP server for daily motivational messages with LeetCode and Deep-ML problems"
+)]
 #[command(version)]
 struct Args {
     #[arg(
@@ -180,7 +182,7 @@ async fn main() -> Result<()> {
 
     // Handle posting and notifications (only for text format, backward compat)
     if format == OutputFormat::Text {
-        let now = leetcode_daily::utils::get_local_time(&config);
+        let now = routine_daily::utils::get_local_time(&config);
         let current_hour = chrono::Timelike::hour(&now);
         let is_early_wake_up = (3..=9).contains(&current_hour);
 
@@ -244,11 +246,11 @@ async fn run_mcp(_config: config::Config, transport: &str, port: u16) -> Result<
         match transport {
             "stdio" => {
                 eprintln!("Starting MCP server in stdio mode...");
-                leetcode_daily::mcp::run_stdio(_config).await?;
+                routine_daily::mcp::run_stdio(_config).await?;
             }
             "http" | "sse" => {
                 eprintln!("Starting MCP server in HTTP/SSE mode on port {}...", port);
-                leetcode_daily::mcp::run_http(_config, port).await?;
+                routine_daily::mcp::run_http(_config, port).await?;
             }
             other => {
                 eprintln!("Unknown transport: {}. Use 'stdio' or 'http'.", other);

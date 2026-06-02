@@ -25,16 +25,16 @@ A Rust CLI tool and MCP server for daily motivational messages with LeetCode pro
 cargo build --release
 
 # Preview message
-leetcode-daily --dry-run
+routine-daily --dry-run
 
 # JSON output for agents
-leetcode-daily --json
+routine-daily --json
 
 # XML output
-leetcode-daily --xml
+routine-daily --xml
 
 # Night routine
-leetcode-daily --night --json
+routine-daily --night --json
 ```
 
 ## MCP Server
@@ -51,10 +51,10 @@ cargo build --release --features mcp
 
 ```bash
 # stdio mode (for Claude Code, OpenCode, Cursor, etc.)
-leetcode-daily mcp --transport stdio
+routine-daily mcp --transport stdio
 
 # HTTP/SSE mode (for remote agents like Pi)
-leetcode-daily mcp --transport http --port 3000
+routine-daily mcp --transport http --port 3000
 ```
 
 ### Available MCP Tools
@@ -75,7 +75,7 @@ leetcode-daily mcp --transport http --port 3000
 {
   "mcpServers": {
     "get-up": {
-      "command": "leetcode-daily",
+      "command": "routine-daily",
       "args": ["mcp", "--transport", "stdio"]
     }
   }
@@ -85,7 +85,7 @@ leetcode-daily mcp --transport http --port 3000
 **Remote agents (HTTP/SSE)**
 ```bash
 # Start server
-leetcode-daily mcp --transport http --port 3000
+routine-daily mcp --transport http --port 3000
 
 # Agents connect to http://localhost:3000/mcp
 ```
@@ -110,7 +110,7 @@ Agents can pass parameters to `run_routine`:
 
 ```
 USAGE:
-    leetcode-daily [OPTIONS] [SUBCOMMAND]
+    routine-daily [OPTIONS] [SUBCOMMAND]
 
 OPTIONS:
     --fetch-easy    Fetch all EASY problems from LeetCode

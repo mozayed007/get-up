@@ -1,12 +1,12 @@
 [package]
-name = "leetcode-daily"
+name = "routine-daily"
 version = "0.2.0"
 edition = "2021"
-description = "A Rust CLI tool and MCP server for daily motivational messages with LeetCode problems"
+description = "A Rust CLI tool and MCP server for daily motivational messages with multi-platform problems (LeetCode, Deep-ML), running stats, history, and quotes"
 authors = ["Muhammad"]
 
 [lib]
-name = "leetcode_daily"
+name = "routine_daily"
 path = "src/lib.rs"
 
 [dependencies]
@@ -61,7 +61,7 @@ discord = ["dep:serenity"]
 mcp = ["dep:rmcp", "dep:schemars", "dep:axum", "dep:tower"]
 
 [[bin]]
-name = "leetcode-daily"
+name = "routine-daily"
 path = "src/main.rs"
 
 [dev-dependencies]

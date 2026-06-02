@@ -1683,34 +1683,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "09edd9e8b54e49e587e4f6295a7d29c3ea94d469cb40ab8ca70b288248a81db2"
 
 [[package]]
-name = "leetcode-daily"
-version = "0.2.0"
-dependencies = [
- "anyhow",
- "async-trait",
- "axum",
- "chrono",
- "chrono-tz 0.9.0",
- "clap",
- "csv",
- "dotenvy",
- "octocrab",
- "polars",
- "rand 0.8.6",
- "reqwest 0.12.28",
- "rmcp",
- "schemars",
- "serde",
- "serde_json",
- "serenity",
- "teloxide",
- "tokio",
- "tokio-test",
- "tower 0.5.3",
- "wiremock",
-]
-
-[[package]]
 name = "libc"
 version = "0.2.186"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3117,6 +3089,34 @@ dependencies = [
  "quote",
  "serde_json",
  "syn 2.0.117",
+]
+
+[[package]]
+name = "routine-daily"
+version = "0.2.0"
+dependencies = [
+ "anyhow",
+ "async-trait",
+ "axum",
+ "chrono",
+ "chrono-tz 0.9.0",
+ "clap",
+ "csv",
+ "dotenvy",
+ "octocrab",
+ "polars",
+ "rand 0.8.6",
+ "reqwest 0.12.28",
+ "rmcp",
+ "schemars",
+ "serde",
+ "serde_json",
+ "serenity",
+ "teloxide",
+ "tokio",
+ "tokio-test",
+ "tower 0.5.3",
+ "wiremock",
 ]
 
 [[package]]

@@ -33,6 +33,8 @@ jobs:
             ${{ runner.os }}-cargo-
 
       - name: Sync Deep-ML problems
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: cargo run --release -- --sync-deepml
 
       - name: Check for changes

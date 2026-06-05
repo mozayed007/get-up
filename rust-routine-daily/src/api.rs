@@ -1,11 +1,100 @@
 use anyhow::Result;
-use chrono::{NaiveDate, TimeDelta};
+use chrono::{Datelike, NaiveDate, TimeDelta};
 use polars::prelude::*;
 use serde::{Deserialize, Serialize};
 
-const DEFAULT_QUOTE: &str = r#"The only way to do great work is to love what you do.
+const QUOTES: &[&str] = &[
+    r#"The only way to do great work is to love what you do.
 
-—— Steve Jobs"#;
+—— Steve Jobs"#,
+    r#"Be yourself; everyone else is already taken.
+
+—— Oscar Wilde"#,
+    r#"In the middle of difficulty lies opportunity.
+
+—— Albert Einstein"#,
+    r#"It always seems impossible until it is done.
+
+—— Nelson Mandela"#,
+    r#"Do not wait to strike till the iron is hot; but make it hot by striking.
+
+—— William Butler Yeats"#,
+    r#"The best way to predict the future is to invent it.
+
+—— Alan Kay"#,
+    r#"Code is like humor. When you have to explain it, it is bad.
+
+—— Cory House"#,
+    r#"First, solve the problem. Then, write the code.
+
+—— John Johnson"#,
+    r#"Simplicity is the soul of efficiency.
+
+—— Austin Freeman"#,
+    r#"Make it work, make it right, make it fast.
+
+—— Kent Beck"#,
+    r#"The function of good software is to make the complex appear to be simple.
+
+—— Grady Booch"#,
+    r#"Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+
+—— Martin Fowler"#,
+    r#"Experience is the name everyone gives to their mistakes.
+
+—— Oscar Wilde"#,
+    r#"Knowledge is power.
+
+—— Francis Bacon"#,
+    r#"The only true wisdom is in knowing you know nothing.
+
+—— Socrates"#,
+    r#"Everything you can imagine is real.
+
+—— Pablo Picasso"#,
+    r#"Whatever you are, be a good one.
+
+—— Abraham Lincoln"#,
+    r#"If you can dream it, you can do it.
+
+—— Walt Disney"#,
+    r#"Well done is better than well said.
+
+—— Benjamin Franklin"#,
+    r#"The secret of getting ahead is getting started.
+
+—— Mark Twain"#,
+    r#"Don't watch the clock; do what it does. Keep going.
+
+—— Sam Levenson"#,
+    r#"The future belongs to those who believe in the beauty of their dreams.
+
+—— Eleanor Roosevelt"#,
+    r#"It does not matter how slowly you go as long as you do not stop.
+
+—— Confucius"#,
+    r#"The only limit to our realization of tomorrow will be our doubts of today.
+
+—— Franklin D. Roosevelt"#,
+    r#"You miss 100% of the shots you don't take.
+
+—— Wayne Gretzky"#,
+    r#"Believe you can and you're halfway there.
+
+—— Theodore Roosevelt"#,
+    r#"Act as if what you do makes a difference. It does.
+
+—— William James"#,
+    r#"Success is not final, failure is not fatal: it is the courage to continue that counts.
+
+—— Winston Churchill"#,
+    r#"What you get by achieving your goals is not as important as what you become by achieving your goals.
+
+—— Zig Ziglar"#,
+    r#"Hardships often prepare ordinary people for an extraordinary destiny.
+
+—— C.S. Lewis"#,
+];
 
 #[derive(Debug, Deserialize)]
 struct QuoteResponse {
@@ -52,15 +141,23 @@ pub struct RunningStats {
     pub year_count: i32,
 }
 
+fn get_daily_quote_index() -> usize {
+    let now = chrono::Utc::now();
+    let day_of_year = now.ordinal() as usize;
+    let year = now.year() as usize;
+    let seed = year * 1000 + day_of_year;
+    seed % QUOTES.len()
+}
+
 pub async fn fetch_quote(client: &reqwest::Client) -> Result<String> {
     let result = client.get("https://api.quotable.io/random").send().await;
 
     match result {
         Ok(resp) => match resp.json::<QuoteResponse>().await {
             Ok(response) => Ok(format!("{}\n\n—— {}", response.content, response.author)),
-            Err(_) => Ok(DEFAULT_QUOTE.to_string()),
+            Err(_) => Ok(QUOTES[get_daily_quote_index()].to_string()),
         },
-        Err(_) => Ok(DEFAULT_QUOTE.to_string()),
+        Err(_) => Ok(QUOTES[get_daily_quote_index()].to_string()),
     }
 }
 

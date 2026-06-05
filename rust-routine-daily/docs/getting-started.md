@@ -132,7 +132,7 @@ Day 15 · 15/365 (4.1%) ██░░░░░░░░░░░░░░░░�
 https://leetcode.com/problems/two-sum/
 
 🟡 Deep-ML Medium: Matrix-Vector Dot Product
-https://deep-ml.com/problem/1
+https://deep-ml.com/problems/1
 
 🏃 Yesterday: 5.23 km · This month: 45.67 km · This year: 45.67 km
 

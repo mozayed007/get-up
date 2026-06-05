@@ -211,7 +211,7 @@ impl DeepMLProvider {
             used_file,
             difficulty,
             Platform::DeepML,
-            |cache| format!("https://deep-ml.com/problem/{}", cache.id),
+            |cache| format!("https://deep-ml.com/problems/{}", cache.id),
             Self::get_day_seed(),
         )
         .await

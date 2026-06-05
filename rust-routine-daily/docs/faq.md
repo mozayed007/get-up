@@ -47,15 +47,9 @@ Error: Failed to fetch quote
 curl -I https://api.quotable.io/random
 ```
 
-**Solution 2: Use Default Quote**
+**Solution 2: Use Local Quote Rotation**
 
-The application automatically falls back to a default quote:
-
-```
-The only way to do great work is to love what you do.
-
-—— Steve Jobs
-```
+The application automatically falls back to a rotating selection of 30 built-in quotes, changing daily. You will get a different quote each day even if the API is unavailable.
 
 **Solution 3: Use Alternative Quote Source**
 
@@ -440,35 +434,18 @@ cargo run -- --post --force
 
 ### How to Add Custom Quotes
 
-**Option 1: Add to fallback quotes**
+**Option 1: Add to local quotes**
 
-Edit `src/api.rs`:
+Edit `src/api.rs` and add quotes to the `QUOTES` array:
 
 ```rust
-const DEFAULT_QUOTES: &[&str] = &[
-    "The only way to do great work is to love what you do.\n\n—— Steve Jobs",
-    "Code is like humor. When you have to explain it, it's bad.\n\n—— Cory House",
-    "First, solve the problem. Then, write the code.\n\n—— John Johnson",
+const QUOTES: &[&str] = &[
+    "Your quote here.\n\n—— Author Name",
+    // ... existing quotes
 ];
-
-pub async fn fetch_quote(client: &reqwest::Client) -> Result<String> {
-    let result = client
-        .get("https://api.quotable.io/random")
-        .send()
-        .await?
-        .json::<QuoteResponse>()
-        .await;
-
-    match result {
-        Ok(response) => Ok(format!("{}\n\n—— {}", response.content, response.author)),
-        Err(_) => {
-            // Use random quote from defaults
-            let index = rand::thread_rng().gen_range(0..DEFAULT_QUOTES.len());
-            Ok(DEFAULT_QUOTES[index].to_string())
-        }
-    }
-}
 ```
+
+The application uses the day of year as a seed to deterministically select one quote per day, so you get a different quote each day without external API dependency.
 
 **Option 2: Load from file**
 
@@ -501,13 +478,16 @@ First, solve the problem. Then, write the code.
 
 **Option 3: Use alternative quote API**
 
+Edit `src/api.rs` to change the primary API URL:
+
 ```rust
-const QUOTE_APIS: &[&str] = &[
-    "https://api.quotable.io/random",
-    "https://zenquotes.io/api/random",
-    "https://quotes.rest/qod",
-];
+pub async fn fetch_quote(client: &reqwest::Client) -> Result<String> {
+    let result = client.get("https://zenquotes.io/api/random").send().await;
+    // ... rest of the function
+}
 ```
+
+The application still falls back to the local `QUOTES` array if the API fails.
 
 ### How to Change Wake-Up Time Range
 

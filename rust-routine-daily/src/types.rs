@@ -64,6 +64,10 @@ pub struct ProblemResult {
     pub problem: Problem,
     pub url: String,
     pub is_daily_challenge: bool,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub reference_url: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub reference_display: Option<String>,
 }
 
 #[derive(Debug, Clone)]

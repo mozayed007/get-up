@@ -4,6 +4,7 @@ pub mod format;
 pub mod message;
 pub mod notification;
 pub mod providers;
+pub mod reference;
 pub mod routine;
 pub mod scheduler;
 pub mod serialization;

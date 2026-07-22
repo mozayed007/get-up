@@ -69,6 +69,8 @@ pub async fn select_problem(
         problem: selected.to_problem(false),
         url,
         is_daily_challenge: false,
+        reference_url: None,
+        reference_display: None,
     })
 }
 

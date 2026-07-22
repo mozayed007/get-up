@@ -1,5 +1,7 @@
 use crate::types::{Difficulty, Platform, ProblemResult};
 
+const SEPARATOR: &str = "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━";
+
 pub fn get_problem_emoji(platform: &Platform, difficulty: &Difficulty) -> &'static str {
     match (platform, difficulty) {
         (Platform::LeetCode, Difficulty::Easy) => "🟢",
@@ -28,7 +30,9 @@ pub fn build_formatted_message(
     }
 
     if !problems.is_empty() {
-        parts.push("\n📚 Today's Problems".to_string());
+        parts.push(format!("\n{}", SEPARATOR));
+        parts.push("📚 Today's Problems".to_string());
+        parts.push(SEPARATOR.to_string());
         for problem in problems {
             let emoji = get_problem_emoji(&problem.platform, &problem.problem.difficulty);
             let daily_hint = if problem.is_daily_challenge {
@@ -36,16 +40,20 @@ pub fn build_formatted_message(
             } else {
                 ""
             };
-            parts.push(format!(
-                "\n{} {} {}: {}. {}{}\n{}",
+            let mut block = format!(
+                "\n{} {} {} · {}. {}{}",
                 emoji,
                 problem.platform,
                 problem.problem.difficulty,
                 problem.problem.id,
                 problem.problem.title,
                 daily_hint,
-                problem.url
-            ));
+            );
+            if let (Some(url), Some(display)) = (&problem.reference_url, &problem.reference_display) {
+                block.push_str(&format!("\n📖 [{}]({})", display, url));
+            }
+            block.push_str(&format!("\n🔗 {}", problem.url));
+            parts.push(block);
         }
     }
 

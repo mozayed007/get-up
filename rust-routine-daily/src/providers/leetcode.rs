@@ -5,6 +5,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::config::{Config, LeetCodeVariant};
 use crate::providers::select_problem;
+use crate::reference::{topic_to_hello_algo_reference, ReferenceInfo};
 use crate::types::{Difficulty, Platform, Problem, ProblemResult};
 
 const LEETCODE_EASY_FILE: &str = "data/leetcode_easy.txt";
@@ -38,6 +39,13 @@ struct QuestionRaw {
     difficulty: String,
     #[allow(dead_code)]
     is_paid_only: bool,
+    #[serde(default)]
+    topic_tags: Vec<TopicTag>,
+}
+
+#[derive(Debug, Deserialize)]
+struct TopicTag {
+    slug: String,
 }
 
 #[derive(Debug, Deserialize)]
@@ -143,14 +151,14 @@ impl LeetCodeProvider {
         self.fetch_problem_list(Difficulty::Hard, output_file).await
     }
 
-    async fn get_daily_challenge(&self) -> Result<Option<Problem>> {
+    async fn get_daily_challenge(&self) -> Result<Option<(Problem, Vec<String>)>> {
         match self.variant {
             LeetCodeVariant::Cn => self.get_daily_challenge_cn().await,
             LeetCodeVariant::Com => self.get_daily_challenge_com().await,
         }
     }
 
-    async fn get_daily_challenge_com(&self) -> Result<Option<Problem>> {
+    async fn get_daily_challenge_com(&self) -> Result<Option<(Problem, Vec<String>)>> {
         let query = r#"
             query activeDailyCodingChallengeQuestion {
                 activeDailyCodingChallengeQuestion {
@@ -160,6 +168,9 @@ impl LeetCodeProvider {
                         titleSlug
                         difficulty
                         isPaidOnly
+                        topicTags {
+                            slug
+                        }
                     }
                 }
             }
@@ -183,19 +194,23 @@ impl LeetCodeProvider {
         if let Some(daily) = graphql_response.data.active_daily_coding_challenge_question {
             let q = daily.question;
             let difficulty = Difficulty::from_str(&q.difficulty).unwrap_or(Difficulty::Easy);
-            Ok(Some(Problem {
-                id: q.question_frontend_id,
-                title: q.title,
-                slug: q.title_slug,
-                difficulty,
-                is_daily_challenge: true,
-            }))
+            let tags: Vec<String> = q.topic_tags.into_iter().map(|t| t.slug).collect();
+            Ok(Some((
+                Problem {
+                    id: q.question_frontend_id,
+                    title: q.title,
+                    slug: q.title_slug,
+                    difficulty,
+                    is_daily_challenge: true,
+                },
+                tags,
+            )))
         } else {
             Ok(None)
         }
     }
 
-    async fn get_daily_challenge_cn(&self) -> Result<Option<Problem>> {
+    async fn get_daily_challenge_cn(&self) -> Result<Option<(Problem, Vec<String>)>> {
         let query = r#"
             query todayRecord {
                 todayRecord {
@@ -206,6 +221,9 @@ impl LeetCodeProvider {
                         titleSlug
                         difficulty
                         isPaidOnly
+                        topicTags {
+                            slug
+                        }
                     }
                 }
             }
@@ -229,13 +247,17 @@ impl LeetCodeProvider {
         if let Some(daily) = graphql_response.data.today_record.into_iter().next() {
             let q = daily.question;
             let difficulty = Difficulty::from_str(&q.difficulty).unwrap_or(Difficulty::Easy);
-            Ok(Some(Problem {
-                id: q.question_frontend_id,
-                title: q.title,
-                slug: q.title_slug,
-                difficulty,
-                is_daily_challenge: true,
-            }))
+            let tags: Vec<String> = q.topic_tags.into_iter().map(|t| t.slug).collect();
+            Ok(Some((
+                Problem {
+                    id: q.question_frontend_id,
+                    title: q.title,
+                    slug: q.title_slug,
+                    difficulty,
+                    is_daily_challenge: true,
+                },
+                tags,
+            )))
         } else {
             Ok(None)
         }
@@ -262,12 +284,60 @@ impl LeetCodeProvider {
         }
     }
 
+    fn resolve_reference(tags: &[String]) -> Option<ReferenceInfo> {
+        topic_to_hello_algo_reference(tags)
+    }
+
+    async fn fetch_topic_tags(&self, title_slug: &str) -> Vec<String> {
+        let query = r#"
+            query questionTopicTags($titleSlug: String!) {
+                question(titleSlug: $titleSlug) {
+                    topicTags {
+                        slug
+                    }
+                }
+            }
+        "#;
+
+        #[derive(Deserialize)]
+        #[serde(rename_all = "camelCase")]
+        struct QuestionTags {
+            topic_tags: Vec<TopicTag>,
+        }
+
+        #[derive(Deserialize)]
+        #[serde(rename_all = "camelCase")]
+        struct TagData {
+            question: QuestionTags,
+        }
+
+        let request = GraphQLRequest {
+            query: query.to_string(),
+            variables: serde_json::json!({ "titleSlug": title_slug }),
+        };
+
+        match self
+            .client
+            .post(&self.endpoint)
+            .header("User-Agent", "LeetCodeDaily/0.2.0")
+            .json(&request)
+            .send()
+            .await
+        {
+            Ok(resp) => match resp.json::<GraphQLResponse<TagData>>().await {
+                Ok(data) => data.data.question.topic_tags.into_iter().map(|t| t.slug).collect(),
+                Err(_) => Vec::new(),
+            },
+            Err(_) => Vec::new(),
+        }
+    }
+
     pub async fn get_problem(
         &self,
         used_file: &str,
         difficulty: Difficulty,
     ) -> Result<ProblemResult> {
-        if let Some(daily) = self.get_daily_challenge().await? {
+        if let Some((daily, tags)) = self.get_daily_challenge().await? {
             if daily.difficulty == difficulty {
                 let used_lines = read_lines(used_file).await?;
                 let used_slugs: HashSet<String> = used_lines
@@ -278,11 +348,17 @@ impl LeetCodeProvider {
 
                 if !used_slugs.contains(&daily.slug) {
                     let url = self.make_url(&daily.slug);
+                    let (reference_url, reference_display) = match Self::resolve_reference(&tags) {
+                        Some(r) => (Some(r.url), Some(r.display_name)),
+                        None => (None, None),
+                    };
                     return Ok(ProblemResult {
                         platform: Platform::LeetCode,
                         problem: daily,
                         url,
                         is_daily_challenge: true,
+                        reference_url,
+                        reference_display,
                     });
                 }
             }
@@ -290,7 +366,7 @@ impl LeetCodeProvider {
 
         let cache_file = Self::get_cache_file(difficulty);
         let variant = self.variant;
-        select_problem(
+        let mut result = select_problem(
             cache_file,
             used_file,
             difficulty,
@@ -301,7 +377,20 @@ impl LeetCodeProvider {
             },
             Self::get_day_seed(),
         )
-        .await
+        .await?;
+
+        let tags = self.fetch_topic_tags(&result.problem.slug).await;
+        match Self::resolve_reference(&tags) {
+            Some(r) => {
+                result.reference_url = Some(r.url);
+                result.reference_display = Some(r.display_name);
+            }
+            None => {
+                result.reference_url = None;
+                result.reference_display = None;
+            }
+        }
+        Ok(result)
     }
 }
 

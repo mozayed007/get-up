@@ -1,10 +1,10 @@
 use std::sync::Arc;
 
 use anyhow::Result;
+use rmcp::handler::server::wrapper::Parameters;
 use rmcp::model::*;
 use rmcp::transport::io::stdio;
 use rmcp::{tool, tool_router, ServerHandler};
-use rmcp::handler::server::wrapper::Parameters;
 use serde::Deserialize;
 
 use crate::config::Config;
@@ -118,12 +118,10 @@ impl GetUpServer {
             .map(|result| {
                 let format = options.format;
                 match format {
-                    OutputFormat::Json => {
-                        routine::to_json(&result).unwrap_or_else(|_| result.formatted_message.clone())
-                    }
-                    OutputFormat::Xml => {
-                        routine::to_xml(&result).unwrap_or_else(|_| result.formatted_message.clone())
-                    }
+                    OutputFormat::Json => routine::to_json(&result)
+                        .unwrap_or_else(|_| result.formatted_message.clone()),
+                    OutputFormat::Xml => routine::to_xml(&result)
+                        .unwrap_or_else(|_| result.formatted_message.clone()),
                     OutputFormat::Text => result.formatted_message,
                 }
             })
@@ -264,22 +262,18 @@ impl GetUpServer {
 #[rmcp::tool_handler]
 impl ServerHandler for GetUpServer {
     fn get_info(&self) -> ServerInfo {
-        ServerInfo::new(
-            ServerCapabilities::builder()
-                .enable_tools()
-                .build(),
-        )
-        .with_server_info(Implementation::new("get-up", env!("CARGO_PKG_VERSION")))
-        .with_instructions(
-            "get-up is your personal AI morning/night routine engine. \
+        ServerInfo::new(ServerCapabilities::builder().enable_tools().build())
+            .with_server_info(Implementation::new("get-up", env!("CARGO_PKG_VERSION")))
+            .with_instructions(
+                "get-up is your personal AI morning/night routine engine. \
              It delivers daily problems from LeetCode and Deep-ML with scheduled difficulty. \
              Use run_routine to get the full daily briefing, or call individual tools \
              (get_problems, get_quote, get_history, get_running_stats, get_year_progress) \
              for specific data. All tools return structured JSON by default. \
              Customize run_routine with options for routine_type (morning/night), \
              which sections to include, and output format (text/json/xml)."
-                .to_string(),
-        )
+                    .to_string(),
+            )
     }
 }
 
@@ -294,8 +288,8 @@ pub async fn run_stdio(config: Config) -> Result<()> {
 
 /// Start the MCP server in HTTP/SSE mode on the given port.
 pub async fn run_http(config: Config, port: u16) -> Result<()> {
-    use rmcp::transport::streamable_http_server::tower::StreamableHttpService;
     use rmcp::transport::streamable_http_server::session::local::LocalSessionManager;
+    use rmcp::transport::streamable_http_server::tower::StreamableHttpService;
 
     let server = GetUpServer::new(config);
     let service: StreamableHttpService<GetUpServer, LocalSessionManager> =

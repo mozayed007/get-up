@@ -11,14 +11,23 @@ pub fn to_xml(result: &RoutineResult) -> Result<String> {
     xml.push('\n');
     xml.push_str("<routine>\n");
     xml.push_str(&format!("  <type>{}</type>\n", result.routine_type));
-    xml.push_str(&format!("  <greeting><![CDATA[{}]]></greeting>\n", result.greeting));
+    xml.push_str(&format!(
+        "  <greeting><![CDATA[{}]]></greeting>\n",
+        result.greeting
+    ));
     xml.push_str(&format!("  <timestamp>{}</timestamp>\n", result.timestamp));
 
     if let Some(ref yp) = result.year_progress {
         xml.push_str("  <year_progress>\n");
-        xml.push_str(&format!("    <day_of_year>{}</day_of_year>\n", yp.day_of_year));
+        xml.push_str(&format!(
+            "    <day_of_year>{}</day_of_year>\n",
+            yp.day_of_year
+        ));
         xml.push_str(&format!("    <total_days>{}</total_days>\n", yp.total_days));
-        xml.push_str(&format!("    <percentage>{:.1}</percentage>\n", yp.percentage));
+        xml.push_str(&format!(
+            "    <percentage>{:.1}</percentage>\n",
+            yp.percentage
+        ));
         xml.push_str(&format!("    <bar><![CDATA[{}]]></bar>\n", yp.bar));
         xml.push_str("  </year_progress>\n");
     }
@@ -27,7 +36,10 @@ pub fn to_xml(result: &RoutineResult) -> Result<String> {
         xml.push_str("  <problems>\n");
         for problem in &result.problems {
             xml.push_str("    <problem>\n");
-            xml.push_str(&format!("      <platform>{}</platform>\n", problem.platform));
+            xml.push_str(&format!(
+                "      <platform>{}</platform>\n",
+                problem.platform
+            ));
             xml.push_str(&format!("      <id>{}</id>\n", problem.problem.id));
             xml.push_str(&format!(
                 "      <title><![CDATA[{}]]></title>\n",
@@ -50,7 +62,10 @@ pub fn to_xml(result: &RoutineResult) -> Result<String> {
 
     if let Some(ref stats) = result.running {
         xml.push_str("  <running>\n");
-        xml.push_str(&format!("    <yesterday_km>{:.2}</yesterday_km>\n", stats.yesterday_km));
+        xml.push_str(&format!(
+            "    <yesterday_km>{:.2}</yesterday_km>\n",
+            stats.yesterday_km
+        ));
         xml.push_str(&format!(
             "    <yesterday_count>{}</yesterday_count>\n",
             stats.yesterday_count
@@ -73,10 +88,7 @@ pub fn to_xml(result: &RoutineResult) -> Result<String> {
         for event in events {
             xml.push_str("    <event>\n");
             xml.push_str(&format!("      <year>{}</year>\n", event.year));
-            xml.push_str(&format!(
-                "      <text><![CDATA[{}]]></text>\n",
-                event.text
-            ));
+            xml.push_str(&format!("      <text><![CDATA[{}]]></text>\n", event.text));
             xml.push_str(&format!("      <url>{}</url>\n", event.url));
             xml.push_str(&format!(
                 "      <age_context><![CDATA[{}]]></age_context>\n",
@@ -90,10 +102,7 @@ pub fn to_xml(result: &RoutineResult) -> Result<String> {
     if let Some(ref q) = result.quote {
         xml.push_str("  <quote>\n");
         xml.push_str(&format!("    <text><![CDATA[{}]]></text>\n", q.text));
-        xml.push_str(&format!(
-            "    <author><![CDATA[{}]]></author>\n",
-            q.author
-        ));
+        xml.push_str(&format!("    <author><![CDATA[{}]]></author>\n", q.author));
         xml.push_str(&format!("    <source>{}</source>\n", q.source));
         xml.push_str("  </quote>\n");
     }

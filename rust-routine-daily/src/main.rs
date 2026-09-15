@@ -1,9 +1,10 @@
 use anyhow::{Context, Result};
+use chrono::TimeZone;
 use clap::{Parser, Subcommand};
 use routine_daily::config;
+use routine_daily::notification::{DiscordNotifier, Notifier, TelegramNotifier};
 use routine_daily::providers::deepml::DeepMLProvider;
 use routine_daily::providers::leetcode::LeetCodeProvider;
-use routine_daily::notification::{DiscordNotifier, Notifier, TelegramNotifier};
 use routine_daily::routine::{self, OutputFormat, RoutineOptions, RoutineType};
 use routine_daily::utils::append_line;
 
@@ -58,6 +59,9 @@ struct Args {
 
     #[arg(long, help = "Run night routine instead of morning")]
     night: bool,
+
+    #[arg(long, help = "Bypass the already-posted-today check")]
+    force: bool,
 
     #[command(subcommand)]
     command: Option<Commands>,
@@ -162,11 +166,6 @@ async fn main() -> Result<()> {
         .await
         .context("Failed to run routine")?;
 
-    // Mark problems as used
-    for problem in &result.problems {
-        append_line(USED_FILE, &problem.problem.slug).await?;
-    }
-
     // Output based on format
     match format {
         OutputFormat::Json => {
@@ -197,18 +196,63 @@ async fn main() -> Result<()> {
             return Ok(());
         }
 
+        if has_explicit_targets && !args.force {
+            match octocrab::Octocrab::builder()
+                .personal_token(config.github_token.clone())
+                .build()
+            {
+                Ok(crab) => {
+                    let marker = daily_marker(now.date_naive());
+                    let midnight = now
+                        .date_naive()
+                        .and_hms_opt(0, 0, 0)
+                        .expect("valid midnight");
+                    let since_utc = config
+                        .timezone
+                        .from_local_datetime(&midnight)
+                        .earliest()
+                        .map(|dt| dt.with_timezone(&chrono::Utc));
+                    if let Some(since_utc) = since_utc {
+                        if already_posted_today(
+                            &crab,
+                            &config.repo_owner,
+                            &config.repo_name,
+                            since_utc,
+                            &marker,
+                        )
+                        .await
+                        {
+                            println!("Already posted today; skipping delivery.");
+                            return Ok(());
+                        }
+                    }
+                }
+                Err(e) => eprintln!(
+                    "Warning: could not build GitHub client for duplicate check: {}",
+                    e
+                ),
+            }
+        }
+
+        let mut delivered = false;
+
         if args.post {
             match octocrab::Octocrab::builder()
                 .personal_token(config.github_token.clone())
                 .build()
             {
                 Ok(crab) => {
+                    let marker = daily_marker(now.date_naive());
+                    let body = format!("{}\n\n{}", result.formatted_message, marker);
                     match crab
                         .issues(&config.repo_owner, &config.repo_name)
-                        .create_comment(1, &result.formatted_message)
+                        .create_comment(1, &body)
                         .await
                     {
-                        Ok(_) => println!("Posted to GitHub Issue #1"),
+                        Ok(_) => {
+                            println!("Posted to GitHub Issue #1");
+                            delivered = true;
+                        }
                         Err(e) => eprintln!("Failed to post to GitHub: {}", e),
                     }
                 }
@@ -230,13 +274,54 @@ async fn main() -> Result<()> {
 
         for notifier in &notifiers {
             match notifier.send_message(&result.formatted_message).await {
-                Ok(_) => println!("Sent notification via {}", notifier.name()),
+                Ok(_) => {
+                    println!("Sent notification via {}", notifier.name());
+                    delivered = true;
+                }
                 Err(e) => eprintln!("Failed to send {}: {}", notifier.name(), e),
+            }
+        }
+
+        if delivered {
+            for problem in &result.problems {
+                if let Err(e) = append_line(USED_FILE, &problem.problem.slug).await {
+                    eprintln!("Warning: failed to record used problem: {}", e);
+                }
             }
         }
     }
 
     Ok(())
+}
+
+fn daily_marker(date: chrono::NaiveDate) -> String {
+    format!("<!-- routine-daily:{} -->", date.format("%Y-%m-%d"))
+}
+
+async fn already_posted_today(
+    crab: &octocrab::Octocrab,
+    owner: &str,
+    repo: &str,
+    since_utc: chrono::DateTime<chrono::Utc>,
+    marker: &str,
+) -> bool {
+    match crab
+        .issues(owner, repo)
+        .list_comments(1)
+        .since(since_utc)
+        .per_page(100)
+        .send()
+        .await
+    {
+        Ok(page) => page
+            .items
+            .iter()
+            .any(|c| c.body.as_deref().is_some_and(|b| b.contains(marker))),
+        Err(e) => {
+            eprintln!("Warning: already-posted check failed ({}); proceeding", e);
+            false
+        }
+    }
 }
 
 #[allow(clippy::needless_return)]
@@ -265,5 +350,16 @@ async fn run_mcp(_config: config::Config, transport: &str, port: u16) -> Result<
         eprintln!("MCP server requires the 'mcp' feature. Rebuild with:");
         eprintln!("  cargo build --release --features mcp");
         std::process::exit(1);
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_daily_marker_format() {
+        let date = chrono::NaiveDate::from_ymd_opt(2026, 9, 15).unwrap();
+        assert_eq!(daily_marker(date), "<!-- routine-daily:2026-09-15 -->");
     }
 }

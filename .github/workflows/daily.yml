@@ -2,12 +2,20 @@ name: Daily Run
 
 on:
   schedule:
-    - cron: '0 1 * * *'
+    - cron: '17 1 * * *'
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Bypass the already-posted-today guard (testing only)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: daily-run
+  cancel-in-progress: false
 
 permissions:
   contents: read
-  issues: write
 
 jobs:
   build:
@@ -38,6 +46,9 @@ jobs:
 
   run:
     needs: build
+    permissions:
+      contents: write
+      issues: write
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -73,4 +84,25 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
           DISCORD_USER_ID: ${{ secrets.DISCORD_USER_ID }}
-        run: cargo run --release --all-features -- --post --telegram --discord
+        run: |
+          FORCE_FLAG=""
+          if [ "${{ inputs.force }}" = "true" ]; then FORCE_FLAG="--force"; fi
+          cargo run --release --all-features -- --post --telegram --discord $FORCE_FLAG
+
+      - name: Persist used problems
+        if: ${{ !cancelled() }}
+        run: |
+          if git diff --quiet -- data/used_problems.txt; then
+            echo "used_problems.txt unchanged"
+            exit 0
+          fi
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/used_problems.txt
+          git commit -m "chore: persist used problems [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase origin "$GITHUB_REF_NAME" || { git rebase --abort; exit 1; }
+            git push origin "HEAD:$GITHUB_REF_NAME" && exit 0
+            sleep 5
+          done
+          exit 1

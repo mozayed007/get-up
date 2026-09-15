@@ -5,7 +5,7 @@ A Rust CLI that delivers a daily motivational briefing with **LeetCode** and **D
 ## Features
 
 - **Multi-platform problems** — LeetCode (Easy/Medium/Hard) + Deep-ML (Easy/Medium/Hard) with scheduled difficulty
-- **Difficulty scheduling** — Weekdays: 3 Easy + 2 Medium per platform, Weekends: 1 Medium + 1 Hard per platform
+- **Difficulty scheduling** — Weekdays: one problem per platform per day (a weekly rotation of 3 Easy + 2 Medium), Weekends: Medium + Hard per platform
 - **Time-aware greeting** — `Good morning` / `Good afternoon` / `Good evening` based on your local hour
 - **Your age in history** — Wikipedia on-this-day events tagged with how old you were
 - **Running stats** — reads parquet or CSV from Strava / OpenTracks / any app that exports run data
@@ -75,6 +75,7 @@ cargo run --features telegram,discord -- --dry-run
 | `--json` | Output structured JSON instead of formatted text |
 | `--xml` | Output structured XML instead of formatted text |
 | `--night` | Run the night routine variant |
+| `--force` | Bypass the already-posted-today check |
 
 **Subcommand:**
 
@@ -220,7 +221,7 @@ DISCORD_USER_ID       # Discord user ID (optional)
 Three workflows are included:
 
 - **CI** — `cargo test --all-features` + `clippy` + `fmt` on every push
-- **Daily Run** — fires at midnight UTC (3 AM Cairo), posts to GitHub Issue + Telegram + Discord
+- **Daily Run** — fires at 01:17 UTC (4:17 AM Cairo), posts to GitHub Issue + Telegram + Discord, and commits the updated used-problems file back to the branch it ran on
 - **Deep-ML Sync** — weekly sync of Deep-ML problems from GitHub (Sundays)
 
 Set these repo secrets:
@@ -274,8 +275,8 @@ The system automatically schedules difficulty based on the day:
 
 | Period | LeetCode | Deep-ML |
 |--------|----------|---------|
-| **Weekdays** (Mon-Fri) | 3 Easy + 2 Medium | 3 Easy + 2 Medium |
-| **Weekends** (Sat-Sun) | 1 Medium + 1 Hard | 1 Medium + 1 Hard |
+| **Weekdays** (Mon-Fri) | 1 problem/day, 3 Easy + 2 Medium across the week | 1 problem/day, 3 Easy + 2 Medium across the week |
+| **Weekends** (Sat-Sun) | 2 problems/day, Medium + Hard | 2 problems/day, Medium + Hard |
 
 Each platform independently rolls its difficulty. LeetCode could be Easy while Deep-ML is Medium on the same day.
 

@@ -35,6 +35,10 @@ jobs:
       - name: Sync Deep-ML problems
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_OWNER: ${{ github.repository_owner }}
+          REPO_NAME: ${{ github.event.repository.name }}
+          BIRTH_YEAR: ${{ secrets.BIRTH_YEAR }}
+          TIMEZONE: ${{ secrets.TIMEZONE }}
         run: cargo run --release -- --sync-deepml
 
       - name: Check for changes

@@ -16,13 +16,17 @@ impl Difficulty {
             Difficulty::Hard => "Hard",
         }
     }
+}
 
-    pub fn from_str(s: &str) -> Option<Self> {
+impl std::str::FromStr for Difficulty {
+    type Err = String;
+
+    fn from_str(s: &str) -> std::result::Result<Self, Self::Err> {
         match s.to_lowercase().as_str() {
-            "easy" => Some(Difficulty::Easy),
-            "medium" => Some(Difficulty::Medium),
-            "hard" => Some(Difficulty::Hard),
-            _ => None,
+            "easy" => Ok(Difficulty::Easy),
+            "medium" => Ok(Difficulty::Medium),
+            "hard" => Ok(Difficulty::Hard),
+            other => Err(format!("Unknown difficulty: {}", other)),
         }
     }
 }
@@ -96,11 +100,11 @@ mod tests {
 
     #[test]
     fn test_difficulty_from_str() {
-        assert_eq!(Difficulty::from_str("easy"), Some(Difficulty::Easy));
-        assert_eq!(Difficulty::from_str("EASY"), Some(Difficulty::Easy));
-        assert_eq!(Difficulty::from_str("Medium"), Some(Difficulty::Medium));
-        assert_eq!(Difficulty::from_str("hard"), Some(Difficulty::Hard));
-        assert_eq!(Difficulty::from_str("unknown"), None);
+        assert_eq!("easy".parse::<Difficulty>(), Ok(Difficulty::Easy));
+        assert_eq!("EASY".parse::<Difficulty>(), Ok(Difficulty::Easy));
+        assert_eq!("Medium".parse::<Difficulty>(), Ok(Difficulty::Medium));
+        assert_eq!("HARD".parse::<Difficulty>(), Ok(Difficulty::Hard));
+        assert!("garbage".parse::<Difficulty>().is_err());
     }
 
     #[test]

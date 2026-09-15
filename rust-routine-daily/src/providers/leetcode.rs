@@ -144,7 +144,8 @@ impl LeetCodeProvider {
     }
 
     pub async fn fetch_medium_list(&self, output_file: &str) -> Result<()> {
-        self.fetch_problem_list(Difficulty::Medium, output_file).await
+        self.fetch_problem_list(Difficulty::Medium, output_file)
+            .await
     }
 
     pub async fn fetch_hard_list(&self, output_file: &str) -> Result<()> {
@@ -193,7 +194,10 @@ impl LeetCodeProvider {
 
         if let Some(daily) = graphql_response.data.active_daily_coding_challenge_question {
             let q = daily.question;
-            let difficulty = Difficulty::from_str(&q.difficulty).unwrap_or(Difficulty::Easy);
+            let difficulty = q
+                .difficulty
+                .parse::<Difficulty>()
+                .unwrap_or(Difficulty::Easy);
             let tags: Vec<String> = q.topic_tags.into_iter().map(|t| t.slug).collect();
             Ok(Some((
                 Problem {
@@ -246,7 +250,10 @@ impl LeetCodeProvider {
 
         if let Some(daily) = graphql_response.data.today_record.into_iter().next() {
             let q = daily.question;
-            let difficulty = Difficulty::from_str(&q.difficulty).unwrap_or(Difficulty::Easy);
+            let difficulty = q
+                .difficulty
+                .parse::<Difficulty>()
+                .unwrap_or(Difficulty::Easy);
             let tags: Vec<String> = q.topic_tags.into_iter().map(|t| t.slug).collect();
             Ok(Some((
                 Problem {
@@ -325,7 +332,13 @@ impl LeetCodeProvider {
             .await
         {
             Ok(resp) => match resp.json::<GraphQLResponse<TagData>>().await {
-                Ok(data) => data.data.question.topic_tags.into_iter().map(|t| t.slug).collect(),
+                Ok(data) => data
+                    .data
+                    .question
+                    .topic_tags
+                    .into_iter()
+                    .map(|t| t.slug)
+                    .collect(),
                 Err(_) => Vec::new(),
             },
             Err(_) => Vec::new(),
@@ -394,8 +407,8 @@ impl LeetCodeProvider {
     }
 }
 
-use std::collections::HashSet;
 use crate::utils::read_lines;
+use std::collections::HashSet;
 
 #[cfg(test)]
 mod tests {
@@ -404,11 +417,19 @@ mod tests {
     #[test]
     fn test_get_day_seed_structure() {
         let seed = LeetCodeProvider::get_day_seed();
-        assert!(seed >= 2024001, "seed {} looks wrong (expected >= 2024001)", seed);
+        assert!(
+            seed >= 2024001,
+            "seed {} looks wrong (expected >= 2024001)",
+            seed
+        );
         let year_part = seed / 1000;
         let day_part = seed % 1000;
         assert!(year_part >= 2024, "year part {} looks wrong", year_part);
-        assert!(day_part >= 1 && day_part <= 366, "day part {} out of range", day_part);
+        assert!(
+            day_part >= 1 && day_part <= 366,
+            "day part {} out of range",
+            day_part
+        );
     }
 
     #[test]
@@ -440,9 +461,12 @@ mod tests {
         let easy_file = tmp.join("test_easy_provider.txt");
         let used_file = tmp.join("test_used_provider.txt");
 
-        tokio::fs::write(&easy_file, "1|First|first|Easy\n2|Second|second|Easy\n3|Third|third|Easy")
-            .await
-            .unwrap();
+        tokio::fs::write(
+            &easy_file,
+            "1|First|first|Easy\n2|Second|second|Easy\n3|Third|third|Easy",
+        )
+        .await
+        .unwrap();
         tokio::fs::write(&used_file, "second").await.unwrap();
 
         let result = crate::providers::select_problem(

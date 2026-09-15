@@ -34,7 +34,7 @@ pub async fn select_problem(
                 let id = parts[0].trim().to_string();
                 let title = parts[1].trim().to_string();
                 let slug = parts[2].trim().to_string();
-                let line_difficulty = Difficulty::from_str(parts[3].trim())?;
+                let line_difficulty = parts[3].trim().parse::<Difficulty>().ok()?;
                 if !used_slugs.contains(&slug) && line_difficulty == difficulty {
                     Some(ProblemCache {
                         id,
@@ -107,6 +107,10 @@ mod tests {
         let results: std::collections::HashSet<i32> = (0..50)
             .map(|s| pick_seeded_random(&items, s).unwrap())
             .collect();
-        assert!(results.len() >= 3, "only {} unique values from 50 seeds", results.len());
+        assert!(
+            results.len() >= 3,
+            "only {} unique values from 50 seeds",
+            results.len()
+        );
     }
 }

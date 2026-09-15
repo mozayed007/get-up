@@ -145,14 +145,17 @@ impl DeepMLProvider {
                 let result = match res {
                     Ok(resp) if resp.status().is_success() => {
                         match resp.json::<DeepMLProblemMeta>().await {
-                            Ok(meta) => Difficulty::from_str(&meta.difficulty).map(|difficulty| {
-                                ProblemCache {
-                                    id: meta.id,
-                                    title: meta.title,
-                                    slug: format!("deep-ml-problem-{}", problem_id),
-                                    difficulty,
-                                }
-                            }),
+                            Ok(meta) => {
+                                meta.difficulty
+                                    .parse::<Difficulty>()
+                                    .ok()
+                                    .map(|difficulty| ProblemCache {
+                                        id: meta.id,
+                                        title: meta.title,
+                                        slug: format!("deep-ml-problem-{}", problem_id),
+                                        difficulty,
+                                    })
+                            }
                             Err(e) => {
                                 eprintln!("Warning: parse failed for {}: {}", problem_id, e);
                                 None
@@ -215,6 +218,12 @@ impl DeepMLProvider {
             Self::get_day_seed(),
         )
         .await
+    }
+}
+
+impl Default for DeepMLProvider {
+    fn default() -> Self {
+        Self::new()
     }
 }
 

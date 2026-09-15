@@ -13,6 +13,7 @@ pub fn get_problem_emoji(platform: &Platform, difficulty: &Difficulty) -> &'stat
     }
 }
 
+#[allow(clippy::too_many_arguments)]
 pub fn build_formatted_message(
     greeting: &str,
     timestamp: &str,
@@ -49,7 +50,8 @@ pub fn build_formatted_message(
                 problem.problem.title,
                 daily_hint,
             );
-            if let (Some(url), Some(display)) = (&problem.reference_url, &problem.reference_display) {
+            if let (Some(url), Some(display)) = (&problem.reference_url, &problem.reference_display)
+            {
                 block.push_str(&format!("\n📖 [{}]({})", display, url));
             }
             block.push_str(&format!("\n🔗 {}", problem.url));
@@ -78,11 +80,29 @@ mod tests {
 
     #[test]
     fn test_problem_emoji() {
-        assert_eq!(get_problem_emoji(&Platform::LeetCode, &Difficulty::Easy), "🟢");
-        assert_eq!(get_problem_emoji(&Platform::LeetCode, &Difficulty::Medium), "🟡");
-        assert_eq!(get_problem_emoji(&Platform::LeetCode, &Difficulty::Hard), "🔴");
-        assert_eq!(get_problem_emoji(&Platform::DeepML, &Difficulty::Easy), "🔵");
-        assert_eq!(get_problem_emoji(&Platform::DeepML, &Difficulty::Medium), "🟣");
-        assert_eq!(get_problem_emoji(&Platform::DeepML, &Difficulty::Hard), "🟠");
+        assert_eq!(
+            get_problem_emoji(&Platform::LeetCode, &Difficulty::Easy),
+            "🟢"
+        );
+        assert_eq!(
+            get_problem_emoji(&Platform::LeetCode, &Difficulty::Medium),
+            "🟡"
+        );
+        assert_eq!(
+            get_problem_emoji(&Platform::LeetCode, &Difficulty::Hard),
+            "🔴"
+        );
+        assert_eq!(
+            get_problem_emoji(&Platform::DeepML, &Difficulty::Easy),
+            "🔵"
+        );
+        assert_eq!(
+            get_problem_emoji(&Platform::DeepML, &Difficulty::Medium),
+            "🟣"
+        );
+        assert_eq!(
+            get_problem_emoji(&Platform::DeepML, &Difficulty::Hard),
+            "🟠"
+        );
     }
 }

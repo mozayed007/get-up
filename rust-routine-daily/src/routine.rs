@@ -161,7 +161,10 @@ pub struct RoutineResult {
 const RUNNING_FILE: &str = "data/running.parquet";
 const USED_FILE: &str = "data/used_problems.txt";
 
-pub async fn run_routine(config: &crate::config::Config, options: &RoutineOptions) -> Result<RoutineResult> {
+pub async fn run_routine(
+    config: &crate::config::Config,
+    options: &RoutineOptions,
+) -> Result<RoutineResult> {
     let client = reqwest::Client::new();
     let leetcode = LeetCodeProvider::new(config);
     let deepml = DeepMLProvider::new();
@@ -219,9 +222,13 @@ pub async fn run_routine(config: &crate::config::Config, options: &RoutineOption
     }
 
     let running = if options.has_section(Section::Running) {
-        api::fetch_running_stats(RUNNING_FILE, now.date_naive())
-            .await
-            .ok()
+        match api::fetch_running_stats(RUNNING_FILE, now.date_naive()).await {
+            Ok(stats) => stats,
+            Err(e) => {
+                eprintln!("Warning: running stats unavailable: {}", e);
+                None
+            }
+        }
     } else {
         None
     };
@@ -252,9 +259,9 @@ pub async fn run_routine(config: &crate::config::Config, options: &RoutineOption
         None
     };
 
-    let year_progress_text = year_progress.as_ref().map(|yp| {
-        format!("Day {} · {}", yp.day_of_year, yp.bar)
-    });
+    let year_progress_text = year_progress
+        .as_ref()
+        .map(|yp| format!("Day {} · {}", yp.day_of_year, yp.bar));
 
     let running_text = running.as_ref().map(|stats| {
         format!(
@@ -304,7 +311,9 @@ pub async fn run_routine(config: &crate::config::Config, options: &RoutineOption
 fn parse_history_events(raw: &[String]) -> Vec<HistoryEvent> {
     raw.iter()
         .filter_map(|line| {
-            let after_bullet = line.strip_prefix("• ").or_else(|| line.strip_prefix("• "))?;
+            let after_bullet = line
+                .strip_prefix("• ")
+                .or_else(|| line.strip_prefix("• "))?;
             let colon_pos = after_bullet.find(':')?;
             let year: i32 = after_bullet[..colon_pos].parse().ok()?;
             let rest = after_bullet[colon_pos + 1..].trim();

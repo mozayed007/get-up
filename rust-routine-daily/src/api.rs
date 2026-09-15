@@ -97,9 +97,9 @@ const QUOTES: &[&str] = &[
 ];
 
 #[derive(Debug, Deserialize)]
-struct QuoteResponse {
-    content: String,
-    author: String,
+struct ZenQuote {
+    q: String,
+    a: String,
 }
 
 #[derive(Debug, Deserialize)]
@@ -149,16 +149,99 @@ fn get_daily_quote_index() -> usize {
     seed % QUOTES.len()
 }
 
+fn format_zen_quote(quotes: Vec<ZenQuote>) -> Option<String> {
+    let first = quotes.into_iter().next()?;
+    let text = first.q.trim();
+    let author = first.a.trim();
+    if text.is_empty() || author.is_empty() {
+        return None;
+    }
+    Some(format!("{}\n\n—— {} (zenquotes.io)", text, author))
+}
+
 pub async fn fetch_quote(client: &reqwest::Client) -> Result<String> {
-    let result = client.get("https://api.quotable.io/random").send().await;
+    let result = client
+        .get("https://zenquotes.io/api/random")
+        .header("User-Agent", "get-up-daily/0.2.0")
+        .send()
+        .await;
 
     match result {
-        Ok(resp) => match resp.json::<QuoteResponse>().await {
-            Ok(response) => Ok(format!("{}\n\n—— {}", response.content, response.author)),
+        Ok(resp) => match resp.json::<Vec<ZenQuote>>().await {
+            Ok(quotes) => match format_zen_quote(quotes) {
+                Some(quote) => Ok(quote),
+                None => Ok(QUOTES[get_daily_quote_index()].to_string()),
+            },
             Err(_) => Ok(QUOTES[get_daily_quote_index()].to_string()),
         },
         Err(_) => Ok(QUOTES[get_daily_quote_index()].to_string()),
     }
+}
+
+const TRAGIC_WORDS: &[&str] = &[
+    "war",
+    "wars",
+    "died",
+    "death",
+    "deaths",
+    "dead",
+    "fire",
+    "flood",
+    "plague",
+    "drought",
+    "riot",
+    "coup",
+    "sank",
+    "crash",
+    "bomb",
+    "bombing",
+    "attack",
+    "attacks",
+    "shot",
+    "slain",
+    "murder",
+    "suicide",
+    "disaster",
+    "shooting",
+    "collapse",
+    "destroyed",
+    "invasion",
+    "executed",
+    "famine",
+    "tsunami",
+    "typhoon",
+    "hurricane",
+    "massacre",
+    "aeroplane",
+    "airliner",
+];
+
+const TRAGIC_STEMS: &[&str] = &[
+    "kill",
+    "massacr",
+    "assassinat",
+    "genocid",
+    "holocaust",
+    "tortur",
+    "hijack",
+    "pandemi",
+    "epidemi",
+    "casualt",
+    "victim",
+    "airstrik",
+    "bombard",
+    "earthquak",
+    "explos",
+    "invad",
+    "wounded",
+];
+
+fn is_tragic(text: &str) -> bool {
+    let lower = text.to_lowercase();
+    lower.split(|c: char| !c.is_ascii_alphanumeric()).any(|w| {
+        !w.is_empty()
+            && (TRAGIC_WORDS.contains(&w) || TRAGIC_STEMS.iter().any(|s| w.starts_with(s)))
+    })
 }
 
 pub async fn fetch_history(
@@ -205,8 +288,13 @@ pub async fn fetch_history(
 
     events.sort_by_key(|b| std::cmp::Reverse(b.0));
 
-    let result: Vec<String> = events
+    let (non_tragic, tragic): (Vec<_>, Vec<_>) = events
         .into_iter()
+        .partition(|(_, text, _)| !is_tragic(text));
+
+    let result: Vec<String> = non_tragic
+        .into_iter()
+        .chain(tragic)
         .take(2)
         .map(|(year, text, wiki_url)| {
             let age_text = if year >= birth_year {
@@ -223,17 +311,20 @@ pub async fn fetch_history(
     Ok(result)
 }
 
-pub async fn fetch_running_stats(running_file: &str, today: NaiveDate) -> Result<RunningStats> {
+pub async fn fetch_running_stats(
+    running_file: &str,
+    today: NaiveDate,
+) -> Result<Option<RunningStats>> {
     let yesterday = today - TimeDelta::days(1);
 
     if !std::path::Path::new(running_file).exists() {
-        return Ok(RunningStats::default());
+        return Ok(None);
     }
 
     let df: LazyFrame = if running_file.ends_with(".csv") {
         let f = match std::fs::File::open(running_file) {
             Ok(f) => std::io::BufReader::new(f),
-            Err(_) => return Ok(RunningStats::default()),
+            Err(_) => return Ok(None),
         };
         let mut rdr = csv::ReaderBuilder::new().has_headers(true).from_reader(f);
         let mut dates = Vec::new();
@@ -255,20 +346,20 @@ pub async fn fetch_running_stats(running_file: &str, today: NaiveDate) -> Result
             }
         }
         if dates.is_empty() {
-            return Ok(RunningStats::default());
+            return Ok(None);
         }
         let frame = match polars::prelude::DataFrame::new(vec![
             polars::prelude::Series::new("date", dates),
             polars::prelude::Series::new("distance_km", distances),
         ]) {
             Ok(f) => f,
-            Err(_) => return Ok(RunningStats::default()),
+            Err(_) => return Ok(None),
         };
         frame.lazy()
     } else {
         match LazyFrame::scan_parquet(running_file, Default::default()) {
             Ok(df) => df,
-            Err(_) => return Ok(RunningStats::default()),
+            Err(_) => return Ok(None),
         }
     };
 
@@ -283,7 +374,7 @@ pub async fn fetch_running_stats(running_file: &str, today: NaiveDate) -> Result
         .collect()
     {
         Ok(d) => d,
-        Err(_) => return Ok(RunningStats::default()),
+        Err(_) => return Ok(None),
     };
 
     let yesterday_df = all_data
@@ -319,14 +410,14 @@ pub async fn fetch_running_stats(running_file: &str, today: NaiveDate) -> Result
     let (month_km, month_count) = extract_pair(month_df);
     let (year_km, year_count) = extract_pair(year_df);
 
-    Ok(RunningStats {
+    Ok(Some(RunningStats {
         yesterday_km,
         yesterday_count,
         month_km,
         month_count,
         year_km,
         year_count,
-    })
+    }))
 }
 
 fn extract_pair(df_result: std::result::Result<DataFrame, PolarsError>) -> (f64, i32) {
@@ -371,11 +462,50 @@ mod tests {
     }
 
     #[test]
-    fn test_quote_response_deserialization() {
-        let json = r#"{"content": "Be yourself", "author": "Unknown"}"#;
-        let resp: QuoteResponse = serde_json::from_str(json).unwrap();
-        assert_eq!(resp.content, "Be yourself");
-        assert_eq!(resp.author, "Unknown");
+    fn test_format_zen_quote() {
+        let json = r#"[{"q": "Be yourself", "a": "Unknown", "h": "hash"}]"#;
+        let quotes: Vec<ZenQuote> = serde_json::from_str(json).unwrap();
+        assert_eq!(
+            format_zen_quote(quotes),
+            Some("Be yourself\n\n—— Unknown (zenquotes.io)".to_string())
+        );
+    }
+
+    #[test]
+    fn test_format_zen_quote_empty() {
+        assert_eq!(format_zen_quote(vec![]), None);
+    }
+
+    #[test]
+    fn test_format_zen_quote_blank_text() {
+        let quotes = vec![ZenQuote {
+            q: "   ".to_string(),
+            a: "Unknown".to_string(),
+        }];
+        assert_eq!(format_zen_quote(quotes), None);
+    }
+
+    #[test]
+    fn test_format_zen_quote_blank_author() {
+        let quotes = vec![ZenQuote {
+            q: "Be yourself".to_string(),
+            a: String::new(),
+        }];
+        assert_eq!(format_zen_quote(quotes), None);
+    }
+
+    #[test]
+    fn test_is_tragic_detects_tragic_events() {
+        assert!(is_tragic("Delhi, India, is hit by a series of bomb blasts"));
+        assert!(is_tragic("fire"));
+        assert!(is_tragic("The Great Fire of London"));
+    }
+
+    #[test]
+    fn test_is_tragic_ignores_calm_events() {
+        assert!(!is_tragic("Takuma Sato wins the Indy 500"));
+        assert!(!is_tragic("warning sign"));
+        assert!(!is_tragic("Firefox"));
     }
 
     #[test]

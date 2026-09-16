@@ -1,3 +1,5 @@
 sort-array-by-increasing-frequency
 1-bit-and-2-bit-characters
 deep-ml-problem-74
+earliest-time-to-finish-one-task
+deep-ml-problem-78

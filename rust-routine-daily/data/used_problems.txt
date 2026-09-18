@@ -5,3 +5,5 @@ earliest-time-to-finish-one-task
 deep-ml-problem-78
 check-if-two-chessboard-squares-have-the-same-color
 deep-ml-problem-27
+find-positive-integer-solution-for-a-given-equation
+deep-ml-problem-42

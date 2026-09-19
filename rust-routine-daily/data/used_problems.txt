@@ -7,3 +7,7 @@ check-if-two-chessboard-squares-have-the-same-color
 deep-ml-problem-27
 find-positive-integer-solution-for-a-given-equation
 deep-ml-problem-42
+circle-and-rectangle-overlapping
+find-building-where-alice-and-bob-can-meet
+deep-ml-problem-87
+deep-ml-problem-88

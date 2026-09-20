@@ -11,3 +11,7 @@ circle-and-rectangle-overlapping
 find-building-where-alice-and-bob-can-meet
 deep-ml-problem-87
 deep-ml-problem-88
+number-of-enclaves
+encrypt-and-decrypt-strings
+deep-ml-problem-25
+deep-ml-problem-137

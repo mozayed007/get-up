@@ -15,3 +15,5 @@ number-of-enclaves
 encrypt-and-decrypt-strings
 deep-ml-problem-25
 deep-ml-problem-137
+find-champion-i
+deep-ml-problem-104

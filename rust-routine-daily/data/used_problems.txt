@@ -17,3 +17,5 @@ deep-ml-problem-25
 deep-ml-problem-137
 find-champion-i
 deep-ml-problem-104
+count-paths-with-the-given-xor-value
+deep-ml-problem-139

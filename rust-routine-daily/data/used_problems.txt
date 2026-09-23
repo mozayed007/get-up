@@ -19,3 +19,5 @@ find-champion-i
 deep-ml-problem-104
 count-paths-with-the-given-xor-value
 deep-ml-problem-139
+number-of-good-pairs
+deep-ml-problem-118

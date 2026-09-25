@@ -23,3 +23,5 @@ number-of-good-pairs
 deep-ml-problem-118
 count-the-number-of-square-free-subsets
 deep-ml-problem-116
+reformat-the-string
+deep-ml-problem-41

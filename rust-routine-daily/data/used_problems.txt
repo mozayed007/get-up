@@ -25,3 +25,7 @@ count-the-number-of-square-free-subsets
 deep-ml-problem-116
 reformat-the-string
 deep-ml-problem-41
+evaluate-the-bracket-pairs-of-a-string
+largest-multiple-of-three
+deep-ml-problem-138
+deep-ml-problem-122

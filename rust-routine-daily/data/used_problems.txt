@@ -29,3 +29,7 @@ evaluate-the-bracket-pairs-of-a-string
 largest-multiple-of-three
 deep-ml-problem-138
 deep-ml-problem-122
+reverse-substrings-between-each-pair-of-parentheses
+minimum-number-of-operations-to-make-string-sorted
+deep-ml-problem-110
+deep-ml-problem-28

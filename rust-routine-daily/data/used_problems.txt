@@ -35,3 +35,5 @@ deep-ml-problem-110
 deep-ml-problem-28
 zero-array-transformation-i
 deep-ml-problem-73
+ransom-note
+deep-ml-problem-71

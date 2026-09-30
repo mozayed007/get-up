@@ -37,3 +37,5 @@ zero-array-transformation-i
 deep-ml-problem-73
 ransom-note
 deep-ml-problem-71
+reshape-the-matrix
+deep-ml-problem-123

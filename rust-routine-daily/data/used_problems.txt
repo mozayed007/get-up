@@ -39,3 +39,5 @@ ransom-note
 deep-ml-problem-71
 reshape-the-matrix
 deep-ml-problem-123
+valid-parentheses
+deep-ml-problem-117

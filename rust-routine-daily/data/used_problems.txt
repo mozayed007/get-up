@@ -43,3 +43,7 @@ valid-parentheses
 deep-ml-problem-117
 generate-parentheses
 deep-ml-problem-60
+minimum-number-of-work-sessions-to-finish-the-tasks
+longest-valid-parentheses
+deep-ml-problem-149
+deep-ml-problem-63

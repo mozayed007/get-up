@@ -47,3 +47,7 @@ minimum-number-of-work-sessions-to-finish-the-tasks
 longest-valid-parentheses
 deep-ml-problem-149
 deep-ml-problem-63
+valid-parenthesis-string
+swim-in-rising-water
+deep-ml-problem-26
+deep-ml-problem-174

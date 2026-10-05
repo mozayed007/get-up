@@ -51,3 +51,5 @@ valid-parenthesis-string
 swim-in-rising-water
 deep-ml-problem-26
 deep-ml-problem-174
+majority-element
+deep-ml-problem-4

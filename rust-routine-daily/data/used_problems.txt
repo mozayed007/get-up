@@ -53,3 +53,5 @@ deep-ml-problem-26
 deep-ml-problem-174
 majority-element
 deep-ml-problem-4
+minimum-add-to-make-parentheses-valid
+deep-ml-problem-15

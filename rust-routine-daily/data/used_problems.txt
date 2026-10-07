@@ -55,3 +55,5 @@ majority-element
 deep-ml-problem-4
 minimum-add-to-make-parentheses-valid
 deep-ml-problem-15
+furthest-point-from-origin
+deep-ml-problem-102

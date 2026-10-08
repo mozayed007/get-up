@@ -57,3 +57,5 @@ minimum-add-to-make-parentheses-valid
 deep-ml-problem-15
 furthest-point-from-origin
 deep-ml-problem-102
+maximum-difference-score-in-a-grid
+deep-ml-problem-184

@@ -61,3 +61,7 @@ maximum-difference-score-in-a-grid
 deep-ml-problem-184
 equal-score-substrings
 deep-ml-problem-126
+minimum-sum-of-squared-difference
+minimum-obstacle-removal-to-reach-corner
+deep-ml-problem-109
+deep-ml-problem-125

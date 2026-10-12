@@ -69,3 +69,5 @@ the-number-of-the-smallest-unoccupied-chair
 count-good-subarrays
 deep-ml-problem-133
 deep-ml-problem-106
+find-indices-with-index-and-value-difference-i
+deep-ml-problem-50

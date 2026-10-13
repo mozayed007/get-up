@@ -71,3 +71,5 @@ deep-ml-problem-133
 deep-ml-problem-106
 find-indices-with-index-and-value-difference-i
 deep-ml-problem-50
+maximum-alternating-sum-of-squares
+deep-ml-problem-91

@@ -75,3 +75,5 @@ maximum-alternating-sum-of-squares
 deep-ml-problem-91
 maximize-sum-of-squares-of-digits
 deep-ml-problem-44
+subarrays-distinct-element-sum-of-squares-i
+deep-ml-problem-95

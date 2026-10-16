@@ -77,3 +77,5 @@ maximize-sum-of-squares-of-digits
 deep-ml-problem-44
 subarrays-distinct-element-sum-of-squares-i
 deep-ml-problem-95
+minimum-moves-to-convert-string
+deep-ml-problem-33

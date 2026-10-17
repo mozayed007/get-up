@@ -79,3 +79,7 @@ subarrays-distinct-element-sum-of-squares-i
 deep-ml-problem-95
 minimum-moves-to-convert-string
 deep-ml-problem-33
+minimum-swaps-to-sort-by-digit-sum
+count-the-number-of-infection-sequences
+deep-ml-problem-6
+deep-ml-problem-62

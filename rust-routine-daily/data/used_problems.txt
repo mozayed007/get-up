@@ -83,3 +83,7 @@ minimum-swaps-to-sort-by-digit-sum
 count-the-number-of-infection-sequences
 deep-ml-problem-6
 deep-ml-problem-62
+minimum-cost-to-convert-string-i
+number-of-ways-to-reorder-array-to-get-same-bst
+deep-ml-problem-9
+deep-ml-problem-20

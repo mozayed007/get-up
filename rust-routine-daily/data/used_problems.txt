@@ -87,3 +87,5 @@ minimum-cost-to-convert-string-i
 number-of-ways-to-reorder-array-to-get-same-bst
 deep-ml-problem-9
 deep-ml-problem-20
+number-of-nodes-in-the-sub-tree-with-the-same-label
+deep-ml-problem-142

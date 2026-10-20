@@ -89,3 +89,5 @@ deep-ml-problem-9
 deep-ml-problem-20
 number-of-nodes-in-the-sub-tree-with-the-same-label
 deep-ml-problem-142
+max-difference-you-can-get-from-changing-an-integer
+deep-ml-problem-160

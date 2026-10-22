@@ -93,3 +93,5 @@ max-difference-you-can-get-from-changing-an-integer
 deep-ml-problem-160
 find-the-largest-almost-missing-integer
 deep-ml-problem-1
+average-value-of-even-numbers-that-are-divisible-by-three
+deep-ml-problem-158

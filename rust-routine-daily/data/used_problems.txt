@@ -101,3 +101,7 @@ kth-largest-element-in-an-array
 insert-delete-getrandom-o1-duplicates-allowed
 deep-ml-problem-173
 deep-ml-problem-13
+number-of-closed-islands
+number-of-valid-words-for-each-puzzle
+deep-ml-problem-132
+deep-ml-problem-12

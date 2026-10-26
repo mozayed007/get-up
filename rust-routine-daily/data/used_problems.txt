@@ -105,3 +105,5 @@ number-of-closed-islands
 number-of-valid-words-for-each-puzzle
 deep-ml-problem-132
 deep-ml-problem-12
+maximum-height-of-a-triangle
+deep-ml-problem-52

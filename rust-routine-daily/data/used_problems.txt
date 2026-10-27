@@ -107,3 +107,5 @@ deep-ml-problem-132
 deep-ml-problem-12
 maximum-height-of-a-triangle
 deep-ml-problem-52
+choose-k-elements-with-maximum-sum
+deep-ml-problem-55

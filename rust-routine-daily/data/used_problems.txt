@@ -109,3 +109,5 @@ maximum-height-of-a-triangle
 deep-ml-problem-52
 choose-k-elements-with-maximum-sum
 deep-ml-problem-55
+maximum-value-of-a-string-in-an-array
+deep-ml-problem-35

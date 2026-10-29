@@ -111,3 +111,5 @@ choose-k-elements-with-maximum-sum
 deep-ml-problem-55
 maximum-value-of-a-string-in-an-array
 deep-ml-problem-35
+k-items-with-the-maximum-sum
+deep-ml-problem-155

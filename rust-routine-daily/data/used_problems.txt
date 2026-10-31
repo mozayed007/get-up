@@ -115,3 +115,7 @@ k-items-with-the-maximum-sum
 deep-ml-problem-155
 shortest-path-with-at-most-k-consecutive-identical-characters
 deep-ml-problem-103
+twisted-mirror-path-count
+number-of-beautiful-integers-in-the-range
+deep-ml-problem-53
+deep-ml-problem-40

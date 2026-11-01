@@ -119,3 +119,7 @@ twisted-mirror-path-count
 number-of-beautiful-integers-in-the-range
 deep-ml-problem-53
 deep-ml-problem-40
+minimum-moves-to-equal-array-elements
+expression-add-operators
+deep-ml-problem-47
+deep-ml-problem-94

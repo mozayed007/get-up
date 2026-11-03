@@ -125,3 +125,5 @@ deep-ml-problem-47
 deep-ml-problem-94
 compute-decimal-representation
 deep-ml-problem-77
+minimum-moves-to-equal-array-elements-iii
+deep-ml-problem-107

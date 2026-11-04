@@ -127,3 +127,5 @@ compute-decimal-representation
 deep-ml-problem-77
 minimum-moves-to-equal-array-elements-iii
 deep-ml-problem-107
+maximum-unique-subarray-sum-after-deletion
+deep-ml-problem-36

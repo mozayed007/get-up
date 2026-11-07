@@ -133,3 +133,7 @@ maximum-xor-product
 deep-ml-problem-115
 count-zero-request-servers
 deep-ml-problem-185
+process-tasks-using-servers
+length-of-the-longest-valid-substring
+deep-ml-problem-8
+deep-ml-problem-21

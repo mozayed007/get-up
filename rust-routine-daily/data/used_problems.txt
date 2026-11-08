@@ -137,3 +137,7 @@ process-tasks-using-servers
 length-of-the-longest-valid-substring
 deep-ml-problem-8
 deep-ml-problem-21
+count-servers-that-communicate
+count-visited-nodes-in-a-directed-graph
+deep-ml-problem-131
+deep-ml-problem-105

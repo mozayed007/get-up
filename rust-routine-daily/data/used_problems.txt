@@ -145,3 +145,5 @@ minimum-distance-between-bst-nodes
 deep-ml-problem-93
 rectangle-overlap
 deep-ml-problem-59
+search-in-a-binary-search-tree
+deep-ml-problem-151

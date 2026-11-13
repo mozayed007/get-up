@@ -149,3 +149,5 @@ search-in-a-binary-search-tree
 deep-ml-problem-151
 sort-matrix-by-diagonals
 deep-ml-problem-136
+minimum-array-length-after-pair-removals
+deep-ml-problem-112

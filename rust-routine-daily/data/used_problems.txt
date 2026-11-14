@@ -151,3 +151,7 @@ sort-matrix-by-diagonals
 deep-ml-problem-136
 minimum-array-length-after-pair-removals
 deep-ml-problem-112
+find-palindrome-with-fixed-length
+find-servers-that-handled-most-number-of-requests
+deep-ml-problem-140
+deep-ml-problem-38

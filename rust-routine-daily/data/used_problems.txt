@@ -163,3 +163,5 @@ evaluate-reverse-polish-notation
 deep-ml-problem-111
 number-of-lines-to-write-string
 deep-ml-problem-100
+student-attendance-record-i
+deep-ml-problem-67

@@ -165,3 +165,5 @@ number-of-lines-to-write-string
 deep-ml-problem-100
 student-attendance-record-i
 deep-ml-problem-67
+points-that-intersect-with-cars
+deep-ml-problem-92

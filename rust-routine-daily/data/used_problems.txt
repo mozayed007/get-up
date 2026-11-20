@@ -167,3 +167,5 @@ student-attendance-record-i
 deep-ml-problem-67
 points-that-intersect-with-cars
 deep-ml-problem-92
+triangle
+deep-ml-problem-30

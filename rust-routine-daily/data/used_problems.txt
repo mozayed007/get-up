@@ -169,3 +169,7 @@ points-that-intersect-with-cars
 deep-ml-problem-92
 triangle
 deep-ml-problem-30
+find-subtree-sizes-after-changes
+count-of-smaller-numbers-after-self
+deep-ml-problem-57
+deep-ml-problem-130
